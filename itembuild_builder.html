@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор сборки билда</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .build-calculator * {
+            font-family: 'Inter', sans-serif;
+        }
+        .build-calculator {
+            width: 1200px;
+            display: flex;
+            margin: 0 auto;
+            gap: 20px;
+            position: relative;
+            background-color: #00000000; /* Фон калькулятора */
+        }
+        .build-calculator .left-block {
+            width: 400px;
+            max-width: 400px;
+            background: linear-gradient(to right, #252728, #101415);
+            padding: 32px 24px;
+            border-radius: 16px;
+            max-height: 1405px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            position: sticky;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            scrollbar-width: thin;
+            scrollbar-color: #ffffff #202020;
+        }
+        .build-calculator .left-block::-webkit-scrollbar {
+            width: 6px;
+        }
+        .build-calculator .left-block::-webkit-scrollbar-track {
+            background: #202020;
+            border-radius: 8px;
+        }
+        .build-calculator .left-block::-webkit-scrollbar-thumb {
+            background: #ffffff;
+            border-radius: 8px;
+        }
+        .build-calculator .left-block::-webkit-scrollbar-thumb:hover {
+            background: #ffffff;
+        }
+        .build-calculator .left-block::-webkit-scrollbar-button {
+            display: none;
+        }
+        .build-calculator .left-block-content {
+            flex-grow: 0;
+            margin-bottom: 16px;
+        }
+        .build-calculator .right-block {
+            width: 800px;
+            background: linear-gradient(to right, #252728, #101415);
+            padding: 32px 24px;
+            border-radius: 16px;
+            box-sizing: border-box;
+            position: relative;
+            height: 1405px;
+            overflow-y: hidden;
+        }
+        .build-calculator .block-title {
+            color: white;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: left;
+            max-width: 100%;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        .build-calculator .title-text {
+            display: inline-block;
+            max-width: 100%;
+            word-wrap: break-word;
+        }
+        .build-calculator .block-title input[type="text"] {
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            background: transparent;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 2px 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .build-calculator .edit-block-icon {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+        .build-calculator .category-input-container {
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+        }
+        .build-calculator .left-block input:not(.block-title input) {
+            padding: 8px;
+            width: calc(100% - 34px);
+            box-sizing: border-box;
+            background: transparent;
+            border: 1px solid #343637;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+            margin-right: 10px;
+        }
+        .build-calculator .left-block .add-category-icon {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        .build-calculator #categories:empty + .category-input-container {
+            margin-top: 20px;
+        }
+        .build-calculator .tabs {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .build-calculator .tab-button {
+            padding: 10px;
+            cursor: pointer;
+            background-color: rgba(11, 14, 15, 0.6);
+            color: white;
+            font-size: 20px;
+            border: none;
+            flex: 1;
+            text-align: center;
+            max-width: calc((752px - 24px) / 3);
+            border-radius: 8px;
+        }
+        .build-calculator .tab-button.active {
+            background-color: #050809;
+        }
+        .build-calculator .tab-content {
+            display: none;
+        }
+        .build-calculator .tab-content.active {
+            display: block;
+        }
+        .build-calculator .category-container {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        .build-calculator .category-row {
+            display: flex;
+            justify-content: space-between;
+            width: 752px;
+            gap: 16px;
+        }
+        .build-calculator .category {
+            width: 368px;
+            position: relative;
+        }
+        .build-calculator .category h3 {
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            word-wrap: break-word;
+            max-width: calc(100% - 40px);
+            display: inline-block;
+            text-align: left;
+        }
+        .build-calculator .category h3 input[type="text"] {
+            font-size: 24px;
+            font-weight: 500;
+            color: white;
+            background: transparent;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 2px 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .build-calculator .left-block .category {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            border-radius: 10px;
+            position: relative;
+            text-align: left;
+        }
+        .build-calculator .left-block .category h3 {
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+            margin: 0 0 10px 0;
+            width: calc(100% - 40px);
+            word-wrap: break-word;
+            display: inline-block;
+            text-align: left;
+            position: relative;
+            padding-right: 24px;
+        }
+        .build-calculator .left-block .category h3 .delete-category-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .build-calculator .items {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 60px;
+            position: relative;
+        }
+        .build-calculator .item {
+            width: 64px;
+            height: 48px;
+            margin: 5px;
+            background-size: cover;
+            cursor: move;
+            touch-action: none; /* Предотвращает стандартное поведение на iOS */
+            border-radius: 8px;
+            position: relative;
+            -webkit-user-select: none; /* Для Safari */
+            user-select: none;
+        }
+        .build-calculator .item-consumable-1 { background-image: url('https://optim.tildacdn.com/tild3235-3037-4732-a530-373534393936/-/resize/86x/-/format/webp/clarity.png'); }
+.build-calculator .item-consumable-2 { background-image: url('https://optim.tildacdn.com/tild6430-6231-4430-a561-303631363162/-/resize/86x/-/format/webp/enchanted_mango.png'); }
+.build-calculator .item-consumable-3 { background-image: url('https://optim.tildacdn.com/tild6131-3537-4066-b762-633235373765/-/resize/86x/-/format/webp/bottle.png'); }
+.build-calculator .item-consumable-4 { background-image: url('https://optim.tildacdn.com/tild3836-3766-4137-b030-346234323031/-/resize/86x/-/format/webp/smoke_of_deceit.png'); }
+.build-calculator .item-consumable-5 { background-image: url('https://optim.tildacdn.com/tild3735-3466-4438-b565-653033393032/-/resize/86x/-/format/webp/flask.png'); }
+.build-calculator .item-consumable-6 { background-image: url('https://optim.tildacdn.com/tild3331-3833-4839-a364-633162376666/-/resize/86x/-/format/webp/tango.png'); }
+.build-calculator .item-consumable-7 { background-image: url('https://optim.tildacdn.com/tild3237-6634-4261-b438-653130643133/-/resize/86x/-/format/webp/fairy_fire.png'); }
+.build-calculator .item-consumable-8 { background-image: url('https://optim.tildacdn.com/tild3465-3038-4333-b232-343366386632/-/resize/86x/-/format/webp/dust.png'); }
+.build-calculator .item-consumable-9 { background-image: url('https://optim.tildacdn.com/tild3036-3739-4266-a138-656334333438/-/resize/86x/-/format/webp/book_of_strength.png'); }
+.build-calculator .item-consumable-10 { background-image: url('https://optim.tildacdn.com/tild3266-6662-4366-a333-356362623361/-/resize/86x/-/format/webp/book_of_agility.png'); }
+.build-calculator .item-consumable-11 { background-image: url('https://optim.tildacdn.com/tild3564-6634-4661-b838-366637303161/-/resize/86x/-/format/webp/book_on_intellegence.png'); }
+.build-calculator .item-consumable-12 { background-image: url('https://optim.tildacdn.com/tild3966-6331-4733-b166-336334623134/-/resize/86x/-/format/webp/book_of_water.png'); }
+.build-calculator .item-consumable-13 { background-image: url('https://optim.tildacdn.com/tild3963-3839-4436-b331-633537633837/-/resize/86x/-/format/webp/blood_grenade.png'); }
+.build-calculator .item-attribute-1 { background-image: url('https://optim.tildacdn.com/tild3266-6637-4136-b763-353737633534/-/resize/86x/-/format/webp/branches.png'); }
+.build-calculator .item-attribute-2 { background-image: url('https://optim.tildacdn.com/tild6639-3830-4537-a161-653861653461/-/resize/86x/-/format/webp/gauntlets.png'); }
+.build-calculator .item-attribute-3 { background-image: url('https://optim.tildacdn.com/tild3034-3235-4239-b962-353162613466/-/resize/86x/-/format/webp/slippers.png'); }
+.build-calculator .item-attribute-4 { background-image: url('https://optim.tildacdn.com/tild3739-6436-4435-b431-613133636336/-/resize/86x/-/format/webp/mantle.png'); }
+.build-calculator .item-attribute-5 { background-image: url('https://optim.tildacdn.com/tild6561-3164-4864-a365-646231383935/-/resize/86x/-/format/webp/circlet.png'); }
+.build-calculator .item-attribute-6 { background-image: url('https://optim.tildacdn.com/tild3064-3366-4136-a239-343534656632/-/resize/86x/-/format/webp/belt_of_strength.png'); }
+.build-calculator .item-attribute-7 { background-image: url('https://optim.tildacdn.com/tild3633-3239-4931-b961-316537346136/-/resize/86x/-/format/webp/band_of_elvenskin.png'); }
+.build-calculator .item-attribute-8 { background-image: url('https://optim.tildacdn.com/tild3863-6331-4161-b263-393237353134/-/resize/86x/-/format/webp/robe.png'); }
+.build-calculator .item-attribute-9 { background-image: url('https://optim.tildacdn.com/tild3562-3965-4635-a130-666333363134/-/resize/86x/-/format/webp/crown.png'); }
+.build-calculator .item-attribute-10 { background-image: url('https://optim.tildacdn.com/tild3030-6666-4762-a332-373866356564/-/resize/86x/-/format/webp/ogre_axe.png'); }
+.build-calculator .item-attribute-11 { background-image: url('https://optim.tildacdn.com/tild6532-6363-4230-a434-353164623033/-/resize/86x/-/format/webp/blade_of_alacrity.png'); }
+.build-calculator .item-attribute-12 { background-image: url('https://optim.tildacdn.com/tild3038-3961-4762-a233-366666643737/-/resize/86x/-/format/webp/staff_of_wizardry.png'); }
+.build-calculator .item-attribute-13 { background-image: url('https://optim.tildacdn.com/tild3638-3739-4938-b261-656332366430/-/resize/86x/-/format/webp/diadem.png'); }
+.build-calculator .item-attribute-14 { background-image: url('https://optim.tildacdn.com/tild3365-6131-4161-b334-653337646230/-/resize/86x/-/format/webp/reaver.png'); }
+.build-calculator .item-attribute-15 { background-image: url('https://optim.tildacdn.com/tild3439-3733-4537-a138-366432313939/-/resize/86x/-/format/webp/eagle.png'); }
+.build-calculator .item-attribute-16 { background-image: url('https://optim.tildacdn.com/tild3337-6131-4639-a531-313863383937/-/resize/86x/-/format/webp/mystic_staff.png'); }
+.build-calculator .item-attribute-17 { background-image: url('https://optim.tildacdn.com/tild3866-3962-4839-b236-346134303162/-/resize/86x/-/format/webp/ultimate_orb.png'); }
+.build-calculator .item-attribute-18 { background-image: url('https://optim.tildacdn.com/tild3661-6564-4564-b036-336562346437/-/resize/86x/-/format/webp/aghanims_shard.png'); }
+.build-calculator .item-equipment-1 { background-image: url('https://optim.tildacdn.com/tild3266-6632-4136-a665-613134613065/-/resize/86x/-/format/webp/wind_lace.png'); }
+.build-calculator .item-equipment-2 { background-image: url('https://optim.tildacdn.com/tild3639-6434-4665-b466-613637663265/-/resize/86x/-/format/webp/boots.png'); }
+.build-calculator .item-equipment-3 { background-image: url('https://optim.tildacdn.com/tild6231-6165-4163-a266-376437316539/-/resize/86x/-/format/webp/infused_raindrop.png'); }
+.build-calculator .item-equipment-4 { background-image: url('https://optim.tildacdn.com/tild6432-6364-4466-b536-356564666430/-/resize/86x/-/format/webp/cloak.png'); }
+.build-calculator .item-equipment-5 { background-image: url('https://optim.tildacdn.com/tild3533-6666-4633-b232-316130663834/-/resize/86x/-/format/webp/ring_of_protection.png'); }
+.build-calculator .item-equipment-6 { background-image: url('https://optim.tildacdn.com/tild6131-3237-4537-b737-636262353135/-/resize/86x/-/format/webp/chainmail.png'); }
+.build-calculator .item-equipment-7 { background-image: url('https://optim.tildacdn.com/tild6139-3239-4135-a236-306333666261/-/resize/86x/-/format/webp/helm_of_iron_will.png'); }
+.build-calculator .item-equipment-8 { background-image: url('https://optim.tildacdn.com/tild3030-3565-4165-b337-356530313034/-/resize/86x/-/format/webp/platemail.png'); }
+.build-calculator .item-equipment-9 { background-image: url('https://optim.tildacdn.com/tild6365-3333-4931-b865-663739326162/-/resize/86x/-/format/webp/quelling_blade.png'); }
+.build-calculator .item-equipment-10 { background-image: url('https://optim.tildacdn.com/tild3133-3136-4236-b661-633138333630/-/resize/86x/-/format/webp/gloves.png'); }
+.build-calculator .item-equipment-11 { background-image: url('https://optim.tildacdn.com/tild3732-3537-4763-b263-643436366633/-/resize/86x/-/format/webp/blitz_knuckles.png'); }
+.build-calculator .item-equipment-12 { background-image: url('https://optim.tildacdn.com/tild3638-3662-4632-b232-613239333832/-/resize/86x/-/format/webp/hyperstone.png'); }
+.build-calculator .item-equipment-13 { background-image: url('https://optim.tildacdn.com/tild6435-3434-4666-a461-303662323636/-/resize/86x/-/format/webp/blades_of_attack.png'); }
+.build-calculator .item-equipment-14 { background-image: url('https://optim.tildacdn.com/tild3866-6565-4632-b061-383038313163/-/resize/86x/-/format/webp/broadsword.png'); }
+.build-calculator .item-equipment-15 { background-image: url('https://optim.tildacdn.com/tild3031-3339-4739-b464-643630383135/-/resize/86x/-/format/webp/javelin.png'); }
+.build-calculator .item-equipment-16 { background-image: url('https://optim.tildacdn.com/tild6336-3639-4436-b332-386233373635/-/resize/86x/-/format/webp/claymore.png'); }
+.build-calculator .item-equipment-17 { background-image: url('https://optim.tildacdn.com/tild3333-3936-4263-b962-343730303661/-/resize/86x/-/format/webp/mithril_hammer.png'); }
+.build-calculator .item-equipment-18 { background-image: url('https://optim.tildacdn.com/tild3862-6661-4935-a536-343462343464/-/resize/86x/-/format/webp/demon_edge.png'); }
+.build-calculator .item-equipment-19 { background-image: url('https://optim.tildacdn.com/tild3539-3835-4537-a164-393362643433/-/resize/86x/-/format/webp/relic.png'); }
+.build-calculator .item-misc-1 { background-image: url('https://optim.tildacdn.com/tild3033-6234-4732-b135-663930383665/-/resize/86x/-/format/webp/magic_stick.png'); }
+.build-calculator .item-misc-2 { background-image: url('https://optim.tildacdn.com/tild3265-6263-4266-b337-386564393964/-/resize/86x/-/format/webp/orb_of_venom.png'); }
+.build-calculator .item-misc-3 { background-image: url('https://optim.tildacdn.com/tild3639-3764-4433-a461-656139336164/-/resize/86x/-/format/webp/blight_stone.png'); }
+.build-calculator .item-misc-4 { background-image: url('https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/items/orb_of_frost.png'); }
+.build-calculator .item-misc-5 { background-image: url('https://optim.tildacdn.com/tild3533-6131-4139-b637-353166656235/-/resize/86x/-/format/webp/fluffy_hat.png'); }
+.build-calculator .item-misc-6 { background-image: url('https://optim.tildacdn.com/tild3332-6462-4938-b238-323362313139/-/resize/86x/-/format/webp/ring_of_regen.png'); }
+.build-calculator .item-misc-7 { background-image: url('https://optim.tildacdn.com/tild3465-3532-4633-b631-343330646231/-/resize/86x/-/format/webp/ring_of_health.png'); }
+.build-calculator .item-misc-8 { background-image: url('https://optim.tildacdn.com/tild6537-3163-4539-b734-656432376434/-/resize/86x/-/format/webp/ring_of_tarrasque.png'); }
+.build-calculator .item-misc-9 { background-image: url('https://optim.tildacdn.com/tild3439-3030-4036-b336-613539636631/-/resize/86x/-/format/webp/lifesteal.png'); }
+.build-calculator .item-misc-10 { background-image: url('https://optim.tildacdn.com/tild6234-6466-4433-b965-623162343062/-/resize/86x/-/format/webp/sobi_mask.png'); }
+.build-calculator .item-misc-11 { background-image: url('https://optim.tildacdn.com/tild3431-6532-4938-a361-306135653934/-/resize/86x/-/format/webp/void_stone.png'); }
+.build-calculator .item-misc-12 { background-image: url('https://optim.tildacdn.com/tild3331-3731-4364-a362-366564626137/-/resize/86x/-/format/webp/tiara_of_selemene.png'); }
+.build-calculator .item-misc-13 { background-image: url('https://optim.tildacdn.com/tild6231-3733-4231-b839-313730383166/-/resize/86x/-/format/webp/voodoo_mask.png'); }
+.build-calculator .item-misc-14 { background-image: url('https://optim.tildacdn.com/tild3437-3161-4433-a633-393565663066/-/resize/86x/-/format/webp/cornucopia.png'); }
+.build-calculator .item-misc-15 { background-image: url('https://optim.tildacdn.com/tild3933-3839-4939-b034-653534646635/-/resize/86x/-/format/webp/vitality_booster.png'); }
+.build-calculator .item-misc-16 { background-image: url('https://optim.tildacdn.com/tild3138-6438-4935-a632-396638366332/-/resize/86x/-/format/webp/energy_booster.png'); }
+.build-calculator .item-misc-17 { background-image: url('https://optim.tildacdn.com/tild6462-3365-4633-b765-383465633139/-/resize/86x/-/format/webp/point_booster.png'); }
+.build-calculator .item-misc-18 { background-image: url('https://optim.tildacdn.com/tild3737-3565-4961-b963-363336323534/-/resize/86x/-/format/webp/talisman_of_evasion.png'); }
+.build-calculator .item-misc-19 { background-image: url('https://optim.tildacdn.com/tild3762-3737-4664-b131-396366366566/-/resize/86x/-/format/webp/ghost_scepter.png'); }
+.build-calculator .item-misc-20 { background-image: url('https://optim.tildacdn.com/tild6431-6462-4663-a431-383932383061/-/resize/86x/-/format/webp/shadow_amulet.png'); }
+.build-calculator .item-misc-21 { background-image: url('https://optim.tildacdn.com/tild3437-3664-4061-b166-376363393031/-/resize/86x/-/format/webp/blink.png'); }
+.build-calculator .item-misc-22 { background-image: url('https://optim.tildacdn.com/tild6162-3438-4236-a435-373033343830/-/resize/86x/-/format/webp/gem.png'); }
+.build-calculator .item-accessory-1 { background-image: url('https://optim.tildacdn.com/tild3731-3834-4264-a534-656566366531/-/resize/86x/-/format/webp/headdress.png'); }
+.build-calculator .item-accessory-2 { background-image: url('https://optim.tildacdn.com/tild3864-6265-4335-a636-343830373634/-/resize/86x/-/format/webp/buckler.png'); }
+.build-calculator .item-accessory-3 { background-image: url('https://optim.tildacdn.com/tild3237-3337-4462-a365-306462306334/-/resize/86x/-/format/webp/ring_of_basilius.png'); }
+.build-calculator .item-accessory-4 { background-image: url('https://optim.tildacdn.com/tild3738-3538-4837-b735-353037363935/-/resize/86x/-/format/webp/magic_wand.png'); }
+.build-calculator .item-accessory-5 { background-image: url('https://optim.tildacdn.com/tild6430-3562-4462-b830-306331633436/-/resize/86x/-/format/webp/bracer.png'); }
+.build-calculator .item-accessory-6 { background-image: url('https://optim.tildacdn.com/tild3332-6236-4661-b566-323862383732/-/resize/86x/-/format/webp/wraith_band.png'); }
+.build-calculator .item-accessory-7 { background-image: url('https://optim.tildacdn.com/tild3739-3736-4338-b038-333037666561/-/resize/86x/-/format/webp/null_talisman.png'); }
+.build-calculator .item-accessory-8 { background-image: url('https://optim.tildacdn.com/tild3630-6638-4064-a163-623335323562/-/resize/86x/-/format/webp/ironwood_staff.png'); }
+.build-calculator .item-accessory-9 { background-image: url('https://optim.tildacdn.com/tild3931-6435-4639-b533-353236393365/-/resize/86x/-/format/webp/soul_ring.png'); }
+.build-calculator .item-accessory-10 { background-image: url('https://optim.tildacdn.com/tild3033-3438-4033-a165-633162376134/-/resize/86x/-/format/webp/orb_of_corrosion.png'); }
+.build-calculator .item-accessory-11 { background-image: url('https://optim.tildacdn.com/tild3462-3930-4362-a239-353637663030/-/resize/86x/-/format/webp/falcon_blade.png'); }
+.build-calculator .item-accessory-12 { background-image: url('https://optim.tildacdn.com/tild3935-3232-4635-b432-386533616161/-/resize/86x/-/format/webp/oblivion_staff.png'); }
+.build-calculator .item-accessory-13 { background-image: url('https://optim.tildacdn.com/tild3563-6234-4038-b330-336636323230/-/resize/86x/-/format/webp/mask_of_madness.png'); }
+.build-calculator .item-accessory-14 { background-image: url('https://optim.tildacdn.com/tild6139-3832-4132-a331-343133366137/-/resize/86x/-/format/webp/pers.png'); }
+.build-calculator .item-accessory-15 { background-image: url('https://optim.tildacdn.com/tild3865-3761-4565-a163-633439623334/-/resize/86x/-/format/webp/soul_booster.png'); }
+.build-calculator .item-accessory-16 { background-image: url('https://optim.tildacdn.com/tild3832-3764-4965-b165-656363353463/-/resize/86x/-/format/webp/ultimate_scepter.png'); }
+.build-calculator .item-accessory-17 { background-image: url('https://optim.tildacdn.com/tild3765-6361-4365-b537-626266616538/-/resize/86x/-/format/webp/moon_aghanim.png'); }
+.build-calculator .item-accessory-18 { background-image: url('https://optim.tildacdn.com/tild3638-3639-4362-a634-336538346230/-/resize/86x/-/format/webp/royale_with_cheese.png'); }
+.build-calculator .item-accessory-19 { background-image: url('https://optim.tildacdn.com/tild6630-6564-4864-b165-616162636435/-/resize/86x/-/format/webp/moon_shard.png'); }
+.build-calculator .item-accessory-20 { background-image: url('https://optim.tildacdn.com/tild3466-3661-4661-b838-356562396534/-/resize/86x/-/format/webp/moon_kaya.png'); }
+.build-calculator .item-accessory-21 { background-image: url('https://optim.tildacdn.com/tild6236-3733-4064-b732-373265336233/-/resize/86x/-/format/webp/moon_yasha.png'); }
+.build-calculator .item-accessory-22 { background-image: url('https://optim.tildacdn.com/tild6637-6463-4635-a132-633363336238/-/resize/86x/-/format/webp/moon_sange.png'); }
+.build-calculator .item-support-1 { background-image: url('https://optim.tildacdn.com/tild3937-6130-4164-b963-633138643933/-/resize/86x/-/format/webp/power_treads.png'); }
+.build-calculator .item-support-2 { background-image: url('https://optim.tildacdn.com/tild3765-6263-4665-b965-353961306635/-/resize/86x/-/format/webp/aghanims_treads.png'); }
+.build-calculator .item-support-3 { background-image: url('https://optim.tildacdn.com/tild6533-6264-4361-b662-303933653161/-/resize/86x/-/format/webp/travel_boots.png'); }
+.build-calculator .item-support-4 { background-image: url('https://optim.tildacdn.com/tild3966-3261-4635-b935-633739643736/-/resize/86x/-/format/webp/travel_boots_2.png'); }
+.build-calculator .item-support-5 { background-image: url('https://optim.tildacdn.com/tild3561-3030-4636-b336-626137356236/-/resize/86x/-/format/webp/phase_boots.png'); }
+.build-calculator .item-support-6 { background-image: url('https://optim.tildacdn.com/tild3363-6262-4630-b139-313130386232/-/resize/86x/-/format/webp/aeon_disk.png'); }
+.build-calculator .item-support-7 { background-image: url('https://optim.tildacdn.com/tild3139-6266-4233-b637-633234663763/-/resize/86x/-/format/webp/aeon_boots.png'); }
+.build-calculator .item-support-8 { background-image: url('https://optim.tildacdn.com/tild3261-3532-4338-a437-656635346633/-/resize/86x/-/format/webp/holy_locket.png'); }
+.build-calculator .item-support-9 { background-image: url('https://optim.tildacdn.com/tild3739-6337-4634-b665-383931313330/-/resize/86x/-/format/webp/arcane_boots.png'); }
+.build-calculator .item-support-10 { background-image: url('https://optim.tildacdn.com/tild6465-6564-4437-b931-326665396265/-/resize/86x/-/format/webp/mekansm.png'); }
+.build-calculator .item-support-11 { background-image: url('https://optim.tildacdn.com/tild6661-6161-4633-b135-393833393633/-/resize/86x/-/format/webp/guardian_greaves.png'); }
+.build-calculator .item-support-12 { background-image: url('https://optim.tildacdn.com/tild6330-3539-4266-b332-626233613761/-/resize/86x/-/format/webp/gods_locket.png'); }
+.build-calculator .item-support-13 { background-image: url('https://optim.tildacdn.com/tild3334-3535-4332-b232-336234306632/-/resize/86x/-/format/webp/tranquil_boots.png'); }
+.build-calculator .item-support-14 { background-image: url('https://optim.tildacdn.com/tild3836-3166-4930-b464-353664666436/-/resize/86x/-/format/webp/ancient_janggo.png'); }
+.build-calculator .item-support-15 { background-image: url('https://optim.tildacdn.com/tild3338-3031-4439-a232-613834383564/-/resize/86x/-/format/webp/boots_of_bearing.png'); }
+.build-calculator .item-support-16 { background-image: url('https://optim.tildacdn.com/tild3031-3634-4532-b864-383937396263/-/resize/86x/-/format/webp/force_staff.png'); }
+.build-calculator .item-support-17 { background-image: url('https://optim.tildacdn.com/tild6466-6538-4935-b336-383931343661/-/resize/86x/-/format/webp/vladmir.png'); }
+.build-calculator .item-support-18 { background-image: url('https://optim.tildacdn.com/tild6631-3661-4930-b736-333261643337/-/resize/86x/-/format/webp/helm_of_the_dominato.png'); }
+.build-calculator .item-support-19 { background-image: url('https://optim.tildacdn.com/tild3436-6666-4032-a335-613565633662/-/resize/86x/-/format/webp/helm_of_the_overlord.png'); }
+.build-calculator .item-support-20 { background-image: url('https://optim.tildacdn.com/tild3161-3534-4139-a366-383238373261/-/resize/86x/-/format/webp/hand_of_midas.png'); }
+.build-calculator .item-support-21 { background-image: url('https://optim.tildacdn.com/tild3939-3039-4838-b363-353661633430/-/resize/86x/-/format/webp/urn_of_shadows.png'); }
+.build-calculator .item-support-22 { background-image: url('https://optim.tildacdn.com/tild6561-3936-4536-a431-366666633061/-/resize/86x/-/format/webp/spirit_vessel.png'); }
+.build-calculator .item-magic-1 { background-image: url('https://optim.tildacdn.com/tild3933-3339-4130-a238-613430363935/-/resize/86x/-/format/webp/veil_of_discord.png'); }
+.build-calculator .item-magic-2 { background-image: url('https://optim.tildacdn.com/tild3037-3866-4234-b263-316465623234/-/resize/86x/-/format/webp/edge_of_discord.png'); }
+.build-calculator .item-magic-3 { background-image: url('https://optim.tildacdn.com/tild6233-3039-4335-b036-616265643532/-/resize/86x/-/format/webp/phylactery.png'); }
+.build-calculator .item-magic-4 { background-image: url('https://optim.tildacdn.com/tild3230-6236-4463-a135-333437356534/-/resize/86x/-/format/webp/angels_demise.png'); }
+.build-calculator .item-magic-5 { background-image: url('https://optim.tildacdn.com/tild6361-6435-4465-b461-633833396166/-/resize/86x/-/format/webp/aether_lens.png'); }
+.build-calculator .item-magic-6 { background-image: url('https://optim.tildacdn.com/tild6235-3766-4261-b761-356634333464/-/resize/86x/-/format/webp/meteor_hammer.png'); }
+.build-calculator .item-magic-7 { background-image: url('https://optim.tildacdn.com/tild3566-3436-4462-a135-313736333064/-/resize/86x/-/format/webp/meteor_lens.png'); }
+.build-calculator .item-magic-8 { background-image: url('https://optim.tildacdn.com/tild3839-6335-4237-b936-336333393932/-/resize/86x/-/format/webp/ethereal_blade.png'); }
+.build-calculator .item-magic-9 { background-image: url('https://optim.tildacdn.com/tild6162-3132-4466-b066-643632653836/-/resize/86x/-/format/webp/cyclone.png'); }
+.build-calculator .item-magic-10 { background-image: url('https://optim.tildacdn.com/tild3161-6539-4135-b465-346131373233/-/resize/86x/-/format/webp/wind_waker.png'); }
+.build-calculator .item-magic-11 { background-image: url('https://optim.tildacdn.com/tild3433-3936-4038-a233-383538343431/-/resize/86x/-/format/webp/rod_of_atos.png'); }
+.build-calculator .item-magic-12 { background-image: url('https://optim.tildacdn.com/tild6161-3634-4537-a535-626439316535/-/resize/86x/-/format/webp/atoss_storm.png'); }
+.build-calculator .item-magic-13 { background-image: url('https://optim.tildacdn.com/tild3263-6235-4334-a232-313564303038/-/resize/86x/-/format/webp/eye_of_thor.png'); }
+.build-calculator .item-magic-14 { background-image: url('https://optim.tildacdn.com/tild3234-6539-4336-b639-616439383938/-/resize/86x/-/format/webp/gungir.png'); }
+.build-calculator .item-magic-15 { background-image: url('https://optim.tildacdn.com/tild6133-3565-4164-b631-303438383239/-/resize/86x/-/format/webp/octarine_core.png'); }
+.build-calculator .item-magic-16 { background-image: url('https://optim.tildacdn.com/tild3939-6539-4365-a434-666632393032/-/resize/86x/-/format/webp/elemental_master.png'); }
+.build-calculator .item-magic-17 { background-image: url('https://optim.tildacdn.com/tild3032-3766-4530-a631-396161333037/-/resize/86x/-/format/webp/witch_blade.png'); }
+.build-calculator .item-magic-18 { background-image: url('https://optim.tildacdn.com/tild3966-3039-4766-a334-333539613666/-/resize/86x/-/format/webp/devastator.png'); }
+.build-calculator .item-magic-19 { background-image: url('https://optim.tildacdn.com/tild3565-6564-4630-a530-636434373739/-/resize/86x/-/format/webp/refresher.png'); }
+.build-calculator .item-magic-20 { background-image: url('https://optim.tildacdn.com/tild6363-3336-4934-b534-653634326338/-/resize/86x/-/format/webp/revenants_brooch.png'); }
+.build-calculator .item-magic-21 { background-image: url('https://optim.tildacdn.com/tild3835-6635-4732-a465-636439333761/-/resize/86x/-/format/webp/orchid.png'); }
+.build-calculator .item-magic-22 { background-image: url('https://optim.tildacdn.com/tild3636-3533-4563-b164-353663393439/-/resize/86x/-/format/webp/mage_destroyer.png'); }
+.build-calculator .item-magic-23 { background-image: url('https://optim.tildacdn.com/tild3563-6331-4439-b137-666330316162/-/resize/86x/-/format/webp/dagon.png'); }
+.build-calculator .item-magic-24 { background-image: url('https://optim.tildacdn.com/tild6463-3862-4461-b335-646664616664/-/resize/86x/-/format/webp/sheepstick.png'); }
+.build-calculator .item-armor-1 { background-image: url('https://optim.tildacdn.com/tild3632-3430-4664-b336-623936313532/-/resize/86x/-/format/webp/glimmer_cape.png'); }
+.build-calculator .item-armor-2 { background-image: url('https://optim.tildacdn.com/tild3634-6634-4365-a432-623461646332/-/resize/86x/-/format/webp/glimmer_shield.png'); }
+.build-calculator .item-armor-3 { background-image: url('https://optim.tildacdn.com/tild6338-3866-4666-b965-663332666664/-/resize/86x/-/format/webp/evasion_cape.png'); }
+.build-calculator .item-armor-4 { background-image: url('https://optim.tildacdn.com/tild3030-6664-4431-b165-663534353037/-/resize/86x/-/format/webp/sphere.png'); }
+.build-calculator .item-armor-5 { background-image: url('https://optim.tildacdn.com/tild3032-6263-4231-a530-353662303964/-/resize/86x/-/format/webp/eternal_shroud.png'); }
+.build-calculator .item-armor-6 { background-image: url('https://optim.tildacdn.com/tild6139-6132-4335-b863-373930386334/-/resize/86x/-/format/webp/eternal_shroud.png'); }
+.build-calculator .item-armor-7 { background-image: url('https://optim.tildacdn.com/tild3761-3337-4432-b761-656366316165/-/resize/86x/-/format/webp/pipe.png'); }
+.build-calculator .item-armor-8 { background-image: url('https://optim.tildacdn.com/tild6363-6530-4065-b036-303362316265/-/resize/86x/-/format/webp/black_king_bar.png'); }
+.build-calculator .item-armor-9 { background-image: url('https://optim.tildacdn.com/tild3932-6163-4630-b532-363365646338/-/resize/86x/-/format/webp/pavise.png'); }
+.build-calculator .item-armor-10 { background-image: url('https://optim.tildacdn.com/tild3736-6632-4636-b038-626533323734/-/resize/86x/-/format/webp/solar_crest.png'); }
+.build-calculator .item-armor-11 { background-image: url('https://optim.tildacdn.com/tild6330-6237-4863-a334-333862333836/-/resize/86x/-/format/webp/sheild_of_insight.png'); }
+.build-calculator .item-armor-12 { background-image: url('https://optim.tildacdn.com/tild6534-6130-4763-b166-656430383730/-/resize/86x/-/format/webp/lotus_orb.png'); }
+.build-calculator .item-armor-13 { background-image: url('https://optim.tildacdn.com/tild3132-3362-4436-a636-373163303962/-/resize/86x/-/format/webp/vanguard.png'); }
+.build-calculator .item-armor-14 { background-image: url('https://optim.tildacdn.com/tild3930-6263-4434-a633-336339326666/-/resize/86x/-/format/webp/crimson_guard.png'); }
+.build-calculator .item-armor-15 { background-image: url('https://optim.tildacdn.com/tild6632-3562-4432-b734-356437353035/-/resize/86x/-/format/webp/heavens_shield.png'); }
+.build-calculator .item-armor-16 { background-image: url('https://optim.tildacdn.com/tild3265-6635-4536-b865-353735666161/-/resize/86x/-/format/webp/heart.png'); }
+.build-calculator .item-armor-17 { background-image: url('https://optim.tildacdn.com/tild6339-6364-4662-a266-316133386430/-/resize/86x/-/format/webp/blade_mail.png'); }
+.build-calculator .item-armor-18 { background-image: url('https://optim.tildacdn.com/tild6266-6532-4666-b534-323335633336/-/resize/86x/-/format/webp/madness_blade_mail.png'); }
+.build-calculator .item-armor-19 { background-image: url('https://optim.tildacdn.com/tild3637-6139-4364-a436-303636336130/-/resize/86x/-/format/webp/satanic.png'); }
+.build-calculator .item-armor-20 { background-image: url('https://optim.tildacdn.com/tild3630-3436-4164-b630-373732346633/-/resize/86x/-/format/webp/bloodstone.png'); }
+.build-calculator .item-armor-21 { background-image: url('https://optim.tildacdn.com/tild6161-3364-4432-a336-643633323236/-/resize/86x/-/format/webp/assault.png'); }
+.build-calculator .item-armor-22 { background-image: url('https://optim.tildacdn.com/tild3366-6532-4966-b062-616236323739/-/resize/86x/-/format/webp/force_platemail.png'); }
+.build-calculator .item-armor-23 { background-image: url('https://optim.tildacdn.com/tild3239-3832-4639-b239-613664666230/-/resize/86x/-/format/webp/shivas_guard.png'); }
+.build-calculator .item-armor-24 { background-image: url('https://optim.tildacdn.com/tild6533-6632-4233-a232-613235626666/-/resize/86x/-/format/webp/skadi.png'); }
+.build-calculator .item-weapon-1 { background-image: url('https://optim.tildacdn.com/tild6364-6131-4165-b661-333936343063/-/resize/86x/-/format/webp/lesser_crit.png'); }
+.build-calculator .item-weapon-2 { background-image: url('https://optim.tildacdn.com/tild6130-3464-4665-b138-636665326237/-/resize/86x/-/format/webp/greater_crit.png'); }
+.build-calculator .item-weapon-3 { background-image: url('https://optim.tildacdn.com/tild3239-3161-4438-b131-306436656431/-/resize/86x/-/format/webp/desolator.png'); }
+.build-calculator .item-weapon-4 { background-image: url('https://optim.tildacdn.com/tild3763-3161-4338-b036-646330626336/-/resize/86x/-/format/webp/nullifier.png'); }
+.build-calculator .item-weapon-5 { background-image: url('https://optim.tildacdn.com/tild6536-6238-4564-b433-623535343032/-/resize/86x/-/format/webp/basher.png'); }
+.build-calculator .item-weapon-6 { background-image: url('https://optim.tildacdn.com/tild3462-3564-4234-b231-363130323831/-/resize/86x/-/format/webp/abyssal_blade.png'); }
+.build-calculator .item-weapon-7 { background-image: url('https://optim.tildacdn.com/tild3264-3163-4835-b537-626438643033/-/resize/86x/-/format/webp/diffusal_basher.png'); }
+.build-calculator .item-weapon-8 { background-image: url('https://optim.tildacdn.com/tild6537-6131-4632-b830-666262636435/-/resize/86x/-/format/webp/magic_arrows.png'); }
+.build-calculator .item-weapon-9 { background-image: url('https://optim.tildacdn.com/tild3732-3931-4433-a530-626662633139/-/resize/86x/-/format/webp/armlet.png'); }
+.build-calculator .item-weapon-10 { background-image: url('https://optim.tildacdn.com/tild3237-6231-4262-a234-323563323436/-/resize/86x/-/format/webp/spear_of_mordiggian.png'); }
+.build-calculator .item-weapon-11 { background-image: url('https://optim.tildacdn.com/tild6531-3338-4838-b435-366531346165/-/resize/86x/-/format/webp/bfury.png'); }
+.build-calculator .item-weapon-12 { background-image: url('https://optim.tildacdn.com/tild3139-3636-4633-a565-326264663636/-/resize/86x/-/format/webp/falcon_fury.png'); }
+.build-calculator .item-weapon-13 { background-image: url('https://optim.tildacdn.com/tild6534-3034-4631-a536-616530303730/-/resize/86x/-/format/webp/invis_sword.png'); }
+.build-calculator .item-weapon-14 { background-image: url('https://optim.tildacdn.com/tild3366-3234-4632-b239-663338626665/-/resize/86x/-/format/webp/silver_edge.png'); }
+.build-calculator .item-weapon-15 { background-image: url('https://optim.tildacdn.com/tild6662-6130-4863-b733-326437393339/-/resize/86x/-/format/webp/maelstrom.png'); }
+.build-calculator .item-weapon-16 { background-image: url('https://optim.tildacdn.com/tild3239-6332-4462-b635-323535393863/-/resize/86x/-/format/webp/mjollnir.png'); }
+.build-calculator .item-weapon-17 { background-image: url('https://optim.tildacdn.com/tild6365-3938-4533-a538-623130343632/-/resize/86x/-/format/webp/butterfly.png'); }
+.build-calculator .item-weapon-18 { background-image: url('https://optim.tildacdn.com/tild6363-3763-4163-a463-663631383234/-/resize/86x/-/format/webp/venom_song.png'); }
+.build-calculator .item-weapon-19 { background-image: url('https://optim.tildacdn.com/tild3665-3963-4339-b862-646336346432/-/resize/86x/-/format/webp/monkey_king_bar.png'); }
+.build-calculator .item-weapon-20 { background-image: url('https://optim.tildacdn.com/tild3335-6633-4864-a666-356565626438/-/resize/86x/-/format/webp/bloodthorn.png'); }
+.build-calculator .item-weapon-21 { background-image: url('https://optim.tildacdn.com/tild3834-6538-4265-a536-326133353762/-/resize/86x/-/format/webp/radiance.png'); }
+.build-calculator .item-weapon-22 { background-image: url('https://optim.tildacdn.com/tild6466-3335-4261-b962-363833393364/-/resize/86x/-/format/webp/health_radiance.png'); }
+.build-calculator .item-weapon-23 { background-image: url('https://optim.tildacdn.com/tild6336-6463-4664-b439-316233326334/-/resize/86x/-/format/webp/mana_radiance.png'); }
+.build-calculator .item-weapon-24 { background-image: url('https://optim.tildacdn.com/tild3233-3236-4032-a265-623261643666/-/resize/86x/-/format/webp/rapier.png'); }
+.build-calculator .item-artifact-1 { background-image: url('https://optim.tildacdn.com/tild3930-3930-4663-b435-323632333266/-/resize/86x/-/format/webp/sange.png'); }
+.build-calculator .item-artifact-2 { background-image: url('https://optim.tildacdn.com/tild3931-3762-4365-b834-623337333066/-/resize/86x/-/format/webp/yasha.png'); }
+.build-calculator .item-artifact-3 { background-image: url('https://optim.tildacdn.com/tild3034-6636-4966-a635-623631306464/-/resize/86x/-/format/webp/kaya.png'); }
+.build-calculator .item-artifact-4 { background-image: url('https://optim.tildacdn.com/tild3136-3462-4566-b634-396230353035/-/resize/86x/-/format/webp/dragon_lance.png'); }
+.build-calculator .item-artifact-5 { background-image: url('https://optim.tildacdn.com/tild6137-6261-4338-b836-393962613233/-/resize/86x/-/format/webp/sange_and_yasha.png'); }
+.build-calculator .item-artifact-6 { background-image: url('https://optim.tildacdn.com/tild6630-6239-4666-b034-363563383135/-/resize/86x/-/format/webp/yasha_and_kaya.png'); }
+.build-calculator .item-artifact-7 { background-image: url('https://optim.tildacdn.com/tild6163-3633-4338-b666-353030643861/-/resize/86x/-/format/webp/kaya_and_sange.png'); }
+.build-calculator .item-artifact-8 { background-image: url('https://optim.tildacdn.com/tild3639-3066-4763-b637-333533323233/-/resize/86x/-/format/webp/hurricane_pike.png'); }
+.build-calculator .item-artifact-9 { background-image: url('https://optim.tildacdn.com/tild6366-6230-4266-b031-616263356536/-/resize/86x/-/format/webp/overwhelming_blink.png'); }
+.build-calculator .item-artifact-10 { background-image: url('https://optim.tildacdn.com/tild3231-3932-4664-a635-383731373466/-/resize/86x/-/format/webp/swift_blink.png'); }
+.build-calculator .item-artifact-11 { background-image: url('https://optim.tildacdn.com/tild3430-3034-4337-b463-656266323230/-/resize/86x/-/format/webp/arcane_blink.png'); }
+.build-calculator .item-artifact-12 { background-image: url('https://optim.tildacdn.com/tild3933-3565-4265-b135-366464326163/-/resize/86x/-/format/webp/echo_sabre.png'); }
+.build-calculator .item-artifact-13 { background-image: url('https://optim.tildacdn.com/tild6634-6133-4437-a566-313664343331/-/resize/86x/-/format/webp/soul_reaver.png'); }
+.build-calculator .item-artifact-14 { background-image: url('https://optim.tildacdn.com/tild6537-3634-4131-b434-393466303365/-/resize/86x/-/format/webp/staff_of_raindrops.png'); }
+.build-calculator .item-artifact-15 { background-image: url('https://optim.tildacdn.com/tild3764-6663-4431-a464-353339336533/-/resize/86x/-/format/webp/harpoon.png'); }
+.build-calculator .item-artifact-16 { background-image: url('https://optim.tildacdn.com/tild3331-3232-4736-a335-656530333362/-/resize/86x/-/format/webp/heavens_halberd.png'); }
+.build-calculator .item-artifact-17 { background-image: url('https://optim.tildacdn.com/tild3466-6638-4462-b136-313333646331/-/resize/86x/-/format/webp/yasha_lens.png'); }
+.build-calculator .item-artifact-18 { background-image: url('https://optim.tildacdn.com/tild6161-6436-4064-a335-646138316332/-/resize/86x/-/format/webp/manta.png'); }
+.build-calculator .item-artifact-19 { background-image: url('https://optim.tildacdn.com/tild6164-3163-4631-a666-383266353334/-/resize/86x/-/format/webp/mage_slayer.png'); }
+.build-calculator .item-artifact-20 { background-image: url('https://optim.tildacdn.com/tild3266-6332-4264-a431-303966363331/-/resize/86x/-/format/webp/diffusal_blade.png'); }
+.build-calculator .item-artifact-21 { background-image: url('https://optim.tildacdn.com/tild6565-3238-4464-b564-663931363035/-/resize/86x/-/format/webp/diffusal_blade_2.png'); }
+.build-calculator .item-artifact-22 { background-image: url('https://optim.tildacdn.com/tild3533-3930-4730-a238-656539616236/-/resize/86x/-/format/webp/disperser.png'); }
+.build-calculator .item-tier1-1 { background-image: url('https://optim.tildacdn.com/tild3634-6439-4735-a434-356535646161/-/resize/86x/-/format/webp/trusty_shovel.png'); }
+.build-calculator .item-tier1-2 { background-image: url('https://optim.tildacdn.com/tild3363-6564-4435-a239-663466303130/-/resize/86x/-/format/webp/occult_bracelet.png'); }
+.build-calculator .item-tier1-3 { background-image: url('https://optim.tildacdn.com/tild3163-3934-4266-b162-623261356539/-/resize/86x/-/format/webp/unstable_wand.png'); }
+.build-calculator .item-tier1-4 { background-image: url('https://optim.tildacdn.com/tild3534-6631-4234-a261-636131383434/-/resize/86x/-/format/webp/mana_draught.png'); }
+.build-calculator .item-tier1-5 { background-image: url('https://optim.tildacdn.com/tild6266-3363-4139-b833-366233656437/-/resize/86x/-/format/webp/polliwog_charm.png'); }
+.build-calculator .item-tier1-6 { background-image: url('https://optim.tildacdn.com/tild3431-6631-4635-a262-616534373436/-/resize/86x/-/format/webp/spark_of_courage.png'); }
+.build-calculator .item-tier1-7 { background-image: url('https://optim.tildacdn.com/tild6564-6636-4463-b433-613833313266/-/resize/86x/-/format/webp/rippers_lash.png'); }
+.build-calculator .item-tier1-8 { background-image: url('https://optim.tildacdn.com/tild3763-6636-4434-a565-396564646466/-/resize/86x/-/format/webp/orb_of_destruction.png'); }
+.build-calculator .item-tier2-1 { background-image: url('https://optim.tildacdn.com/tild6639-6337-4239-a333-643930353263/-/resize/86x/-/format/webp/essence_ring.png'); }
+.build-calculator .item-tier2-2 { background-image: url('https://optim.tildacdn.com/tild6638-6431-4134-b335-663133356438/-/resize/86x/-/format/webp/iron_talon.png'); }
+.build-calculator .item-tier2-3 { background-image: url('https://optim.tildacdn.com/tild3865-6366-4363-b133-333664633034/-/resize/86x/-/format/webp/gossamer_cape.png'); }
+.build-calculator .item-tier2-4 { background-image: url('https://optim.tildacdn.com/tild6335-3937-4038-a666-326531666436/-/resize/86x/-/format/webp/searing_signet.png'); }
+.build-calculator .item-tier2-5 { background-image: url('https://optim.tildacdn.com/tild3339-3564-4334-b432-353930643861/-/resize/86x/-/format/webp/misericorde.png'); }
+.build-calculator .item-tier2-6 { background-image: url('https://optim.tildacdn.com/tild6332-6533-4361-b335-306535313939/-/resize/86x/-/format/webp/pogo_stick.png'); }
+.build-calculator .item-tier2-7 { background-image: url('https://optim.tildacdn.com/tild3633-3432-4261-b536-313561393238/-/resize/86x/-/format/webp/necronomicon.png'); }
+.build-calculator .item-tier2-8 { background-image: url('https://optim.tildacdn.com/tild3761-3464-4934-a464-343665333730/-/resize/86x/-/format/webp/arcane_ring.png'); }
+.build-calculator .item-tier3-1 { background-image: url('https://optim.tildacdn.com/tild3661-6334-4132-b637-386532303734/-/resize/86x/-/format/webp/serrated_shiv.png'); }
+.build-calculator .item-tier3-2 { background-image: url('https://optim.tildacdn.com/tild3131-6539-4039-a461-326564646631/-/resize/86x/-/format/webp/nemesis_curse.png'); }
+.build-calculator .item-tier3-3 { background-image: url('https://optim.tildacdn.com/tild3632-6330-4232-b633-616332323332/-/resize/86x/-/format/webp/gale_guard.png'); }
+.build-calculator .item-tier3-4 { background-image: url('https://optim.tildacdn.com/tild3465-3437-4535-b036-636130633038/-/resize/86x/-/format/webp/gunpowder_gauntlets.png'); }
+.build-calculator .item-tier3-5 { background-image: url('https://optim.tildacdn.com/tild6261-3938-4461-b830-366530363039/-/resize/86x/-/format/webp/whisper_of_the_dread.png'); }
+.build-calculator .item-tier3-6 { background-image: url('https://optim.tildacdn.com/tild3565-6365-4433-b539-626132383933/-/resize/86x/-/format/webp/ninja_gear.png'); }
+.build-calculator .item-tier3-7 { background-image: url('https://optim.tildacdn.com/tild6134-6465-4866-b166-626637643531/-/resize/86x/-/format/webp/cloak_of_flames.png'); }
+.build-calculator .item-tier3-8 { background-image: url('https://optim.tildacdn.com/tild3364-3761-4664-a637-336135353662/-/resize/86x/-/format/webp/necronomicon_2.png'); }
+.build-calculator .item-tier4-1 { background-image: url('https://optim.tildacdn.com/tild3664-6463-4531-a436-373761383662/-/resize/86x/-/format/webp/ogre_seal_totem.png'); }
+.build-calculator .item-tier4-2 { background-image: url('https://optim.tildacdn.com/tild3362-3030-4334-b365-353830336633/-/resize/86x/-/format/webp/crippling_crossbow.png'); }
+.build-calculator .item-tier4-3 { background-image: url('https://optim.tildacdn.com/tild3939-3236-4033-b332-383830633561/-/resize/86x/-/format/webp/magnifying_monocle.png'); }
+.build-calculator .item-tier4-4 { background-image: url('https://optim.tildacdn.com/tild3363-3239-4234-b565-643930393037/-/resize/86x/-/format/webp/ceremonial_robe.png'); }
+.build-calculator .item-tier4-5 { background-image: url('https://optim.tildacdn.com/tild3339-3431-4364-b337-656366353561/-/resize/86x/-/format/webp/mind_breaker.png'); }
+.build-calculator .item-tier4-6 { background-image: url('https://optim.tildacdn.com/tild3333-3766-4734-b332-333731313861/-/resize/86x/-/format/webp/pyrrhic_cloak.png'); }
+.build-calculator .item-tier4-7 { background-image: url('https://optim.tildacdn.com/tild6565-3030-4762-a464-383831373536/-/resize/86x/-/format/webp/illusionists_cape.png'); }
+.build-calculator .item-tier4-8 { background-image: url('https://optim.tildacdn.com/tild3930-3766-4334-b366-376363663931/-/resize/86x/-/format/webp/havoc_hammer.png'); }
+.build-calculator .item-tier4-9 { background-image: url('https://optim.tildacdn.com/tild3462-6661-4937-b639-336635303565/-/resize/86x/-/format/webp/force_boots.png'); }
+.build-calculator .item-tier5-1 { background-image: url('https://optim.tildacdn.com/tild6266-6261-4334-b266-393663333061/-/resize/86x/-/format/webp/desolator_2.png'); }
+.build-calculator .item-tier5-2 { background-image: url('https://optim.tildacdn.com/tild6437-6230-4832-b663-346634663435/-/resize/86x/-/format/webp/fallen_sky.png'); }
+.build-calculator .item-tier5-3 { background-image: url('https://optim.tildacdn.com/tild6164-3733-4463-b363-323036646336/-/resize/86x/-/format/webp/book_of_the_dead.png'); }
+.build-calculator .item-tier5-4 { background-image: url('https://optim.tildacdn.com/tild6164-6564-4232-a565-323334656433/-/resize/86x/-/format/webp/minotaur_horn.png'); }
+.build-calculator .item-tier5-5 { background-image: url('https://optim.tildacdn.com/tild6639-6361-4734-a138-336230353861/-/resize/86x/-/format/webp/spider_legs.png'); }
+.build-calculator .item-tier5-6 { background-image: url('https://optim.tildacdn.com/tild3061-6666-4634-a565-373661383233/-/resize/86x/-/format/webp/panic_button.png'); }
+.build-calculator .item-tier5-7 { background-image: url('https://optim.tildacdn.com/tild3835-6538-4635-b131-626634656461/-/resize/86x/-/format/webp/unrelenting_eye.png'); }
+.build-calculator .item-tier5-8 { background-image: url('https://optim.tildacdn.com/tild6638-3538-4732-b031-326336393531/-/resize/86x/-/format/webp/mirror_shield.png'); }
+.build-calculator .item-tier5-9 { background-image: url('https://optim.tildacdn.com/tild3839-3835-4332-a363-353537323031/-/resize/86x/-/format/webp/giants_ring.png'); }
+.build-calculator .item-tier5-10 { background-image: url('https://optim.tildacdn.com/tild6339-3631-4266-a666-333737666331/-/resize/86x/-/format/webp/book_of_shadows.png'); }
+.build-calculator .item-tier6-1 { background-image: url('https://optim.tildacdn.com/tild3332-6135-4330-b263-353661323936/-/resize/86x/-/format/webp/woodland_striders.png'); }
+.build-calculator .item-tier6-2 { background-image: url('https://optim.tildacdn.com/tild6163-6435-4237-a138-616331613462/-/resize/86x/-/format/webp/helm_of_the_undying.png'); }
+.build-calculator .item-tier6-3 { background-image: url('https://optim.tildacdn.com/tild3436-6639-4362-a233-353336393364/-/resize/86x/-/format/webp/tome_of_aghanim.png'); }
+.build-calculator .item-tier6-4 { background-image: url('https://optim.tildacdn.com/tild6533-3132-4438-a363-663032643236/-/resize/86x/-/format/webp/poor_mans_shield.png'); }
+.build-calculator .item-tier6-5 { background-image: url('https://optim.tildacdn.com/tild3538-3132-4633-b030-633261643232/-/resize/86x/-/format/webp/spell_prism.png'); }
+.build-calculator .item-tier6-6 { background-image: url('https://optim.tildacdn.com/tild3061-3032-4135-b866-373531393936/-/resize/86x/-/format/webp/phoenix_ash.png'); }
+.build-calculator .item-tier6-7 { background-image: url('https://optim.tildacdn.com/tild3639-6234-4433-b065-333162323439/-/resize/86x/-/format/webp/chipped_vest.png'); }
+.build-calculator .item-tier6-8 { background-image: url('https://optim.tildacdn.com/tild3764-6135-4630-a439-316666383763/-/resize/86x/-/format/webp/greater_faerie_fire.png'); }
+.build-calculator .item-tier6-9 { background-image: url('https://optim.tildacdn.com/tild6236-3733-4539-b533-316432616130/-/resize/86x/-/format/webp/banana.png'); }
+.build-calculator .item-enchant-1 { background-image: url('https://optim.tildacdn.com/tild6564-6137-4138-b630-303432636263/-/resize/86x/-/format/webp/enhancement_mystical.png'); }
+.build-calculator .item-enchant-2 { background-image: url('https://optim.tildacdn.com/tild3534-6335-4234-a137-336565366231/-/resize/86x/-/format/webp/enhancement_brawny.png'); }
+.build-calculator .item-enchant-3 { background-image: url('https://optim.tildacdn.com/tild6234-6637-4631-b533-313437613834/-/resize/86x/-/format/webp/enhancement_alert.png'); }
+.build-calculator .item-enchant-4 { background-image: url('https://optim.tildacdn.com/tild3864-3030-4536-b831-626437646563/-/resize/86x/-/format/webp/enhancement_tough.png'); }
+.build-calculator .item-enchant-5 { background-image: url('https://optim.tildacdn.com/tild3132-3766-4464-b831-386134383863/-/resize/86x/-/format/webp/enhancement_quickene.png'); }
+.build-calculator .item-enchant-6 { background-image: url('https://optim.tildacdn.com/tild6138-3933-4230-a539-353437626563/-/resize/86x/-/format/webp/enhancement_keen_eye.png'); }
+.build-calculator .item-enchant-7 { background-image: url('https://optim.tildacdn.com/tild6465-6238-4736-a330-396432326234/-/resize/86x/-/format/webp/enhancement_vast.png'); }
+.build-calculator .item-enchant-8 { background-image: url('https://optim.tildacdn.com/tild3039-3763-4966-b033-303662363230/-/resize/86x/-/format/webp/enhancement_greedy.png'); }
+.build-calculator .item-enchant-9 { background-image: url('https://optim.tildacdn.com/tild3566-6234-4936-b261-623966616333/-/resize/86x/-/format/webp/enhancement_vampiric.png'); }
+.build-calculator .item-enchant-10 { background-image: url('https://optim.tildacdn.com/tild3633-6466-4238-b063-336334313531/-/resize/86x/-/format/webp/enhancement_timeless.png'); }
+.build-calculator .item-enchant-11 { background-image: url('https://optim.tildacdn.com/tild6166-3063-4466-b537-333965306533/-/resize/86x/-/format/webp/enhancement_titanic.png'); }
+.build-calculator .item-enchant-12 { background-image: url('https://optim.tildacdn.com/tild3237-3763-4334-b336-646232343039/-/resize/86x/-/format/webp/enhancement_crude.png'); }
+.build-calculator .item-enchant-13 { background-image: url('https://optim.tildacdn.com/tild3266-3763-4265-a232-316263306437/-/resize/86x/-/format/webp/enhancement_wise.png'); }
+.build-calculator .item-enchant-14 { background-image: url('https://optim.tildacdn.com/tild6332-6630-4433-b633-373863376531/-/resize/86x/-/format/webp/enhancement_feverish.png'); }
+.build-calculator .item-enchant-15 { background-image: url('https://optim.tildacdn.com/tild3231-3265-4862-b964-303266643838/-/resize/86x/-/format/webp/enhancement_fleetfoo.png'); }
+.build-calculator .item-enchant-16 { background-image: url('https://optim.tildacdn.com/tild3334-6262-4961-a237-306330326366/-/resize/86x/-/format/webp/enhancement_audaciou.png'); }
+.build-calculator .item-enchant-17 { background-image: url('https://optim.tildacdn.com/tild3232-6333-4461-b337-633532636631/-/resize/86x/-/format/webp/enhancement_evolved.png'); }
+.build-calculator .item-enchant-18 { background-image: url('https://optim.tildacdn.com/tild3561-3036-4936-b532-343264306563/-/resize/86x/-/format/webp/enhancement_boundles.png'); }
+        .build-calculator .edit-category-icon, .build-calculator .delete-category-icon {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+        .build-calculator .save-build-button {
+            width: calc(100% - 16px);
+            height: 54px;
+            min-height: 54px;
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 16px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 16px 8px 0 8px;
+            margin-top: auto;
+        }
+        .build-calculator .save-build-button:hover {
+            background-color: #e0e0e0;
+        }
+        .build-calculator .item-tooltip {
+            display: none;
+            position: fixed;
+            width: 416px;
+            background-color: #262C31;
+            border-radius: 8px;
+            padding: 20px 16px;
+            color: white;
+            font-size: 16px;
+            z-index: 10000;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .build-calculator .tooltip-header {
+            background-color: #32383D;
+            padding: 20px 16px 12px;
+            margin: -20px -16px 0;
+            border-radius: 8px 8px 0 0;
+        }
+        .build-calculator .tooltip-header.hidden { display: none; }
+        .build-calculator .tooltip-header .item-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .build-calculator .tooltip-header .item-cost {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: bold;
+            color: #EABE10;
+        }
+        .build-calculator .tooltip-header .item-cost img {
+            width: 16px;
+            height: 16px;
+        }
+        .build-calculator .tooltip-description {
+            padding: 12px 0;
+            margin-top: 0;
+            border-bottom: 1px solid #3C444E;
+            color: #5B718D;
+        }
+        .build-calculator .tooltip-description.hidden { display: none; }
+        .build-calculator .tooltip-description p { margin: 4px 0; }
+        .build-calculator .tooltip-description p strong { font-weight: normal; }
+        .build-calculator .tooltip-description p.hidden { display: none; }
+        .build-calculator .tooltip-stats {
+            padding: 12px 16px;
+            margin: 0 -16px;
+            color: #758191;
+        }
+        .build-calculator .tooltip-stats.hidden { display: none; }
+        .build-calculator .tooltip-stats p { margin: 4px 0; }
+        .build-calculator .tooltip-stats p span { font-weight: bold; color: white; }
+        .build-calculator .tooltip-stats p.hidden { display: none; }
+        .build-calculator .tooltip-abilities {
+            padding: 12px 16px 0;
+            margin: 0 -16px;
+        }
+        .build-calculator .tooltip-abilities.hidden { display: none; }
+        .build-calculator .ability { margin-bottom: 12px; padding: 8px; color: #758191; }
+        .build-calculator .ability.active { background-color: #1E2E54; }
+        .build-calculator .ability.passive { background-color: #23313D; }
+        .build-calculator .ability.hidden { display: none; }
+        .build-calculator .ability-title { font-weight: bold; color: white; margin-bottom: 4px; }
+        .build-calculator .ability-description { font-size: 14px; }
+
+        /* Стили для сохранения изображения */
+        .build-calculator .saving .save-build-button,
+        .build-calculator .saving .edit-block-icon,
+        .build-calculator .saving .edit-category-icon,
+        .build-calculator .saving .delete-category-icon,
+        .build-calculator .saving .category-input-container {
+            display: none !important;
+        }
+        .build-calculator .saving {
+            max-height: none !important;
+            height: auto !important;
+            overflow-y: visible !important;
+        }
+        .build-calculator .saving .category {
+            background: transparent !important;
+            padding: 0 !important;
+            margin-bottom: 16px !important;
+            border-radius: 0 !important;
+        }
+        .build-calculator .saving .category h3 {
+            margin: 0 0 5px 0 !important;
+        }
+        .build-calculator .saving .items {
+            margin: 0 !important;
+            min-height: 0 !important;
+        }
+        .build-calculator .saving .left-block-content {
+            margin-bottom: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="build-calculator">
+        <div class="left-block">
+            <div class="left-block-content">
+                <div class="block-title">
+                    <span class="title-text">
+                        Название сборки
+                        <img src="https://static.tildacdn.com/tild6266-3937-4230-a636-393734393230/pen-solid.svg" class="edit-block-icon" alt="Редактировать">
+                    </span>
+                </div>
+                <div id="categories"></div>
+                <div class="category-input-container">
+                    <input type="text" id="category-name" placeholder="Название категории">
+                    <button class="add-category-icon">
+                        <img src="https://static.tildacdn.com/tild6437-3866-4530-a630-663430666266/plus-solid.svg" alt="Добавить">
+                    </button>
+                </div>
+            </div>
+            <button class="save-build-button">Сохранить билд</button>
+        </div>
+
+        <div class="right-block">
+            <div class="block-title">Предметы</div>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="main">Основные</button>
+                <button class="tab-button" data-tab="upgrades">Улучшения</button>
+                <button class="tab-button" data-tab="neutral">Нейтральные и Чары</button>
+            </div>
+
+            <div class="tab-content active" id="main">
+                <div class="category-container">
+                    <div class="category-row">
+                        <div class="category">
+                            <h3>Расходники</h3>
+                            <div class="items">
+                                <div class="item item-consumable-1"></div>
+                                <div class="item item-consumable-2"></div>
+                                <div class="item item-consumable-3"></div>
+                                <div class="item item-consumable-4"></div>
+                                <div class="item item-consumable-5"></div>
+                                <div class="item item-consumable-6"></div>
+                                <div class="item item-consumable-7"></div>
+                                <div class="item item-consumable-8"></div>
+                                <div class="item item-consumable-9"></div>
+                                <div class="item item-consumable-10"></div>
+                                <div class="item item-consumable-11"></div>
+                                <div class="item item-consumable-12"></div>
+                                <div class="item item-consumable-13"></div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3>Атрибуты</h3>
+                            <div class="items">
+                                <div class="item item-attribute-1"></div>
+                                <div class="item item-attribute-2"></div>
+                                <div class="item item-attribute-3"></div>
+                                <div class="item item-attribute-4"></div>
+                                <div class="item item-attribute-5"></div>
+                                <div class="item item-attribute-6"></div>
+                                <div class="item item-attribute-7"></div>
+                                <div class="item item-attribute-8"></div>
+                                <div class="item item-attribute-9"></div>
+                                <div class="item item-attribute-10"></div>
+                                <div class="item item-attribute-11"></div>
+                                <div class="item item-attribute-12"></div>
+                                <div class="item item-attribute-13"></div>
+                                <div class="item item-attribute-14"></div>
+                                <div class="item item-attribute-15"></div>
+                                <div class="item item-attribute-16"></div>
+                                <div class="item item-attribute-17"></div>
+                                <div class="item item-attribute-18"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-row">
+                        <div class="category">
+                            <h3>Снаряжение</h3>
+                            <div class="items">
+                                <div class="item item-equipment-1"></div>
+                                <div class="item item-equipment-2"></div>
+                                <div class="item item-equipment-3"></div>
+                                <div class="item item-equipment-4"></div>
+                                <div class="item item-equipment-5"></div>
+                                <div class="item item-equipment-6"></div>
+                                <div class="item item-equipment-7"></div>
+                                <div class="item item-equipment-8"></div>
+                                <div class="item item-equipment-9"></div>
+                                <div class="item item-equipment-10"></div>
+                                <div class="item item-equipment-11"></div>
+                                <div class="item item-equipment-12"></div>
+                                <div class="item item-equipment-13"></div>
+                                <div class="item item-equipment-14"></div>
+                                <div class="item item-equipment-15"></div>
+                                <div class="item item-equipment-16"></div>
+                                <div class="item item-equipment-17"></div>
+                                <div class="item item-equipment-18"></div>
+                                <div class="item item-equipment-19"></div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3>Разное</h3>
+                            <div class="items">
+                                <div class="item item-misc-1"></div>
+                                <div class="item item-misc-2"></div>
+                                <div class="item item-misc-3"></div>
+                                <div class="item item-misc-4"></div>
+                                <div class="item item-misc-5"></div>
+                                <div class="item item-misc-6"></div>
+                                <div class="item item-misc-7"></div>
+                                <div class="item item-misc-8"></div>
+                                <div class="item item-misc-9"></div>
+                                <div class="item item-misc-10"></div>
+                                <div class="item item-misc-11"></div>
+                                <div class="item item-misc-12"></div>
+                                <div class="item item-misc-13"></div>
+                                <div class="item item-misc-14"></div>
+                                <div class="item item-misc-15"></div>
+                                <div class="item item-misc-16"></div>
+                                <div class="item item-misc-17"></div>
+                                <div class="item item-misc-18"></div>
+                                <div class="item item-misc-19"></div>
+                                <div class="item item-misc-20"></div>
+                                <div class="item item-misc-21"></div>
+                                <div class="item item-misc-22"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="upgrades" style="display: none;">
+                <div class="category-container">
+                    <div class="category-row">
+                        <div class="category">
+                            <h3>Аксессуары</h3>
+                            <div class="items">
+                                <div class="item item-accessory-1"></div>
+                                <div class="item item-accessory-2"></div>
+                                <div class="item item-accessory-3"></div>
+                                <div class="item item-accessory-4"></div>
+                                <div class="item item-accessory-5"></div>
+                                <div class="item item-accessory-6"></div>
+                                <div class="item item-accessory-7"></div>
+                                <div class="item item-accessory-8"></div>
+                                <div class="item item-accessory-9"></div>
+                                <div class="item item-accessory-10"></div>
+                                <div class="item item-accessory-11"></div>
+                                <div class="item item-accessory-12"></div>
+                                <div class="item item-accessory-13"></div>
+                                <div class="item item-accessory-14"></div>
+                                <div class="item item-accessory-15"></div>
+                                <div class="item item-accessory-16"></div>
+                                <div class="item item-accessory-17"></div>
+                                <div class="item item-accessory-18"></div>
+                                <div class="item item-accessory-19"></div>
+                                <div class="item item-accessory-20"></div>
+                                <div class="item item-accessory-21"></div>
+                                <div class="item item-accessory-22"></div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3>Поддержка</h3>
+                            <div class="items">
+                                <div class="item item-support-1"></div>
+                                <div class="item item-support-2"></div>
+                                <div class="item item-support-3"></div>
+                                <div class="item item-support-4"></div>
+                                <div class="item item-support-5"></div>
+                                <div class="item item-support-6"></div>
+                                <div class="item item-support-7"></div>
+                                <div class="item item-support-8"></div>
+                                <div class="item item-support-9"></div>
+                                <div class="item item-support-10"></div>
+                                <div class="item item-support-11"></div>
+                                <div class="item item-support-12"></div>
+                                <div class="item item-support-13"></div>
+                                <div class="item item-support-14"></div>
+                                <div class="item item-support-15"></div>
+                                <div class="item item-support-16"></div>
+                                <div class="item item-support-17"></div>
+                                <div class="item item-support-18"></div>
+                                <div class="item item-support-19"></div>
+                                <div class="item item-support-20"></div>
+                                <div class="item item-support-21"></div>
+                                <div class="item item-support-22"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-row">
+                        <div class="category">
+                            <h3>Магия</h3>
+                            <div class="items">
+                                <div class="item item-magic-1"></div>
+                                <div class="item item-magic-2"></div>
+                                <div class="item item-magic-3"></div>
+                                <div class="item item-magic-4"></div>
+                                <div class="item item-magic-5"></div>
+                                <div class="item item-magic-6"></div>
+                                <div class="item item-magic-7"></div>
+                                <div class="item item-magic-8"></div>
+                                <div class="item item-magic-9"></div>
+                                <div class="item item-magic-10"></div>
+                                <div class="item item-magic-11"></div>
+                                <div class="item item-magic-12"></div>
+                                <div class="item item-magic-13"></div>
+                                <div class="item item-magic-14"></div>
+                                <div class="item item-magic-15"></div>
+                                <div class="item item-magic-16"></div>
+                                <div class="item item-magic-17"></div>
+                                <div class="item item-magic-18"></div>
+                                <div class="item item-magic-19"></div>
+                                <div class="item item-magic-20"></div>
+                                <div class="item item-magic-21"></div>
+                                <div class="item item-magic-22"></div>
+                                <div class="item item-magic-23"></div>
+                                <div class="item item-magic-24"></div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3>Броня</h3>
+                            <div class="items">
+                                <div class="item item-armor-1"></div>
+                                <div class="item item-armor-2"></div>
+                                <div class="item item-armor-3"></div>
+                                <div class="item item-armor-4"></div>
+                                <div class="item item-armor-5"></div>
+                                <div class="item item-armor-6"></div>
+                                <div class="item item-armor-7"></div>
+                                <div class="item item-armor-8"></div>
+                                <div class="item item-armor-9"></div>
+                                <div class="item item-armor-10"></div>
+                                <div class="item item-armor-11"></div>
+                                <div class="item item-armor-12"></div>
+                                <div class="item item-armor-13"></div>
+                                <div class="item item-armor-14"></div>
+                                <div class="item item-armor-15"></div>
+                                <div class="item item-armor-16"></div>
+                                <div class="item item-armor-17"></div>
+                                <div class="item item-armor-18"></div>
+                                <div class="item item-armor-19"></div>
+                                <div class="item item-armor-20"></div>
+                                <div class="item item-armor-21"></div>
+                                <div class="item item-armor-22"></div>
+                                <div class="item item-armor-23"></div>
+                                <div class="item item-armor-24"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-row">
+                        <div class="category">
+                            <h3>Оружие</h3>
+                            <div class="items">
+                                <div class="item item-weapon-1"></div>
+                                <div class="item item-weapon-2"></div>
+                                <div class="item item-weapon-3"></div>
+                                <div class="item item-weapon-4"></div>
+                                <div class="item item-weapon-5"></div>
+                                <div class="item item-weapon-6"></div>
+                                <div class="item item-weapon-7"></div>
+                                <div class="item item-weapon-8"></div>
+                                <div class="item item-weapon-9"></div>
+                                <div class="item item-weapon-10"></div>
+                                <div class="item item-weapon-11"></div>
+                                <div class="item item-weapon-12"></div>
+                                <div class="item item-weapon-13"></div>
+                                <div class="item item-weapon-14"></div>
+                                <div class="item item-weapon-15"></div>
+                                <div class="item item-weapon-16"></div>
+                                <div class="item item-weapon-17"></div>
+                                <div class="item item-weapon-18"></div>
+                                <div class="item item-weapon-19"></div>
+                                <div class="item item-weapon-20"></div>
+                                <div class="item item-weapon-21"></div>
+                                <div class="item item-weapon-22"></div>
+                                <div class="item item-weapon-23"></div>
+                                <div class="item item-weapon-24"></div>
+                                <div class="item item-weapon-25"></div>
+                                <div class="item item-weapon-26"></div>
+                                <div class="item item-weapon-27"></div>
+                                <div class="item item-weapon-28"></div>
+                                <div class="item item-weapon-29"></div>
+                                <div class="item item-weapon-30"></div>
+                                <div class="item item-weapon-31"></div>
+                                <div class="item item-weapon-32"></div>
+                                <div class="item item-weapon-33"></div>
+                                <div class="item item-weapon-34"></div>
+                                <div class="item item-weapon-35"></div>
+                                <div class="item item-weapon-36"></div>
+                                <div class="item item-weapon-37"></div>
+                                <div class="item item-weapon-38"></div>
+                                <div class="item item-weapon-39"></div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3>Артефакты</h3>
+                            <div class="items">
+                                <div class="item item-artifact-1"></div>
+                                <div class="item item-artifact-2"></div>
+                                <div class="item item-artifact-3"></div>
+                                <div class="item item-artifact-4"></div>
+                                <div class="item item-artifact-5"></div>
+                                <div class="item item-artifact-6"></div>
+                                <div class="item item-artifact-7"></div>
+                                <div class="item item-artifact-8"></div>
+                                <div class="item item-artifact-9"></div>
+                                <div class="item item-artifact-10"></div>
+                                <div class="item item-artifact-11"></div>
+                                <div class="item item-artifact-12"></div>
+                                <div class="item item-artifact-13"></div>
+                                <div class="item item-artifact-14"></div>
+                                <div class="item item-artifact-15"></div>
+                                <div class="item item-artifact-16"></div>
+                                <div class="item item-artifact-17"></div>
+                                <div class="item item-artifact-18"></div>
+                                <div class="item item-artifact-19"></div>
+                                <div class="item item-artifact-20"></div>
+                                <div class="item item-artifact-21"></div>
+                                <div class="item item-artifact-22"></div>
+                                <div class="item item-artifact-23"></div>
+                                <div class="item item-artifact-24"></div>
+                                <div class="item item-artifact-25"></div>
+                                <div class="item item-artifact-26"></div>
+                                <div class="item item-artifact-27"></div>
+                                <div class="item item-artifact-28"></div>
+                                <div class="item item-artifact-29"></div>
+                                <div class="item item-artifact-30"></div>
+                                <div class="item item-artifact-31"></div>
+                                <div class="item item-artifact-32"></div>
+                                <div class="item item-artifact-33"></div>
+                                <div class="item item-artifact-34"></div>
+                                <div class="item item-artifact-35"></div>
+                                <div class="item item-artifact-36"></div>
+                                <div class="item item-artifact-37"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="neutral" style="display: none;">
+                <div class="category-container">
+                    <div class="category-row">
+                        <div class="category">
+                            <h3>Разряд 1</h3>
+                            <div class="items">
+                                <div class="item item-tier1-1"></div>
+                                <div class="item item-tier1-2"></div>
+                                <div class="item item-tier1-3"></div>
+                                <div class="item item-tier1-4"></div>
+                                <div class="item item-tier1-5"></div>
+                                <div class="item item-tier1-6"></div>
+                                <div class="item item-tier1-7"></div>
+                                <div class="item item-tier1-8"></div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3>Разряд 2</h3>
+                            <div class="items">
+                                <div class="item item-tier2-1"></div>
+                                <div class="item item-tier2-2"></div>
+                                <div class="item item-tier2-3"></div>
+                                <div class="item item-tier2-4"></div>
+                                <div class="item item-tier2-5"></div>
+                                <div class="item item-tier2-6"></div>
+                                <div class="item item-tier2-7"></div>
+                                <div class="item item-tier2-8"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-row">
+                        <div class="category">
+                            <h3>Разряд 3</h3>
+                            <div class="items">
+                                <div class="item item-tier3-1"></div>
+                                <div class="item item-tier3-2"></div>
+                                <div class="item item-tier3-3"></div>
+                                <div class="item item-tier3-4"></div>
+                                <div class="item item-tier3-5"></div>
+                                <div class="item item-tier3-6"></div>
+                                <div class="item item-tier3-7"></div>
+                                <div class="item item-tier3-8"></div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3>Разряд 4</h3>
+                            <div class="items">
+                                <div class="item item-tier4-1"></div>
+                                <div class="item item-tier4-2"></div>
+                                <div class="item item-tier4-3"></div>
+                                <div class="item item-tier4-4"></div>
+                                <div class="item item-tier4-5"></div>
+                                <div class="item item-tier4-6"></div>
+                                <div class="item item-tier4-7"></div>
+                                <div class="item item-tier4-8"></div>
+                                <div class="item item-tier4-9"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-row">
+                        <div class="category">
+                            <h3>Разряд 5</h3>
+                            <div class="items">
+                                <div class="item item-tier5-1"></div>
+                                <div class="item item-tier5-2"></div>
+                                <div class="item item-tier5-3"></div>
+                                <div class="item item-tier5-4"></div>
+                                <div class="item item-tier5-5"></div>
+                                <div class="item item-tier5-6"></div>
+                                <div class="item item-tier5-7"></div>
+                                <div class="item item-tier5-8"></div>
+                                <div class="item item-tier5-9"></div>
+                                <div class="item item-tier5-10"></div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3>Разряд 6</h3>
+                            <div class="items">
+                                <div class="item item-tier6-1"></div>
+                                <div class="item item-tier6-2"></div>
+                                <div class="item item-tier6-3"></div>
+                                <div class="item item-tier6-4"></div>
+                                <div class="item item-tier6-5"></div>
+                                <div class="item item-tier6-6"></div>
+                                <div class="item item-tier6-7"></div>
+                                <div class="item item-tier6-8"></div>
+                                <div class="item item-tier6-9"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-row">
+                        <div class="category">
+                            <h3>Чары</h3>
+                            <div class="items">
+                                <div class="item item-enchant-1"></div>
+                                <div class="item item-enchant-2"></div>
+                                <div class="item item-enchant-3"></div>
+                                <div class="item item-enchant-4"></div>
+                                <div class="item item-enchant-5"></div>
+                                <div class="item item-enchant-6"></div>
+                                <div class="item item-enchant-7"></div>
+                                <div class="item item-enchant-8"></div>
+                                <div class="item item-enchant-9"></div>
+                                <div class="item item-enchant-10"></div>
+                                <div class="item item-enchant-11"></div>
+                                <div class="item item-enchant-12"></div>
+                                <div class="item item-enchant-13"></div>
+                                <div class="item item-enchant-14"></div>
+                                <div class="item item-enchant-15"></div>
+                                <div class="item item-enchant-16"></div>
+                                <div class="item item-enchant-17"></div>
+                                <div class="item item-enchant-18"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function($) {
+            $(document).ready(function() {
+                var $calculator = $('.build-calculator');
+
+                // Переключение вкладок
+                $calculator.find('.tab-button').click(function() {
+                    var tabId = $(this).data('tab');
+                    $calculator.find('.tab-button').removeClass('active');
+                    $(this).addClass('active');
+                    $calculator.find('.tab-content').removeClass('active').hide();
+                    $calculator.find('#' + tabId).addClass('active').show();
+                });
+
+                $calculator.find('#main').addClass('active').show();
+                $calculator.find('.tab-button[data-tab="main"]').addClass('active');
+
+                // Редактирование названия левого блока
+                $calculator.find('.left-block').on('click', '.edit-block-icon', function() {
+                    var $titleSpan = $(this).parent('.title-text');
+                    var currentTitle = $titleSpan.text().trim();
+                    var $input = $('<input type="text" value="' + currentTitle + '">');
+                    $titleSpan.replaceWith($input);
+                    $input.focus();
+
+                    $input.on('blur keypress', function(e) {
+                        if (e.type === 'blur' || (e.type === 'keypress' && e.which === 13)) {
+                            var newTitle = $(this).val().trim();
+                            if (newTitle) {
+                                $(this).replaceWith(`<span class="title-text">${newTitle}<img src="https://static.tildacdn.com/tild6266-3937-4230-a636-393734393230/pen-solid.svg" class="edit-block-icon" alt="Редактировать"></span>`);
+                            }
+                        }
+                    });
+                });
+
+                // Добавить категорию
+                $calculator.find('.left-block').on('click', '.add-category-icon', function() {
+                    var categoryName = $calculator.find('#category-name').val();
+                    if (categoryName) {
+                        var categoryHtml = `
+                            <div class="category">
+                                <h3>
+                                    ${categoryName}
+                                    <img src="https://static.tildacdn.com/tild6266-3937-4230-a636-393734393230/pen-solid.svg" class="edit-category-icon" alt="Редактировать">
+                                    <img src="https://static.tildacdn.com/tild3238-3963-4637-b139-353331636166/minus-solid.svg" class="delete-category-icon" alt="Удалить">
+                                </h3>
+                                <div class="items"></div>
+                            </div>
+                        `;
+                        $calculator.find('#categories').append(categoryHtml);
+                        $calculator.find('#category-name').val('');
+                        $calculator.find('.left-block .items').droppable({
+                            accept: '.item',
+                            drop: function(event, ui) {
+                                var $item = ui.draggable;
+                                var $sourceCategory = $item.closest('.items');
+                                var $targetCategory = $(this);
+
+                                if ($sourceCategory.is($targetCategory)) {
+                                    $item.css({position: 'relative', left: '', top: ''});
+                                } else {
+                                    var itemClone = $item.clone();
+                                    itemClone.find('.item-tooltip').remove();
+                                    itemClone.css({position: 'relative', left: '', top: ''});
+                                    $targetCategory.append(itemClone);
+                                    itemClone.draggable({
+                                        revert: 'invalid',
+                                        containment: '.left-block',
+                                        helper: function() {
+                                            return $('<div></div>').css({
+                                                width: $(this).width(),
+                                                height: $(this).height(),
+                                                backgroundImage: $(this).css('background-image'),
+                                                backgroundSize: 'cover',
+                                                borderRadius: '8px'
+                                            });
+                                        },
+                                        start: function(event, ui) {
+                                            $(ui.helper).css({'z-index': 10000, 'opacity': 0.8});
+                                            $calculator.find('.item-tooltip').hide();
+                                        },
+                                        stop: function(event, ui) {
+                                            var dropTarget = $(document.elementFromPoint(event.pageX, event.pageY)).closest('.left-block .items');
+                                            if (!dropTarget.length) {
+                                                $(this).remove();
+                                            } else if (dropTarget.children('.item').length === 1) {
+                                                $(this).css({left: '', top: ''});
+                                            }
+                                            $(ui.helper).css('z-index', '');
+                                        }
+                                    });
+                                    attachTooltipHandler(itemClone);
+                                    attachTouchEvents(itemClone); // Добавляем сенсорные события для нового предмета
+                                }
+                            }
+                        });
+                    }
+                });
+
+                // Удаление категории
+                $calculator.find('#categories').on('click', '.delete-category-icon', function() {
+                    $(this).closest('.category').remove();
+                });
+
+                // Редактирование названия категории
+                $calculator.find('#categories').on('click', '.edit-category-icon', function() {
+                    var $h3 = $(this).parent('h3');
+                    var currentName = $h3.text().trim();
+                    var $input = $('<input type="text" value="' + currentName + '">');
+                    $h3.html($input);
+                    $input.focus();
+
+                    $input.on('blur keypress', function(e) {
+                        if (e.type === 'blur' || (e.type === 'keypress' && e.which === 13)) {
+                            var newName = $(this).val().trim();
+                            if (newName) {
+                                $(this).parent('h3').html(`
+                                    ${newName}
+                                    <img src="https://static.tildacdn.com/tild6266-3937-4230-a636-393734393230/pen-solid.svg" class="edit-category-icon" alt="Редактировать">
+                                    <img src="https://static.tildacdn.com/tild3238-3963-4637-b139-353331636166/minus-solid.svg" class="delete-category-icon" alt="Удалить">
+                                `);
+                            }
+                        }
+                    });
+                });
+
+                // Перетаскивание предметов из правого блока (десктоп)
+                $calculator.find('.right-block .item').draggable({
+                    revert: 'invalid',
+                    helper: function() {
+                        return $('<div></div>').css({
+                            width: $(this).width(),
+                            height: $(this).height(),
+                            backgroundImage: $(this).css('background-image'),
+                            backgroundSize: 'cover',
+                            borderRadius: '8px'
+                        });
+                    },
+                    appendTo: '.build-calculator', // Ограничиваем область калькулятором
+                    start: function(event, ui) {
+                        $(ui.helper).css({'z-index': 10000, 'opacity': 0.8});
+                        $calculator.find('.item-tooltip').hide();
+                    },
+                    stop: function(event, ui) {
+                        $(ui.helper).css('z-index', '');
+                    }
+                });
+
+                // Инициализация droppable
+                $calculator.find('.left-block .items').droppable({
+                    accept: '.item',
+                    drop: function(event, ui) {
+                        var $item = ui.draggable;
+                        var $sourceCategory = $item.closest('.items');
+                        var $targetCategory = $(this);
+
+                        if ($sourceCategory.is($targetCategory)) {
+                            $item.css({position: 'relative', left: '', top: ''});
+                        } else {
+                            var itemClone = $item.clone();
+                            itemClone.find('.item-tooltip').remove();
+                            itemClone.css({position: 'relative', left: '', top: ''});
+                            $targetCategory.append(itemClone);
+                            itemClone.draggable({
+                                revert: 'invalid',
+                                containment: '.left-block',
+                                helper: function() {
+                                    return $('<div></div>').css({
+                                        width: $(this).width(),
+                                        height: $(this).height(),
+                                        backgroundImage: $(this).css('background-image'),
+                                        backgroundSize: 'cover',
+                                        borderRadius: '8px'
+                                    });
+                                },
+                                start: function(event, ui) {
+                                    $(ui.helper).css({'z-index': 10000, 'opacity': 0.8});
+                                    $calculator.find('.item-tooltip').hide();
+                                },
+                                stop: function(event, ui) {
+                                    var dropTarget = $(document.elementFromPoint(event.pageX, event.pageY)).closest('.left-block .items');
+                                    if (!dropTarget.length) {
+                                        $(this).remove();
+                                    } else if (dropTarget.children('.item').length === 1) {
+                                        $(this).css({left: '', top: ''});
+                                    }
+                                    $(ui.helper).css('z-index', '');
+                                }
+                            });
+                            attachTooltipHandler(itemClone);
+                            attachTouchEvents(itemClone); // Добавляем сенсорные события для нового предмета
+                        }
+                    }
+                });
+
+                // Функция для tooltip
+                function attachTooltipHandler($item) {
+                    $item.hover(function(e) {
+                        $calculator.find('.item-tooltip').hide();
+                        var $tooltip = $(this).find('.item-tooltip');
+                        var itemOffset = $(this).offset();
+                        var itemHeight = $(this).outerHeight();
+                        var tooltipWidth = $tooltip.outerWidth();
+                        var tooltipHeight = $tooltip.outerHeight();
+                        var windowWidth = $(window).width();
+                        var windowHeight = $(window).height();
+                        var scrollTop = $(window).scrollTop();
+
+                        var top = itemOffset.top + itemHeight + scrollTop;
+                        var left = itemOffset.left + ($(this).outerWidth() / 2) - (tooltipWidth / 2);
+
+                        if (left + tooltipWidth > windowWidth) {
+                            left = windowWidth - tooltipWidth - 5;
+                        }
+                        if (left < 0) {
+                            left = 5;
+                        }
+                        if (top + tooltipHeight > windowHeight + scrollTop) {
+                            top = itemOffset.top - tooltipHeight - 5;
+                        }
+
+                        $tooltip.css({
+                            top: top + 'px',
+                            left: left + 'px',
+                            display: 'block'
+                        });
+                    }, function() {
+                        $(this).find('.item-tooltip').hide();
+                    });
+                }
+
+                // Функция для сенсорной поддержки
+function attachTouchEvents($item) {
+    $item.on('touchstart', function(e) {
+        e.preventDefault();
+        var touch = e.originalEvent.touches[0];
+        var $this = $(this);
+        var calculatorOffset = $calculator.offset(); // Смещение .build-calculator относительно окна
+
+        // Начальная позиция клона точно под пальцем
+        var clone = $('<div></div>').css({
+            position: 'absolute',
+            width: $this.width(),
+            height: $this.height(),
+            backgroundImage: $this.css('background-image'),
+            backgroundSize: 'cover',
+            borderRadius: '8px',
+            left: touch.pageX - calculatorOffset.left, // Учитываем смещение контейнера
+            top: touch.pageY - calculatorOffset.top,
+            zIndex: 10000,
+            opacity: 0.8
+        }).appendTo('.build-calculator');
+
+        $calculator.find('.item-tooltip').hide();
+
+        $(document).on('touchmove', function(e) {
+            var touch = e.originalEvent.touches[0];
+            clone.css({
+                left: touch.pageX - calculatorOffset.left, // Позиция под пальцем
+                top: touch.pageY - calculatorOffset.top
+            });
+        });
+
+        function handleTouchEnd(e) {
+            e.preventDefault();
+            var touch = e.originalEvent.changedTouches[0];
+            var $dropTarget = null;
+
+            // Проверяем все .left-block .items на пересечение координат
+            $calculator.find('.left-block .items').each(function() {
+                var $target = $(this);
+                var offset = $target.offset();
+                var width = $target.outerWidth();
+                var height = $target.outerHeight();
+
+                if (
+                    touch.pageX >= offset.left &&
+                    touch.pageX <= offset.left + width &&
+                    touch.pageY >= offset.top &&
+                    touch.pageY <= offset.top + height
+                ) {
+                    $dropTarget = $target;
+                    return false; // Прерываем цикл
+                }
+            });
+
+            if ($dropTarget && !$dropTarget.is($this.closest('.items'))) {
+                var itemClone = $this.clone();
+                itemClone.find('.item-tooltip').remove();
+                itemClone.css({position: 'relative', left: '', top: ''});
+                $dropTarget.append(itemClone);
+                $this.remove();
+
+                itemClone.draggable({
+                    revert: 'invalid',
+                    containment: '.left-block',
+                    helper: function() {
+                        return $('<div></div>').css({
+                            width: $(this).width(),
+                            height: $(this).height(),
+                            backgroundImage: $(this).css('background-image'),
+                            backgroundSize: 'cover',
+                            borderRadius: '8px'
+                        });
+                    },
+                    start: function(event, ui) {
+                        $(ui.helper).css({'z-index': 10000, 'opacity': 0.8});
+                        $calculator.find('.item-tooltip').hide();
+                    },
+                    stop: function(event, ui) {
+                        var dropTarget = $(document.elementFromPoint(event.pageX, event.pageY)).closest('.left-block .items');
+                        if (!dropTarget.length) {
+                            $(this).remove();
+                        } else if (dropTarget.children('.item').length === 1) {
+                            $(this).css({left: '', top: ''});
+                        }
+                        $(ui.helper).css('z-index', '');
+                    }
+                });
+                attachTooltipHandler(itemClone);
+                attachTouchEvents(itemClone);
+            } else if (!$dropTarget) {
+                $this.remove();
+            }
+
+            clone.remove();
+            $(document).off('touchmove touchend touchcancel');
+        }
+
+        $(document).on('touchend', handleTouchEnd);
+        $(document).on('touchcancel', handleTouchEnd);
+    });
+}
+
+// Сенсорная поддержка для предметов из правого блока
+$calculator.find('.right-block .item').each(function() {
+    var $item = $(this);
+    $item.on('touchstart', function(e) {
+        e.preventDefault();
+        var touch = e.originalEvent.touches[0];
+        var calculatorOffset = $calculator.offset(); // Смещение .build-calculator
+
+        var clone = $('<div></div>').css({
+            position: 'absolute',
+            width: $item.width(),
+            height: $item.height(),
+            backgroundImage: $item.css('background-image'),
+            backgroundSize: 'cover',
+            borderRadius: '8px',
+            left: touch.pageX - calculatorOffset.left, // Позиция под пальцем
+            top: touch.pageY - calculatorOffset.top,
+            zIndex: 10000,
+            opacity: 0.8
+        }).appendTo('.build-calculator');
+
+        $calculator.find('.item-tooltip').hide();
+
+        $(document).on('touchmove', function(e) {
+            var touch = e.originalEvent.touches[0];
+            clone.css({
+                left: touch.pageX - calculatorOffset.left, // Позиция под пальцем
+                top: touch.pageY - calculatorOffset.top
+            });
+        });
+
+        function handleTouchEnd(e) {
+            e.preventDefault();
+            var touch = e.originalEvent.changedTouches[0];
+            var $dropTarget = null;
+
+            // Проверяем все .left-block .items на пересечение координат
+            $calculator.find('.left-block .items').each(function() {
+                var $target = $(this);
+                var offset = $target.offset();
+                var width = $target.outerWidth();
+                var height = $target.outerHeight();
+
+                if (
+                    touch.pageX >= offset.left &&
+                    touch.pageX <= offset.left + width &&
+                    touch.pageY >= offset.top &&
+                    touch.pageY <= offset.top + height
+                ) {
+                    $dropTarget = $target;
+                    return false; // Прерываем цикл
+                }
+            });
+
+            if ($dropTarget) {
+                var itemClone = $item.clone();
+                itemClone.find('.item-tooltip').remove();
+                itemClone.css({position: 'relative', left: '', top: ''});
+                $dropTarget.append(itemClone);
+                itemClone.draggable({
+                    revert: 'invalid',
+                    containment: '.left-block',
+                    helper: function() {
+                        return $('<div></div>').css({
+                            width: $(this).width(),
+                            height: $(this).height(),
+                            backgroundImage: $(this).css('background-image'),
+                            backgroundSize: 'cover',
+                            borderRadius: '8px'
+                        });
+                    },
+                    start: function(event, ui) {
+                        $(ui.helper).css({'z-index': 10000, 'opacity': 0.8});
+                        $calculator.find('.item-tooltip').hide();
+                    },
+                    stop: function(event, ui) {
+                        var dropTarget = $(document.elementFromPoint(event.pageX, event.pageY)).closest('.left-block .items');
+                        if (!dropTarget.length) {
+                            $(this).remove();
+                        } else if (dropTarget.children('.item').length === 1) {
+                            $(this).css({left: '', top: ''});
+                        }
+                        $(ui.helper).css('z-index', '');
+                    }
+                });
+                attachTooltipHandler(itemClone);
+                attachTouchEvents(itemClone);
+            }
+
+            clone.remove();
+            $(document).off('touchmove touchend touchcancel');
+        }
+
+        $(document).on('touchend', handleTouchEnd);
+        $(document).on('touchcancel', handleTouchEnd);
+    });
+});
+
+                // Инициализация tooltip для существующих предметов
+                $calculator.find('.item').each(function() {
+                    attachTooltipHandler($(this));
+                });
+
+                // Сохранение билда
+                $calculator.find('.save-build-button').click(function() {
+                    var $leftBlock = $calculator.find('.left-block');
+                    
+                    var originalMaxHeight = $leftBlock.css('max-height');
+                    var originalOverflowY = $leftBlock.css('overflow-y');
+
+                    $leftBlock.addClass('saving');
+
+                    setTimeout(function() {
+                        html2canvas($leftBlock[0], {
+                            backgroundColor: null,
+                            useCORS: true,
+                            width: $leftBlock.outerWidth(),
+                            height: $leftBlock[0].scrollHeight,
+                            x: 0,
+                            y: 0
+                        }).then(function(canvas) {
+                            var link = document.createElement('a');
+                            link.download = 'build.png';
+                            link.href = canvas.toDataURL('image/png');
+                            link.click();
+
+                            $leftBlock.removeClass('saving');
+                            $leftBlock.css({
+                                'max-height': originalMaxHeight,
+                                'overflow-y': originalOverflowY
+                            });
+                        }).catch(function(error) {
+                            console.error('Ошибка при сохранении:', error);
+                            $leftBlock.removeClass('saving');
+                            $leftBlock.css({
+                                'max-height': originalMaxHeight,
+                                'overflow-y': originalOverflowY
+                            });
+                        });
+                    }, 200);
+                });
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>
