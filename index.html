@@ -108,122 +108,74 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            const dataUrl = 'https://data.worldofdota.net/data/get_top_rating_150.php';
-            const steamApiUrl = 'https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/';
-            const steamApiKey = 'YOUR_STEAM_API_KEY'; // Замените на ваш Steam API ключ
-            
-            fetchLeaderboard();
-            
-            function fetchLeaderboard() {
-                $.ajax({
-                    url: dataUrl,
-                    type: 'GET',
-                    dataType: 'json',
-                    success: function(data) {
-                        processPlayerData(data);
-                    },
-                    error: function(xhr, status, error) {
-                        showError('Ошибка при загрузке данных: ' + error);
-                    }
-                });
-            }
-            
-            function processPlayerData(players) {
-                if (!Array.isArray(players) || players.length === 0) {
-                    showError('Данные не получены или имеют неправильный формат.');
-                    return;
-                }
-                
-                // Собираем steamIDs для запроса к Steam API
-                const steamIds = players.map(player => player.steamid).join(',');
-                
-                // Создаем таблицу с известными данными
+    // Используем локальный JSON-файл, обновляемый через GitHub Actions
+    const dataUrl = 'playerdata.json';
+    
+    fetchLeaderboard();
+    
+    function fetchLeaderboard() {
+        $.ajax({
+            url: dataUrl,
+            type: 'GET',
+            dataType: 'json',
+            success: function(players) {
                 createLeaderboardTable(players);
-                
-                // Запрашиваем дополнительные данные из Steam API
-                fetchSteamProfiles(steamIds);
-            }
-            
-            function createLeaderboardTable(players) {
-                let tableHtml = `
-                    <table class="leaderboard-table">
-                        <thead>
-                            <tr>
-                                <th>Место</th>
-                                <th>Игрок</th>
-                                <th>Рейтинг</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                `;
-                
-                players.forEach((player, index) => {
-                    const rowClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
-                    const rankClass = index < 3 ? 'top-3' : '';
-                    
-                    tableHtml += `
-                        <tr class="${rowClass}" data-steamid="${player.steamid}">
-                            <td class="rank ${rankClass}">${index + 1}</td>
-                            <td class="player">
-                                <img class="avatar" src="/api/placeholder/40/40" alt="Аватар" data-steamid="${player.steamid}">
-                                <span class="player-name" data-steamid="${player.steamid}">Игрок ${index + 1}</span>
-                            </td>
-                            <td class="rating">${player.rating}</td>
-                        </tr>
-                    `;
-                });
-                
-                tableHtml += `
-                        </tbody>
-                    </table>
-                `;
-                
-                $('#leaderboard-content').html(tableHtml);
-            }
-            
-            function fetchSteamProfiles(steamIds) {
-                // Прямой запрос к Steam API не будет работать из-за CORS ограничений
-                // В реальном приложении вам нужно будет использовать прокси-сервер или серверную часть
-                // Здесь мы демонстрируем, как это было бы сделано
-                
-                // Вместо прямого запроса к Steam API, мы можем использовать сервис для проксирования запроса
-                // Например, вы можете создать простой прокси-сервер на GitHub Pages или использовать облачные функции
-                
-                // Пример: 
-                // $.ajax({
-                //     url: 'https://ваш-прокси-сервер.com/steam-api',
-                //     type: 'GET',
-                //     data: {
-                //         steamids: steamIds
-                //     },
-                //     success: function(data) {
-                //         updatePlayerProfiles(data.response.players);
-                //     },
-                //     error: function(xhr, status, error) {
-                //         console.error('Ошибка при загрузке профилей Steam:', error);
-                //     }
-                // });
-                
-                // В целях демонстрации, мы просто покажем, как обновить профили если бы мы получили данные
-                console.log('Запрос профилей Steam для:', steamIds);
-            }
-            
-            function updatePlayerProfiles(players) {
-                players.forEach(player => {
-                    const steamId = player.steamid;
-                    const avatarUrl = player.avatarmedium || player.avatar;
-                    const playerName = player.personaname;
-                    
-                    // Обновляем аватар и имя игрока
-                    $(`img[data-steamid="${steamId}"]`).attr('src', avatarUrl);
-                    $(`span[data-steamid="${steamId}"]`).text(playerName);
-                });
-            }
-            
-            function showError(message) {
-                $('#leaderboard-content').html(`<div class="error">${message}</div>`);
+            },
+            error: function(xhr, status, error) {
+                showError('Ошибка при загрузке данных: ' + error);
             }
         });
+    }
+    
+    function createLeaderboardTable(players) {
+        if (!Array.isArray(players) || players.length === 0) {
+            showError('Данные не получены или имеют неправильный формат.');
+            return;
+        }
+        
+        let tableHtml = `
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Место</th>
+                        <th>Игрок</th>
+                        <th>Рейтинг</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+        
+        players.forEach((player, index) => {
+            const rowClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
+            const rankClass = index < 3 ? 'top-3' : '';
+            const avatarUrl = player.avatarmedium || '/api/placeholder/40/40';
+            const playerName = player.personaname || `Игрок ${index + 1}`;
+            const profileUrl = player.profileurl || '#';
+            
+            tableHtml += `
+                <tr class="${rowClass}">
+                    <td class="rank ${rankClass}">${index + 1}</td>
+                    <td class="player">
+                        <img class="avatar" src="${avatarUrl}" alt="Аватар">
+                        <a href="${profileUrl}" target="_blank" class="player-name">${playerName}</a>
+                    </td>
+                    <td class="rating">${player.rating}</td>
+                </tr>
+            `;
+        });
+        
+        tableHtml += `
+                </tbody>
+            </table>
+        `;
+        
+        $('#leaderboard-content').html(tableHtml);
+    }
+    
+    function showError(message) {
+        $('#leaderboard-content').html(`<div class="error">${message}</div>`);
+    }
+});
     </script>
 </body>
 </html>
