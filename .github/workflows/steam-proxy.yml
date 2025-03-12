@@ -1,0 +1,89 @@
+name: Steam API Proxy
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Запускается каждые 6 часов
+  workflow_dispatch:  # Позволяет запускать вручную
+
+jobs:
+  fetch-and-store:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install axios
+          
+      - name: Fetch Player Data
+        env:
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+        run: |
+          node << 'EOF'
+          const axios = require('axios');
+          const fs = require('fs');
+          
+          async function fetchData() {
+            try {
+              // Получаем данные из World of Dota API
+              const worldOfDotaResponse = await axios.get('https://data.worldofdota.net/data/get_top_rating_150.php');
+              const players = worldOfDotaResponse.data;
+              
+              if (!Array.isArray(players) || players.length === 0) {
+                throw new Error('Данные не получены или имеют неправильный формат');
+              }
+              
+              // Получаем steamIds для запроса
+              const steamIds = players.map(player => player.steamid);
+              
+              // Делим на группы по 100 (ограничение Steam API)
+              const steamIdGroups = [];
+              for (let i = 0; i < steamIds.length; i += 100) {
+                steamIdGroups.push(steamIds.slice(i, i + 100));
+              }
+              
+              // Получаем данные профилей из Steam API
+              let allProfiles = [];
+              for (const group of steamIdGroups) {
+                const steamApiUrl = `https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${process.env.STEAM_API_KEY}&steamids=${group.join(',')}`;
+                const steamResponse = await axios.get(steamApiUrl);
+                allProfiles = [...allProfiles, ...steamResponse.data.response.players];
+              }
+              
+              // Объединяем данные
+              const combinedData = players.map(player => {
+                const steamProfile = allProfiles.find(profile => profile.steamid === player.steamid) || {};
+                return {
+                  ...player,
+                  personaname: steamProfile.personaname || `Игрок ${player.steamid.substr(-4)}`,
+                  avatarmedium: steamProfile.avatarmedium || '',
+                  profileurl: steamProfile.profileurl || ''
+                };
+              });
+              
+              // Сохраняем объединенные данные в JSON файл
+              fs.writeFileSync('playerdata.json', JSON.stringify(combinedData, null, 2));
+              console.log(`Сохранено ${combinedData.length} профилей игроков`);
+            } catch (error) {
+              console.error('Ошибка при получении данных:', error.message);
+              process.exit(1);
+            }
+          }
+          
+          fetchData();
+          EOF
+          
+      - name: Commit and push data
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add playerdata.json
+          git commit -m "Update player data" || echo "No changes to commit"
+          git push
