@@ -82,8 +82,10 @@ jobs:
           
       - name: Commit and push data
         run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'actions@github.com'
-          git add playerdata.json
-          git commit -m "Update player data" || echo "No changes to commit"
-          git push
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add playerdata.json
+            git commit -m "Update player data" || echo "No changes to commit"
+            git push origin main
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
