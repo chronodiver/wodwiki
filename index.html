@@ -118,10 +118,12 @@
             url: dataUrl,
             type: 'GET',
             dataType: 'json',
+            cache: false, // Отключаем кэширование
             success: function(players) {
                 createLeaderboardTable(players);
             },
             error: function(xhr, status, error) {
+                console.error('Error details:', xhr.responseText);
                 showError('Ошибка при загрузке данных: ' + error);
             }
         });
@@ -148,15 +150,21 @@
         players.forEach((player, index) => {
             const rowClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
             const rankClass = index < 3 ? 'top-3' : '';
-            const avatarUrl = player.avatarmedium || '/api/placeholder/40/40';
-            const playerName = player.personaname || `Игрок ${index + 1}`;
-            const profileUrl = player.profileurl || '#';
+            
+            // Используем заглушку для аватара, если он не найден
+            const avatarUrl = player.avatarmedium || 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg';
+            
+            // Используем персональное имя или steamid в качестве запасного варианта
+            const playerName = player.personaname || `Игрок ${player.steamid.substr(-4)}`;
+            
+            // Формируем URL профиля Steam
+            const profileUrl = player.profileurl || `https://steamcommunity.com/profiles/${player.steamid}`;
             
             tableHtml += `
                 <tr class="${rowClass}">
                     <td class="rank ${rankClass}">${index + 1}</td>
                     <td class="player">
-                        <img class="avatar" src="${avatarUrl}" alt="Аватар">
+                        <img class="avatar" src="${avatarUrl}" onerror="this.src='https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg'" alt="Аватар">
                         <a href="${profileUrl}" target="_blank" class="player-name">${playerName}</a>
                     </td>
                     <td class="rating">${player.rating}</td>
