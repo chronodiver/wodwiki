@@ -8,6 +8,8 @@ on:
 jobs:
   fetch-and-store:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Явно указываем права на запись в репозиторий
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -32,9 +34,14 @@ jobs:
           
           async function fetchData() {
             try {
+              console.log('Начинаем получение данных...');
+              
               // Получаем данные из World of Dota API
+              console.log('Загрузка данных из World of Dota API...');
               const worldOfDotaResponse = await axios.get('https://data.worldofdota.net/data/get_top_rating_150.php');
               const players = worldOfDotaResponse.data;
+              
+              console.log(`Получено ${players.length} игроков из World of Dota API`);
               
               if (!Array.isArray(players) || players.length === 0) {
                 throw new Error('Данные не получены или имеют неправильный формат');
@@ -42,6 +49,7 @@ jobs:
               
               // Получаем steamIds для запроса
               const steamIds = players.map(player => player.steamid);
+              console.log(`Всего уникальных steamIds: ${new Set(steamIds).size}`);
               
               // Делим на группы по 100 (ограничение Steam API)
               const steamIdGroups = [];
@@ -49,30 +57,65 @@ jobs:
                 steamIdGroups.push(steamIds.slice(i, i + 100));
               }
               
+              console.log(`Разделено на ${steamIdGroups.length} групп для запроса к Steam API`);
+              
               // Получаем данные профилей из Steam API
               let allProfiles = [];
               for (const group of steamIdGroups) {
+                console.log(`Запрос данных для группы из ${group.length} steamIds...`);
                 const steamApiUrl = `https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${process.env.STEAM_API_KEY}&steamids=${group.join(',')}`;
-                const steamResponse = await axios.get(steamApiUrl);
-                allProfiles = [...allProfiles, ...steamResponse.data.response.players];
+                try {
+                  const steamResponse = await axios.get(steamApiUrl);
+                  if (steamResponse.data && steamResponse.data.response && steamResponse.data.response.players) {
+                    console.log(`Получено ${steamResponse.data.response.players.length} профилей из Steam API`);
+                    allProfiles = [...allProfiles, ...steamResponse.data.response.players];
+                  } else {
+                    console.error('Неожиданный формат ответа от Steam API:', JSON.stringify(steamResponse.data));
+                  }
+                } catch (error) {
+                  console.error('Ошибка при запросе к Steam API:', error.message);
+                  if (error.response) {
+                    console.error('Статус ответа:', error.response.status);
+                    console.error('Данные ответа:', error.response.data);
+                  }
+                }
+                // Делаем паузу между запросами для избежания превышения лимита запросов
+                await new Promise(resolve => setTimeout(resolve, 1000));
               }
+              
+              console.log(`Всего получено ${allProfiles.length} профилей из Steam API`);
+              
+              // Сохраняем данные Steam API для отладки
+              fs.writeFileSync('steam_profiles.json', JSON.stringify(allProfiles, null, 2));
               
               // Объединяем данные
               const combinedData = players.map(player => {
                 const steamProfile = allProfiles.find(profile => profile.steamid === player.steamid) || {};
                 return {
                   ...player,
-                  personaname: steamProfile.personaname || `Игрок ${player.steamid.substr(-4)}`,
+                  personaname: steamProfile.personaname || `Unknown Player ${player.steamid.substr(-4)}`,
                   avatarmedium: steamProfile.avatarmedium || '',
                   profileurl: steamProfile.profileurl || ''
                 };
               });
               
+              console.log(`Создано ${combinedData.length} объединенных записей`);
+              
+              // Проверяем количество записей с именами и аватарами
+              const withNames = combinedData.filter(player => player.personaname && !player.personaname.startsWith('Unknown Player')).length;
+              const withAvatars = combinedData.filter(player => player.avatarmedium).length;
+              
+              console.log(`Игроков с именами: ${withNames}/${combinedData.length}`);
+              console.log(`Игроков с аватарами: ${withAvatars}/${combinedData.length}`);
+              
               // Сохраняем объединенные данные в JSON файл
               fs.writeFileSync('playerdata.json', JSON.stringify(combinedData, null, 2));
-              console.log(`Сохранено ${combinedData.length} профилей игроков`);
+              console.log(`Файл playerdata.json успешно создан`);
             } catch (error) {
               console.error('Ошибка при получении данных:', error.message);
+              if (error.stack) {
+                console.error('Stack trace:', error.stack);
+              }
               process.exit(1);
             }
           }
@@ -84,7 +127,8 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add playerdata.json
+          git add playerdata.json steam_profiles.json || true
           git commit -m "Update player data" || echo "No changes to commit"
-          git remote set-url origin https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git
-          git push origin main
+          git push || git push --set-upstream origin HEAD
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
