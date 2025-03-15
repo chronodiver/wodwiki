@@ -2,8 +2,8 @@ name: Update Leaderboard
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # Запуск каждые 10 минут
-  workflow_dispatch: # Возможность запустить вручную
+    - cron: '*/10 * * * *' # Каждые 10 минут
+  workflow_dispatch: # Ручной запуск
 
 jobs:
   build:
@@ -11,17 +11,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.0'
-
       - name: Generate leaderboard
         run: php generate_leaderboard.php
         env:
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
-
       - name: Commit changes
         run: |
           git config --global user.name 'GitHub Action'
