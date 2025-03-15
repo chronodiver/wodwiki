@@ -3,7 +3,7 @@ name: Update Leaderboard
 on:
   schedule:
     - cron: '*/10 * * * *' # Каждые 10 минут
-  workflow_dispatch: # Ручной запуск
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,14 +15,18 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.0'
-      - name: Generate leaderboard
+      - name: Generate Rating leaderboard
         run: php generate_leaderboard.php
+        env:
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+      - name: Generate Arena leaderboard
+        run: php generate_arena_leaderboard.php
         env:
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
       - name: Commit changes
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add leaderboard.json
-          git commit -m "Update leaderboard.json" || echo "No changes to commit"
+          git add leaderboard.json arena_leaderboard.json
+          git commit -m "Update leaderboards" || echo "No changes to commit"
           git push
