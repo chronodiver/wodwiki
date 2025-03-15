@@ -5,46 +5,51 @@ $arenaUrl = 'https://data.worldofdota.net/data/get_top_rating_pve_arena.php';
 $arenaData = file_get_contents($arenaUrl);
 $arenaPlayers = json_decode($arenaData, true);
 
-// Логируем сырые данные для отладки
-file_put_contents('arena_debug.log', print_r($arenaPlayers, true));
+// Логируем сырые данные
+file_put_contents('arena_debug.log', "Raw data: " . print_r($arenaPlayers, true) . "\n");
 
 $result = ['1' => [], '2' => [], '3' => []];
 
-if (is_array($arenaPlayers)) {
-    foreach ($arenaPlayers as $entry) {
-        $playerCount = $entry['player_count'];
-        $waveCount = $entry['wave_count'];
+if (is_array($arenaPlayers) && !empty($arenaPlayers)) {
+    foreach ($arenaPlayers as $index => $entry) {
+        // Проверяем наличие ключей и логируем
+        $playerCount = isset($entry['player_count']) ? $entry['player_count'] : null;
+        $waveCount = isset($entry['wave_count']) ? $entry['wave_count'] : null;
+        $p1 = isset($entry['p1']) ? $entry['p1'] : '0';
+        $p2 = isset($entry['p2']) ? $entry['p2'] : '0';
+        $p3 = isset($entry['p3']) ? $entry['p3'] : '0';
+
+        file_put_contents('arena_debug.log', "Entry #$index: player_count=$playerCount, wave_count=$waveCount, p1=$p1, p2=$p2, p3=$p3\n", FILE_APPEND);
+
         $players = [];
+        $tab = null;
 
-        // Логируем каждую запись
-        file_put_contents('arena_debug.log', "Processing entry: " . print_r($entry, true) . "\n", FILE_APPEND);
-
-        if ($playerCount === '1' && $entry['p1'] !== '0') {
-            $steamid3 = $entry['p1'];
-            $steamid64 = '76561197960265728' + $steamid3;
+        if ($playerCount == '1' && $p1 != '0') {
+            $steamid64 = '76561197960265728' + $p1;
             $players[] = $steamid64;
             $tab = '1';
-        } elseif ($playerCount === '2' && $entry['p1'] !== '0' && $entry['p2'] !== '0') {
-            $steamid3_1 = $entry['p1'];
-            $steamid3_2 = $entry['p2'];
-            $steamid64_1 = '76561197960265728' + $steamid3_1;
-            $steamid64_2 = '76561197960265728' + $steamid3_2;
+        } elseif ($playerCount == '2' && $p1 != '0' && $p2 != '0') {
+            $steamid64_1 = '76561197960265728' + $p1;
+            $steamid64_2 = '76561197960265728' + $p2;
             $players = [$steamid64_1, $steamid64_2];
             $tab = '2';
-        } elseif ($playerCount === '3' && $entry['p1'] !== '0' && $entry['p2'] !== '0' && $entry['p3'] !== '0') {
-            $steamid3_1 = $entry['p1'];
-            $steamid3_2 = $entry['p2'];
-            $steamid3_3 = $entry['p3'];
-            $steamid64_1 = '76561197960265728' + $steamid3_1;
-            $steamid64_2 = '76561197960265728' + $steamid3_2;
-            $steamid64_3 = '76561197960265728' + $steamid3_3;
+        } elseif ($playerCount == '3' && $p1 != '0' && $p2 != '0' && $p3 != '0') {
+            $steamid64_1 = '76561197960265728' + $p1;
+            $steamid64_2 = '76561197960265728' + $p2;
+            $steamid64_3 = '76561197960265728' + $p3;
             $players = [$steamid64_1, $steamid64_2, $steamid64_3];
             $tab = '3';
         } else {
-            file_put_contents('arena_debug.log', "Skipped entry: player_count=$playerCount, p1={$entry['p1']}, p2={$entry['p2']}, p3={$entry['p3']}\n", FILE_APPEND);
+            file_put_contents('arena_debug.log', "Skipped entry #$index: invalid player_count or players\n", FILE_APPEND);
             continue;
         }
 
+        if ($waveCount === null) {
+            file_put_contents('arena_debug.log', "Skipped entry #$index: no wave_count\n", FILE_APPEND);
+            continue;
+        }
+
+        // Запрос к Steam API
         $steamUrl = "https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=$apiKey&steamids=" . implode(',', $players);
         $steamData = file_get_contents($steamUrl);
         $steamProfile = json_decode($steamData, true);
@@ -68,12 +73,15 @@ if (is_array($arenaPlayers)) {
         ];
     }
 
+    // Сортировка
     foreach ($result as $tab => &$entries) {
         usort($entries, function($a, $b) { return $b['wave_count'] - $a['wave_count']; });
         foreach ($entries as $index => &$entry) {
             $entry['rank'] = $index + 1;
         }
     }
+} else {
+    file_put_contents('arena_debug.log', "No valid data from $arenaUrl\n", FILE_APPEND);
 }
 
 file_put_contents('arena_leaderboard.json', json_encode($result, JSON_PRETTY_PRINT));
