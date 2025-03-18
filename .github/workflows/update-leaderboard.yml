@@ -2,8 +2,8 @@ name: Update Leaderboard
 
 on:
   schedule:
-    - cron: '0 */1 * * *' # Каждые 2 часа (00:00, 02:00, 04:00 и т.д.)
-  workflow_dispatch: # Возможность запустить вручную
+    - cron: '*/30 * * * *' # Каждые 30 минут
+  workflow_dispatch:
 
 jobs:
   build:
@@ -31,6 +31,6 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add leaderboard.json arena_leaderboard.json profiles_cache.json
-          git commit -m "Update leaderboards with profile cache" || echo "No changes to commit"
+          git add leaderboard.json arena_leaderboard.json
+          git commit -m "Update leaderboards" || echo "No changes to commit"
           git push
