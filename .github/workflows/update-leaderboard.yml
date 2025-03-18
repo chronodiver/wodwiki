@@ -11,22 +11,18 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.0'
-
       - name: Generate Rating leaderboard
         run: php generate_leaderboard.php
         env:
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
-
       - name: Generate Arena leaderboard
         run: php generate_arena_leaderboard.php
         env:
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
-
       - name: Commit changes
         run: |
           git config --global user.name 'GitHub Action'
