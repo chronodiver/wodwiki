@@ -1,6 +1,6 @@
 <?php
 $apiKey = getenv('STEAM_API_KEY');
-$ratingUrl = 'https://data.worldofdota.net/data/get_top_rating_pve.php';
+$ratingUrl = 'https://data.worldofdota.net/data/get_top_rating_150.php';
 $cacheFile = 'profiles_cache.json';
 
 $ratingData = file_get_contents($ratingUrl);
