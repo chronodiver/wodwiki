@@ -1,38 +1,65 @@
 <?php
 $apiKey = getenv('STEAM_API_KEY');
-$topRatingUrl = 'https://data.worldofdota.net/data/get_top_rating_150.php';
+$ratingUrl = 'https://data.worldofdota.net/data/get_top_rating_pve.php';
+$cacheFile = 'profiles_cache.json';
 
-$ratingData = file_get_contents($topRatingUrl);
-$players = json_decode($ratingData, true);
+$ratingData = file_get_contents($ratingUrl);
+$ratingPlayers = json_decode($ratingData, true);
+$profilesCache = file_exists($cacheFile) ? json_decode(file_get_contents($cacheFile), true) : [];
 
-$result = [];
-if (is_array($players)) {
-    foreach ($players as $index => $player) {
-        $account_id = $player['steamid']; // AccountID из get_top_rating_150.php
-        $rating = $player['rating'];
+$players = [];
+$steamIds = [];
 
-        // Вычисляем SteamID64 для запроса
-        $steamid64 = '76561197960265728' + $account_id;
+foreach ($ratingPlayers as $player) {
+    $steamId = '76561197960265728' + ($player['steamid'] ?? 0);
+    $players[$steamId] = [
+        'steamid' => $steamId,
+        'rating' => $player['rating'] ?? 0
+    ];
+    $steamIds[] = $steamId;
+}
 
-        // Запрос к Steam API
-        $steamUrl = "https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=$apiKey&steamids=$steamid64";
-        $steamData = file_get_contents($steamUrl);
-        $steamProfile = json_decode($steamData, true);
+$uniqueSteamIds = array_unique($steamIds);
+$toFetch = array_filter($uniqueSteamIds, function($id) use ($profilesCache) {
+    return !isset($profilesCache[$id]) || empty($profilesCache[$id]['name']);
+});
+$steamIdChunks = array_chunk($toFetch, 100);
 
-        // Получаем данные из ответа Steam API
-        $playerName = $steamProfile['response']['players'][0]['personaname'] ?? 'Неизвестно';
-        $avatarUrl = $steamProfile['response']['players'][0]['avatarmedium'] ?? 'https://via.placeholder.com/64';
-        $realSteamID64 = $steamProfile['response']['players'][0]['steamid'] ?? (string)$steamid64; // Используем SteamID64 из ответа
+foreach ($steamIdChunks as $chunk) {
+    $steamUrl = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=$apiKey&steamids=" . implode(',', $chunk);
+    $steamData = @file_get_contents($steamUrl);
+    $steamProfiles = $steamData ? json_decode($steamData, true) : null;
 
-        $result[] = [
-            'rank' => $index + 1,
-            'steamid' => $realSteamID64, // Реальный SteamID64 от Steam API
-            'name' => $playerName,
-            'avatar' => $avatarUrl,
-            'rating' => $rating
-        ];
+    if (isset($steamProfiles['response']['players'])) {
+        foreach ($steamProfiles['response']['players'] as $profile) {
+            $steamId = $profile['steamid'];
+            $profilesCache[$steamId] = [
+                'steamid' => $steamId,
+                'name' => $profile['personaname'] ?? 'Неизвестно',
+                'avatar' => $profile['avatarmedium'] ?? 'https://via.placeholder.com/64'
+            ];
+        }
     }
 }
 
+$result = [];
+foreach ($players as $steamId => $player) {
+    $result[] = [
+        'rank' => count($result) + 1,
+        'steamid' => $steamId,
+        'rating' => $player['rating'],
+        'name' => $profilesCache[$steamId]['name'] ?? 'Неизвестно',
+        'avatar' => $profilesCache[$steamId]['avatar'] ?? 'https://via.placeholder.com/64'
+    ];
+}
+
+usort($result, function($a, $b) {
+    return $b['rating'] - $a['rating'];
+});
+foreach ($result as $index => &$player) {
+    $player['rank'] = $index + 1;
+}
+
 file_put_contents('leaderboard.json', json_encode($result, JSON_PRETTY_PRINT));
+file_put_contents($cacheFile, json_encode($profilesCache, JSON_PRETTY_PRINT));
 ?>
