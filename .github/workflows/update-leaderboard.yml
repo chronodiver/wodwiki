@@ -2,8 +2,8 @@ name: Update Leaderboard
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
+    - cron: '0 */1 * * *' # Каждые 2 часа (00:00, 02:00, 04:00 и т.д.)
+  workflow_dispatch: # Возможность запустить вручную
 
 jobs:
   build:
@@ -11,22 +11,26 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.0'
+
       - name: Generate Rating leaderboard
         run: php generate_leaderboard.php
         env:
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+
       - name: Generate Arena leaderboard
         run: php generate_arena_leaderboard.php
         env:
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+
       - name: Commit changes
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add leaderboard.json arena_leaderboard.json
-          git commit -m "Update leaderboards" || echo "No changes to commit"
+          git add leaderboard.json arena_leaderboard.json profiles_cache.json
+          git commit -m "Update leaderboards with profile cache" || echo "No changes to commit"
           git push
