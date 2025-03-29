@@ -19,7 +19,7 @@ foreach ($heroesVotes as $hero) {
     $votes = (int)($hero['votes'] ?? 0);
     $heroName = str_replace('npc_dota_hero_', '', $hero['hero_name'] ?? '');
     if ($votes >= $maxVotes) {
-        continue;
+        continue; // Пропускаем героев с 500,000 голосов
     }
     $result[] = [
         'hero_name' => $heroName,
@@ -28,6 +28,6 @@ foreach ($heroesVotes as $hero) {
     ];
 }
 
-// Сортировка убрана, чтобы сохранить исходный порядок
+// Сортировка убрана, порядок сохраняется как в исходных данных
 file_put_contents('heroes_votes.json', json_encode($result, JSON_PRETTY_PRINT));
 ?>
