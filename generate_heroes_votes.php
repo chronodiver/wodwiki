@@ -1,6 +1,6 @@
 <?php
 $votesUrl = 'https://data.worldofdota.net/data/get_heroes_votes.php';
-$maxVotes = 500000; // Максимум голосов
+$maxVotes = 500000;
 
 $votesData = @file_get_contents($votesUrl);
 if ($votesData === false) {
@@ -17,13 +17,10 @@ if ($heroesVotes === null) {
 $result = [];
 foreach ($heroesVotes as $hero) {
     $votes = (int)($hero['votes'] ?? 0);
-    $heroName = str_replace('npc_dota_hero_', '', $hero['hero_name'] ?? ''); // Убираем префикс
-
-    // Пропускаем героев с 500,000 голосов
+    $heroName = str_replace('npc_dota_hero_', '', $hero['hero_name'] ?? '');
     if ($votes >= $maxVotes) {
         continue;
     }
-
     $result[] = [
         'hero_name' => $heroName,
         'votes' => $votes,
@@ -31,10 +28,6 @@ foreach ($heroesVotes as $hero) {
     ];
 }
 
-// Сортируем по убыванию голосов (опционально)
-usort($result, function($a, $b) {
-    return $b['votes'] - $a['votes'];
-});
-
+// Сортировка убрана, чтобы сохранить исходный порядок
 file_put_contents('heroes_votes.json', json_encode($result, JSON_PRETTY_PRINT));
 ?>
