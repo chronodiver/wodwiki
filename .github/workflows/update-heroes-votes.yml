@@ -1,0 +1,29 @@
+name: Update Heroes Votes
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Каждые час (00:00, 01:00, 02:00 и т.д. по UTC)
+  workflow_dispatch: # Возможность запустить вручную
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+
+      - name: Generate Heroes Votes
+        run: php generate_heroes_votes.php
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add heroes_votes.json
+          git commit -m "Update heroes votes" || echo "No changes to commit"
+          git push
