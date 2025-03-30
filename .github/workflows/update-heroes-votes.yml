@@ -24,9 +24,9 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git stash push -m "Temp stash for heroes votes update"
+          git stash push -m "Temp stash for heroes votes update" || echo "No changes to stash"
           git pull origin main
-          git stash pop
+          git stash pop || true  # Игнорируем ошибку, если нет сохранённых изменений
           git add heroes_votes.json
           git commit -m "Update heroes votes" || echo "No changes to commit"
           git push
