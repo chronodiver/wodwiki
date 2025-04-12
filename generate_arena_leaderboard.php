@@ -5,7 +5,13 @@ $arenaUrl = 'https://data.worldofdota.net/data/get_top_rating_pve_arena.php';
 $arenaData = file_get_contents($arenaUrl);
 $arenaPlayers = json_decode($arenaData, true);
 
-$result = ['1' => [], '2' => [], '3' => []];
+// Устанавливаем московский часовой пояс
+date_default_timezone_set('Europe/Moscow');
+
+$result = [
+    'last_updated' => date('Y-m-d H:i:s'), // Время в MSK
+    'tabs' => ['1' => [], '2' => [], '3' => []]
+];
 
 if (is_array($arenaPlayers)) {
     foreach (['1', '2', '3'] as $key) {
@@ -58,7 +64,7 @@ if (is_array($arenaPlayers)) {
                     }
                 }
 
-                $result[$tab][] = [
+                $result['tabs'][$tab][] = [
                     'wave_count' => (int)$waveCount,
                     'players' => $playerData
                 ];
@@ -66,7 +72,7 @@ if (is_array($arenaPlayers)) {
         }
     }
 
-    foreach ($result as $tab => &$entries) {
+    foreach ($result['tabs'] as $tab => &$entries) {
         usort($entries, function($a, $b) { return $b['wave_count'] - $a['wave_count']; });
         foreach ($entries as $index => &$entry) {
             $entry['rank'] = $index + 1;
