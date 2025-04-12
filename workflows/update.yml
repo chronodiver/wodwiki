@@ -1,0 +1,27 @@
+# .github/workflows/update.yml
+name: Update Online JSON
+
+on:
+  schedule:
+    - cron: "*/10 * * * *" # каждые 5 минут
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Fetch online data
+        run: |
+          curl -s https://www.customgamestats.com/api/game/2880603428/summary \
+          | jq '{ now_players: .now_players, updated_at: now | todate }' > data.json
+
+      - name: Commit and Push
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add data.json
+          git commit -m "Update data" || echo "No changes"
+          git push
