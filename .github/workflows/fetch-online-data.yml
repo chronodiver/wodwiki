@@ -2,35 +2,26 @@ name: Fetch Online Data
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # каждые 10 минут
-  workflow_dispatch:
+    - cron: '*/10 * * * *'  # Запускать каждую 10-ю минуту
+  workflow_dispatch:  # Для запуска вручную через GitHub Actions
 
 jobs:
-  fetch_online:
+  fetch_online_data:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
       - name: Install dependencies
         run: |
-          npm install
-
-      - name: Install dependencies for Puppeteer
-        run: |
           sudo apt-get update
-          sudo apt-get install -y wget curl libxss1 libappindicator3-1 libindicator7
+          sudo apt-get install -y curl jq
 
       - name: Fetch Online Data
         run: |
+          # Создаем файл fetchOnline.js с единственным импортом
           echo 'const puppeteer = require("puppeteer");' > fetchOnline.js
-          echo 'const puppeteer = require("puppeteer");' >> fetchOnline.js
           echo 'async function fetchOnline() {' >> fetchOnline.js
           echo '  const browser = await puppeteer.launch({ args: ["--no-sandbox", "--disable-setuid-sandbox"] });' >> fetchOnline.js
           echo '  const page = await browser.newPage();' >> fetchOnline.js
@@ -40,3 +31,9 @@ jobs:
           echo '  console.log(JSON.stringify({ now_players: online, updated_at: updatedAt }));' >> fetchOnline.js
           echo '  await browser.close();' >> fetchOnline.js
           node fetchOnline.js > data.json
+          
+      - name: Upload Data JSON
+        uses: actions/upload-artifact@v2
+        with:
+          name: online-data
+          path: data.json
