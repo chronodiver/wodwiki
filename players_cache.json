@@ -1,4 +1,1757 @@
 {
-  "players": {},
-  "last_updated": "2025-04-13T00:00:00"
+    "players": {
+        "76561198048135503": {
+            "name": "\u0424\u0430\u0439\u043d\u0438\u0439 \u041c\u0430\u043b\u0430\u0445\u0456\u0442",
+            "avatar": "https:\/\/avatars.steamstatic.com\/624eec788684245ba1b4022922f1ea758e0cf962_medium.jpg"
+        },
+        "76561198307203378": {
+            "name": "\u0437\u0434\u043e\u0440\u043e\u0432\u0430 \u0437\u0430\u0435\u0431\u0430\u043b",
+            "avatar": "https:\/\/avatars.steamstatic.com\/79b03fa337c3e29d48191aab151b07b22484e06b_medium.jpg"
+        },
+        "76561198306211359": {
+            "name": "\u0434\u0440\u0438\u043f\u0432\u043e\u0434\u04304",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1eb62c28f39149e39c7b1c5a83af89df5be5efa1_medium.jpg"
+        },
+        "76561198072826999": {
+            "name": "aggressive_leech",
+            "avatar": "https:\/\/avatars.steamstatic.com\/950f9f3147d4c8530a5072825d01c34ee3f1afa1_medium.jpg"
+        },
+        "76561198081461256": {
+            "name": "\u0432\u044b \u0445\u0443\u0435\u0441\u043e\u0441\u044b",
+            "avatar": "https:\/\/avatars.steamstatic.com\/4ab3db0761bdfb0b02c32de00e0924e1270cf81a_medium.jpg"
+        },
+        "76561198834372251": {
+            "name": "\u0410\u0440\u0438\u043e\u0445",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198062942381": {
+            "name": "Epicurus (341\u2013270 BC)",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b7e2fba7ba2677c40ff9c71a8ad9d96df5edc36a_medium.jpg"
+        },
+        "76561198299015571": {
+            "name": "Ursulus",
+            "avatar": "https:\/\/avatars.steamstatic.com\/00dd22566c110728b718762b572f5e9d8cc3a23f_medium.jpg"
+        },
+        "76561198900696228": {
+            "name": "StarCourge",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cbb5effefae90a7b340d4a37c6b0c84e959c3e62_medium.jpg"
+        },
+        "76561198065851519": {
+            "name": "\u041f\u0415\u041f\u041b\u041e\u0411\u041e\u0419\u2665",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d143f0bc1dd41ff2aead0d2c79e1de958021aaeb_medium.jpg"
+        },
+        "76561198070524719": {
+            "name": "Night",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9da07086e001c4f2a18d450212da1b68a1220576_medium.jpg"
+        },
+        "76561198870629911": {
+            "name": "\u0421\u043e\u0432\u0430\u0410\u043b\u0435\u0439\u043a\u0443\u043c",
+            "avatar": "https:\/\/avatars.steamstatic.com\/2a9b79ec9c9e970ee4d99e4ee8c0342d52a4d9a7_medium.jpg"
+        },
+        "76561199817538681": {
+            "name": "Baxmyt",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199552871748": {
+            "name": "\u0441\u0432\u0438\u043d\u043e\u0442\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cd74fc3cb7a8051d134b95edcd310e0d420b8a72_medium.jpg"
+        },
+        "76561198851566071": {
+            "name": "L1mco",
+            "avatar": "https:\/\/avatars.steamstatic.com\/290764676dea90ec5e85d552cf5fbf7de0aab2c4_medium.jpg"
+        },
+        "76561198127099412": {
+            "name": "\u0441\u0430\u0442\u043e\u0440\u0443 \u0433\u043e\u0434\u0436\u0443",
+            "avatar": "https:\/\/avatars.steamstatic.com\/13e327cf1a865c31e4a3c27bd0d79dbe3b392a69_medium.jpg"
+        },
+        "76561198112917038": {
+            "name": "KJIEOPIK",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198056727743": {
+            "name": "\u0442\u0435\u043b\u0435\u0433\u0430 \u0435\u0431\u0430\u043d\u0430\u044f",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b322482201862af0eb4f111c762d1a7e812b8560_medium.jpg"
+        },
+        "76561198365772082": {
+            "name": "123",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198076709345": {
+            "name": "kirill.ulyanov",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f5305dbffc8e534a75532962762efe0e2dbe7c84_medium.jpg"
+        },
+        "76561198332304479": {
+            "name": "\u041d\u0435 \u0437\u043b\u0438 \u043c\u0435\u043d\u044f (\u041f\u0420\u041e\u0412\u0410\u041b)",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f9195a0fd186685989cd7d9481bf2538c226dc46_medium.jpg"
+        },
+        "76561199211464899": {
+            "name": "\u041f\u0440\u0430\u0445 \u0421\u043e\u0431\u0430\u043a\u0438",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b93f04b9194fba8980a2dc74947d47d0087ba113_medium.jpg"
+        },
+        "76561199436485091": {
+            "name": "Me Mori",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f699d3bb5985a8f6eac6726bfe0b07f03728e70e_medium.jpg"
+        },
+        "76561199088644351": {
+            "name": "\u0422\u0430\u043c\u043f\u043e\u043d",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c7b901daf79c4cd4666eca1d1a8eb07f00230446_medium.jpg"
+        },
+        "76561199262430422": {
+            "name": "\u0412s\u0415 \u0423\u043c\u0420u\u0422 @ \u042f \u0433R\u0435\u0419\u0444R\u0443\u0422",
+            "avatar": "https:\/\/avatars.steamstatic.com\/4031c60b0b4f35db3556f77688d5745fb2b62d64_medium.jpg"
+        },
+        "76561199003036313": {
+            "name": "tv\/goldenpig42",
+            "avatar": "https:\/\/avatars.steamstatic.com\/197b216d0bc0424981342a42f32991cfa94ea29f_medium.jpg"
+        },
+        "76561198046996468": {
+            "name": "Set",
+            "avatar": "https:\/\/avatars.steamstatic.com\/71901004b276026f74ee7f559e048f8793c9c655_medium.jpg"
+        },
+        "76561198344335376": {
+            "name": "Govnetso",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d1574ebf1babe4a280713cb9d7440c83b00015ef_medium.jpg"
+        },
+        "76561198190315389": {
+            "name": "\u0415\u0437\u0434\u043e\u043a \u043a\u0443\u043a\u0443\u0445\u043e\u0439",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5b5e7fe11f5e35e36d9a1aef89cdf55819a5aaeb_medium.jpg"
+        },
+        "76561199013801460": {
+            "name": "\u0443\u043c\u043d\u0438\u0439\u0432\u0433\u043e\u0440\u0443\u043d\u0435\u043f\u043e\u0439\u0434\u043e\u0442\u0443\u043c\u043d\u0438\u0439\u0433\u043e\u0440\u0443\u043e\u0431\u043e",
+            "avatar": "https:\/\/avatars.steamstatic.com\/de1077a2ab100a4a14de29cdfcb61760361f5ba0_medium.jpg"
+        },
+        "76561199711636332": {
+            "name": "\u042f \u041c\u0430\u043a\u0422\u0440\u0430\u0445\u0435\u0440",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b97a3ef774367659889666b7e4ab8c4f48374358_medium.jpg"
+        },
+        "76561198327795406": {
+            "name": "yilo",
+            "avatar": "https:\/\/avatars.steamstatic.com\/0844755a6df42b44e7b4fc7ef332c17e0e114aca_medium.jpg"
+        },
+        "76561198399703076": {
+            "name": "AntiTERROR",
+            "avatar": "https:\/\/avatars.steamstatic.com\/0ce3c39d6244363b9d29ab6f121c2bd08fb924bf_medium.jpg"
+        },
+        "76561198309497935": {
+            "name": "\u0421\u0435\u0440\u0435\u0436\u0430 \u0442\u0440\u043e\u0439\u043d\u0438\u043a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a715bc80b3fdc25b9f85b83f6adf3a239584c51a_medium.jpg"
+        },
+        "76561198117928870": {
+            "name": "rankandell",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d4a1718526f97749da95e0b1e5dc55dfa4bb8a4f_medium.jpg"
+        },
+        "76561198141653537": {
+            "name": "\u0414\u0420\u0423\u0416\u0418\u0429\u0415!",
+            "avatar": "https:\/\/avatars.steamstatic.com\/6d74ac2da795305043bdd63a381cef0d3129230d_medium.jpg"
+        },
+        "76561198198996993": {
+            "name": "Death-",
+            "avatar": "https:\/\/avatars.steamstatic.com\/0e0fa301e0cca986cec33e8257990e4ff3c88158_medium.jpg"
+        },
+        "76561198137725123": {
+            "name": "Cheka",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5fdb9b04e7fb4d20eff0c1ec2af5766fe23def55_medium.jpg"
+        },
+        "76561198372138079": {
+            "name": "\u041f4NKYXA<3",
+            "avatar": "https:\/\/avatars.steamstatic.com\/e6f0f5a4e04e7d92e4f879efcf77fc91f87bd5e4_medium.jpg"
+        },
+        "76561198058982298": {
+            "name": "Irsuike<>3",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a0182535183721a92a2981490b7ff554796386af_medium.jpg"
+        },
+        "76561199587287344": {
+            "name": "Kisa lost interest in with me",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c8d3923bd9496d18a90f76d732afd0b06d1dcd99_medium.jpg"
+        },
+        "76561197999122457": {
+            "name": "SmoG",
+            "avatar": "https:\/\/avatars.steamstatic.com\/556d78a5cebd9e92e13ec82158161114757cb84e_medium.jpg"
+        },
+        "76561198348189575": {
+            "name": "iferus",
+            "avatar": "https:\/\/avatars.steamstatic.com\/8ba7af1f080728e37e453a82a8723343c5ff9bca_medium.jpg"
+        },
+        "76561198084133000": {
+            "name": "yung conor",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ecf47e8566f655167913a6e9567c2fa36d9adf28_medium.jpg"
+        },
+        "76561198993848120": {
+            "name": "yuqi",
+            "avatar": "https:\/\/avatars.steamstatic.com\/910b849e50ee271d8edcff7661bdf2c1fc4dcedb_medium.jpg"
+        },
+        "76561198244247688": {
+            "name": "\u0414\u0436\u043e\u043a\u0435\u0440\u0433\u0435",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1407aff58c65d6aca89e246532d0f3465f722654_medium.jpg"
+        },
+        "76561198217600341": {
+            "name": "Armando",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198147399459": {
+            "name": "PC VS Computer",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c2fee68b88d71fc6300e4a779cb6d8ed141f7926_medium.jpg"
+        },
+        "76561199379445667": {
+            "name": "Morgalka",
+            "avatar": "https:\/\/avatars.steamstatic.com\/416b9d9417f978edefcc1b2d29293e40579df662_medium.jpg"
+        },
+        "76561198120816090": {
+            "name": "Kataev",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199698707296": {
+            "name": "sabiruh911",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198107387566": {
+            "name": "Drink Vodka and...",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f2ee7599a2c4f9889d4fa4b798c3a7f4085fb180_medium.jpg"
+        },
+        "76561197988769629": {
+            "name": "SourBraun",
+            "avatar": "https:\/\/avatars.steamstatic.com\/e637424e1f5c24a0f712cd1773dbb9fc1200bf91_medium.jpg"
+        },
+        "76561198081676260": {
+            "name": "Power",
+            "avatar": "https:\/\/avatars.steamstatic.com\/17076a9e3c07353e414f45288fd937a69cdc2434_medium.jpg"
+        },
+        "76561198271235428": {
+            "name": "SilentKorjick",
+            "avatar": "https:\/\/avatars.steamstatic.com\/7e61f1e2c76a58406d1c360a9ac871a6350a9523_medium.jpg"
+        },
+        "76561199130067608": {
+            "name": "judah iscariot",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cc1f633d3cc5348f5b1ca87d3fb8849881a77d5f_medium.jpg"
+        },
+        "76561199194758741": {
+            "name": "\u0413\u0430\u0440\u0438\u043a \u0425\u0430\u0440\u043b\u0430\u043c\u043e\u0432",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5c995b950a4f0f37955dc62ff69b5418612a413a_medium.jpg"
+        },
+        "76561198960392006": {
+            "name": "1NFERN0",
+            "avatar": "https:\/\/avatars.steamstatic.com\/57ff4dca805321e100b2586a914cf1b5af72fe33_medium.jpg"
+        },
+        "76561198084113697": {
+            "name": "Sh3rshen`",
+            "avatar": "https:\/\/avatars.steamstatic.com\/4067feea4dae1a5427f54e0986460dba4d63070f_medium.jpg"
+        },
+        "76561198084106894": {
+            "name": "sooqa",
+            "avatar": "https:\/\/avatars.steamstatic.com\/779ef4a579fdcf8c33be2373963b4a356c9959fe_medium.jpg"
+        },
+        "76561198422173189": {
+            "name": "Guhr",
+            "avatar": "https:\/\/avatars.steamstatic.com\/6a991cedbf9caf7e0dfd32c5f17f13820c818bf8_medium.jpg"
+        },
+        "76561198323931810": {
+            "name": "Red\u0411\u0443\u043b\u044c",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b2a734431d40a6c110b7c09b1b3b65ad5819c79f_medium.jpg"
+        },
+        "76561198851299515": {
+            "name": "\u0445\u043e\u0433 2.6",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a3d702ee9b7a3db118ab125933684bbccc27d58b_medium.jpg"
+        },
+        "76561198865550285": {
+            "name": "\u041c\u0430xxxymiron",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b967bdbe79e5b224e81411f3a328096b4e8a65db_medium.jpg"
+        },
+        "76561199223593669": {
+            "name": "\u0413\u0435\u043d\u0430 \u0426\u0438\u0434\u0436\u0438\u0434\u043e\u0432",
+            "avatar": "https:\/\/avatars.steamstatic.com\/abec50632411b339cc8f2ca9fa299ea5f050bbd0_medium.jpg"
+        },
+        "76561198305252131": {
+            "name": "MuraL",
+            "avatar": "https:\/\/avatars.steamstatic.com\/8626d64dff828991917a7bc55b4b46a4b48c70bb_medium.jpg"
+        },
+        "76561199548605050": {
+            "name": "RhastaNoob",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ea7210e9427bf0fafa6d73cd1c572e67a8a99da2_medium.jpg"
+        },
+        "76561199394964453": {
+            "name": "TheDest",
+            "avatar": "https:\/\/avatars.steamstatic.com\/bcb390288131b9d60abeca3ea1913ed06e919e5d_medium.jpg"
+        },
+        "76561199836852277": {
+            "name": "flex1blexxl",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198123765105": {
+            "name": "I'm on",
+            "avatar": "https:\/\/avatars.steamstatic.com\/16b0fc0dadf1e0c6ed17cb322070171316f508db_medium.jpg"
+        },
+        "76561198799397943": {
+            "name": "hotel-08",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199222644917": {
+            "name": "Yutorii|emo",
+            "avatar": "https:\/\/avatars.steamstatic.com\/de7aed4299406a52b01b0fc087ec5eb1d380b7e7_medium.jpg"
+        },
+        "76561198016269999": {
+            "name": "Obi-Wan Kenobi",
+            "avatar": "https:\/\/avatars.steamstatic.com\/45aa213e082a773d801ca130dc2afa8df079c69a_medium.jpg"
+        },
+        "76561198083681145": {
+            "name": "\u041b\u0438\u0442\u0440",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a8e91e2296e112d1f7a3f4cde2d60f60bb6ced0d_medium.jpg"
+        },
+        "76561198082144172": {
+            "name": "toha sadness",
+            "avatar": "https:\/\/avatars.steamstatic.com\/3f5e9daea59216d7fe13df4e031d3537580e5e21_medium.jpg"
+        },
+        "76561198194633783": {
+            "name": "Tinkerino",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5edff0d9e3ab7ebe406eaf1feb0aa4cd52af1f0a_medium.jpg"
+        },
+        "76561198110758633": {
+            "name": "2121",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c898c68b2d7bbf65c7ebe50c301ee7d74c2a477b_medium.jpg"
+        },
+        "76561198086448812": {
+            "name": "\u041f\u043e\u0432\u0438\u0434\u043b\u043e",
+            "avatar": "https:\/\/avatars.steamstatic.com\/07af34e2228abcc41777e34a34a9fbabfcd9fa52_medium.jpg"
+        },
+        "76561199024770543": {
+            "name": "\u0441\u043d\u0443\u043f\u0435\u0440",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198033233256": {
+            "name": "George W. Pudge",
+            "avatar": "https:\/\/avatars.steamstatic.com\/7b2ec0ce699eabc2de8f756dd45b0da7733270ba_medium.jpg"
+        },
+        "76561198982204291": {
+            "name": "Endymion",
+            "avatar": "https:\/\/avatars.steamstatic.com\/56a62b5769ce63ee5966d881d9b7af9dff7d13f4_medium.jpg"
+        },
+        "76561198203111156": {
+            "name": "\u041d\u0430\u0434\u043f\u0438\u0441\u044c \u043d\u0430 \u043a\u0443\u0440\u0442\u043e\u0447",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cb009b3ac2aca54a00c0a3c1715c126719514389_medium.jpg"
+        },
+        "76561198288946848": {
+            "name": "n7",
+            "avatar": "https:\/\/avatars.steamstatic.com\/2b2e223425ab592edbef855e3e337ecaf820d6bf_medium.jpg"
+        },
+        "76561198317144448": {
+            "name": "\u0421\u043e \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c\u044e \u043a\u043e\u0431\u0440",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1e3403863ad560f421a2608f82205b9d659a4147_medium.jpg"
+        },
+        "76561198065620014": {
+            "name": "Uspento patronum",
+            "avatar": "https:\/\/avatars.steamstatic.com\/859e38388d2107963710d74fa31e9e521de54df3_medium.jpg"
+        },
+        "76561198275005748": {
+            "name": "\u30e2\u30f3\u30b9\u30bf\u30fc",
+            "avatar": "https:\/\/avatars.steamstatic.com\/0547e5c80eedd8ab88c6203436149db66415a78d_medium.jpg"
+        },
+        "76561198134991371": {
+            "name": "Remark",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1ed6e68c35d1e33b3ac245022161983ad51bf356_medium.jpg"
+        },
+        "76561198310204494": {
+            "name": "Ameedou",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fea3c9744e929ceeddcf2802801e10a70125e79b_medium.jpg"
+        },
+        "76561199440867614": {
+            "name": "ratnikveka",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198281519396": {
+            "name": "\u0421\u041a\u0423\u0424\u0418\u041a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/210b4eea7a37bdd5a2cd0f7e0ba2b3cc9e539815_medium.jpg"
+        },
+        "76561198213158175": {
+            "name": "EntWeR",
+            "avatar": "https:\/\/avatars.steamstatic.com\/28f78450309db548f23f6061866438d2e34e78e8_medium.jpg"
+        },
+        "76561198153729074": {
+            "name": "np",
+            "avatar": "https:\/\/avatars.steamstatic.com\/599c07a8005eca1d6294e65424ea31a2d80f693a_medium.jpg"
+        },
+        "76561198073962945": {
+            "name": "Batistuta_love",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b79842a851ddccf4ab96b4bbaf0016453830985c_medium.jpg"
+        },
+        "76561198200811623": {
+            "name": "Satoru Gojo",
+            "avatar": "https:\/\/avatars.steamstatic.com\/3f0acdb64d9828777c9f8bc3ce4e615b9dfa3f15_medium.jpg"
+        },
+        "76561198112997480": {
+            "name": "kerrusha4",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cdd13fe8eb6246f2132ef15a3f11058d6e9dc688_medium.jpg"
+        },
+        "76561198063389487": {
+            "name": "error",
+            "avatar": "https:\/\/avatars.steamstatic.com\/90d5d01d0213907dad3ed5f0f640db13e136fafa_medium.jpg"
+        },
+        "76561198830328466": {
+            "name": "\u0430\u0434\u0436\u0430\u0440\u0430\u0433\u0443\u0434\u0436\u0443",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c1ef6b924c5761986f38b1f576b73928f43cd4a6_medium.jpg"
+        },
+        "76561197995250090": {
+            "name": "ZyXeL",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b0ace84d10b309fe56d952fdf79fb818c52ea46b_medium.jpg"
+        },
+        "76561199126596675": {
+            "name": "\u0421\u043b\u0430\u0434\u043a\u0430\u044f \u0411\u0443\u043b\u043e\u0447\u043a\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199091216154": {
+            "name": "\u0427\u0418\u041f",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198436522943": {
+            "name": "\u03b1\u03c3\u03ae\u03bc\u03b9",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cc65b2e51c12c364fdb62d61b2232e804b4c789a_medium.jpg"
+        },
+        "76561198280872441": {
+            "name": "\u0431\u0438\u043b\u0434 \u0447\u0435\u0440\u0435\u0437 \u043d\u0438\u0449\u0435\u0442\u0443",
+            "avatar": "https:\/\/avatars.steamstatic.com\/878cc425fc384bd91f6d6c7755d1a55af76d775b_medium.jpg"
+        },
+        "76561199215504505": {
+            "name": "\u0412\u043e\u043b\u043a \u0441 \u043b\u0443\u0437 \u0441\u0442\u0440\u0438\u043a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/7da7f8e06cbdbcafa9258a02dbd134c339e3f054_medium.jpg"
+        },
+        "76561197965142607": {
+            "name": "lega",
+            "avatar": "https:\/\/avatars.steamstatic.com\/37be858427e1712872870af16472698487cef99a_medium.jpg"
+        },
+        "76561199160539815": {
+            "name": "\u041f\u043e\u0434\u043e\u043d\u043e\u043a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/999ced656cd337768c909b35193cda4b48c493d0_medium.jpg"
+        },
+        "76561198088603498": {
+            "name": "Str_Lion",
+            "avatar": "https:\/\/avatars.steamstatic.com\/218af1d409b151fe6851af7f09fd20d20713f699_medium.jpg"
+        },
+        "76561198206282244": {
+            "name": "Wulf",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ecb854cbd88f897d89cc897194bba0f27fcfccec_medium.jpg"
+        },
+        "76561198168716241": {
+            "name": "Fisher",
+            "avatar": "https:\/\/avatars.steamstatic.com\/7c3990e5acb719159cfd8d332bf8785b482d3861_medium.jpg"
+        },
+        "76561199232945717": {
+            "name": "I love boobs",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1dd0bf56b426aee0b87e74bc8cb0433e2f9c476b_medium.jpg"
+        },
+        "76561198989489209": {
+            "name": "\u041e\u043c\u0441\u043a\u0438\u0439 \u043f\u0430\u0440\u0435\u043d\u044c",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ccc67f922a1421ae88eae75ab51d8c9ff97780a2_medium.jpg"
+        },
+        "76561198036633776": {
+            "name": "\u0412\u044f\u043b\u044b\u0439\u041e\u0433\u0443\u0440\u0435\u0446",
+            "avatar": "https:\/\/avatars.steamstatic.com\/3a383b6aaf33df9c50773e645cc6d34fa088556a_medium.jpg"
+        },
+        "76561198109668523": {
+            "name": "\u0412\u044b \u0432 \u0441\u043a\u0440\u044b\u0442\u043e\u043c \u043f\u0443\u043b\u0435",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9ab854c23ad39c58c4a0dcb78a9104a2cd9691d4_medium.jpg"
+        },
+        "76561199083778475": {
+            "name": "\u0421\u0442\u0438\u0432\u0438 \u0411\u043b\u043e\u0443\u0434\u0436\u043e\u0431\u0441",
+            "avatar": "https:\/\/avatars.steamstatic.com\/762730a5fb8e2425ae707fc04c209882abece8fa_medium.jpg"
+        },
+        "76561199211003625": {
+            "name": "hunter",
+            "avatar": "https:\/\/avatars.steamstatic.com\/738345e90541ec9e092fdad6321ae639eed49e4b_medium.jpg"
+        },
+        "76561199069847727": {
+            "name": "\u0410\u0440\u0430\u0445\u043d\u043e\u0411\u044b\u0434\u043b\u043e",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ad06b81840746039f02c2d46b9ed228268e34e12_medium.jpg"
+        },
+        "76561198093839447": {
+            "name": "Gutter #5064557664",
+            "avatar": "https:\/\/avatars.steamstatic.com\/945d91b3db4a4537abbb259d473c3e3ba39c228a_medium.jpg"
+        },
+        "76561198361067169": {
+            "name": ".tv\/ArTi_Moor",
+            "avatar": "https:\/\/avatars.steamstatic.com\/71e776f395e4596688f9e9263229f34a527288cc_medium.jpg"
+        },
+        "76561198307511127": {
+            "name": "\u0427\u0438\u043f\u0438-\u0447\u0438\u043f\u0438",
+            "avatar": "https:\/\/avatars.steamstatic.com\/840c3970f5b4c73c0f2038d910c4e75263de622b_medium.jpg"
+        },
+        "76561199104219277": {
+            "name": "08tears",
+            "avatar": "https:\/\/avatars.steamstatic.com\/e842efa3a2d96e636f6c68a161e6ccfc2639093f_medium.jpg"
+        },
+        "76561199446516613": {
+            "name": "\u044f \u0443\u0440\u043e\u0434",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ec0cd9828772a83437e5694e26f56b038dc55b0b_medium.jpg"
+        },
+        "76561199132619453": {
+            "name": "\u0410\u043d\u0433\u0438\u043d\u0430 \u0412\u0430\u043b\u0435\u0440\u044b",
+            "avatar": "https:\/\/avatars.steamstatic.com\/77599746eae4bf39896b5718068ca9b0fc0754e8_medium.jpg"
+        },
+        "76561198196518549": {
+            "name": "\u0412\u043e\u043b\u0442\u0435\u0440 \u0411\u0435\u043b\u044b\u0439",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b92c4bb48ce2182b9f64262f5d1d1aaba6fcc319_medium.jpg"
+        },
+        "76561198106789866": {
+            "name": "\u0427\u0415\u041c\u041f\u0418\u041e\u041d \u041aASS\u0422\u041e\u041c\u041a\u0418",
+            "avatar": "https:\/\/avatars.steamstatic.com\/7abbbd00d40108c97cf3a5780b5224924c0acd0b_medium.jpg"
+        },
+        "76561199031032750": {
+            "name": "Rom4ikWhite",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9c34dbf3b61a8b5ad5f53e40e6c4c1414d31f095_medium.jpg"
+        },
+        "76561198823411893": {
+            "name": "Mane",
+            "avatar": "https:\/\/avatars.steamstatic.com\/edcce023a8d1bf73eb87dfd1ecb40e20007f6a8e_medium.jpg"
+        },
+        "76561198278958544": {
+            "name": "urdmn",
+            "avatar": "https:\/\/avatars.steamstatic.com\/dfcddbdb2dbaced6ee0478dcf6f32fb3c462c647_medium.jpg"
+        },
+        "76561198038225142": {
+            "name": "ASMAXI",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b694c808a04b908e1ad70c2a17683a61ffc971be_medium.jpg"
+        },
+        "76561199538443679": {
+            "name": "looking at midasdick",
+            "avatar": "https:\/\/avatars.steamstatic.com\/91f2822b92f99b8df0792830782c24508a8dc0ce_medium.jpg"
+        },
+        "76561198362541660": {
+            "name": "\u0422\u043e\u043f\u0438-\u0442\u043e\u043f\u0438",
+            "avatar": "https:\/\/avatars.steamstatic.com\/acaf394e8ab6fa41bddc6d8b54237a748867c945_medium.jpg"
+        },
+        "76561198119891634": {
+            "name": "\u0414\u0435\u043d\u0438\u0447",
+            "avatar": "https:\/\/avatars.steamstatic.com\/20b0308caed15e182b43d9a6a7af42a167981ed2_medium.jpg"
+        },
+        "76561198991388366": {
+            "name": "\u0421\u0401\u041c\u0410",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d3d35da8859156ef63ef51f1ede3d5307abc7dcf_medium.jpg"
+        },
+        "76561199043611976": {
+            "name": "\u0448\u0435\u0444",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1ca31a3056c86d26212544f6236ca6c3cdc82eb6_medium.jpg"
+        },
+        "76561198158903991": {
+            "name": "\ua9c1\u0f12\u262cShiny\u262c\u0f12\ua9c2",
+            "avatar": "https:\/\/avatars.steamstatic.com\/7973fa576e28063774f08c70d9081dc874a478d6_medium.jpg"
+        },
+        "76561198017118187": {
+            "name": "[\u0414\u043d\u0438\u043d\u0430\u2122]Daymarus",
+            "avatar": "https:\/\/avatars.steamstatic.com\/0a65120260ea3613a182e50843919516c363ce49_medium.jpg"
+        },
+        "76561198008836409": {
+            "name": "FlyDubai",
+            "avatar": "https:\/\/avatars.steamstatic.com\/3ce6a7f2f28119d43680a7745381231900c0724b_medium.jpg"
+        },
+        "76561198144037103": {
+            "name": "\u0437\u0440\u044f \u0432\u044b \u043c\u0435\u043d\u044f \u0435\u0431\u0430\u043b\u0438",
+            "avatar": "https:\/\/avatars.steamstatic.com\/845cec562c0fd42215e4fd4fcb32e7bbb2e5836f_medium.jpg"
+        },
+        "76561198077126726": {
+            "name": "YT\/@shidorobi",
+            "avatar": "https:\/\/avatars.steamstatic.com\/7b77b5b364ff93c17337fa711b5a834293a142e6_medium.jpg"
+        },
+        "76561198375832675": {
+            "name": "Ryou",
+            "avatar": "https:\/\/avatars.steamstatic.com\/368f62ee4050326091bef4ab9df8316e4fc261af_medium.jpg"
+        },
+        "76561199672374071": {
+            "name": "sangellix",
+            "avatar": "https:\/\/avatars.steamstatic.com\/08746f16ce8faabf74fc63f587ea1d2364ca36a1_medium.jpg"
+        },
+        "76561198074041629": {
+            "name": "Spartanec",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b01274574c0e2b5b302250ade7f7454d65b40a9d_medium.jpg"
+        },
+        "76561199010837006": {
+            "name": "jykito",
+            "avatar": "https:\/\/avatars.steamstatic.com\/852f99527bdca5bd45a1badb891609b79347ea44_medium.jpg"
+        },
+        "76561199428942656": {
+            "name": "Noodli",
+            "avatar": "https:\/\/avatars.steamstatic.com\/7c9cdd7a1a0dcb5a42b4b03a4f485c42ec0427ab_medium.jpg"
+        },
+        "76561198840617697": {
+            "name": "TTo4emy4ka",
+            "avatar": "https:\/\/avatars.steamstatic.com\/35a975d2783a95a5d6cfc3874cfc431760dcfc8d_medium.jpg"
+        },
+        "76561199815374704": {
+            "name": "\u0441\u044b\u043d \u0448\u043b\u044e\u0445\u0438",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199550220007": {
+            "name": "Swiftkey",
+            "avatar": "https:\/\/avatars.steamstatic.com\/0e96fd1da4c91017a7c1de980d6361b139e6831d_medium.jpg"
+        },
+        "76561199204576168": {
+            "name": "srtutroul",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ec526227b219a3a67f1c08ebe7bc1da462bca9ac_medium.jpg"
+        },
+        "76561198102106188": {
+            "name": "What's happened.",
+            "avatar": "https:\/\/avatars.steamstatic.com\/2626038d185368a2bd7c65ab51592c8fba4d0a5f_medium.jpg"
+        },
+        "76561198058203965": {
+            "name": "Kendail",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198867649836": {
+            "name": "Elepinro",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ee2f480b017dff08799eaf9eb10333e2edbcd974_medium.jpg"
+        },
+        "76561198296873463": {
+            "name": "Zaid",
+            "avatar": "https:\/\/avatars.steamstatic.com\/43b37b323147bfd12f7ef41a8a9f40cfa384f57e_medium.jpg"
+        },
+        "76561198917418839": {
+            "name": "\ue0daMarzIc\ue0da",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c9e1fe8fe5f43d18ba7ffaa99a28791232035f33_medium.jpg"
+        },
+        "76561198306698047": {
+            "name": "Hamsterere",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199428010514": {
+            "name": "NoLimit",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198130181727": {
+            "name": "\u0422\u043e\u043a\u0438\u0439\u0441\u043a\u0438\u0439 \u0436\u0438\u0433\u0443\u043b\u044c",
+            "avatar": "https:\/\/avatars.steamstatic.com\/83543f57a5ca37ec20b3652106a4718335aaf35e_medium.jpg"
+        },
+        "76561199493893605": {
+            "name": "AraAra",
+            "avatar": "https:\/\/avatars.steamstatic.com\/3f47c3634c822270cbccf23f4cb4fcf2272e23d1_medium.jpg"
+        },
+        "76561199486934350": {
+            "name": "fergyt1992",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199651312538": {
+            "name": "nosyncc",
+            "avatar": "https:\/\/avatars.steamstatic.com\/99d2bed96e04e1a90b1889e66cd605a9dd4d0353_medium.jpg"
+        },
+        "76561198931627060": {
+            "name": "Mikihisa Asakura",
+            "avatar": "https:\/\/avatars.steamstatic.com\/e26f321df6108d2c42a89d908ff16b4e7d5b7640_medium.jpg"
+        },
+        "76561199087221668": {
+            "name": "Gayboy Farti B",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b57759b27227a2ab7af48ef9306e6b3375b1ee21_medium.jpg"
+        },
+        "76561198261575721": {
+            "name": "Bones",
+            "avatar": "https:\/\/avatars.steamstatic.com\/905e79443be93e55772b518e8f81fde1d9b3fcb0_medium.jpg"
+        },
+        "76561198084383781": {
+            "name": "Black Nightcrawler",
+            "avatar": "https:\/\/avatars.steamstatic.com\/eb179367dfe057be2e6847882eef2360e8066f4c_medium.jpg"
+        },
+        "76561199389485489": {
+            "name": "\ud835\udd72\ud835\udd8e\ud835\udd8c\ud835\udd86\ud835\udd6e\ud835\udd8d\ud835\udd86\ud835\udd89",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d80fef947cab1eb09e9d090e3d998ed112ebed5b_medium.jpg"
+        },
+        "76561198156992612": {
+            "name": "fo fun!",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d55074785f65e0a5be49f279ee4a83822160398c_medium.jpg"
+        },
+        "76561198248123700": {
+            "name": "\u0411\u0410\u0422\u042f",
+            "avatar": "https:\/\/avatars.steamstatic.com\/552f6b92f2f61801c33a0e9624e14b05ca4394c8_medium.jpg"
+        },
+        "76561198160782850": {
+            "name": "\u0439\u043e\u0443 \u043a\u0440\u044d\u0448",
+            "avatar": "https:\/\/avatars.steamstatic.com\/496f0f40f6948140d9e9f12c93db03b7cdf7798e_medium.jpg"
+        },
+        "76561199570322997": {
+            "name": "xenujht",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198062180648": {
+            "name": "Timon\u30c6\u30a3\u30e2\u30f3",
+            "avatar": "https:\/\/avatars.steamstatic.com\/552c6109251d07a37fefd1ac9db2fc7718c8449e_medium.jpg"
+        },
+        "76561199013414165": {
+            "name": "sofb",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b1b0ee337b84e5cd86f26c9e67c13aea02e011ca_medium.jpg"
+        },
+        "76561198374479920": {
+            "name": "\u0436\u0443\u0442\u043e\u043a\u043f\u0440\u043e\u043c\u0435",
+            "avatar": "https:\/\/avatars.steamstatic.com\/de4bd541a96cb41c89af7dd18cf124c65036ab1f_medium.jpg"
+        },
+        "76561199080289625": {
+            "name": "\u041a\u0443\u043d\u0438\u043b\u0438\u043d \u0413\u0443\u0441",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a7e7abdf1c78ce9c99e10e501c910182613efdd0_medium.jpg"
+        },
+        "76561199070619094": {
+            "name": "Alezar4ik",
+            "avatar": "https:\/\/avatars.steamstatic.com\/edea68afd57a75255af47916521ba7b4bd0174c1_medium.jpg"
+        },
+        "76561198077808198": {
+            "name": "\u043a\u0430\u0440\u0443\u0441\u0435\u043b\u044c\u043f\u0440\u0438\u0437\u043e\u0432",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b0c4774972b75b624bd0ed841e9dc377a28fb96e_medium.jpg"
+        },
+        "76561198853556163": {
+            "name": "Rambi",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c72fd66d8bd545232dfe7d103e2c67c94d4940e5_medium.jpg"
+        },
+        "76561199122045061": {
+            "name": "Fujitora",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ff430a42dab2c70abb44b29a415f793174093029_medium.jpg"
+        },
+        "76561198263012453": {
+            "name": "MidIzu",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5499d0bad431ee7138320485c6b397c1a8c03920_medium.jpg"
+        },
+        "76561199003193619": {
+            "name": "Eternal Night",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ce7964f8adfef3fd040e4628689beff4761100f6_medium.jpg"
+        },
+        "76561198109412709": {
+            "name": "W1zaRDIK",
+            "avatar": "https:\/\/avatars.steamstatic.com\/17c313fd953a3d6926195649a0656811923a8741_medium.jpg"
+        },
+        "76561199069616420": {
+            "name": "ya",
+            "avatar": "https:\/\/avatars.steamstatic.com\/41b144730af59769808206c43f1ce73a7970082f_medium.jpg"
+        },
+        "76561199406910899": {
+            "name": "\u0414\u0435\u0432\u0441\u0442\u0432\u0435\u043d\u043d\u0438\u043a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c6cd371f2bfa076c761753bfdd418a100b31adea_medium.jpg"
+        },
+        "76561198403221764": {
+            "name": "\u041a\u044b\u0440 \u0421\u043e\u0441\u0438\u0447\u043a\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/17b7dbd2c7c5e18ac6892f9ad5e829bd02e92840_medium.jpg"
+        },
+        "76561198080198616": {
+            "name": "Powder! Go Away",
+            "avatar": "https:\/\/avatars.steamstatic.com\/823a7786ea4009a8b675dff2f8d512da89b00d99_medium.jpg"
+        },
+        "76561198448516455": {
+            "name": "Senderion",
+            "avatar": "https:\/\/avatars.steamstatic.com\/6129a3f474c4a6782044f1ee842a7ad107390af2_medium.jpg"
+        },
+        "76561199001589363": {
+            "name": "Fishman",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c4e62577ed8e92f666adc32f5c85e7a38982edd5_medium.jpg"
+        },
+        "76561199142079993": {
+            "name": "\u0424\u043e\u0442\u043e\u0433\u0440\u0430\u0444",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a5e112840647490b8a36744b09f99c7f54264a4b_medium.jpg"
+        },
+        "76561198987204608": {
+            "name": "TTcux",
+            "avatar": "https:\/\/avatars.steamstatic.com\/82c5d0943996d0eb52ea176c75bfa7ee012dc7c1_medium.jpg"
+        },
+        "76561198027279745": {
+            "name": "glad mj\u00f6lkbud",
+            "avatar": "https:\/\/avatars.steamstatic.com\/23c8a3fe45ed9e65e04ad68eb6f7c75dd36df6d1_medium.jpg"
+        },
+        "76561198788420498": {
+            "name": "Lodout",
+            "avatar": "https:\/\/avatars.steamstatic.com\/8b0504b5c9ae4328cd21d5e524082a057539befc_medium.jpg"
+        },
+        "76561198303715924": {
+            "name": "Abricosss",
+            "avatar": "https:\/\/avatars.steamstatic.com\/35858cef308ef1f79faabb349f9d6463b5d43ec5_medium.jpg"
+        },
+        "76561198116088638": {
+            "name": "Wik1nger",
+            "avatar": "https:\/\/avatars.steamstatic.com\/07a120ca009c483ab89ea5d084968b45a21b000b_medium.jpg"
+        },
+        "76561199131189694": {
+            "name": "\u044f\u0440\u0438\u043a 3-\u0439 \u0432\u0430\u0439\u043f\u0435\u0440\u0440",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f60c58655b55d6b5ad2611e397d5ade3efa92c38_medium.jpg"
+        },
+        "76561198872598984": {
+            "name": "el Korm",
+            "avatar": "https:\/\/avatars.steamstatic.com\/4e3fb04978f458fee0ce7b8708cf495242b00d68_medium.jpg"
+        },
+        "76561198081434458": {
+            "name": "VaBorG1313",
+            "avatar": "https:\/\/avatars.steamstatic.com\/236caf4df5cd405840c6f01ca849e8bd345fb90e_medium.jpg"
+        },
+        "76561198327734516": {
+            "name": "Leon_n",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fb1acc4b0cc9d8b1814a53af9e4be2b169d9c84b_medium.jpg"
+        },
+        "76561198138052677": {
+            "name": "cRiNgE",
+            "avatar": "https:\/\/avatars.steamstatic.com\/639eba4a77e9050c944b5da62ec334cc283c2da6_medium.jpg"
+        },
+        "76561198326371174": {
+            "name": "\u0416\u0438\u0433\u0430\u043d-\u041b\u0438\u043c\u043e\u043d",
+            "avatar": "https:\/\/avatars.steamstatic.com\/0a2d87a50688d4fa9953f0913ea1f74fb8bb15ca_medium.jpg"
+        },
+        "76561198983958600": {
+            "name": "SomS35 TOXIC",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9b722ecad2d17affdd2aee31ea8309f70f1a023e_medium.jpg"
+        },
+        "76561198105352500": {
+            "name": "FreshPenguinMeat",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b736bc1f42d782092ec44692d92d2730ec92cd3c_medium.jpg"
+        },
+        "76561198257188502": {
+            "name": "M\u00e0\u00e9\u0160\u2020R\u00d5Funnyk(|\/)_O_o_(|\/)",
+            "avatar": "https:\/\/avatars.steamstatic.com\/2f70614f9bb8c31f02a961a380d826df201627b2_medium.jpg"
+        },
+        "76561198148683816": {
+            "name": "\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u041a\u0430\u0432\u0430\u0439\u043d\u044b\u0439",
+            "avatar": "https:\/\/avatars.steamstatic.com\/600a54e62405d2696730eabca74233adfd9aea7e_medium.jpg"
+        },
+        "76561198194355518": {
+            "name": "sryoussless",
+            "avatar": "https:\/\/avatars.steamstatic.com\/76d7f753b739a05c62617495067188e100e8004d_medium.jpg"
+        },
+        "76561198837441346": {
+            "name": "AMiRiUS",
+            "avatar": "https:\/\/avatars.steamstatic.com\/58c40095bbc08b27a4e116f18021ede0960f11bb_medium.jpg"
+        },
+        "76561198216339853": {
+            "name": "\u041c\u0430\u043b\u0435\u043d\u044c\u043a\u0430\u044f \u0448\u0442\u0443\u0447\u043a\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/2a846e031deddfb08fa184c4bb97dc3d3bbc37a1_medium.jpg"
+        },
+        "76561199270043536": {
+            "name": "EvilPanda",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198314333786": {
+            "name": "><",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a3d25e5d684f6c2dd43c2ff87c58096cfa24296a_medium.jpg"
+        },
+        "76561198272262019": {
+            "name": "\u0432\u044b\u0434\u0443\u043c\u0430\u043d\u043d\u044b\u0439 \u0434\u0440\u0443\u0433",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5b1636d508e6e851860aa7a89835283e9ad3c56b_medium.jpg"
+        },
+        "76561199672685143": {
+            "name": "beartet2002",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199030660862": {
+            "name": "\u0421y4|<a tYnaR",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9c4db848627117559ade943830c1c15cd0d74602_medium.jpg"
+        },
+        "76561198120722628": {
+            "name": "na kristale",
+            "avatar": "https:\/\/avatars.steamstatic.com\/6fbfc49a8ff62dd48b4cd9ff8d9575cb0322bf8f_medium.jpg"
+        },
+        "76561198914325518": {
+            "name": "Caramel",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199039874482": {
+            "name": "\u0440\u043e\u043c\u0430\u043d\u0442\u0438\u043a\u0430.com",
+            "avatar": "https:\/\/avatars.steamstatic.com\/11a16d67db5ec915a455989e04a8cbd558a073d5_medium.jpg"
+        },
+        "76561199433643357": {
+            "name": "\u0412\u0430\u043b\u044b\u043d\u0430 \u0411\u0430\u0440\u0431\u043e\u0441\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/de83c18564cccee0150255bee3a9a10b2421a300_medium.jpg"
+        },
+        "76561199778163737": {
+            "name": "negerhaholpediks",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199826922487": {
+            "name": "Zero",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5997faf323f3b7c7b0b876db51ef306bc3f59c1e_medium.jpg"
+        },
+        "76561198068674016": {
+            "name": "\u042a\u0423\u042a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d48e57dc4672700340cfa24a7bd40409dee829f6_medium.jpg"
+        },
+        "76561198046070340": {
+            "name": "\u041e\u0431\u044b\u0447\u043d\u043e \u044f \u0442\u043e\u043f 3 WODO",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b3f7b1d5933af1e371537b170f59d67e4de044d7_medium.jpg"
+        },
+        "76561199351807573": {
+            "name": "\u0431\u043e\u043d\u043f\u0430\u0440\u0438 \u043a\u043e\u0448\u043c\u0430\u0440\u0438\u043a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/74d2e52b7e38cae0135673400e7dfd79aecf979e_medium.jpg"
+        },
+        "76561198332917039": {
+            "name": "GFDG",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5b8825b34c5d77b00c3a18897f2f1175fa0e0e57_medium.jpg"
+        },
+        "76561198395789577": {
+            "name": "\u0422\u0435\u043d\u044c \u041b\u0443\u043d\u044b",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d213cbfe9dab3710d6241dd50bc027747c3628f7_medium.jpg"
+        },
+        "76561199404879248": {
+            "name": "\u75bc\u75db",
+            "avatar": "https:\/\/avatars.steamstatic.com\/966dfa20e370e343335ef1bb65f10b9765591081_medium.jpg"
+        },
+        "76561198804050569": {
+            "name": "Mr. \u0411\u0430\u0437\u0443\u043a\u0430 \u042f\u0439\u0446\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a2d49561ee84e68c63f2d488963376d3193851b3_medium.jpg"
+        },
+        "76561199466861322": {
+            "name": "(SIGMA)o_0Mr.Sk18iDo$$$<3P.Dr1L@",
+            "avatar": "https:\/\/avatars.steamstatic.com\/64455b3f80e6419b182bf68c483de214f5f56d75_medium.jpg"
+        },
+        "76561198185162205": {
+            "name": "Gapi",
+            "avatar": "https:\/\/avatars.steamstatic.com\/bc63bd40dc757254ecaf3a3c30bd4719a28ddb14_medium.jpg"
+        },
+        "76561198078244418": {
+            "name": "Xpuncyc",
+            "avatar": "https:\/\/avatars.steamstatic.com\/85e0ed77fb0e536a31f54cf4a73fc3189ebdbb51_medium.jpg"
+        },
+        "76561198159467323": {
+            "name": "ProfessorCherep",
+            "avatar": "https:\/\/avatars.steamstatic.com\/003f7d6e7ff43624a4775a49ea57d5a7b6454a49_medium.jpg"
+        },
+        "76561198377057320": {
+            "name": "\u0422\u0430\u043c\u043f\u043e\u043d",
+            "avatar": "https:\/\/avatars.steamstatic.com\/78222d9a6983764550dc7dbc53cb7939addb1237_medium.jpg"
+        },
+        "76561199500424026": {
+            "name": "\u0445yeny\u0442\u0430\u043b\u043e \u0445ye\u043c",
+            "avatar": "https:\/\/avatars.steamstatic.com\/2162bd9fdcc9d96134660e087b4a5e852ca9df19_medium.jpg"
+        },
+        "76561198914370411": {
+            "name": "Xiholo",
+            "avatar": "https:\/\/avatars.steamstatic.com\/064071d1b6c772363100fda6e41f7d9442893891_medium.jpg"
+        },
+        "76561198016893583": {
+            "name": "Degit",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ea548dd7c2dad0cf98d538611e7bba0ff5bfa936_medium.jpg"
+        },
+        "76561198328462059": {
+            "name": "FrozAl",
+            "avatar": "https:\/\/avatars.steamstatic.com\/baf3f1e4fe88fff5f7b21b537acda40c52ec0d56_medium.jpg"
+        },
+        "76561199114297918": {
+            "name": "60+",
+            "avatar": "https:\/\/avatars.steamstatic.com\/804dd7d9d3cdf93874b79ae69a5b0bf95da262c1_medium.jpg"
+        },
+        "76561198033360389": {
+            "name": "SeaN",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198259918683": {
+            "name": "\u0e4b",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b8199243d1397b13b7d59c917a00d07733c32583_medium.jpg"
+        },
+        "76561198144943583": {
+            "name": "\u0434\u043e\u043d\u0435\u0446\u043a\u0438\u0439 \u043f\u0438\u0440\u0430\u0442",
+            "avatar": "https:\/\/avatars.steamstatic.com\/0b0e36725b95ae6623be29d3d7d5286b01c2a046_medium.jpg"
+        },
+        "76561198131654197": {
+            "name": "Joy",
+            "avatar": "https:\/\/avatars.steamstatic.com\/3f5e9daea59216d7fe13df4e031d3537580e5e21_medium.jpg"
+        },
+        "76561199197112694": {
+            "name": "\u0413\u0440\u044f\u0437\u043d\u044b\u0439 \u0422\u0443\u0437",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c1f8d58defac0cbac2a18d8d72dcb4385d99289d_medium.jpg"
+        },
+        "76561199438687783": {
+            "name": "\u0424\u0438\u0434\u0430\u043d\u0443 \u042f\u043f\u043e\u043c\u0438\u0434\u04432004",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f9f4e65cd0d9322711055c13d2c789e63b09463f_medium.jpg"
+        },
+        "76561199043479331": {
+            "name": "\u4e02\u5344\u3116\u53692",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5514d9f12cab25be570bf0466a573b2631157003_medium.jpg"
+        },
+        "76561198371396238": {
+            "name": "MrMurzik",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a2bc6d85172d0de4338dc1079ee7475647598446_medium.jpg"
+        },
+        "76561198127791527": {
+            "name": "Xael",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cd12bd4c72fd4f435144638b2bd4390ee8119ef4_medium.jpg"
+        },
+        "76561198083929038": {
+            "name": "toxicgamemyposition",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a34d8c097d58bd97036d504790514f1ba033c113_medium.jpg"
+        },
+        "76561199294919735": {
+            "name": "Chimmy Changa",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d8ed61d5a37ebdeb0dd7400d5889e78f09d98aef_medium.jpg"
+        },
+        "76561199569609894": {
+            "name": "Femboy-Dreams",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ab28821f75b005d1b4874f12843f89fa04d56835_medium.jpg"
+        },
+        "76561198058707531": {
+            "name": "Baalsham",
+            "avatar": "https:\/\/avatars.steamstatic.com\/67e5649e76d081f11110bbee7e91dc156b5f6b20_medium.jpg"
+        },
+        "76561198087573600": {
+            "name": "Fedix",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c80df529f724a1c125cdd2cc4f73a418549f933e_medium.jpg"
+        },
+        "76561198283530281": {
+            "name": "Yankee",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f43975743a8fcb3033ce98353ae19fbb3b83d0fc_medium.jpg"
+        },
+        "76561198059699529": {
+            "name": "ez",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a389d5880e65d0503671b9e3b0fdac99f832f500_medium.jpg"
+        },
+        "76561199221063369": {
+            "name": "\u041f\u043e\u0434\u043b\u044b\u0439 \u0431\u0430\u0448\u0435\u0440",
+            "avatar": "https:\/\/avatars.steamstatic.com\/25c56727a68598ac26e4d6abfd0a5d41c3e45a06_medium.jpg"
+        },
+        "76561198083948364": {
+            "name": "WholeLottaFuck",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1d068a6c6fc978da150d4309bda2f013b88ea467_medium.jpg"
+        },
+        "76561199254439247": {
+            "name": "high l&q",
+            "avatar": "https:\/\/avatars.steamstatic.com\/492051b23d2f125a07973b77e428d12455ed94ac_medium.jpg"
+        },
+        "76561198861918824": {
+            "name": "cVinoreZ",
+            "avatar": "https:\/\/avatars.steamstatic.com\/881642c8db241c2015c07fbee5dfb622e9a25023_medium.jpg"
+        },
+        "76561199473843685": {
+            "name": "i.am.stadnik",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9860aa8b710a71c3c8f6ba513e1c70cf9bc1603b_medium.jpg"
+        },
+        "76561198150279083": {
+            "name": "tip_top_lol_ka",
+            "avatar": "https:\/\/avatars.steamstatic.com\/71a1fc8a9fa1f323a91f0c25f91696a13c2c6413_medium.jpg"
+        },
+        "76561199007630192": {
+            "name": "ahyra",
+            "avatar": "https:\/\/avatars.steamstatic.com\/4d91a882a6452fbf4a51c5e6987816a7863702a4_medium.jpg"
+        },
+        "76561198416745369": {
+            "name": "\u5ddd\u5d0e\u8599\u5b50",
+            "avatar": "https:\/\/avatars.steamstatic.com\/40d091287a436f6dd65bc33f5778155bd4861c4c_medium.jpg"
+        },
+        "76561199119464857": {
+            "name": "\u041c\u0430\u043a\u0422\u0440\u0430\u0445\u0435\u0440",
+            "avatar": "https:\/\/avatars.steamstatic.com\/77b5b9dd5412b517585e55e43dbc33888aa89118_medium.jpg"
+        },
+        "76561198398944349": {
+            "name": "psych",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5448645756332350f993067383805b636ee7c3c8_medium.jpg"
+        },
+        "76561199095930716": {
+            "name": "_Nixoliits_",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198282421792": {
+            "name": "\u0432 \u043f\u043e\u0442\u043e\u043a\u0435",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1965afb9eb415f2242eda3ab11536f9aff7fdfba_medium.jpg"
+        },
+        "76561198047018459": {
+            "name": "Not glad",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1828d3c26d462b527b217587d086a00a930f3c0b_medium.jpg"
+        },
+        "76561198271697809": {
+            "name": "clay",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cee70a69e452ae1c8d0570281dc6a47f1af294e2_medium.jpg"
+        },
+        "76561198227753024": {
+            "name": "\u041f\u0440\u043e\u043f\u0430\u043b\u0430 \u0441\u043e\u0431\u0430\u043a\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/71c068c7d73eb93281f1cf508f92ab54cf474f74_medium.jpg"
+        },
+        "76561198339797729": {
+            "name": "Nikitoz2013",
+            "avatar": "https:\/\/avatars.steamstatic.com\/905e79443be93e55772b518e8f81fde1d9b3fcb0_medium.jpg"
+        },
+        "76561198337002067": {
+            "name": "\u0442\u0443\u0430\u043b\u0435\u0442\u043d\u044b\u0439 \u043d\u0435\u0433\u0440",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b2c0f6ee35e24dd0c577dfc3d873ea005e0da8c2_medium.jpg"
+        },
+        "76561199078060819": {
+            "name": "\u043a\u0443\u043f\u0438\u0442\u0435 \u0442\u0435\u043b\u0435\u0432\u0438\u0437\u043e\u0440 \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u0435 \u043f\u0440\u0438\u0437",
+            "avatar": "https:\/\/avatars.steamstatic.com\/978931ff2d774c665a91b9fa83c8a6a8666dca91_medium.jpg"
+        },
+        "76561199168048813": {
+            "name": "DEAD GOD",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198445572961": {
+            "name": "Grinch 2Mainey",
+            "avatar": "https:\/\/avatars.steamstatic.com\/edc8fb1820908bcf611dad2efcd1a06851d610e7_medium.jpg"
+        },
+        "76561198027905584": {
+            "name": "Krovostok",
+            "avatar": "https:\/\/avatars.steamstatic.com\/0a724026bcde7bdf52def58d8bf99bef0090e691_medium.jpg"
+        },
+        "76561199097508025": {
+            "name": "Stasik",
+            "avatar": "https:\/\/avatars.steamstatic.com\/bd7356a4ca1ed94380cfabe0c8e9e4c96f15fcfd_medium.jpg"
+        },
+        "76561199001898304": {
+            "name": "Snoop Dogg",
+            "avatar": "https:\/\/avatars.steamstatic.com\/75b8162090096c5f1c97a9ac6c35f2c8b038631d_medium.jpg"
+        },
+        "76561198070738653": {
+            "name": "Amadeus",
+            "avatar": "https:\/\/avatars.steamstatic.com\/14f1a9927382fa8dea134a0f3ca6f17e6938e131_medium.jpg"
+        },
+        "76561198262302327": {
+            "name": "\u0413\u043e\u0439\u0434\u043e\u0432\u0441\u043a\u0438\u0439",
+            "avatar": "https:\/\/avatars.steamstatic.com\/06fb8a4436975a23f066865208a578e210364371_medium.jpg"
+        },
+        "76561198053530331": {
+            "name": "Sanchostav",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199204790525": {
+            "name": "\u0428\u0430\u0445\u0435\u0440 \u0438\u0437 \u0410\u0434\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198118636151": {
+            "name": "Lefiya",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1191c81a57194f64acfcda94f0fd0cb94e92eff7_medium.jpg"
+        },
+        "76561199481614102": {
+            "name": "\u0430\u0445\u0430\u0445\u0430\u0445\u0430\u0445\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/892a2d88d84b81eecedc3d8f2c53e01380093a0b_medium.jpg"
+        },
+        "76561198190413794": {
+            "name": "DACOYRI",
+            "avatar": "https:\/\/avatars.steamstatic.com\/4a38d860455c1cecfca90987cad674925bd87a75_medium.jpg"
+        },
+        "76561199555381701": {
+            "name": "\u0410\u0431\u0441\u043e\u043b\u044e\u0442 \u0425\u0430\u0440\u0430\u043c",
+            "avatar": "https:\/\/avatars.steamstatic.com\/43168a604c2e2f92b3b0b62e724ed241ad9dbd14_medium.jpg"
+        },
+        "76561199259496797": {
+            "name": "croc",
+            "avatar": "https:\/\/avatars.steamstatic.com\/83d2ab083eb76aebed718fd01921fbe2af2b7e35_medium.jpg"
+        },
+        "76561199737292281": {
+            "name": "Skibidi tolchek",
+            "avatar": "https:\/\/avatars.steamstatic.com\/47e43ee884ee375e5bd378f7b9b7c942385d6010_medium.jpg"
+        },
+        "76561198881426515": {
+            "name": "yaxzzachemjivy",
+            "avatar": "https:\/\/avatars.steamstatic.com\/e455aa468476d752df97eaacd8f956df95c6aa9e_medium.jpg"
+        },
+        "76561198196072466": {
+            "name": "jose.vitorsr",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a42eca789271fab6ce5d4c7a5ac5bd3e5b400322_medium.jpg"
+        },
+        "76561199220993891": {
+            "name": "vladosrtx3090",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199495120786": {
+            "name": "\u043d\u0435\u0433\u043e\u0434\u044f\u0439 \u0431\u043e sigma",
+            "avatar": "https:\/\/avatars.steamstatic.com\/57ab434ab5db1669affdec28e09f30f14e9d1e9f_medium.jpg"
+        },
+        "76561198124254500": {
+            "name": "E_VO",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ad603e8b9579b28b9496ce321250930cc2eb2139_medium.jpg"
+        },
+        "76561199310785100": {
+            "name": "\u041f\u0435\u043d\u0438\u0441 \u0414\u0443\u0448\u0438\u043b\u0438\u043d",
+            "avatar": "https:\/\/avatars.steamstatic.com\/983f461a43abc8d5450a5c1985e3cbce03dc7055_medium.jpg"
+        },
+        "76561198081900591": {
+            "name": "DEA MORTIS",
+            "avatar": "https:\/\/avatars.steamstatic.com\/af8860ec2cc567b737d07b3a87cc823f5ecb64dc_medium.jpg"
+        },
+        "76561199343465997": {
+            "name": "\u043c\u0430\u0441\u0442\u0435\u0440 \u0444\u0438\u0434\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a5d1702b79eb67b3dc54880af5a64fa994e22621_medium.jpg"
+        },
+        "76561198992361309": {
+            "name": "brutal_balls228",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f8b581f340fa3311414a1f1a194735e07b202e1e_medium.jpg"
+        },
+        "76561199575027321": {
+            "name": "Matje Baldo",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b568381359c1da92ea24e67776165293c07264a5_medium.jpg"
+        },
+        "76561198110584081": {
+            "name": "\u0421\u0435\u043d\u0441\u0435\u0439",
+            "avatar": "https:\/\/avatars.steamstatic.com\/bd3ec21facbb06f293482c3c5a2c7e4c7f9f68f6_medium.jpg"
+        },
+        "76561198022022381": {
+            "name": "TesKaTlipoKa",
+            "avatar": "https:\/\/avatars.steamstatic.com\/8e145a5294419fb997c3cf80c62027df83fd123f_medium.jpg"
+        },
+        "76561198095596775": {
+            "name": "Dota 2",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9822bd54e09e05a4410d38f46df2041f49f639f8_medium.jpg"
+        },
+        "76561198097376870": {
+            "name": "SkyperOne",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a49953c4bf0f146c0a463abe9f77de97cdc3c89d_medium.jpg"
+        },
+        "76561199018721503": {
+            "name": "\u672a\u77e5\u306e\u6b7b2002(swap comm)",
+            "avatar": "https:\/\/avatars.steamstatic.com\/da3b5201d972af88704c8ece5b7d107bf204640b_medium.jpg"
+        },
+        "76561199640903463": {
+            "name": "4wkryodan",
+            "avatar": "https:\/\/avatars.steamstatic.com\/803a4179749a6e9fcf5362eb1231aa948e9c40e5_medium.jpg"
+        },
+        "76561199277212536": {
+            "name": "god_of_the_game",
+            "avatar": "https:\/\/avatars.steamstatic.com\/05187c4818e81c8ada6b890119ca8c9355fa4bd9_medium.jpg"
+        },
+        "76561199231995980": {
+            "name": "xoollox",
+            "avatar": "https:\/\/avatars.steamstatic.com\/8e5f25db341953092f7c65bb32a1c8d06af9ecbc_medium.jpg"
+        },
+        "76561198844881820": {
+            "name": "sonexxzxw",
+            "avatar": "https:\/\/avatars.steamstatic.com\/8185241051e45f9e92bb33a86596caad4004afe8_medium.jpg"
+        },
+        "76561199004670128": {
+            "name": "absolute",
+            "avatar": "https:\/\/avatars.steamstatic.com\/600a54e62405d2696730eabca74233adfd9aea7e_medium.jpg"
+        },
+        "76561198165096708": {
+            "name": "dark souls",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a43868d7037d831d2f09b98d4483b06d61ec82d0_medium.jpg"
+        },
+        "76561198329316760": {
+            "name": "Prokol 88",
+            "avatar": "https:\/\/avatars.steamstatic.com\/465c813f6ba74649f982f6482646440eb194b2ed_medium.jpg"
+        },
+        "76561199100134544": {
+            "name": "\u043a\u043e\u0442\u043e\u0444\u0435\u0438\u0447",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ea8adfc15ed9200f76c880dd16ed0636b3a2db09_medium.jpg"
+        },
+        "76561198413276385": {
+            "name": "\u0425\u043e\u0440\u043d\u0438 \u0421\u0430\u044f\u043d",
+            "avatar": "https:\/\/avatars.steamstatic.com\/bdf672a385bf1633f86b2b66765d5c31060710e5_medium.jpg"
+        },
+        "76561198217666963": {
+            "name": "Manylistiy",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d7ec0d0ef0368896e3699c4678ef9bdc20233c57_medium.jpg"
+        },
+        "76561198028381796": {
+            "name": "\u0445\u043e\u0431\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a00160bb3deb852b5877204f3e5781fd71ee3962_medium.jpg"
+        },
+        "76561198190452333": {
+            "name": "143heartrate",
+            "avatar": "https:\/\/avatars.steamstatic.com\/009cb2ac0f315bf2b8480531548855da817a3195_medium.jpg"
+        },
+        "76561198214929583": {
+            "name": "K.I.L.L.E.R",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b5801d8170ed61115ed71b355dcdfa3fc1352550_medium.jpg"
+        },
+        "76561198297019847": {
+            "name": "pierre",
+            "avatar": "https:\/\/avatars.steamstatic.com\/6427c91377c22800053e8505040f265cb226ea5d_medium.jpg"
+        },
+        "76561198384289089": {
+            "name": "TypikalPlayer",
+            "avatar": "https:\/\/avatars.steamstatic.com\/51bb78fd07a616dffa959c285ad0951a7ece4680_medium.jpg"
+        },
+        "76561198118620279": {
+            "name": "\u4ec1\u4e43\u4e39\u5c38\u3116\u5382",
+            "avatar": "https:\/\/avatars.steamstatic.com\/7162b62c93462b494c74b40e1c17a5ef67558f1f_medium.jpg"
+        },
+        "76561199169221696": {
+            "name": "\u041f\u0430\u0440\u0430\u0432\u043e\u0437\u0438\u043aMGE",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cf397f31009b9cc749439ee96d7ff01766db9bc6_medium.jpg"
+        },
+        "76561199193677811": {
+            "name": "\u0410\u043d\u0434\u0440\u0435\u0439 \u0415\u0432\u0433\u0435\u043d\u0438\u0447 \u0411",
+            "avatar": "https:\/\/avatars.steamstatic.com\/7faa33807caceed8a25b323eec098c084583c999_medium.jpg"
+        },
+        "76561198345351345": {
+            "name": "SMORODINA",
+            "avatar": "https:\/\/avatars.steamstatic.com\/572a124706acf1c24b67f4c06cb53594428b90f2_medium.jpg"
+        },
+        "76561199038312377": {
+            "name": "Porzeczka",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b7928464782bcb73f0ff6431181d44c3fc2d0ba9_medium.jpg"
+        },
+        "76561198349632458": {
+            "name": "Alpha",
+            "avatar": "https:\/\/avatars.steamstatic.com\/feb07b406a71a458583bd47b1c75086c6f0acab4_medium.jpg"
+        },
+        "76561198351916746": {
+            "name": "\ua7aes\u1d1b\u1d07\u0280\u026a\u1d0b\u1d00",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d61f754c5fdce4fa0d2a56684138d778ecfe9cfc_medium.jpg"
+        },
+        "76561199510680854": {
+            "name": "Tohaks(\u043f\u0440\u0430\u0432\u0430\u044f \u043d\u044f\u0448\u043a\u0430)",
+            "avatar": "https:\/\/avatars.steamstatic.com\/94ac002f597ed510d2fb02aaef532557bdda4e69_medium.jpg"
+        },
+        "76561199209873241": {
+            "name": "sexy cutie (\u043b\u0435\u0432\u0430\u044f \u043d\u044f\u0448\u043a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/616adff3e166996e1d45a4d12e4a780ee4bf3d48_medium.jpg"
+        },
+        "76561198390765934": {
+            "name": "all in mute\\",
+            "avatar": "https:\/\/avatars.steamstatic.com\/600a54e62405d2696730eabca74233adfd9aea7e_medium.jpg"
+        },
+        "76561199466773571": {
+            "name": ".",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f84e9488205cf17b9c34c6efb21afbc82721f8ec_medium.jpg"
+        },
+        "76561198309747373": {
+            "name": "AJIuca 2007",
+            "avatar": "https:\/\/avatars.steamstatic.com\/21c682de606b37d7dc0cfaa71f2f3da732b4455e_medium.jpg"
+        },
+        "76561199302652365": {
+            "name": "\u0412\u044f\u043b\u0435\u043d\u0430\u044f \u0412\u0430\u0433\u0438\u043d\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/279b0c881b3c701259cd5a292222330ef79ef7eb_medium.jpg"
+        },
+        "76561199100172957": {
+            "name": "\u041a\u043d\u0438\u0433\u0430 \u0431\u0440\u0430\u0442\u0430\u043d",
+            "avatar": "https:\/\/avatars.steamstatic.com\/47d4ce821866df5708044a9cdd0ed29b59e60cca_medium.jpg"
+        },
+        "76561198993307254": {
+            "name": "Cheese",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b44f72fa56d633d35800cb07ec8aaca9cb76b32b_medium.jpg"
+        },
+        "76561199239452336": {
+            "name": "Arl1an4ik",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c53f763139c24ec9e24acd6c3b5172a050454af2_medium.jpg"
+        },
+        "76561199072421315": {
+            "name": "\u0439\u043e\u0443",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c5582f0e51867d495bb108fd8b97962573043bb4_medium.jpg"
+        },
+        "76561198205818145": {
+            "name": "Mordragon",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cf4d9b9e67d994971637bb0c38902844c16e95d8_medium.jpg"
+        },
+        "76561198289425615": {
+            "name": "\u0421\u041a\u0415\u0411\u041e\u0411",
+            "avatar": "https:\/\/avatars.steamstatic.com\/bbfdc3630b7b010760f6dd3f2c2d4416ab768223_medium.jpg"
+        },
+        "76561198863000199": {
+            "name": "\u0447i\u0440i\u043c\u0448a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/2391b6085f69731b187b39542b75d845c452912b_medium.jpg"
+        },
+        "76561198967782352": {
+            "name": "I am Russian. questions?",
+            "avatar": "https:\/\/avatars.steamstatic.com\/74438134782b7fc253510b7ed19f472d890c73df_medium.jpg"
+        },
+        "76561199582275793": {
+            "name": "GHOST_FATEBLLE",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c57cdc8bee7796162be0be75bab30f3c9f0bd0cb_medium.jpg"
+        },
+        "76561198281194724": {
+            "name": "Klein",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c563f76b24f8708e639a9aad99c0f9a9993dc9c3_medium.jpg"
+        },
+        "76561199565784025": {
+            "name": "Soltsel",
+            "avatar": "https:\/\/avatars.steamstatic.com\/8440441b3d44780dfc5fb8842bc9b2567d2418ce_medium.jpg"
+        },
+        "76561199219807944": {
+            "name": "r3ign",
+            "avatar": "https:\/\/avatars.steamstatic.com\/60b645722946c4aa33c77e12eb51e0a91f4644b1_medium.jpg"
+        },
+        "76561198924361111": {
+            "name": "2203681153",
+            "avatar": "https:\/\/avatars.steamstatic.com\/314046aed35d2dd44dbb3fb4b418154f2f4ed35e_medium.jpg"
+        },
+        "76561198352251893": {
+            "name": "Undbrognor",
+            "avatar": "https:\/\/avatars.steamstatic.com\/6b2ff59dcceb545a89998de7a8cc5bd5d1fefdb4_medium.jpg"
+        },
+        "76561199037238621": {
+            "name": "never lucky",
+            "avatar": "https:\/\/avatars.steamstatic.com\/216f9a167b52f5e799e12ef5d007b942e361546d_medium.jpg"
+        },
+        "76561199191297152": {
+            "name": "\u0433\u0443\u0431\u0430\u0448\u043b\u0435\u043f \u0435\u0431\u0430\u043d\u044b\u0439",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f0bb5ea6fac7953e33c5a5a9886e3105325915cf_medium.jpg"
+        },
+        "76561199839774636": {
+            "name": "\u0449\u0430\u0432\u0435\u043b\u044c \u0435\u0431\u0430\u043d\u044b\u0439",
+            "avatar": "https:\/\/avatars.steamstatic.com\/4644243e74eecc4b243c6c718e440d7aeb871df0_medium.jpg"
+        },
+        "76561199238200978": {
+            "name": "BABOCHKA",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199002965734": {
+            "name": "\u0420\u0443\u043a\u043e\u0436\u043e\u043f",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ac24d00143e6ee074790fab16402c2aec27a8a2d_medium.jpg"
+        },
+        "76561199555500756": {
+            "name": "destz",
+            "avatar": "https:\/\/avatars.steamstatic.com\/decac14e389e390256cff355ad24b29f01152207_medium.jpg"
+        },
+        "76561199546577382": {
+            "name": "xxx",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a43465ba83759e93113ae0fdc1a61473cbb361a7_medium.jpg"
+        },
+        "76561199172716446": {
+            "name": "WITCH DOCTOR",
+            "avatar": "https:\/\/avatars.steamstatic.com\/4929e31052c4a50d6bf801b893cdfaf3056f284a_medium.jpg"
+        },
+        "76561199021193192": {
+            "name": "ZELEN",
+            "avatar": "https:\/\/avatars.steamstatic.com\/3b703e5265518eae5e4f07d9098a4c5fb2293a92_medium.jpg"
+        },
+        "76561198955113746": {
+            "name": "\u0428\u0438\u0437\u0438\u043a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/e9aa8f8a49ae266e26f3c598823d7d444118a0c5_medium.jpg"
+        },
+        "76561198054462463": {
+            "name": "NekLol",
+            "avatar": "https:\/\/avatars.steamstatic.com\/181ad30ddd1aec0357a0cc3de098c042015232b2_medium.jpg"
+        },
+        "76561198194728177": {
+            "name": "BDSM i\u043d\u0441\u0442\u0440\u0443\u043a\u0442\u043e\u0440",
+            "avatar": "https:\/\/avatars.steamstatic.com\/e123051ffc4f07e73737d58c17e3bee71366fc34_medium.jpg"
+        },
+        "76561198815996949": {
+            "name": "\u0441\u043a\u0443\u0444\u044f\u0440\u0430 \u0437\u0430\u0440\u044b\u0433\u0430\u043d\u044b",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9ac6bad79cdeac20732edcc5b8685bb71ca3f4ec_medium.jpg"
+        },
+        "76561199345616314": {
+            "name": "\u0431\u043e\u043c\u0431\u043e\u0440\u0434\u0438\u043b\u043e \u043a\u0440\u043e\u043a\u043e",
+            "avatar": "https:\/\/avatars.steamstatic.com\/879551f3e922ac8d266bf208616c9820735a12ea_medium.jpg"
+        },
+        "76561199510529686": {
+            "name": "\u041c\u044f\u0447",
+            "avatar": "https:\/\/avatars.steamstatic.com\/05d49ec8765dd265cf36fe921bc816d47fb3b839_medium.jpg"
+        },
+        "76561198124803302": {
+            "name": "\u0102\u0440\u0438\u0441\u0442\u0430\u043d\u265b\u2660\u25ba\u0421\u0412\u041e",
+            "avatar": "https:\/\/avatars.steamstatic.com\/6968f359d93cf0e88d735e35442f22c941cc2bea_medium.jpg"
+        },
+        "76561198046272593": {
+            "name": "Rnem",
+            "avatar": "https:\/\/avatars.steamstatic.com\/8dfe278c7493b6984540e57ecd57b791df13841e_medium.jpg"
+        },
+        "76561199608377529": {
+            "name": "Pentagramma",
+            "avatar": "https:\/\/avatars.steamstatic.com\/e8711b5390b31c800774a9a42e4638030c45a086_medium.jpg"
+        },
+        "76561198936567824": {
+            "name": "\u0415\u0431\u0430\u043b\u0430 \u0411\u043b\u0435\u0432\u043e\u0442\u043d\u0430\u044f",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a6c85ce7d1dd17a1c01d75c92d6f5182cf99a74f_medium.jpg"
+        },
+        "76561198067127360": {
+            "name": "Marakyia[Z]",
+            "avatar": "https:\/\/avatars.steamstatic.com\/465fd2343dc6c0626706adae3283aea61e02cfec_medium.jpg"
+        },
+        "76561198047907970": {
+            "name": "wildfowl{Z}",
+            "avatar": "https:\/\/avatars.steamstatic.com\/6d8bd442fe0bd7ba3d57b24938cd1ef2e8ccdc57_medium.jpg"
+        },
+        "76561198845959089": {
+            "name": "\u0410\u043d\u0434\u0440\u0435\u0439 \u0441\u0430\u043d\u0441\u0442\u0440\u0430\u0439\u043a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/091e9333502af30e5e1df2675ec6a3e4c9188c01_medium.jpg"
+        },
+        "76561198982550594": {
+            "name": "notenoughdopamine",
+            "avatar": "https:\/\/avatars.steamstatic.com\/320f6df442341bfd964016a5d863789427a88564_medium.jpg"
+        },
+        "76561198345074719": {
+            "name": "DUNHR",
+            "avatar": "https:\/\/avatars.steamstatic.com\/e8672cf2e48cdc0d5b59cbeaf7ad554e1015d718_medium.jpg"
+        },
+        "76561198843615537": {
+            "name": "paraci4",
+            "avatar": "https:\/\/avatars.steamstatic.com\/07817c91f320a96de5806c9d2abef0fe5f46f626_medium.jpg"
+        },
+        "76561198287275116": {
+            "name": "SuicideboyS",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fe70168543e44b7b365726870cdde6a0dc5fd77f_medium.jpg"
+        },
+        "76561199529175442": {
+            "name": "emptiness tilted",
+            "avatar": "https:\/\/avatars.steamstatic.com\/605cf47f787bd9e504960d95d97c2d72812be661_medium.jpg"
+        },
+        "76561199509708715": {
+            "name": "Isa4ok",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c138085aa39283e92cc7e4ae56e4c8dc65d1296d_medium.jpg"
+        },
+        "76561199057270442": {
+            "name": "ArtemVenz",
+            "avatar": "https:\/\/avatars.steamstatic.com\/3524a889dd3359592420cb95a06a82255092ce77_medium.jpg"
+        },
+        "76561199652131215": {
+            "name": "\u041c\u0443\u043b\u044c\u0442\u0438\u043a\u0430\u043c\u0448\u043e\u0442",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ea8a5dbc615e7b8d3878a358a9f92f08f7240e5d_medium.jpg"
+        },
+        "76561199128192215": {
+            "name": "\u0415\u043d\u041e\u0442\u0418\u043a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/545d042dc5bf99547955389905d9a189fee32cd9_medium.jpg"
+        },
+        "76561199007996941": {
+            "name": "goodlimur",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c4b19a7ddce2490d1533009842d7f0100805abb6_medium.jpg"
+        },
+        "76561199042142471": {
+            "name": "\u0428\u0415\u0424",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fba7081e30e78c3d8e3504bd3eb85b9266520174_medium.jpg"
+        },
+        "76561199131210436": {
+            "name": "\u041c\u0423\u0425\u0422\u0420\u0410\u0425",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9546eea0dc1c5e3d96130d69b2184be8eefa01c3_medium.jpg"
+        },
+        "76561198049295881": {
+            "name": "\u041d\u0438\u043a\u043e\u043b\u0430\u0439 \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0438\u0447",
+            "avatar": "https:\/\/avatars.steamstatic.com\/89edb262d9c9f2654ad8a898b37ea5ae85a05bfd_medium.jpg"
+        },
+        "76561198809687296": {
+            "name": "\u0414\u0438\u043a\u0438\u0439 \u0412\u0438\u0440\u0443\u0441",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c95530485593a47f5f3a036eb4e1cffe0b934e7c_medium.jpg"
+        },
+        "76561199131005141": {
+            "name": "\u043f\u043e\u043f\u0438\u043d\u0433\u0443\u0439",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ffd5a73c8c0fd3b39fee12e2e016154f7fa8686f_medium.jpg"
+        },
+        "76561198129019347": {
+            "name": "LLlN330ND",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a10f3d5ae6ed4be7cef75ecbdac790bc2ad86db1_medium.jpg"
+        },
+        "76561198138502856": {
+            "name": "\u043f\u0435\u0440\u0435\u0436\u0438\u043b 3 \u0430\u0431\u043e\u0440\u0442\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1402acb9331277c856f402c6b8fcb3aacb6c923b_medium.jpg"
+        },
+        "76561198082133494": {
+            "name": "10",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ea7662bb39f1ee207da7cad76d8fb0a0c0e5d096_medium.jpg"
+        },
+        "76561198082314536": {
+            "name": "POPU MIL",
+            "avatar": "https:\/\/avatars.steamstatic.com\/effba4362904655b759959d2af17e0fef7c1ddf7_medium.jpg"
+        },
+        "76561199073410159": {
+            "name": "40-\u043b\u0435\u0442\u043d\u0438\u0439 \u0441\u043a\u0443\u0444",
+            "avatar": "https:\/\/avatars.steamstatic.com\/10f59f7e890cd37c59d4366ba961c4b162ea1c6d_medium.jpg"
+        },
+        "76561198089709805": {
+            "name": "forins",
+            "avatar": "https:\/\/avatars.steamstatic.com\/74e2a79ca0e287ac2f31415c19cdb4aa2a880a81_medium.jpg"
+        },
+        "76561198078856885": {
+            "name": "Joukahainen",
+            "avatar": "https:\/\/avatars.steamstatic.com\/61e1a9bc61abae4494f0356b6f5b44506010d776_medium.jpg"
+        },
+        "76561198204337393": {
+            "name": "Sokorro",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1aa5a661abf98fa57fdd55e70ae544b828701d67_medium.jpg"
+        },
+        "76561198994240949": {
+            "name": "Coco2",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561199047713403": {
+            "name": "21321321",
+            "avatar": "https:\/\/avatars.steamstatic.com\/68e05025f7cc023a3e013eab64671011b19ba6b7_medium.jpg"
+        },
+        "76561198977072292": {
+            "name": "vat",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ff12434bdb2cc74a952f46e453e7fe119f9d6983_medium.jpg"
+        },
+        "76561198872927237": {
+            "name": "M\u00f6rfy",
+            "avatar": "https:\/\/avatars.steamstatic.com\/de9c8ad63e2416c9002350a0a8906b686db9ae07_medium.jpg"
+        },
+        "76561198883728217": {
+            "name": "\u3053\u306e\u4eba\u751f\u306b\u306f\u610f\u5473\u304c\u306a\u3044",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c42df7cfe818784d32a83551e69221df3f265ce0_medium.jpg"
+        },
+        "76561199094522057": {
+            "name": "Crocodildo Penisini",
+            "avatar": "https:\/\/avatars.steamstatic.com\/badd5e4a512d7d334981f812a58fec9eaebf211b_medium.jpg"
+        },
+        "76561198089328318": {
+            "name": "MrNikeLike",
+            "avatar": "https:\/\/avatars.steamstatic.com\/2d96897f7cf79baf4fcb07bf0039be7bc5ff3b30_medium.jpg"
+        },
+        "76561198306822320": {
+            "name": "IAMWAR",
+            "avatar": "https:\/\/avatars.steamstatic.com\/874ff26867ae56d28f0d7099387649d073ca8567_medium.jpg"
+        },
+        "76561198315893500": {
+            "name": "Love only ***me",
+            "avatar": "https:\/\/avatars.steamstatic.com\/148ff422f2245ab66abfeabf3f7506861d6b703b_medium.jpg"
+        },
+        "76561198253498957": {
+            "name": "\u0410\u0442\u0430\u043a\u0430 \u0422\u0438\u0442\u044f\u043d\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/80454912dd5e8e0703afaa675d36b7e8ca2e26ab_medium.jpg"
+        },
+        "76561199088159234": {
+            "name": "VerV",
+            "avatar": "https:\/\/avatars.steamstatic.com\/454a91ebb5976bd98f6bd3a5cced3adc96d08fe7_medium.jpg"
+        },
+        "76561199162361855": {
+            "name": "\u0441\u0442\u0430\u0440\u044b\u0439 \u043a\u0442\u043e \u0442\u043e \u0442\u0430\u043c",
+            "avatar": "https:\/\/avatars.steamstatic.com\/3915071300b4647dfe6b746b78e932e53deaad8f_medium.jpg"
+        },
+        "76561198823010699": {
+            "name": "Balduin",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ae0febf6d52bcb9d9698d455f5f1a38de21f8f53_medium.jpg"
+        },
+        "76561199240191703": {
+            "name": "\u0444\u0430\u0440\u043c\u043b\u044e \u0430\u0433\u0430\u043d",
+            "avatar": "https:\/\/avatars.steamstatic.com\/7261e1a21b78d11613674ba59cc93b89e3ca8f2f_medium.jpg"
+        },
+        "76561198085071039": {
+            "name": "ShkipeR",
+            "avatar": "https:\/\/avatars.steamstatic.com\/54025d3ee4588321a9472edff8b50f3d842ec974_medium.jpg"
+        },
+        "76561198083328195": {
+            "name": "\u0410\u0440\u043a\u0430\u0434\u0456\u0439 \u0406\u043f\u043e\u0434\u0440\u043e\u043c",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c99432c62a0109099082045ccade6a07ca16d070_medium.jpg"
+        },
+        "76561199238389368": {
+            "name": "Magistral`",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f182afb68e0bbd4065f09bfbe8814372b65192fb_medium.jpg"
+        },
+        "76561199476699169": {
+            "name": "qasdom",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9822bd54e09e05a4410d38f46df2041f49f639f8_medium.jpg"
+        },
+        "76561199427939745": {
+            "name": "\u0434\u0430\u043b\u044c\u043d\u0438\u043a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ad909e6b37cc807a79bafb9024550ab6cb7cf1da_medium.jpg"
+        },
+        "76561199207536303": {
+            "name": "GUNDON",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9ab854c23ad39c58c4a0dcb78a9104a2cd9691d4_medium.jpg"
+        },
+        "76561198046664793": {
+            "name": "Probably Bad",
+            "avatar": "https:\/\/avatars.steamstatic.com\/363f6358f26e358948452ea434bae1798b4964bc_medium.jpg"
+        },
+        "76561197971987969": {
+            "name": "Not mad",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f2492a6721f44198a1e6d07cd35887895a813689_medium.jpg"
+        },
+        "76561199531190218": {
+            "name": "\u043c\u0430\u043a\u0442\u0440\u0430\u0445\u0435\u0440",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c49c5796628c9e8584fdd686945949fb509cb656_medium.jpg"
+        },
+        "76561199180835838": {
+            "name": "\u044f \u0431\u0430\u0440\u0431\u0435\u043a\u044e?",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d71c350ce4377afc79b1d56062b29eab3603afde_medium.jpg"
+        },
+        "76561199537365001": {
+            "name": "olyx41-45",
+            "avatar": "https:\/\/avatars.steamstatic.com\/43d897869e84670537a7cda590da24c76aff82bf_medium.jpg"
+        },
+        "76561199037618907": {
+            "name": "\u0437\u0430\u0432\u043e\u0434\u043d\u043e\u0439 \u0430\u043f\u0435\u043b\u044c\u0441\u0438\u043d",
+            "avatar": "https:\/\/avatars.steamstatic.com\/bcae3a03f924b5f5b5faea1f35f258c78f6928cb_medium.jpg"
+        },
+        "76561198930128898": {
+            "name": "siuuuuu",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cb36d463d976b08eb40154426807fbf1991f074c_medium.jpg"
+        },
+        "76561199056018549": {
+            "name": "\u0432\u0438\u043d\u0438",
+            "avatar": "https:\/\/avatars.steamstatic.com\/e5e6febd7da8e5b029b541a2aef7a7f711ecf7be_medium.jpg"
+        },
+        "76561198818931159": {
+            "name": "\u041d\u0435\u0433\u0440\u0438\u0442\u043e \u0411\u043e\u0431\u0440\u0438\u0442\u043e",
+            "avatar": "https:\/\/avatars.steamstatic.com\/86fc44bb227284e4ff017b7992ee558cc95eb3c9_medium.jpg"
+        },
+        "76561199491249018": {
+            "name": "Kizarik",
+            "avatar": "https:\/\/avatars.steamstatic.com\/4a0bc9794348f5c3a67453a26790b666ca742f9a_medium.jpg"
+        },
+        "76561198981494461": {
+            "name": "NeMoFanne",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f5f487cf6479576097a7a0ac9fd8062951285483_medium.jpg"
+        },
+        "76561199082876035": {
+            "name": "\u0442\u0438\u043c\u043e\u0448\u0430 \u043c\u0443\u043d\u0440\u0430\u0439\u0441\u043e\u0432",
+            "avatar": "https:\/\/avatars.steamstatic.com\/194a256150181b472e56eafb91078156d2baee22_medium.jpg"
+        },
+        "76561199820612323": {
+            "name": "\u0413\u043e\u0448\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cefc5b6a3361ea45415cd6cc497f16912138f054_medium.jpg"
+        },
+        "76561199208778574": {
+            "name": "\u0421\u0435\u043d\u044f",
+            "avatar": "https:\/\/avatars.steamstatic.com\/3f96a958e728af6c08d7a6b6ec411aee9040eac8_medium.jpg"
+        },
+        "76561198134780599": {
+            "name": "\u0412\u043e\u0436\u0434\u044c \u0428\u0430\u043a\u0430\u043b\u043e\u0432",
+            "avatar": "https:\/\/avatars.steamstatic.com\/f2f34dd7620ddb9cb3033ffc6d970d1dab2978b9_medium.jpg"
+        },
+        "76561199019130527": {
+            "name": "\u0428\u0410\u041a\u0410\u041b",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9822bd54e09e05a4410d38f46df2041f49f639f8_medium.jpg"
+        },
+        "76561199563120789": {
+            "name": "\u0421\u0410\u041c\u041a\u0410 \u0428\u0410\u041a\u0410\u041b\u0410",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9b7bbf8eacc3754ea6049eb2f370797f94883826_medium.jpg"
+        },
+        "76561199544223066": {
+            "name": "Justice",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c7fbc4c6895adb13f1056a917af46cffe4e9dcfb_medium.jpg"
+        },
+        "76561199564045495": {
+            "name": "\u0431\u0443\u043b\u043e\u0447\u043a\u0430 \u0441 \u043f\u0438\u0432\u043e\u043c",
+            "avatar": "https:\/\/avatars.steamstatic.com\/59fbee7c7d6a08ec53323edd2b0e052282c48568_medium.jpg"
+        },
+        "76561199010796509": {
+            "name": "\u041a\u041e\u0420\u041e\u0427\u0415 !!!",
+            "avatar": "https:\/\/avatars.steamstatic.com\/6aead7fcd4b557bdf468763df843be5434f7c382_medium.jpg"
+        },
+        "76561199067981498": {
+            "name": "\ud83e\udd21\ue059ITNOTMEHONESTLY\ue059\ud83e\udd21",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d1779bc8dcaf8db6906673b890abc0f184113b00_medium.jpg"
+        },
+        "76561199028230558": {
+            "name": "^^K@RaN4ik_08^^",
+            "avatar": "https:\/\/avatars.steamstatic.com\/122a2562c9842180b32282d724d2c923e3d4365b_medium.jpg"
+        },
+        "76561199390968312": {
+            "name": "gaz",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+        },
+        "76561198995861447": {
+            "name": "DjokeR",
+            "avatar": "https:\/\/avatars.steamstatic.com\/8fa500c247619fe2aafffa510867d3f68610808b_medium.jpg"
+        },
+        "76561199269070348": {
+            "name": "IO",
+            "avatar": "https:\/\/avatars.steamstatic.com\/59a70dbae7e8b505b0fa7efa6f51c52413942155_medium.jpg"
+        },
+        "76561199086817263": {
+            "name": "OmegaConnect",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5b8825b34c5d77b00c3a18897f2f1175fa0e0e57_medium.jpg"
+        },
+        "76561198139086497": {
+            "name": "LaV1e",
+            "avatar": "https:\/\/avatars.steamstatic.com\/df9d7430e0370da0caad9b21d72c1b162ef47145_medium.jpg"
+        },
+        "76561198091190942": {
+            "name": "+-",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9b75cb8641bec11676f66f3d8eb4995ddec08908_medium.jpg"
+        },
+        "76561198870907389": {
+            "name": "RizzoN",
+            "avatar": "https:\/\/avatars.steamstatic.com\/d3b1dc8398744d63193203f2b79271fcbd544f7f_medium.jpg"
+        },
+        "76561198325616996": {
+            "name": "nuri",
+            "avatar": "https:\/\/avatars.steamstatic.com\/c5bb4a12a2202c086b8b78e38c66d47bfc5885e3_medium.jpg"
+        },
+        "76561199034440240": {
+            "name": "\u0415\u0411\u041b\u0410\u041d",
+            "avatar": "https:\/\/avatars.steamstatic.com\/8a8f967e15393d5d37ffd078bcd02db377b613e0_medium.jpg"
+        },
+        "76561199338839488": {
+            "name": "Kupitman",
+            "avatar": "https:\/\/avatars.steamstatic.com\/37532e3ae4e0c8719b550098941ddc8facd90754_medium.jpg"
+        },
+        "76561199503852208": {
+            "name": "Bikov",
+            "avatar": "https:\/\/avatars.steamstatic.com\/73faa1b25bb0e2731b26389145a943a42e60edb4_medium.jpg"
+        },
+        "76561198191274034": {
+            "name": "K00L boy",
+            "avatar": "https:\/\/avatars.steamstatic.com\/223a73d5043569a0d71243e7f22e2319d55dc077_medium.jpg"
+        },
+        "76561199225353032": {
+            "name": "\u0441\u043e\u0437\u0434\u0430\u0442\u0435\u043b\u044c \u0441\u0435\u043a\u0441\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/19e56c0281a47110aa36e0147e8d9b25683325a4_medium.jpg"
+        },
+        "76561198887181530": {
+            "name": "\u041f\u0440\u0435\u0434-\u041a\u0430\u043cshot",
+            "avatar": "https:\/\/avatars.steamstatic.com\/4973aa52af0b067884a278a472a5316de6024354_medium.jpg"
+        },
+        "76561199043761283": {
+            "name": "Shuntaro Chishiya",
+            "avatar": "https:\/\/avatars.steamstatic.com\/9d1b00a6bfe788816b17876116aa1b9c03b5efeb_medium.jpg"
+        }
+    },
+    "last_updated": "2025-04-13 23:26:37"
 }
