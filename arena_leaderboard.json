@@ -1,7 +1,51 @@
 {
-    "last_updated": "2025-04-13 09:27:03",
+    "last_updated": "2025-04-13 10:18:12",
     "tabs": {
         "1": [
+            {
+                "wave_count": 56,
+                "players": [
+                    {
+                        "steamid": "76561199131189694",
+                        "name": "\u044f\u0440\u0438\u043a 3-\u0439 \u0432\u0430\u0439\u043f\u0435\u0440\u0440",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/f60c58655b55d6b5ad2611e397d5ade3efa92c38_medium.jpg"
+                    }
+                ],
+                "rank": 1
+            },
+            {
+                "wave_count": 43,
+                "players": [
+                    {
+                        "steamid": "76561199438687783",
+                        "name": "\u0424\u0438\u0434\u0430\u043d\u0443 \u042f\u043f\u043e\u043c\u0438\u0434\u04432004",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/f9f4e65cd0d9322711055c13d2c789e63b09463f_medium.jpg"
+                    }
+                ],
+                "rank": 2
+            },
+            {
+                "wave_count": 36,
+                "players": [
+                    {
+                        "steamid": "76561198914370411",
+                        "name": "Xiholo",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/064071d1b6c772363100fda6e41f7d9442893891_medium.jpg"
+                    }
+                ],
+                "rank": 3
+            },
+            {
+                "wave_count": 21,
+                "players": [
+                    {
+                        "steamid": "76561198416745369",
+                        "name": "\u5ddd\u5d0e\u8599\u5b50",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/40d091287a436f6dd65bc33f5778155bd4861c4c_medium.jpg"
+                    }
+                ],
+                "rank": 4
+            },
             {
                 "wave_count": 20,
                 "players": [
@@ -11,10 +55,60 @@
                         "avatar": "https:\/\/avatars.steamstatic.com\/1965afb9eb415f2242eda3ab11536f9aff7fdfba_medium.jpg"
                     }
                 ],
+                "rank": 5
+            },
+            {
+                "wave_count": 13,
+                "players": [
+                    {
+                        "steamid": "76561198445572961",
+                        "name": "Grinch 2Mainey",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/edc8fb1820908bcf611dad2efcd1a06851d610e7_medium.jpg"
+                    }
+                ],
+                "rank": 6
+            }
+        ],
+        "2": [
+            {
+                "wave_count": 69,
+                "players": [
+                    {
+                        "steamid": "76561199239452336",
+                        "name": "Arl1an4ik",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/c53f763139c24ec9e24acd6c3b5172a050454af2_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198993307254",
+                        "name": "Cheese",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/b44f72fa56d633d35800cb07ec8aaca9cb76b32b_medium.jpg"
+                    }
+                ],
                 "rank": 1
             }
         ],
-        "2": [],
-        "3": []
+        "3": [
+            {
+                "wave_count": 78,
+                "players": [
+                    {
+                        "steamid": "76561199047713403",
+                        "name": "21321321",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/68e05025f7cc023a3e013eab64671011b19ba6b7_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198977072292",
+                        "name": "vat",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/ff12434bdb2cc74a952f46e453e7fe119f9d6983_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198994240949",
+                        "name": "Coco2",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+                    }
+                ],
+                "rank": 1
+            }
+        ]
     }
 }
