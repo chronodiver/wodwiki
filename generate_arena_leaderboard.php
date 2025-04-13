@@ -1,6 +1,14 @@
 <?php
 $apiKey = getenv('STEAM_API_KEY');
 $arenaUrl = 'https://data.worldofdota.net/data/get_top_rating_pve_arena.php';
+$cacheFile = 'players_cache.json';
+
+// Загрузка кэша
+$playerCache = [];
+if (file_exists($cacheFile)) {
+    $cacheContent = file_get_contents($cacheFile);
+    $playerCache = json_decode($cacheContent, true)['players'] ?? [];
+}
 
 $arenaData = file_get_contents($arenaUrl);
 $arenaPlayers = json_decode($arenaData, true);
@@ -61,17 +69,34 @@ if (is_array($arenaPlayers)) {
                     continue;
                 }
 
-                $steamUrl = "https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=$apiKey&steamids=" . implode(',', $players);
-                $steamData = file_get_contents($steamUrl);
-                $steamProfile = json_decode($steamData, true);
-
                 $playerData = [];
-                if (isset($steamProfile['response']['players'])) {
-                    foreach ($steamProfile['response']['players'] as $p) {
+                foreach ($players as $steamid64) {
+                    if (isset($playerCache[$steamid64])) {
                         $playerData[] = [
-                            'steamid' => $p['steamid'],
-                            'name' => $p['personaname'] ?? 'Неизвестно',
-                            'avatar' => $p['avatarmedium'] ?? 'https://via.placeholder.com/64'
+                            'steamid' => (string)$steamid64,
+                            'name' => $playerCache[$steamid64]['name'],
+                            'avatar' => $playerCache[$steamid64]['avatar']
+                        ];
+                    } else {
+                        $steamUrl = "https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=$apiKey&steamids=$steamid64";
+                        $steamData = @file_get_contents($steamUrl);
+                        if ($steamData === false) {
+                            $playerName = 'Неизвестно';
+                            $avatarUrl = 'https://via.placeholder.com/64';
+                        } else {
+                            $steamProfile = json_decode($steamData, true);
+                            $playerName = $steamProfile['response']['players'][0]['personaname'] ?? 'Неизвестно';
+                            $avatarUrl = $steamProfile['response']['players'][0]['avatarmedium'] ?? 'https://via.placeholder.com/64';
+                        }
+                        $playerData[] = [
+                            'steamid' => (string)$steamid64,
+                            'name' => $playerName,
+                            'avatar' => $avatarUrl
+                        ];
+                        // Обновляем кэш
+                        $playerCache[$steamid64] = [
+                            'name' => $playerName,
+                            'avatar' => $avatarUrl
                         ];
                     }
                 }
@@ -93,5 +118,13 @@ if (is_array($arenaPlayers)) {
     }
 }
 
+// Сохранение кэша
+$cacheData = [
+    'players' => $playerCache,
+    'last_updated' => date('Y-m-d H:i:s')
+];
+file_put_contents($cacheFile, json_encode($cacheData, JSON_PRETTY_PRINT));
+
+// Сохранение arena_leaderboard.json
 file_put_contents('arena_leaderboard.json', json_encode($result, JSON_PRETTY_PRINT));
 ?>
