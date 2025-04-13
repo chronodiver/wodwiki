@@ -9,7 +9,7 @@ $arenaPlayers = json_decode($arenaData, true);
 date_default_timezone_set('Europe/Moscow');
 
 $result = [
-    'last_updated' => date('Y-m-d H:i:s'), // Время в MSK
+    'last_updated' => date('Y-m-d H:i:s'),
     'tabs' => ['1' => [], '2' => [], '3' => []]
 ];
 
@@ -22,6 +22,18 @@ if (is_array($arenaPlayers)) {
                 $p1 = isset($entry['p1']) ? $entry['p1'] : '0';
                 $p2 = isset($entry['p2']) ? $entry['p2'] : '0';
                 $p3 = isset($entry['p3']) ? $entry['p3'] : '0';
+
+                // Извлекаем героев
+                $heroes = [];
+                if (isset($entry['hero_1']) && preg_match('/npc_dota_hero_(.+)/', $entry['hero_1'], $match)) {
+                    $heroes[] = $match[1];
+                }
+                if ($key >= 2 && isset($entry['hero_2']) && preg_match('/npc_dota_hero_(.+)/', $entry['hero_2'], $match)) {
+                    $heroes[] = $match[1];
+                }
+                if ($key == 3 && isset($entry['hero_3']) && preg_match('/npc_dota_hero_(.+)/', $entry['hero_3'], $match)) {
+                    $heroes[] = $match[1];
+                }
 
                 $players = [];
                 $tab = null;
@@ -66,7 +78,8 @@ if (is_array($arenaPlayers)) {
 
                 $result['tabs'][$tab][] = [
                     'wave_count' => (int)$waveCount,
-                    'players' => $playerData
+                    'players' => $playerData,
+                    'heroes' => $heroes // Добавляем героев
                 ];
             }
         }
