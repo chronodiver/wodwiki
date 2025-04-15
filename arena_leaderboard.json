@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-15 07:24:40",
+    "last_updated": "2025-04-15 08:19:55",
     "tabs": {
         "1": [
             {
@@ -1977,6 +1977,20 @@
                 "rank": 141
             },
             {
+                "wave_count": 67,
+                "players": [
+                    {
+                        "steamid": "76561198063757589",
+                        "name": "Bill Nye the Silence Guy",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/ca3c2740c796b9385e9fca6df1c4ae326383137d_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "luna"
+                ],
+                "rank": 142
+            },
+            {
                 "wave_count": 65,
                 "players": [
                     {
@@ -1988,7 +2002,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 142
+                "rank": 143
             },
             {
                 "wave_count": 64,
@@ -2002,7 +2016,7 @@
                 "heroes": [
                     "drow_ranger"
                 ],
-                "rank": 143
+                "rank": 144
             },
             {
                 "wave_count": 64,
@@ -2016,7 +2030,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 64,
@@ -2030,7 +2044,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 64,
@@ -2044,7 +2058,7 @@
                 "heroes": [
                     "lion"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 64,
@@ -2058,7 +2072,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 64,
@@ -2072,7 +2086,7 @@
                 "heroes": [
                     "jakiro"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 64,
@@ -2081,20 +2095,6 @@
                         "steamid": "76561198187563649",
                         "name": "MilfPool",
                         "avatar": "https:\/\/avatars.steamstatic.com\/b3ecf80e43595f0bf20f094a58faf42f8f22da2b_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "luna"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 63,
-                "players": [
-                    {
-                        "steamid": "76561198216339853",
-                        "name": "\u041c\u0430\u043b\u0435\u043d\u044c\u043a\u0430\u044f \u0448\u0442\u0443\u0447\u043a\u0430",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/2a846e031deddfb08fa184c4bb97dc3d3bbc37a1_medium.jpg"
                     }
                 ],
                 "heroes": [
