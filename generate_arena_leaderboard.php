@@ -21,6 +21,9 @@ $result = [
     'tabs' => ['1' => [], '2' => [], '3' => []]
 ];
 
+// Период обновления кэша (1 день в секундах)
+$cacheExpiration = 24 * 60 * 60; // 86400 секунд
+
 if (is_array($arenaPlayers)) {
     foreach (['1', '2', '3'] as $key) {
         if (isset($arenaPlayers[$key]) && is_array($arenaPlayers[$key])) {
@@ -71,13 +74,23 @@ if (is_array($arenaPlayers)) {
 
                 $playerData = [];
                 foreach ($players as $steamid64) {
+                    $updateRequired = true;
                     if (isset($playerCache[$steamid64])) {
-                        $playerData[] = [
-                            'steamid' => (string)$steamid64,
-                            'name' => $playerCache[$steamid64]['name'],
-                            'avatar' => $playerCache[$steamid64]['avatar']
-                        ];
-                    } else {
+                        $lastUpdated = isset($playerCache[$steamid64]['last_updated']) 
+                            ? strtotime($playerCache[$steamid64]['last_updated']) 
+                            : 0;
+                        $currentTime = time();
+                        if ($lastUpdated && ($currentTime - $lastUpdated < $cacheExpiration)) {
+                            $playerData[] = [
+                                'steamid' => (string)$steamid64,
+                                'name' => $playerCache[$steamid64]['name'],
+                                'avatar' => $playerCache[$steamid64]['avatar']
+                            ];
+                            $updateRequired = false;
+                        }
+                    }
+
+                    if ($updateRequired) {
                         $steamUrl = "https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=$apiKey&steamids=$steamid64";
                         $steamData = @file_get_contents($steamUrl);
                         if ($steamData === false) {
@@ -96,7 +109,8 @@ if (is_array($arenaPlayers)) {
                         // Обновляем кэш
                         $playerCache[$steamid64] = [
                             'name' => $playerName,
-                            'avatar' => $avatarUrl
+                            'avatar' => $avatarUrl,
+                            'last_updated' => date('Y-m-d H:i:s')
                         ];
                     }
                 }
