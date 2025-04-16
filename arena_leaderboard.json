@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-16 08:19:57",
+    "last_updated": "2025-04-16 09:29:15",
     "tabs": {
         "1": [
             {
@@ -1991,6 +1991,20 @@
                 "rank": 142
             },
             {
+                "wave_count": 79,
+                "players": [
+                    {
+                        "steamid": "76561198830277240",
+                        "name": "<3",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/c0790f51c1cb67ea6fe2732d6a42d80900d0187c_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "invoker"
+                ],
+                "rank": 143
+            },
+            {
                 "wave_count": 78,
                 "players": [
                     {
@@ -2002,7 +2016,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 143
+                "rank": 144
             },
             {
                 "wave_count": 78,
@@ -2016,7 +2030,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 78,
@@ -2030,7 +2044,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 78,
@@ -2044,7 +2058,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 78,
@@ -2058,7 +2072,7 @@
                 "heroes": [
                     "marci"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 78,
@@ -2072,7 +2086,7 @@
                 "heroes": [
                     "legion_commander"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 78,
@@ -2085,20 +2099,6 @@
                 ],
                 "heroes": [
                     "luna"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 78,
-                "players": [
-                    {
-                        "steamid": "76561198826423152",
-                        "name": "Wadanohara",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/bc589de5c347f41f7026e146d62d9ff279c757e4_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "marci"
                 ],
                 "rank": 150
             }
