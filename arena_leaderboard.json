@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-17 15:35:31",
+    "last_updated": "2025-04-17 15:39:53",
     "tabs": {
         "1": [
             {
@@ -2019,6 +2019,20 @@
                 "rank": 144
             },
             {
+                "wave_count": 80,
+                "players": [
+                    {
+                        "steamid": "76561199178178425",
+                        "name": "Clarkoof",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "winter_wyvern"
+                ],
+                "rank": 145
+            },
+            {
                 "wave_count": 79,
                 "players": [
                     {
@@ -2030,7 +2044,7 @@
                 "heroes": [
                     "drow_ranger"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 79,
@@ -2044,7 +2058,7 @@
                 "heroes": [
                     "undying"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 79,
@@ -2058,7 +2072,7 @@
                 "heroes": [
                     "medusa"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 79,
@@ -2072,7 +2086,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 79,
@@ -2085,20 +2099,6 @@
                 ],
                 "heroes": [
                     "winter_wyvern"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 79,
-                "players": [
-                    {
-                        "steamid": "76561199406910899",
-                        "name": "\u0414\u0435\u0432\u0441\u0442\u0432\u0435\u043d\u043d\u0438\u043a",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/c6cd371f2bfa076c761753bfdd418a100b31adea_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "nevermore"
                 ],
                 "rank": 150
             }
