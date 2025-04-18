@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-18 07:23:44",
+    "last_updated": "2025-04-18 08:19:47",
     "tabs": {
         "1": [
             {
@@ -3425,6 +3425,26 @@
                 "rank": 66
             },
             {
+                "wave_count": 86,
+                "players": [
+                    {
+                        "steamid": "76561199070619094",
+                        "name": "Alezar4ik",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/edea68afd57a75255af47916521ba7b4bd0174c1_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199026100835",
+                        "name": "\u0427\u0443\u043a\u0430\u0433\u0438\u0440",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/c620686fc28f48c6fc6a86bf38da70c4d034ee90_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "medusa",
+                    "legion_commander"
+                ],
+                "rank": 67
+            },
+            {
                 "wave_count": 84,
                 "players": [
                     {
@@ -3442,7 +3462,7 @@
                     "winter_wyvern",
                     "tidehunter"
                 ],
-                "rank": 67
+                "rank": 68
             },
             {
                 "wave_count": 84,
@@ -3462,7 +3482,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 68
+                "rank": 69
             },
             {
                 "wave_count": 83,
@@ -3482,7 +3502,7 @@
                     "tiny",
                     "marci"
                 ],
-                "rank": 69
+                "rank": 70
             },
             {
                 "wave_count": 82,
@@ -3502,7 +3522,7 @@
                     "necrolyte",
                     "antimage"
                 ],
-                "rank": 70
+                "rank": 71
             },
             {
                 "wave_count": 80,
@@ -3522,7 +3542,7 @@
                     "nevermore",
                     "muerta"
                 ],
-                "rank": 71
+                "rank": 72
             },
             {
                 "wave_count": 80,
@@ -3542,7 +3562,7 @@
                     "luna",
                     "tidehunter"
                 ],
-                "rank": 72
+                "rank": 73
             },
             {
                 "wave_count": 80,
@@ -3562,7 +3582,7 @@
                     "pangolier",
                     "slardar"
                 ],
-                "rank": 73
+                "rank": 74
             },
             {
                 "wave_count": 80,
@@ -3582,7 +3602,7 @@
                     "winter_wyvern",
                     "luna"
                 ],
-                "rank": 74
+                "rank": 75
             },
             {
                 "wave_count": 80,
@@ -3602,7 +3622,7 @@
                     "drow_ranger",
                     "winter_wyvern"
                 ],
-                "rank": 75
+                "rank": 76
             },
             {
                 "wave_count": 80,
@@ -3622,7 +3642,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 76
+                "rank": 77
             },
             {
                 "wave_count": 80,
@@ -3642,7 +3662,7 @@
                     "winter_wyvern",
                     "luna"
                 ],
-                "rank": 77
+                "rank": 78
             },
             {
                 "wave_count": 79,
@@ -3662,7 +3682,7 @@
                     "abaddon",
                     "warlock"
                 ],
-                "rank": 78
+                "rank": 79
             },
             {
                 "wave_count": 79,
@@ -3682,7 +3702,7 @@
                     "dragon_knight",
                     "pudge"
                 ],
-                "rank": 79
+                "rank": 80
             },
             {
                 "wave_count": 79,
@@ -3702,7 +3722,7 @@
                     "winter_wyvern",
                     "huskar"
                 ],
-                "rank": 80
+                "rank": 81
             },
             {
                 "wave_count": 79,
@@ -3722,7 +3742,7 @@
                     "winter_wyvern",
                     "medusa"
                 ],
-                "rank": 81
+                "rank": 82
             },
             {
                 "wave_count": 79,
@@ -3742,7 +3762,7 @@
                     "legion_commander",
                     "crystal_maiden"
                 ],
-                "rank": 82
+                "rank": 83
             },
             {
                 "wave_count": 79,
@@ -3762,7 +3782,7 @@
                     "winter_wyvern",
                     "dazzle"
                 ],
-                "rank": 83
+                "rank": 84
             },
             {
                 "wave_count": 79,
@@ -3782,7 +3802,7 @@
                     "luna",
                     "witch_doctor"
                 ],
-                "rank": 84
+                "rank": 85
             },
             {
                 "wave_count": 79,
@@ -3802,7 +3822,7 @@
                     "luna",
                     "phantom_assassin"
                 ],
-                "rank": 85
+                "rank": 86
             },
             {
                 "wave_count": 79,
@@ -3822,7 +3842,7 @@
                     "lion",
                     "medusa"
                 ],
-                "rank": 86
+                "rank": 87
             },
             {
                 "wave_count": 79,
@@ -3842,7 +3862,7 @@
                     "winter_wyvern",
                     "crystal_maiden"
                 ],
-                "rank": 87
+                "rank": 88
             },
             {
                 "wave_count": 79,
@@ -3862,7 +3882,7 @@
                     "muerta",
                     "morphling"
                 ],
-                "rank": 88
+                "rank": 89
             },
             {
                 "wave_count": 78,
@@ -3882,7 +3902,7 @@
                     "marci",
                     "huskar"
                 ],
-                "rank": 89
+                "rank": 90
             },
             {
                 "wave_count": 78,
@@ -3902,7 +3922,7 @@
                     "marci",
                     "arc_warden"
                 ],
-                "rank": 90
+                "rank": 91
             },
             {
                 "wave_count": 78,
@@ -3922,7 +3942,7 @@
                     "medusa",
                     "spectre"
                 ],
-                "rank": 91
+                "rank": 92
             },
             {
                 "wave_count": 78,
@@ -3942,7 +3962,7 @@
                     "vengefulspirit",
                     "marci"
                 ],
-                "rank": 92
+                "rank": 93
             },
             {
                 "wave_count": 78,
@@ -3962,7 +3982,7 @@
                     "tidehunter",
                     "phantom_assassin"
                 ],
-                "rank": 93
+                "rank": 94
             },
             {
                 "wave_count": 78,
@@ -3982,7 +4002,7 @@
                     "tidehunter",
                     "vengefulspirit"
                 ],
-                "rank": 94
+                "rank": 95
             },
             {
                 "wave_count": 77,
@@ -4002,7 +4022,7 @@
                     "winter_wyvern",
                     "luna"
                 ],
-                "rank": 95
+                "rank": 96
             },
             {
                 "wave_count": 77,
@@ -4022,7 +4042,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 96
+                "rank": 97
             },
             {
                 "wave_count": 77,
@@ -4042,7 +4062,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 97
+                "rank": 98
             },
             {
                 "wave_count": 71,
@@ -4062,7 +4082,7 @@
                     "pangolier",
                     "phantom_assassin"
                 ],
-                "rank": 98
+                "rank": 99
             },
             {
                 "wave_count": 71,
@@ -4082,7 +4102,7 @@
                     "zuus",
                     "necrolyte"
                 ],
-                "rank": 99
+                "rank": 100
             },
             {
                 "wave_count": 71,
@@ -4102,7 +4122,7 @@
                     "phantom_assassin",
                     "winter_wyvern"
                 ],
-                "rank": 100
+                "rank": 101
             },
             {
                 "wave_count": 69,
@@ -4122,7 +4142,7 @@
                     "doom_bringer",
                     "lion"
                 ],
-                "rank": 101
+                "rank": 102
             },
             {
                 "wave_count": 69,
@@ -4142,7 +4162,7 @@
                     "necrolyte",
                     "luna"
                 ],
-                "rank": 102
+                "rank": 103
             },
             {
                 "wave_count": 69,
@@ -4162,7 +4182,7 @@
                     "chen",
                     "phantom_assassin"
                 ],
-                "rank": 103
+                "rank": 104
             },
             {
                 "wave_count": 69,
@@ -4182,7 +4202,7 @@
                     "earthshaker",
                     "winter_wyvern"
                 ],
-                "rank": 104
+                "rank": 105
             },
             {
                 "wave_count": 69,
@@ -4202,7 +4222,7 @@
                     "marci",
                     "bristleback"
                 ],
-                "rank": 105
+                "rank": 106
             },
             {
                 "wave_count": 69,
@@ -4222,7 +4242,7 @@
                     "ancient_apparition",
                     "winter_wyvern"
                 ],
-                "rank": 106
+                "rank": 107
             },
             {
                 "wave_count": 69,
@@ -4242,7 +4262,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 107
+                "rank": 108
             },
             {
                 "wave_count": 69,
@@ -4262,7 +4282,7 @@
                     "legion_commander",
                     "ancient_apparition"
                 ],
-                "rank": 108
+                "rank": 109
             },
             {
                 "wave_count": 69,
@@ -4282,7 +4302,7 @@
                     "luna",
                     "medusa"
                 ],
-                "rank": 109
+                "rank": 110
             },
             {
                 "wave_count": 69,
@@ -4302,7 +4322,7 @@
                     "oracle",
                     "crystal_maiden"
                 ],
-                "rank": 110
+                "rank": 111
             },
             {
                 "wave_count": 69,
@@ -4322,7 +4342,7 @@
                     "tidehunter",
                     "luna"
                 ],
-                "rank": 111
+                "rank": 112
             },
             {
                 "wave_count": 69,
@@ -4342,7 +4362,7 @@
                     "warlock",
                     "winter_wyvern"
                 ],
-                "rank": 112
+                "rank": 113
             },
             {
                 "wave_count": 69,
@@ -4362,7 +4382,7 @@
                     "night_stalker",
                     "lich"
                 ],
-                "rank": 113
+                "rank": 114
             },
             {
                 "wave_count": 69,
@@ -4382,7 +4402,7 @@
                     "luna",
                     "doom_bringer"
                 ],
-                "rank": 114
+                "rank": 115
             },
             {
                 "wave_count": 69,
@@ -4402,7 +4422,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 115
+                "rank": 116
             },
             {
                 "wave_count": 69,
@@ -4422,7 +4442,7 @@
                     "morphling",
                     "tidehunter"
                 ],
-                "rank": 116
+                "rank": 117
             },
             {
                 "wave_count": 67,
@@ -4442,7 +4462,7 @@
                     "chen",
                     "morphling"
                 ],
-                "rank": 117
+                "rank": 118
             },
             {
                 "wave_count": 67,
@@ -4462,7 +4482,7 @@
                     "luna",
                     "crystal_maiden"
                 ],
-                "rank": 118
+                "rank": 119
             },
             {
                 "wave_count": 64,
@@ -4482,7 +4502,7 @@
                     "warlock",
                     "necrolyte"
                 ],
-                "rank": 119
+                "rank": 120
             },
             {
                 "wave_count": 64,
@@ -4502,7 +4522,7 @@
                     "chen",
                     "weaver"
                 ],
-                "rank": 120
+                "rank": 121
             },
             {
                 "wave_count": 64,
@@ -4522,7 +4542,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 121
+                "rank": 122
             },
             {
                 "wave_count": 64,
@@ -4542,7 +4562,7 @@
                     "pudge",
                     "luna"
                 ],
-                "rank": 122
+                "rank": 123
             },
             {
                 "wave_count": 64,
@@ -4562,7 +4582,7 @@
                     "rubick",
                     "chen"
                 ],
-                "rank": 123
+                "rank": 124
             },
             {
                 "wave_count": 63,
@@ -4582,7 +4602,7 @@
                     "drow_ranger",
                     "juggernaut"
                 ],
-                "rank": 124
+                "rank": 125
             },
             {
                 "wave_count": 63,
@@ -4602,7 +4622,7 @@
                     "chen",
                     "luna"
                 ],
-                "rank": 125
+                "rank": 126
             },
             {
                 "wave_count": 63,
@@ -4622,7 +4642,7 @@
                     "luna",
                     "legion_commander"
                 ],
-                "rank": 126
+                "rank": 127
             },
             {
                 "wave_count": 63,
@@ -4642,7 +4662,7 @@
                     "windrunner",
                     "luna"
                 ],
-                "rank": 127
+                "rank": 128
             },
             {
                 "wave_count": 63,
@@ -4662,7 +4682,7 @@
                     "nevermore",
                     "luna"
                 ],
-                "rank": 128
+                "rank": 129
             },
             {
                 "wave_count": 63,
@@ -4682,7 +4702,7 @@
                     "medusa",
                     "luna"
                 ],
-                "rank": 129
+                "rank": 130
             },
             {
                 "wave_count": 63,
@@ -4702,7 +4722,7 @@
                     "legion_commander",
                     "luna"
                 ],
-                "rank": 130
+                "rank": 131
             },
             {
                 "wave_count": 59,
@@ -4722,7 +4742,7 @@
                     "invoker",
                     "kunkka"
                 ],
-                "rank": 131
+                "rank": 132
             },
             {
                 "wave_count": 59,
@@ -4742,7 +4762,7 @@
                     "weaver",
                     "ursa"
                 ],
-                "rank": 132
+                "rank": 133
             },
             {
                 "wave_count": 59,
@@ -4762,7 +4782,7 @@
                     "oracle",
                     "omniknight"
                 ],
-                "rank": 133
+                "rank": 134
             },
             {
                 "wave_count": 59,
@@ -4782,7 +4802,7 @@
                     "nevermore",
                     "tiny"
                 ],
-                "rank": 134
+                "rank": 135
             },
             {
                 "wave_count": 59,
@@ -4802,7 +4822,7 @@
                     "winter_wyvern",
                     "chen"
                 ],
-                "rank": 135
+                "rank": 136
             },
             {
                 "wave_count": 59,
@@ -4822,7 +4842,7 @@
                     "luna",
                     "huskar"
                 ],
-                "rank": 136
+                "rank": 137
             },
             {
                 "wave_count": 59,
@@ -4842,7 +4862,7 @@
                     "dragon_knight",
                     "drow_ranger"
                 ],
-                "rank": 137
+                "rank": 138
             },
             {
                 "wave_count": 59,
@@ -4862,7 +4882,7 @@
                     "antimage",
                     "spirit_breaker"
                 ],
-                "rank": 138
+                "rank": 139
             },
             {
                 "wave_count": 59,
@@ -4882,7 +4902,7 @@
                     "luna",
                     "pudge"
                 ],
-                "rank": 139
+                "rank": 140
             },
             {
                 "wave_count": 59,
@@ -4902,7 +4922,7 @@
                     "pudge",
                     "arc_warden"
                 ],
-                "rank": 140
+                "rank": 141
             },
             {
                 "wave_count": 59,
@@ -4922,7 +4942,7 @@
                     "invoker",
                     "crystal_maiden"
                 ],
-                "rank": 141
+                "rank": 142
             },
             {
                 "wave_count": 59,
@@ -4942,7 +4962,7 @@
                     "luna",
                     "tiny"
                 ],
-                "rank": 142
+                "rank": 143
             },
             {
                 "wave_count": 59,
@@ -4962,7 +4982,7 @@
                     "skywrath_mage",
                     "crystal_maiden"
                 ],
-                "rank": 143
+                "rank": 144
             },
             {
                 "wave_count": 59,
@@ -4982,7 +5002,7 @@
                     "dragon_knight",
                     "medusa"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 59,
@@ -5002,7 +5022,7 @@
                     "necrolyte",
                     "lion"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 59,
@@ -5022,7 +5042,7 @@
                     "necrolyte",
                     "nevermore"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 59,
@@ -5042,7 +5062,7 @@
                     "invoker",
                     "oracle"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 59,
@@ -5062,7 +5082,7 @@
                     "pangolier",
                     "kunkka"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 59,
@@ -5081,26 +5101,6 @@
                 "heroes": [
                     "kunkka",
                     "juggernaut"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 59,
-                "players": [
-                    {
-                        "steamid": "76561199316516420",
-                        "name": "Zettai wa boku da",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/30a75bfdf92af350b1d036fd66ba63da8762cf69_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199277451358",
-                        "name": "JesSand",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/526234d233d412db50cd77b096fee1d11f874198_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "marci",
-                    "winter_wyvern"
                 ],
                 "rank": 150
             }
