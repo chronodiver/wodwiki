@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-18 16:26:51",
+    "last_updated": "2025-04-18 17:18:01",
     "tabs": {
         "1": [
             {
@@ -1851,6 +1851,20 @@
                 "rank": 132
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561199316516420",
+                        "name": "Zettai wa boku da",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/30a75bfdf92af350b1d036fd66ba63da8762cf69_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "winter_wyvern"
+                ],
+                "rank": 133
+            },
+            {
                 "wave_count": 88,
                 "players": [
                     {
@@ -1862,7 +1876,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 133
+                "rank": 134
             },
             {
                 "wave_count": 87,
@@ -1876,7 +1890,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 134
+                "rank": 135
             },
             {
                 "wave_count": 87,
@@ -1890,7 +1904,7 @@
                 "heroes": [
                     "drow_ranger"
                 ],
-                "rank": 135
+                "rank": 136
             },
             {
                 "wave_count": 87,
@@ -1904,7 +1918,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 136
+                "rank": 137
             },
             {
                 "wave_count": 87,
@@ -1918,7 +1932,7 @@
                 "heroes": [
                     "drow_ranger"
                 ],
-                "rank": 137
+                "rank": 138
             },
             {
                 "wave_count": 86,
@@ -1932,7 +1946,7 @@
                 "heroes": [
                     "nevermore"
                 ],
-                "rank": 138
+                "rank": 139
             },
             {
                 "wave_count": 86,
@@ -1946,7 +1960,7 @@
                 "heroes": [
                     "spirit_breaker"
                 ],
-                "rank": 139
+                "rank": 140
             },
             {
                 "wave_count": 86,
@@ -1960,7 +1974,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 140
+                "rank": 141
             },
             {
                 "wave_count": 86,
@@ -1974,7 +1988,7 @@
                 "heroes": [
                     "drow_ranger"
                 ],
-                "rank": 141
+                "rank": 142
             },
             {
                 "wave_count": 86,
@@ -1988,7 +2002,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 142
+                "rank": 143
             },
             {
                 "wave_count": 86,
@@ -2002,7 +2016,7 @@
                 "heroes": [
                     "ursa"
                 ],
-                "rank": 143
+                "rank": 144
             },
             {
                 "wave_count": 86,
@@ -2016,7 +2030,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 86,
@@ -2030,7 +2044,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 86,
@@ -2044,7 +2058,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 86,
@@ -2058,7 +2072,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 84,
@@ -2072,7 +2086,7 @@
                 "heroes": [
                     "terrorblade"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 84,
@@ -2085,20 +2099,6 @@
                 ],
                 "heroes": [
                     "warlock"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 81,
-                "players": [
-                    {
-                        "steamid": "76561197990292209",
-                        "name": "Cia tamsu ir mes girti!",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/9b75cb8641bec11676f66f3d8eb4995ddec08908_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "winter_wyvern"
                 ],
                 "rank": 150
             }
@@ -8331,6 +8331,32 @@
                 "rank": 124
             },
             {
+                "wave_count": 21,
+                "players": [
+                    {
+                        "steamid": "76561198992497050",
+                        "name": "dmice",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/0e9b5e09e61ed2ed8634daebb54c3390dddc8c0f_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199241036862",
+                        "name": "N0PMAJlN1 T1n043K",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/8e49c13458efbde4e3abafb77e3993bc09732891_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199478306218",
+                        "name": "XXX",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/0e27e3ccc4a69e2dfb089e4805b3573765916a07_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "tiny",
+                    "invoker",
+                    "juggernaut"
+                ],
+                "rank": 125
+            },
+            {
                 "wave_count": 18,
                 "players": [
                     {
@@ -8354,7 +8380,7 @@
                     "meepo",
                     "winter_wyvern"
                 ],
-                "rank": 125
+                "rank": 126
             }
         ]
     }
