@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-19 05:56:48",
+    "last_updated": "2025-04-19 06:32:20",
     "tabs": {
         "1": [
             {
@@ -2005,6 +2005,20 @@
                 "rank": 143
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561198130503632",
+                        "name": "DupiDupi",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/9ed36beb5d09f2eafba210f988322cf050f1eb08_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "luna"
+                ],
+                "rank": 144
+            },
+            {
                 "wave_count": 88,
                 "players": [
                     {
@@ -2016,7 +2030,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 87,
@@ -2030,7 +2044,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 87,
@@ -2044,7 +2058,7 @@
                 "heroes": [
                     "drow_ranger"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 87,
@@ -2058,7 +2072,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 87,
@@ -2072,7 +2086,7 @@
                 "heroes": [
                     "drow_ranger"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 87,
@@ -2085,20 +2099,6 @@
                 ],
                 "heroes": [
                     "skeleton_king"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 87,
-                "players": [
-                    {
-                        "steamid": "76561198186484359",
-                        "name": "\u041e\u0442\u0447\u0435\u041d\u0410\u0417\u0415\u0421",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/0b34958879f0ad8dd45d07f229121b8c0fa30be4_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "medusa"
                 ],
                 "rank": 150
             }
