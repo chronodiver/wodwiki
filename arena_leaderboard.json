@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-19 09:26:30",
+    "last_updated": "2025-04-19 10:16:53",
     "tabs": {
         "1": [
             {
@@ -2033,6 +2033,20 @@
                 "rank": 145
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561198063148545",
+                        "name": "Zimri_VT",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/6c8fbd7037fe91028998168917782128f3cdaf7f_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "lich"
+                ],
+                "rank": 146
+            },
+            {
                 "wave_count": 88,
                 "players": [
                     {
@@ -2044,7 +2058,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 87,
@@ -2058,7 +2072,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 87,
@@ -2072,7 +2086,7 @@
                 "heroes": [
                     "drow_ranger"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 87,
@@ -2085,20 +2099,6 @@
                 ],
                 "heroes": [
                     "luna"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 87,
-                "players": [
-                    {
-                        "steamid": "76561198865070817",
-                        "name": "\u0431\u0430\u043b\u0431\u0435\u0441)",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/4cdcc6da88e30e23807f6f9370267a0b64dacfeb_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "drow_ranger"
                 ],
                 "rank": 150
             }
@@ -5045,6 +5045,26 @@
                 "rank": 147
             },
             {
+                "wave_count": 64,
+                "players": [
+                    {
+                        "steamid": "76561197994992742",
+                        "name": "Loiter",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/7cc53089ed88892c9071b5c60eb8c925b7ae53f1_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198317805457",
+                        "name": "--DGOS--",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/5364a10a7cfe467d63c891b56b23ae1869e285f5_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "luna",
+                    "slardar"
+                ],
+                "rank": 148
+            },
+            {
                 "wave_count": 63,
                 "players": [
                     {
@@ -5062,7 +5082,7 @@
                     "drow_ranger",
                     "juggernaut"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 63,
@@ -5081,26 +5101,6 @@
                 "heroes": [
                     "chen",
                     "luna"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 63,
-                "players": [
-                    {
-                        "steamid": "76561198397971499",
-                        "name": "minis4rka3m",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/bf7168644ef63f63260e97594bac8b57b90274f5_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199480784555",
-                        "name": "\u4f60\u4f6c\u8c46\u7684\u96de\u62dc",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/270b20886339e93f9086d90755f67651b7040513_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "luna",
-                    "legion_commander"
                 ],
                 "rank": 150
             }
