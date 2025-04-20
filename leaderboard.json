@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-20 14:15:31",
+    "last_updated": "2025-04-20 15:36:14",
     "players": [
         {
             "rank": 1,
@@ -17,17 +17,17 @@
         },
         {
             "rank": 3,
+            "steamid": "76561198982204291",
+            "name": "Endymion",
+            "avatar": "https:\/\/avatars.steamstatic.com\/56a62b5769ce63ee5966d881d9b7af9dff7d13f4_medium.jpg",
+            "rating": "766"
+        },
+        {
+            "rank": 4,
             "steamid": "76561198307203378",
             "name": "\u0437\u0434\u043e\u0440\u043e\u0432\u0430 \u0437\u0430\u0435\u0431\u0430\u043b",
             "avatar": "https:\/\/avatars.steamstatic.com\/79b03fa337c3e29d48191aab151b07b22484e06b_medium.jpg",
             "rating": "753"
-        },
-        {
-            "rank": 4,
-            "steamid": "76561198982204291",
-            "name": "Endymion",
-            "avatar": "https:\/\/avatars.steamstatic.com\/56a62b5769ce63ee5966d881d9b7af9dff7d13f4_medium.jpg",
-            "rating": "750"
         },
         {
             "rank": 5,
@@ -38,17 +38,17 @@
         },
         {
             "rank": 6,
+            "steamid": "76561198287517540",
+            "name": "1aZzy",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ac7a0ea1d7ec850ff4955527f196c0babc8051ed_medium.jpg",
+            "rating": "725"
+        },
+        {
+            "rank": 7,
             "steamid": "76561197995250090",
             "name": "ZyXeL",
             "avatar": "https:\/\/avatars.steamstatic.com\/b0ace84d10b309fe56d952fdf79fb818c52ea46b_medium.jpg",
             "rating": "722"
-        },
-        {
-            "rank": 7,
-            "steamid": "76561198287517540",
-            "name": "1aZzy",
-            "avatar": "https:\/\/avatars.steamstatic.com\/ac7a0ea1d7ec850ff4955527f196c0babc8051ed_medium.jpg",
-            "rating": "715"
         },
         {
             "rank": 8,
@@ -87,52 +87,52 @@
         },
         {
             "rank": 13,
+            "steamid": "76561198306211359",
+            "name": "\u0434\u0440\u0438\u043f\u0432\u043e\u0434\u04304",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1eb62c28f39149e39c7b1c5a83af89df5be5efa1_medium.jpg",
+            "rating": "578"
+        },
+        {
+            "rank": 14,
             "steamid": "76561198142611562",
             "name": "\u0141\u01fe\u0147\u0114\u0158",
             "avatar": "https:\/\/avatars.steamstatic.com\/4ddb67c3283dbc5178ec4718f9147b12f47e6007_medium.jpg",
             "rating": "562"
         },
         {
-            "rank": 14,
+            "rank": 15,
             "steamid": "76561198117666716",
             "name": "EviLRuDy",
             "avatar": "https:\/\/avatars.steamstatic.com\/b43f00755d642af1dd99039f25872a3bb6d2b5ed_medium.jpg",
             "rating": "560"
         },
         {
-            "rank": 15,
+            "rank": 16,
+            "steamid": "76561198811874111",
+            "name": "\u0410\u0433\u0440\u0435\u0441\u0441\u0438\u0432\u043d\u044b\u0439 \u0411\u0401\u0411\u041e",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5fc4775025fdcf8060729b855613c09a964854e5_medium.jpg",
+            "rating": "555"
+        },
+        {
+            "rank": 17,
             "steamid": "76561198405372128",
             "name": "Oathbreak3R",
             "avatar": "https:\/\/avatars.steamstatic.com\/d6d4c397544f8402608a8f78299e311acc1b7b0f_medium.jpg",
             "rating": "548"
         },
         {
-            "rank": 16,
+            "rank": 18,
             "steamid": "76561198851299515",
             "name": "\u0432\u043e\u0438\u043d \u0434\u0430\u0433\u043e\u043d\u0430",
             "avatar": "https:\/\/avatars.steamstatic.com\/a3d702ee9b7a3db118ab125933684bbccc27d58b_medium.jpg",
             "rating": "547"
         },
         {
-            "rank": 17,
+            "rank": 19,
             "steamid": "76561199088644351",
             "name": "\u0422\u0430\u043c\u043f\u043e\u043d",
             "avatar": "https:\/\/avatars.steamstatic.com\/c7b901daf79c4cd4666eca1d1a8eb07f00230446_medium.jpg",
             "rating": "547"
-        },
-        {
-            "rank": 18,
-            "steamid": "76561198306211359",
-            "name": "\u0434\u0440\u0438\u043f\u0432\u043e\u0434\u04304",
-            "avatar": "https:\/\/avatars.steamstatic.com\/1eb62c28f39149e39c7b1c5a83af89df5be5efa1_medium.jpg",
-            "rating": "542"
-        },
-        {
-            "rank": 19,
-            "steamid": "76561198811874111",
-            "name": "\u0410\u0433\u0440\u0435\u0441\u0441\u0438\u0432\u043d\u044b\u0439 \u0411\u0401\u0411\u041e",
-            "avatar": "https:\/\/avatars.steamstatic.com\/5fc4775025fdcf8060729b855613c09a964854e5_medium.jpg",
-            "rating": "537"
         },
         {
             "rank": 20,
@@ -164,122 +164,122 @@
         },
         {
             "rank": 24,
+            "steamid": "76561198107919922",
+            "name": "XmanWz",
+            "avatar": "https:\/\/avatars.steamstatic.com\/0ca2383cae7e0c30662c2c3cecdc4bb2d2af0056_medium.jpg",
+            "rating": "467"
+        },
+        {
+            "rank": 25,
             "steamid": "76561199562362347",
             "name": "\u041c\u0435\u0433\u0443\u043c\u0438\u043d",
             "avatar": "https:\/\/avatars.steamstatic.com\/24c5901d96d7ae88d64a72365bec9aec6e4ac0e1_medium.jpg",
             "rating": "463"
         },
         {
-            "rank": 25,
+            "rank": 26,
             "steamid": "76561198062942381",
             "name": "Epicurus (341\u2013270 BC)",
             "avatar": "https:\/\/avatars.steamstatic.com\/b7e2fba7ba2677c40ff9c71a8ad9d96df5edc36a_medium.jpg",
             "rating": "463"
         },
         {
-            "rank": 26,
-            "steamid": "76561198107919922",
-            "name": "XmanWz",
-            "avatar": "https:\/\/avatars.steamstatic.com\/0ca2383cae7e0c30662c2c3cecdc4bb2d2af0056_medium.jpg",
-            "rating": "453"
+            "rank": 27,
+            "steamid": "76561199241095798",
+            "name": "\u0428\u0412\u0410\u041a\u041b\u0410\u0411\u0410\u041a\u041b",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5a791c05d07953398c957d1e3d2baa1c4d2a2cd3_medium.jpg",
+            "rating": "461"
         },
         {
-            "rank": 27,
+            "rank": 28,
+            "steamid": "76561198253652581",
+            "name": "EnZEROt",
+            "avatar": "https:\/\/avatars.steamstatic.com\/b6d140e0e35e0b3a9174d20ecbce532b84bed9d8_medium.jpg",
+            "rating": "449"
+        },
+        {
+            "rank": 29,
             "steamid": "76561198845799742",
             "name": "FletFix",
             "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
             "rating": "447"
         },
         {
-            "rank": 28,
-            "steamid": "76561199241095798",
-            "name": "\u0428\u0412\u0410\u041a\u041b\u0410\u0411\u0410\u041a\u041b",
-            "avatar": "https:\/\/avatars.steamstatic.com\/5a791c05d07953398c957d1e3d2baa1c4d2a2cd3_medium.jpg",
-            "rating": "447"
-        },
-        {
-            "rank": 29,
+            "rank": 30,
             "steamid": "76561199222644917",
             "name": "Yutorii|emo",
             "avatar": "https:\/\/avatars.steamstatic.com\/de7aed4299406a52b01b0fc087ec5eb1d380b7e7_medium.jpg",
             "rating": "444"
         },
         {
-            "rank": 30,
+            "rank": 31,
             "steamid": "76561198200811623",
             "name": "Satoru Gojo",
             "avatar": "https:\/\/avatars.steamstatic.com\/3f0acdb64d9828777c9f8bc3ce4e615b9dfa3f15_medium.jpg",
             "rating": "443"
         },
         {
-            "rank": 31,
-            "steamid": "76561198253652581",
-            "name": "EnZEROt",
-            "avatar": "https:\/\/avatars.steamstatic.com\/b6d140e0e35e0b3a9174d20ecbce532b84bed9d8_medium.jpg",
-            "rating": "435"
+            "rank": 32,
+            "steamid": "76561199687723997",
+            "name": "asterus777",
+            "avatar": "https:\/\/avatars.steamstatic.com\/5518b45061d970b5584164db4366da9879e2e3e5_medium.jpg",
+            "rating": "438"
         },
         {
-            "rank": 32,
+            "rank": 33,
             "steamid": "76561198865550285",
             "name": "\u041c\u0430xxxymiron",
             "avatar": "https:\/\/avatars.steamstatic.com\/b967bdbe79e5b224e81411f3a328096b4e8a65db_medium.jpg",
             "rating": "434"
         },
         {
-            "rank": 33,
+            "rank": 34,
             "steamid": "76561198276607938",
             "name": "Akagi Ritsuko",
             "avatar": "https:\/\/avatars.steamstatic.com\/1e7f6faaee6fa84a5c7e87db2dbc05e7113f6e9f_medium.jpg",
             "rating": "433"
         },
         {
-            "rank": 34,
+            "rank": 35,
+            "steamid": "76561199706039993",
+            "name": "\u0441\u043b\u0430\u0431\u0435\u0439\u0448\u0435\u0435 \u043e\u0440\u0443\u0436\u0438\u0435",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
+            "rating": "429"
+        },
+        {
+            "rank": 36,
             "steamid": "76561198341421936",
             "name": "\u30e0One Punch Man\u30e0",
             "avatar": "https:\/\/avatars.steamstatic.com\/5f9cece1f66e3b2472f1d724f681acdc5522fd03_medium.jpg",
             "rating": "426"
         },
         {
-            "rank": 35,
+            "rank": 37,
             "steamid": "76561198995780241",
             "name": "still trying",
             "avatar": "https:\/\/avatars.steamstatic.com\/1ae3df4aff1d8d04ca1d276a4b74f6afdd8e37f9_medium.jpg",
             "rating": "424"
         },
         {
-            "rank": 36,
+            "rank": 38,
             "steamid": "76561198298347663",
             "name": "gordan69",
             "avatar": "https:\/\/avatars.steamstatic.com\/953d26320a2f793eb2d5500775eaf6b6dbcbba6b_medium.jpg",
             "rating": "424"
         },
         {
-            "rank": 37,
+            "rank": 39,
             "steamid": "76561199369096343",
             "name": "TonyReset",
             "avatar": "https:\/\/avatars.steamstatic.com\/d17e0b86a8219f5efb3c96ede8afab3d33a25cdd_medium.jpg",
             "rating": "420"
         },
         {
-            "rank": 38,
-            "steamid": "76561199687723997",
-            "name": "asterus777",
-            "avatar": "https:\/\/avatars.steamstatic.com\/5518b45061d970b5584164db4366da9879e2e3e5_medium.jpg",
-            "rating": "418"
-        },
-        {
-            "rank": 39,
-            "steamid": "76561199706039993",
-            "name": "\u0441\u043b\u0430\u0431\u0435\u0439\u0448\u0435\u0435 \u043e\u0440\u0443\u0436\u0438\u0435",
-            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
-            "rating": "414"
-        },
-        {
             "rank": 40,
             "steamid": "76561198086448812",
             "name": "\u041f\u043e\u0432\u0438\u0434\u043b\u043e",
             "avatar": "https:\/\/avatars.steamstatic.com\/07af34e2228abcc41777e34a34a9fbabfcd9fa52_medium.jpg",
-            "rating": "410"
+            "rating": "419"
         },
         {
             "rank": 41,
@@ -311,45 +311,45 @@
         },
         {
             "rank": 45,
+            "steamid": "76561198348189575",
+            "name": "iferus",
+            "avatar": "https:\/\/avatars.steamstatic.com\/8ba7af1f080728e37e453a82a8723343c5ff9bca_medium.jpg",
+            "rating": "394"
+        },
+        {
+            "rank": 46,
             "steamid": "76561199184012113",
             "name": "shitty wizard",
             "avatar": "https:\/\/avatars.steamstatic.com\/cc3532a5d8d4eab5adf8a4302f099ad7e54a4bfe_medium.jpg",
             "rating": "393"
         },
         {
-            "rank": 46,
+            "rank": 47,
             "steamid": "76561199190136676",
             "name": "\u041a\u043e\u0442\u044f",
             "avatar": "https:\/\/avatars.steamstatic.com\/a377f5feb9b07b4fd3489843fa0a886dfeeede33_medium.jpg",
             "rating": "390"
         },
         {
-            "rank": 47,
+            "rank": 48,
             "steamid": "76561198103942735",
             "name": "muted",
             "avatar": "https:\/\/avatars.steamstatic.com\/600a54e62405d2696730eabca74233adfd9aea7e_medium.jpg",
             "rating": "385"
         },
         {
-            "rank": 48,
-            "steamid": "76561198348189575",
-            "name": "iferus",
-            "avatar": "https:\/\/avatars.steamstatic.com\/8ba7af1f080728e37e453a82a8723343c5ff9bca_medium.jpg",
+            "rank": 49,
+            "steamid": "76561198080823077",
+            "name": "\u0424\u0451\u0434\u043e\u0440\u043e\u0432",
+            "avatar": "https:\/\/avatars.steamstatic.com\/59704697576758e79a6fa661c27e32b4f8aa3309_medium.jpg",
             "rating": "380"
         },
         {
-            "rank": 49,
+            "rank": 50,
             "steamid": "76561199587287344",
             "name": "Kisa lost interest in with me",
             "avatar": "https:\/\/avatars.steamstatic.com\/c8d3923bd9496d18a90f76d732afd0b06d1dcd99_medium.jpg",
             "rating": "378"
-        },
-        {
-            "rank": 50,
-            "steamid": "76561198080823077",
-            "name": "\u0424\u0451\u0434\u043e\u0440\u043e\u0432",
-            "avatar": "https:\/\/avatars.steamstatic.com\/59704697576758e79a6fa661c27e32b4f8aa3309_medium.jpg",
-            "rating": "375"
         },
         {
             "rank": 51,
@@ -367,24 +367,24 @@
         },
         {
             "rank": 53,
+            "steamid": "76561198046996468",
+            "name": "Set",
+            "avatar": "https:\/\/avatars.steamstatic.com\/71901004b276026f74ee7f559e048f8793c9c655_medium.jpg",
+            "rating": "368"
+        },
+        {
+            "rank": 54,
             "steamid": "76561198067882531",
             "name": "Maral",
             "avatar": "https:\/\/avatars.steamstatic.com\/536d9f9ff4e3f8e802a03a0a97817cab8e0f3d3a_medium.jpg",
             "rating": "359"
         },
         {
-            "rank": 54,
+            "rank": 55,
             "steamid": "76561198103427478",
             "name": "M1nuano",
             "avatar": "https:\/\/avatars.steamstatic.com\/97caee00eb9e2fd9f78eaf034b7f9f4d2fd9210d_medium.jpg",
             "rating": "355"
-        },
-        {
-            "rank": 55,
-            "steamid": "76561198046996468",
-            "name": "Set",
-            "avatar": "https:\/\/avatars.steamstatic.com\/71901004b276026f74ee7f559e048f8793c9c655_medium.jpg",
-            "rating": "354"
         },
         {
             "rank": 56,
@@ -395,94 +395,94 @@
         },
         {
             "rank": 57,
+            "steamid": "76561199552871748",
+            "name": "\u0441\u0432\u0438\u043d\u043e\u0442\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/cd74fc3cb7a8051d134b95edcd310e0d420b8a72_medium.jpg",
+            "rating": "346"
+        },
+        {
+            "rank": 58,
             "steamid": "76561198123765105",
             "name": "I'm on",
             "avatar": "https:\/\/avatars.steamstatic.com\/16b0fc0dadf1e0c6ed17cb322070171316f508db_medium.jpg",
             "rating": "345"
         },
         {
-            "rank": 58,
+            "rank": 59,
             "steamid": "76561198137725123",
             "name": "Cheka",
             "avatar": "https:\/\/avatars.steamstatic.com\/5fdb9b04e7fb4d20eff0c1ec2af5766fe23def55_medium.jpg",
             "rating": "345"
         },
         {
-            "rank": 59,
+            "rank": 60,
             "steamid": "76561198028559570",
             "name": "\u0416\u0430\u043d \u041f\u043e\u043b\u044c \u0411\u0430\u0434\u043c\u0438\u043d\u0442\u043e",
             "avatar": "https:\/\/avatars.steamstatic.com\/b5801d8170ed61115ed71b355dcdfa3fc1352550_medium.jpg",
             "rating": "345"
         },
         {
-            "rank": 60,
+            "rank": 61,
+            "steamid": "76561198043819131",
+            "name": "PLZ911",
+            "avatar": "https:\/\/avatars.steamstatic.com\/64d70864f634b4ac1ffbffe54622f492dd971acf_medium.jpg",
+            "rating": "345"
+        },
+        {
+            "rank": 62,
             "steamid": "76561199817538681",
             "name": "Baxmyt",
             "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
             "rating": "342"
         },
         {
-            "rank": 61,
-            "steamid": "76561199552871748",
-            "name": "\u0441\u0432\u0438\u043d\u043e\u0442\u0430",
-            "avatar": "https:\/\/avatars.steamstatic.com\/cd74fc3cb7a8051d134b95edcd310e0d420b8a72_medium.jpg",
-            "rating": "341"
-        },
-        {
-            "rank": 62,
+            "rank": 63,
             "steamid": "76561199021785490",
             "name": "\u0421\u0442\u0430\u0440\u0430\u0435\u0448\u044c\u0441\u044f?)))",
             "avatar": "https:\/\/avatars.steamstatic.com\/50dc589f8a04c3fab37c1c6a2e8ecc0765465d30_medium.jpg",
             "rating": "340"
         },
         {
-            "rank": 63,
+            "rank": 64,
             "steamid": "76561199569825272",
             "name": "\u0413\u0435\u0440\u0430\u043d\u044c\u043a\u0443???",
             "avatar": "https:\/\/avatars.steamstatic.com\/8b8441e211408bd2a32f86af56cc92197f01a585_medium.jpg",
             "rating": "340"
         },
         {
-            "rank": 64,
+            "rank": 65,
             "steamid": "76561198889796955",
             "name": "Anti",
             "avatar": "https:\/\/avatars.steamstatic.com\/bcc881a389edc306a915f05e317e3d2d4a7b3231_medium.jpg",
             "rating": "335"
         },
         {
-            "rank": 65,
+            "rank": 66,
+            "steamid": "76561198087278758",
+            "name": "\u041a\u0410\u0411\u0410\u041d\u0415\u0420\u041e",
+            "avatar": "https:\/\/avatars.steamstatic.com\/73803b2b0088e7e2992503a5bc4222d513f3f902_medium.jpg",
+            "rating": "333"
+        },
+        {
+            "rank": 67,
             "steamid": "76561199130067608",
             "name": "judah iscariot",
             "avatar": "https:\/\/avatars.steamstatic.com\/cc1f633d3cc5348f5b1ca87d3fb8849881a77d5f_medium.jpg",
             "rating": "331"
         },
         {
-            "rank": 66,
+            "rank": 68,
             "steamid": "76561198113654842",
             "name": "\u0279\u0250\u01dd\u025f\u028e\u01dd\u029e",
             "avatar": "https:\/\/avatars.steamstatic.com\/99b64826f23dda9f64ce7014df6fcd19f1f26002_medium.jpg",
             "rating": "330"
         },
         {
-            "rank": 67,
-            "steamid": "76561198043819131",
-            "name": "PLZ911",
-            "avatar": "https:\/\/avatars.steamstatic.com\/64d70864f634b4ac1ffbffe54622f492dd971acf_medium.jpg",
-            "rating": "330"
-        },
-        {
-            "rank": 68,
+            "rank": 69,
             "steamid": "76561198203111156",
             "name": "\u041d\u0430\u0434\u043f\u0438\u0441\u044c \u043d\u0430 \u043a\u0443\u0440\u0442\u043e\u0447",
             "avatar": "https:\/\/avatars.steamstatic.com\/cb009b3ac2aca54a00c0a3c1715c126719514389_medium.jpg",
             "rating": "329"
-        },
-        {
-            "rank": 69,
-            "steamid": "76561198087278758",
-            "name": "\u041a\u0410\u0411\u0410\u041d\u0415\u0420\u041e",
-            "avatar": "https:\/\/avatars.steamstatic.com\/73803b2b0088e7e2992503a5bc4222d513f3f902_medium.jpg",
-            "rating": "328"
         },
         {
             "rank": 70,
@@ -493,156 +493,156 @@
         },
         {
             "rank": 71,
+            "steamid": "76561198048135503",
+            "name": "\u0424\u0430\u0439\u043d\u0438\u0439 \u041c\u0430\u043b\u0430\u0445\u0456\u0442",
+            "avatar": "https:\/\/avatars.steamstatic.com\/624eec788684245ba1b4022922f1ea758e0cf962_medium.jpg",
+            "rating": "323"
+        },
+        {
+            "rank": 72,
             "steamid": "76561198062598987",
             "name": "bambucha",
             "avatar": "https:\/\/avatars.steamstatic.com\/37b8e7931e1f850a8334c3ca714cc7b55ac5d894_medium.jpg",
             "rating": "322"
         },
         {
-            "rank": 72,
+            "rank": 73,
             "steamid": "76561199036394560",
             "name": "snake ice",
             "avatar": "https:\/\/avatars.steamstatic.com\/2b4bae126cf6f35ca7dc0b730efd1d41ac4c5c52_medium.jpg",
             "rating": "321"
         },
         {
-            "rank": 73,
+            "rank": 74,
             "steamid": "76561198118525566",
             "name": "TroubleBubble",
             "avatar": "https:\/\/avatars.steamstatic.com\/bbb57fdff58f610f042ed8b586fa41e9e2d241fd_medium.jpg",
             "rating": "321"
         },
         {
-            "rank": 74,
+            "rank": 75,
+            "steamid": "76561198127099412",
+            "name": "\u0441\u0430\u0442\u043e\u0440\u0443 \u0433\u043e\u0434\u0436\u0443",
+            "avatar": "https:\/\/avatars.steamstatic.com\/13e327cf1a865c31e4a3c27bd0d79dbe3b392a69_medium.jpg",
+            "rating": "319"
+        },
+        {
+            "rank": 76,
             "steamid": "76561198108607319",
             "name": "ZOOM",
             "avatar": "https:\/\/avatars.steamstatic.com\/ac65bda77dcc49fedf4b98ceaa8507cf35230035_medium.jpg",
             "rating": "319"
         },
         {
-            "rank": 75,
-            "steamid": "76561198048135503",
-            "name": "\u0424\u0430\u0439\u043d\u0438\u0439 \u041c\u0430\u043b\u0430\u0445\u0456\u0442",
-            "avatar": "https:\/\/avatars.steamstatic.com\/624eec788684245ba1b4022922f1ea758e0cf962_medium.jpg",
-            "rating": "318"
-        },
-        {
-            "rank": 76,
+            "rank": 77,
             "steamid": "76561198074337920",
             "name": "Margaritka",
             "avatar": "https:\/\/avatars.steamstatic.com\/fff2e8ebd151d97f15d1b0fa6926301a5b2f650f_medium.jpg",
             "rating": "317"
         },
         {
-            "rank": 77,
+            "rank": 78,
+            "steamid": "76561198088197518",
+            "name": "GuranRey",
+            "avatar": "https:\/\/avatars.steamstatic.com\/bd9341e65bae3395256e3df88f265a7f21ce4ef8_medium.jpg",
+            "rating": "315"
+        },
+        {
+            "rank": 79,
             "steamid": "76561199379445667",
             "name": "Morgalka",
             "avatar": "https:\/\/avatars.steamstatic.com\/416b9d9417f978edefcc1b2d29293e40579df662_medium.jpg",
             "rating": "315"
         },
         {
-            "rank": 78,
+            "rank": 80,
             "steamid": "76561198327795406",
             "name": "yilo",
             "avatar": "https:\/\/avatars.steamstatic.com\/0844755a6df42b44e7b4fc7ef332c17e0e114aca_medium.jpg",
             "rating": "315"
         },
         {
-            "rank": 79,
+            "rank": 81,
             "steamid": "76561198900696228",
             "name": "StarCourge",
             "avatar": "https:\/\/avatars.steamstatic.com\/cbb5effefae90a7b340d4a37c6b0c84e959c3e62_medium.jpg",
             "rating": "311"
         },
         {
-            "rank": 80,
+            "rank": 82,
             "steamid": "76561198152520067",
             "name": "Analitek Titek",
             "avatar": "https:\/\/avatars.steamstatic.com\/62406d8f9058ff5233d74a7a2e482e6f9884afe8_medium.jpg",
             "rating": "310"
         },
         {
-            "rank": 81,
+            "rank": 83,
             "steamid": "76561198089968359",
             "name": "Bodvar",
             "avatar": "https:\/\/avatars.steamstatic.com\/4880f260bd0550dffd6fe1c3e4b00d2afb9b1beb_medium.jpg",
             "rating": "310"
         },
         {
-            "rank": 82,
-            "steamid": "76561198127099412",
-            "name": "\u0441\u0430\u0442\u043e\u0440\u0443 \u0433\u043e\u0434\u0436\u0443",
-            "avatar": "https:\/\/avatars.steamstatic.com\/13e327cf1a865c31e4a3c27bd0d79dbe3b392a69_medium.jpg",
-            "rating": "309"
-        },
-        {
-            "rank": 83,
+            "rank": 84,
             "steamid": "76561198082103335",
             "name": "Nik_Name",
             "avatar": "https:\/\/avatars.steamstatic.com\/45ac454ecc8700dc9da27a6050c12dc541eaa304_medium.jpg",
             "rating": "305"
         },
         {
-            "rank": 84,
+            "rank": 85,
             "steamid": "76561198161120583",
             "name": "StatusQuO",
             "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
             "rating": "305"
         },
         {
-            "rank": 85,
+            "rank": 86,
             "steamid": "76561198044225805",
             "name": "POKRAS LAMPAS",
             "avatar": "https:\/\/avatars.steamstatic.com\/212c500bb7f88e1831073e48b04777786401edd7_medium.jpg",
             "rating": "305"
         },
         {
-            "rank": 86,
+            "rank": 87,
             "steamid": "76561198076938894",
             "name": "Laifu",
             "avatar": "https:\/\/avatars.steamstatic.com\/52aa1b567557b4e668ad2d9083fe4a4fb303ba31_medium.jpg",
             "rating": "305"
         },
         {
-            "rank": 87,
-            "steamid": "76561198088197518",
-            "name": "GuranRey",
-            "avatar": "https:\/\/avatars.steamstatic.com\/bd9341e65bae3395256e3df88f265a7f21ce4ef8_medium.jpg",
+            "rank": 88,
+            "steamid": "76561198103444247",
+            "name": "MrStail",
+            "avatar": "https:\/\/avatars.steamstatic.com\/66b8586073d9f09754a95ea076aefe1c0eb65979_medium.jpg",
             "rating": "300"
         },
         {
-            "rank": 88,
+            "rank": 89,
             "steamid": "76561198094219895",
             "name": "\u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0439 \u0434\u044d\u043f",
             "avatar": "https:\/\/avatars.steamstatic.com\/ac10154956ec03fffa128200cdb49e4e49963af7_medium.jpg",
             "rating": "300"
         },
         {
-            "rank": 89,
+            "rank": 90,
             "steamid": "76561198167751343",
             "name": "\u30af\u30ec\u30a2",
             "avatar": "https:\/\/avatars.steamstatic.com\/32828485df55d9ee83b03a3f95a3e15e2c9f997a_medium.jpg",
             "rating": "300"
         },
         {
-            "rank": 90,
+            "rank": 91,
             "steamid": "76561198117928870",
             "name": "rankandell",
             "avatar": "https:\/\/avatars.steamstatic.com\/d4a1718526f97749da95e0b1e5dc55dfa4bb8a4f_medium.jpg",
             "rating": "298"
         },
         {
-            "rank": 91,
+            "rank": 92,
             "steamid": "76561198059754510",
             "name": "J0shi",
             "avatar": "https:\/\/avatars.steamstatic.com\/c1c286dcccebe6ee831a4dd30e3c16923cebce02_medium.jpg",
-            "rating": "296"
-        },
-        {
-            "rank": 92,
-            "steamid": "76561198084133000",
-            "name": "yung conor",
-            "avatar": "https:\/\/avatars.steamstatic.com\/ecf47e8566f655167913a6e9567c2fa36d9adf28_medium.jpg",
             "rating": "296"
         },
         {
@@ -689,38 +689,38 @@
         },
         {
             "rank": 99,
-            "steamid": "76561198103444247",
-            "name": "MrStail",
-            "avatar": "https:\/\/avatars.steamstatic.com\/66b8586073d9f09754a95ea076aefe1c0eb65979_medium.jpg",
-            "rating": "290"
-        },
-        {
-            "rank": 100,
             "steamid": "76561198199242691",
             "name": "\u044f \u043d\u043e\u0432\u0438\u0447\u043e\u043a \u043d\u0435 \u0440\u0443\u0433\u0430",
             "avatar": "https:\/\/avatars.steamstatic.com\/4f8358436a8017aca572ce2ccdeb7635a375ea64_medium.jpg",
             "rating": "290"
         },
         {
-            "rank": 101,
+            "rank": 100,
             "steamid": "76561199637026707",
             "name": "Dubrovsky",
             "avatar": "https:\/\/avatars.steamstatic.com\/3f47c3634c822270cbccf23f4cb4fcf2272e23d1_medium.jpg",
             "rating": "290"
         },
         {
-            "rank": 102,
+            "rank": 101,
             "steamid": "76561198016578454",
             "name": "Firekazino",
             "avatar": "https:\/\/avatars.steamstatic.com\/b311b03cde349d12219223f58030e09171efab6e_medium.jpg",
             "rating": "290"
         },
         {
-            "rank": 103,
+            "rank": 102,
             "steamid": "76561198969605672",
             "name": "\u2020bineR",
             "avatar": "https:\/\/avatars.steamstatic.com\/b5882339138061f9750c20ad52812333338fc94e_medium.jpg",
             "rating": "287"
+        },
+        {
+            "rank": 103,
+            "steamid": "76561198084133000",
+            "name": "yung conor",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ecf47e8566f655167913a6e9567c2fa36d9adf28_medium.jpg",
+            "rating": "286"
         },
         {
             "rank": 104,
@@ -752,304 +752,304 @@
         },
         {
             "rank": 108,
+            "steamid": "76561198317144448",
+            "name": "\u0421\u043e \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c\u044e \u043a\u043e\u0431\u0440",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1e3403863ad560f421a2608f82205b9d659a4147_medium.jpg",
+            "rating": "282"
+        },
+        {
+            "rank": 109,
             "steamid": "76561198386371958",
             "name": "\u0414\u0440\u0443\u0433 \u0413\u0435\u0440\u043c\u0430\u043d\u0430",
             "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
             "rating": "280"
         },
         {
-            "rank": 109,
+            "rank": 110,
+            "steamid": "76561199690209439",
+            "name": "\u0412\u0435\u0436\u043b\u0438\u0432\u044b\u0439 \u043c\u0430\u043b\u044c\u0447\u0438\u043a",
+            "avatar": "https:\/\/avatars.steamstatic.com\/a799081611ff3dff62db15172257f76d6ed568db_medium.jpg",
+            "rating": "280"
+        },
+        {
+            "rank": 111,
             "steamid": "76561198399874954",
             "name": "3,14DOOR",
             "avatar": "https:\/\/avatars.steamstatic.com\/58d675a804098804ce47f38fd0317e033f3794b8_medium.jpg",
             "rating": "280"
         },
         {
-            "rank": 110,
+            "rank": 112,
             "steamid": "76561199183218038",
             "name": "Anakondi4",
             "avatar": "https:\/\/avatars.steamstatic.com\/db1049d6efc4f1b7bf39dbb092e91a0374bcd5eb_medium.jpg",
             "rating": "280"
         },
         {
-            "rank": 111,
+            "rank": 113,
             "steamid": "76561198436305633",
             "name": "@1\u043a",
             "avatar": "https:\/\/avatars.steamstatic.com\/05162053b8847b65780a81cc56dbceed454b49c4_medium.jpg",
             "rating": "280"
         },
         {
-            "rank": 112,
+            "rank": 114,
             "steamid": "76561198072826999",
             "name": "aggressive_leech",
             "avatar": "https:\/\/avatars.steamstatic.com\/950f9f3147d4c8530a5072825d01c34ee3f1afa1_medium.jpg",
             "rating": "278"
         },
         {
-            "rank": 113,
-            "steamid": "76561198081676260",
-            "name": "Power",
-            "avatar": "https:\/\/avatars.steamstatic.com\/17076a9e3c07353e414f45288fd937a69cdc2434_medium.jpg",
-            "rating": "278"
-        },
-        {
-            "rank": 114,
-            "steamid": "76561198317144448",
-            "name": "\u0421\u043e \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c\u044e \u043a\u043e\u0431\u0440",
-            "avatar": "https:\/\/avatars.steamstatic.com\/1e3403863ad560f421a2608f82205b9d659a4147_medium.jpg",
-            "rating": "277"
-        },
-        {
             "rank": 115,
+            "steamid": "76561198281228654",
+            "name": "\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e",
+            "avatar": "https:\/\/via.placeholder.com\/64",
+            "rating": "275"
+        },
+        {
+            "rank": 116,
             "steamid": "76561199078391711",
             "name": "hollywood hills",
             "avatar": "https:\/\/avatars.steamstatic.com\/838b16557aca15455ea289c7c7a57266f9cdb62c_medium.jpg",
             "rating": "275"
         },
         {
-            "rank": 116,
+            "rank": 117,
             "steamid": "76561198997247208",
             "name": "Rasty",
             "avatar": "https:\/\/avatars.steamstatic.com\/694189ae65e7d70b2ca66262d4ebf141ffcc6715_medium.jpg",
             "rating": "274"
         },
         {
-            "rank": 117,
+            "rank": 118,
+            "steamid": "76561197999122457",
+            "name": "SmoG",
+            "avatar": "https:\/\/avatars.steamstatic.com\/556d78a5cebd9e92e13ec82158161114757cb84e_medium.jpg",
+            "rating": "273"
+        },
+        {
+            "rank": 119,
+            "steamid": "76561198108460666",
+            "name": "VooDoo DaDDy",
+            "avatar": "https:\/\/avatars.steamstatic.com\/793da7668fe5b0c27a5b793c24fa1132df0c4122_medium.jpg",
+            "rating": "273"
+        },
+        {
+            "rank": 120,
+            "steamid": "76561198205427999",
+            "name": "Tim",
+            "avatar": "https:\/\/avatars.steamstatic.com\/e7c46f8c46d0a6b845b50d35f85dacff8fad10cf_medium.jpg",
+            "rating": "272"
+        },
+        {
+            "rank": 121,
             "steamid": "76561198078681560",
             "name": "dravon06",
             "avatar": "https:\/\/avatars.steamstatic.com\/a73955f5d746e6e266b5170c2eed3047928ff0b7_medium.jpg",
             "rating": "270"
         },
         {
-            "rank": 118,
+            "rank": 122,
             "steamid": "76561198077386241",
             "name": "\u041c\u0430\u0442\u044c\u0435 \u0411\u0430\u0430\u043b",
             "avatar": "https:\/\/avatars.steamstatic.com\/3403b69f600cf1ab534dafe87242d6d1a70273ed_medium.jpg",
             "rating": "270"
         },
         {
-            "rank": 119,
+            "rank": 123,
             "steamid": "76561198190499006",
             "name": "zultrew",
             "avatar": "https:\/\/avatars.steamstatic.com\/9a4423732e16df93323c5a055d0245789e356dbc_medium.jpg",
             "rating": "270"
         },
         {
-            "rank": 120,
+            "rank": 124,
+            "steamid": "76561198110168332",
+            "name": "\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e",
+            "avatar": "https:\/\/via.placeholder.com\/64",
+            "rating": "270"
+        },
+        {
+            "rank": 125,
+            "steamid": "76561198081676260",
+            "name": "Power",
+            "avatar": "https:\/\/avatars.steamstatic.com\/17076a9e3c07353e414f45288fd937a69cdc2434_medium.jpg",
+            "rating": "268"
+        },
+        {
+            "rank": 126,
             "steamid": "76561198818960018",
             "name": "\u041d\u0415\u041b\u041e\u0412\u041a\u041e \u0412\u042b\u0428\u041b\u041e",
             "avatar": "https:\/\/avatars.steamstatic.com\/04d2a2705bb203ef553e9bcf8bd653ab5e95200b_medium.jpg",
             "rating": "265"
         },
         {
-            "rank": 121,
+            "rank": 127,
             "steamid": "76561198134277096",
             "name": "\u041a\u0430\u0431\u0430\u0447\u043e\u043a \u0411\u043e\u0441\u0441\u0430",
             "avatar": "https:\/\/avatars.steamstatic.com\/58df26f42e347a2f7feb22a6bb16dee98cd64d2e_medium.jpg",
             "rating": "265"
         },
         {
-            "rank": 122,
+            "rank": 128,
             "steamid": "76561199224870632",
             "name": "\u0422\u0432\u043e\u044f \u0431\u0430\u0431\u0443\u0448\u043a\u0430",
             "avatar": "https:\/\/avatars.steamstatic.com\/67e5649e76d081f11110bbee7e91dc156b5f6b20_medium.jpg",
             "rating": "265"
         },
         {
-            "rank": 123,
+            "rank": 129,
             "steamid": "76561198073962945",
             "name": "Batistuta_love",
             "avatar": "https:\/\/avatars.steamstatic.com\/b79842a851ddccf4ab96b4bbaf0016453830985c_medium.jpg",
             "rating": "265"
         },
         {
-            "rank": 124,
+            "rank": 130,
+            "steamid": "76561199011598121",
+            "name": "Remove",
+            "avatar": "https:\/\/avatars.steamstatic.com\/915face2ea1a354372927c8a11d8d815a2d719c7_medium.jpg",
+            "rating": "265"
+        },
+        {
+            "rank": 131,
+            "steamid": "76561198217600341",
+            "name": "Armando",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
+            "rating": "265"
+        },
+        {
+            "rank": 132,
             "steamid": "76561198168716241",
             "name": "Fisher",
             "avatar": "https:\/\/avatars.steamstatic.com\/7c3990e5acb719159cfd8d332bf8785b482d3861_medium.jpg",
             "rating": "263"
         },
         {
-            "rank": 125,
+            "rank": 133,
+            "steamid": "76561198798682281",
+            "name": "cortex",
+            "avatar": "https:\/\/avatars.steamstatic.com\/28133ca617ffd43c8c8d573b53fed78c5c186601_medium.jpg",
+            "rating": "262"
+        },
+        {
+            "rank": 134,
             "steamid": "76561198134991371",
             "name": "Remark",
             "avatar": "https:\/\/avatars.steamstatic.com\/1ed6e68c35d1e33b3ac245022161983ad51bf356_medium.jpg",
             "rating": "261"
         },
         {
-            "rank": 126,
+            "rank": 135,
             "steamid": "76561198851566071",
             "name": "L1mco",
             "avatar": "https:\/\/avatars.steamstatic.com\/290764676dea90ec5e85d552cf5fbf7de0aab2c4_medium.jpg",
             "rating": "260"
         },
         {
-            "rank": 127,
-            "steamid": "76561199690209439",
-            "name": "\u0412\u0435\u0436\u043b\u0438\u0432\u044b\u0439 \u043c\u0430\u043b\u044c\u0447\u0438\u043a",
-            "avatar": "https:\/\/avatars.steamstatic.com\/a799081611ff3dff62db15172257f76d6ed568db_medium.jpg",
-            "rating": "260"
-        },
-        {
-            "rank": 128,
+            "rank": 136,
             "steamid": "76561198434388863",
             "name": "Helicobacter",
             "avatar": "https:\/\/avatars.steamstatic.com\/17b6e551389fa4d5024103312e26c2125c9ae190_medium.jpg",
             "rating": "260"
         },
         {
-            "rank": 129,
+            "rank": 137,
             "steamid": "76561199845026655",
             "name": "wrwrehywer255",
             "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
             "rating": "260"
         },
         {
-            "rank": 130,
-            "steamid": "76561197999122457",
-            "name": "SmoG",
-            "avatar": "https:\/\/avatars.steamstatic.com\/556d78a5cebd9e92e13ec82158161114757cb84e_medium.jpg",
+            "rank": 138,
+            "steamid": "76561198067878499",
+            "name": "MiM",
+            "avatar": "https:\/\/avatars.steamstatic.com\/497871e63ec2155b381229b6b3edc9f64c1ced52_medium.jpg",
             "rating": "258"
         },
         {
-            "rank": 131,
+            "rank": 139,
             "steamid": "76561198288946848",
             "name": "n7",
             "avatar": "https:\/\/avatars.steamstatic.com\/2b2e223425ab592edbef855e3e337ecaf820d6bf_medium.jpg",
             "rating": "258"
         },
         {
-            "rank": 132,
-            "steamid": "76561198108460666",
-            "name": "VooDoo DaDDy",
-            "avatar": "https:\/\/avatars.steamstatic.com\/793da7668fe5b0c27a5b793c24fa1132df0c4122_medium.jpg",
-            "rating": "258"
-        },
-        {
-            "rank": 133,
-            "steamid": "76561198205427999",
-            "name": "Tim",
-            "avatar": "https:\/\/avatars.steamstatic.com\/e7c46f8c46d0a6b845b50d35f85dacff8fad10cf_medium.jpg",
-            "rating": "257"
-        },
-        {
-            "rank": 134,
-            "steamid": "76561198281228654",
-            "name": "\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e",
-            "avatar": "https:\/\/via.placeholder.com\/64",
+            "rank": 140,
+            "steamid": "76561198016893583",
+            "name": "Degit",
+            "avatar": "https:\/\/avatars.steamstatic.com\/ea548dd7c2dad0cf98d538611e7bba0ff5bfa936_medium.jpg",
             "rating": "255"
         },
         {
-            "rank": 135,
-            "steamid": "76561198112764259",
-            "name": "F9",
-            "avatar": "https:\/\/avatars.steamstatic.com\/1731441d29985521f680901105fdc96f903bd390_medium.jpg",
-            "rating": "255"
-        },
-        {
-            "rank": 136,
+            "rank": 141,
             "steamid": "76561198090319816",
             "name": "Grave",
             "avatar": "https:\/\/avatars.steamstatic.com\/5ad9da4eea7585f73ae9be2f99bdd4de6ce56ad0_medium.jpg",
             "rating": "255"
         },
         {
-            "rank": 137,
-            "steamid": "76561199011598121",
-            "name": "Remove",
-            "avatar": "https:\/\/avatars.steamstatic.com\/915face2ea1a354372927c8a11d8d815a2d719c7_medium.jpg",
-            "rating": "255"
+            "rank": 142,
+            "steamid": "76561198279890873",
+            "name": "Memento Mori",
+            "avatar": "https:\/\/avatars.steamstatic.com\/caf5df0f164dd427e3a2ffb08e814ee0ec6127a9_medium.jpg",
+            "rating": "253"
         },
         {
-            "rank": 138,
+            "rank": 143,
             "steamid": "76561198296786298",
             "name": "\u624d\u80fd\u306e\u306a\u3044\u6557\u8005",
             "avatar": "https:\/\/avatars.steamstatic.com\/8ce3a4cdac3c3ce62eb3440e5be13bb0859dff99_medium.jpg",
             "rating": "250"
         },
         {
-            "rank": 139,
+            "rank": 144,
+            "steamid": "76561199204790525",
+            "name": "\u0428\u0430\u0445\u0435\u0440 \u0438\u0437 \u0410\u0434\u0430",
+            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
+            "rating": "250"
+        },
+        {
+            "rank": 145,
             "steamid": "76561198833225144",
             "name": "\u9053",
             "avatar": "https:\/\/avatars.steamstatic.com\/67d62c028d81350aba0f1615003d3d2c3ae12a2d_medium.jpg",
             "rating": "250"
         },
         {
-            "rank": 140,
+            "rank": 146,
+            "steamid": "76561198112764259",
+            "name": "F9",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1731441d29985521f680901105fdc96f903bd390_medium.jpg",
+            "rating": "250"
+        },
+        {
+            "rank": 147,
             "steamid": "76561199104219277",
             "name": "08tears",
             "avatar": "https:\/\/avatars.steamstatic.com\/e842efa3a2d96e636f6c68a161e6ccfc2639093f_medium.jpg",
             "rating": "250"
         },
         {
-            "rank": 141,
+            "rank": 148,
             "steamid": "76561199446516613",
             "name": "Aldrich, Devourer of Gods",
             "avatar": "https:\/\/avatars.steamstatic.com\/ec0cd9828772a83437e5694e26f56b038dc55b0b_medium.jpg",
             "rating": "250"
         },
         {
-            "rank": 142,
+            "rank": 149,
             "steamid": "76561198384952600",
             "name": "\u041b\u0418\u0422\u0422\u041b \u041c\u0418\u0421\u0421",
             "avatar": "https:\/\/avatars.steamstatic.com\/f2a8d163cb0584dd378c370b2380c148bdb18e51_medium.jpg",
             "rating": "250"
         },
         {
-            "rank": 143,
+            "rank": 150,
             "steamid": "76561198870629911",
             "name": "\u0421\u043e\u0432\u0430\u0410\u043b\u0435\u0439\u043a\u0443\u043c",
             "avatar": "https:\/\/avatars.steamstatic.com\/2a9b79ec9c9e970ee4d99e4ee8c0342d52a4d9a7_medium.jpg",
             "rating": "250"
-        },
-        {
-            "rank": 144,
-            "steamid": "76561199126596675",
-            "name": "\u0421\u043b\u0430\u0434\u043a\u0430\u044f \u0411\u0443\u043b\u043e\u0447\u043a\u0430",
-            "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
-            "rating": "249"
-        },
-        {
-            "rank": 145,
-            "steamid": "76561199436485091",
-            "name": "Me Mori",
-            "avatar": "https:\/\/avatars.steamstatic.com\/f699d3bb5985a8f6eac6726bfe0b07f03728e70e_medium.jpg",
-            "rating": "247"
-        },
-        {
-            "rank": 146,
-            "steamid": "76561198305252131",
-            "name": "MuraL",
-            "avatar": "https:\/\/avatars.steamstatic.com\/8626d64dff828991917a7bc55b4b46a4b48c70bb_medium.jpg",
-            "rating": "246"
-        },
-        {
-            "rank": 147,
-            "steamid": "76561198082885711",
-            "name": "Der Ritter",
-            "avatar": "https:\/\/avatars.steamstatic.com\/b934017b62415f6a2b55b789153c5c2cb4b44af4_medium.jpg",
-            "rating": "245"
-        },
-        {
-            "rank": 148,
-            "steamid": "76561198178620183",
-            "name": "Lisan al Gaib",
-            "avatar": "https:\/\/avatars.steamstatic.com\/6e3d984b0e9ad9f4f1d66c3a2dbfab5ccf7e22d1_medium.jpg",
-            "rating": "245"
-        },
-        {
-            "rank": 149,
-            "steamid": "76561198076709345",
-            "name": "kirill.ulyanov",
-            "avatar": "https:\/\/avatars.steamstatic.com\/f5305dbffc8e534a75532962762efe0e2dbe7c84_medium.jpg",
-            "rating": "245"
-        },
-        {
-            "rank": 150,
-            "steamid": "76561198107387566",
-            "name": "Drink Vodka and...",
-            "avatar": "https:\/\/avatars.steamstatic.com\/f2ee7599a2c4f9889d4fa4b798c3a7f4085fb180_medium.jpg",
-            "rating": "245"
         }
     ]
 }
