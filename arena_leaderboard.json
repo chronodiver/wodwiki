@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-23 09:29:18",
+    "last_updated": "2025-04-23 10:24:36",
     "tabs": {
         "1": [
             {
@@ -4965,6 +4965,26 @@
                 "rank": 143
             },
             {
+                "wave_count": 80,
+                "players": [
+                    {
+                        "steamid": "76561198077658249",
+                        "name": "Ladd Russo",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/07ed5f62d768d464e8d1d84c2c1186c69171327d_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198124161546",
+                        "name": "\u0413OC\u041fO\u0414\u0418H T\u0418PAHHO\u0421\u041bAB",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/da39c262db466be17e892c5e1db0128c1126680c_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "winter_wyvern",
+                    "weaver"
+                ],
+                "rank": 144
+            },
+            {
                 "wave_count": 79,
                 "players": [
                     {
@@ -4982,7 +5002,7 @@
                     "dragon_knight",
                     "pudge"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 79,
@@ -5002,7 +5022,7 @@
                     "winter_wyvern",
                     "huskar"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 79,
@@ -5022,7 +5042,7 @@
                     "winter_wyvern",
                     "medusa"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 79,
@@ -5042,7 +5062,7 @@
                     "legion_commander",
                     "crystal_maiden"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 79,
@@ -5062,7 +5082,7 @@
                     "winter_wyvern",
                     "dazzle"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 79,
@@ -5081,26 +5101,6 @@
                 "heroes": [
                     "luna",
                     "witch_doctor"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 79,
-                "players": [
-                    {
-                        "steamid": "76561198316958324",
-                        "name": "\u0410\u0428\u0410\u041b\u0415\u0422\u042c",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/a5f27d4cddef20b3a2e9fea0fbd1767bcde38435_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198874329000",
-                        "name": "\u0422\u043e\u0432\u0430\u0440\u0438\u0449",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/0f0838a1530ca0440a00476a36070da22d0a000d_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "luna",
-                    "phantom_assassin"
                 ],
                 "rank": 150
             }
