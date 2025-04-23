@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-23 18:22:27",
+    "last_updated": "2025-04-23 19:26:24",
     "tabs": {
         "1": [
             {
@@ -2009,8 +2009,8 @@
                 "players": [
                     {
                         "steamid": "76561199390117618",
-                        "name": "ANIMEDestroyer",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/580663f2f520687abcf9f3aa37da031296bec2fe_medium.jpg"
+                        "name": "Harry Racister",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/88985d21a246b510c7ff8a0f85a059d6d493622c_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -7551,6 +7551,32 @@
                 "rank": 94
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561198843372683",
+                        "name": "\u041e\u0442\u0435\u0446 \u0410\u0440\u043c\u0430\u0442\u0443\u0440\u0430",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/945580fbb38afb87dfbe8b33193b77182ada1f8e_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199519138054",
+                        "name": "__steklish__",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/34c8401f9dfe9ea9ea42b399736fae8d6c4a2b8f_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199115051237",
+                        "name": "\u041c\u0430\u0442\u044c \u0410\u0440\u043c\u0430\u0442\u0443\u0440\u0430",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/b6ea9cf894de99647316505a211d2f1fa71c4f58_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "kez",
+                    "lich",
+                    "dragon_knight"
+                ],
+                "rank": 95
+            },
+            {
                 "wave_count": 87,
                 "players": [
                     {
@@ -7574,7 +7600,7 @@
                     "ancient_apparition",
                     "drow_ranger"
                 ],
-                "rank": 95
+                "rank": 96
             },
             {
                 "wave_count": 86,
@@ -7600,7 +7626,7 @@
                     "pudge",
                     "nevermore"
                 ],
-                "rank": 96
+                "rank": 97
             },
             {
                 "wave_count": 86,
@@ -7626,7 +7652,7 @@
                     "phantom_assassin",
                     "skeleton_king"
                 ],
-                "rank": 97
+                "rank": 98
             },
             {
                 "wave_count": 86,
@@ -7652,7 +7678,7 @@
                     "medusa",
                     "skeleton_king"
                 ],
-                "rank": 98
+                "rank": 99
             },
             {
                 "wave_count": 86,
@@ -7678,7 +7704,7 @@
                     "zuus",
                     "morphling"
                 ],
-                "rank": 99
+                "rank": 100
             },
             {
                 "wave_count": 86,
@@ -7704,7 +7730,7 @@
                     "zuus",
                     "luna"
                 ],
-                "rank": 100
+                "rank": 101
             },
             {
                 "wave_count": 86,
@@ -7730,7 +7756,7 @@
                     "marci",
                     "witch_doctor"
                 ],
-                "rank": 101
+                "rank": 102
             },
             {
                 "wave_count": 86,
@@ -7756,7 +7782,7 @@
                     "earthshaker",
                     "luna"
                 ],
-                "rank": 102
+                "rank": 103
             },
             {
                 "wave_count": 86,
@@ -7782,7 +7808,7 @@
                     "bristleback",
                     "vengefulspirit"
                 ],
-                "rank": 103
+                "rank": 104
             },
             {
                 "wave_count": 86,
@@ -7808,7 +7834,7 @@
                     "nevermore",
                     "kez"
                 ],
-                "rank": 104
+                "rank": 105
             },
             {
                 "wave_count": 86,
@@ -7834,7 +7860,7 @@
                     "jakiro",
                     "skeleton_king"
                 ],
-                "rank": 105
+                "rank": 106
             },
             {
                 "wave_count": 86,
@@ -7860,7 +7886,7 @@
                     "bristleback",
                     "juggernaut"
                 ],
-                "rank": 106
+                "rank": 107
             },
             {
                 "wave_count": 86,
@@ -7886,7 +7912,7 @@
                     "muerta",
                     "necrolyte"
                 ],
-                "rank": 107
+                "rank": 108
             },
             {
                 "wave_count": 86,
@@ -7912,7 +7938,7 @@
                     "luna",
                     "omniknight"
                 ],
-                "rank": 108
+                "rank": 109
             },
             {
                 "wave_count": 86,
@@ -7938,7 +7964,7 @@
                     "marci",
                     "arc_warden"
                 ],
-                "rank": 109
+                "rank": 110
             },
             {
                 "wave_count": 86,
@@ -7964,7 +7990,7 @@
                     "skywrath_mage",
                     "dazzle"
                 ],
-                "rank": 110
+                "rank": 111
             },
             {
                 "wave_count": 86,
@@ -7990,7 +8016,7 @@
                     "nevermore",
                     "winter_wyvern"
                 ],
-                "rank": 111
+                "rank": 112
             },
             {
                 "wave_count": 86,
@@ -8016,7 +8042,7 @@
                     "chen",
                     "pangolier"
                 ],
-                "rank": 112
+                "rank": 113
             },
             {
                 "wave_count": 86,
@@ -8041,32 +8067,6 @@
                     "necrolyte",
                     "jakiro",
                     "nevermore"
-                ],
-                "rank": 113
-            },
-            {
-                "wave_count": 86,
-                "players": [
-                    {
-                        "steamid": "76561198843372683",
-                        "name": "\u041e\u0442\u0435\u0446 \u0410\u0440\u043c\u0430\u0442\u0443\u0440\u0430",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/945580fbb38afb87dfbe8b33193b77182ada1f8e_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199115051237",
-                        "name": "\u041c\u0430\u0442\u044c \u0410\u0440\u043c\u0430\u0442\u0443\u0440\u0430",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/b6ea9cf894de99647316505a211d2f1fa71c4f58_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199519138054",
-                        "name": "__steklish__",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/34c8401f9dfe9ea9ea42b399736fae8d6c4a2b8f_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "pangolier",
-                    "drow_ranger",
-                    "witch_doctor"
                 ],
                 "rank": 114
             },
