@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-26 04:37:58",
+    "last_updated": "2025-04-26 05:59:47",
     "tabs": {
         "1": [
             {
@@ -5045,6 +5045,26 @@
                 "rank": 147
             },
             {
+                "wave_count": 86,
+                "players": [
+                    {
+                        "steamid": "76561198061119955",
+                        "name": "\u0428NLO",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/8442685651231b08503c282a75c5f324df2ae085_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198104846345",
+                        "name": "\u0394rkR\u039eZ\u039eR\u00d8",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/8bc3a6d34ff0d0fe5d38147256964cef35d3e169_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "medusa",
+                    "drow_ranger"
+                ],
+                "rank": 148
+            },
+            {
                 "wave_count": 84,
                 "players": [
                     {
@@ -5062,7 +5082,7 @@
                     "winter_wyvern",
                     "tidehunter"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 84,
@@ -5081,26 +5101,6 @@
                 "heroes": [
                     "luna",
                     "winter_wyvern"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 84,
-                "players": [
-                    {
-                        "steamid": "76561198988427951",
-                        "name": "fayz_43",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/e0d6ad2626edfde9002651005baa99ceaf4fdd41_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199508617240",
-                        "name": "Rodin",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/6f07989e7fc8a782f656da21c45553284246a42a_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "nevermore",
-                    "witch_doctor"
                 ],
                 "rank": 150
             }
