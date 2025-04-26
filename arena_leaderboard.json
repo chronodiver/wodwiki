@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-27 00:17:24",
+    "last_updated": "2025-04-27 01:17:53",
     "tabs": {
         "1": [
             {
@@ -4825,6 +4825,26 @@
                 "rank": 136
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561199028754436",
+                        "name": "Ane4ka",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199445975986",
+                        "name": "doc",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "luna",
+                    "drow_ranger"
+                ],
+                "rank": 137
+            },
+            {
                 "wave_count": 87,
                 "players": [
                     {
@@ -4842,7 +4862,7 @@
                     "winter_wyvern",
                     "slark"
                 ],
-                "rank": 137
+                "rank": 138
             },
             {
                 "wave_count": 87,
@@ -4862,7 +4882,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 138
+                "rank": 139
             },
             {
                 "wave_count": 87,
@@ -4882,7 +4902,7 @@
                     "ancient_apparition",
                     "invoker"
                 ],
-                "rank": 139
+                "rank": 140
             },
             {
                 "wave_count": 87,
@@ -4902,7 +4922,7 @@
                     "morphling",
                     "luna"
                 ],
-                "rank": 140
+                "rank": 141
             },
             {
                 "wave_count": 87,
@@ -4922,7 +4942,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 141
+                "rank": 142
             },
             {
                 "wave_count": 87,
@@ -4942,7 +4962,7 @@
                     "winter_wyvern",
                     "warlock"
                 ],
-                "rank": 142
+                "rank": 143
             },
             {
                 "wave_count": 86,
@@ -4962,7 +4982,7 @@
                     "medusa",
                     "winter_wyvern"
                 ],
-                "rank": 143
+                "rank": 144
             },
             {
                 "wave_count": 86,
@@ -4982,7 +5002,7 @@
                     "luna",
                     "earthshaker"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 86,
@@ -5002,7 +5022,7 @@
                     "antimage",
                     "tidehunter"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 86,
@@ -5022,7 +5042,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 86,
@@ -5042,7 +5062,7 @@
                     "antimage",
                     "dazzle"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 86,
@@ -5062,7 +5082,7 @@
                     "medusa",
                     "legion_commander"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 86,
@@ -5081,26 +5101,6 @@
                 "heroes": [
                     "antimage",
                     "necrolyte"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 86,
-                "players": [
-                    {
-                        "steamid": "76561199071675687",
-                        "name": "Cuchelo",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/36dfddd1568398b8dbcb5cfefde5485263fd5343_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198179113593",
-                        "name": "Sovar",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/ac79962c7b8a42255f6c7a5511f492d21d6660f7_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "bristleback",
-                    "phantom_assassin"
                 ],
                 "rank": 150
             }
