@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-27 21:25:31",
+    "last_updated": "2025-04-27 22:16:07",
     "tabs": {
         "1": [
             {
@@ -4945,6 +4945,46 @@
                 "rank": 142
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561198173330654",
+                        "name": "MirrorsShot",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/6e78a2e31d6517931f0f0d460915fac1f11f9305_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198145046120",
+                        "name": "\u042f \u043d\u0435 \u0438\u0433\u0440\u0430\u044e \u0432 \u0436\u0438\u0437\u043d\u044c",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/3d50e361efeba992f220f72a21c459aa5027c18b_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "muerta",
+                    "drow_ranger"
+                ],
+                "rank": 143
+            },
+            {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561199047681325",
+                        "name": "\u043d\u0430\u0434\u044e\u0425\u0430 prime",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/541e3151b1b1b7b69dbd52d55b05281623166f3e_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199002443595",
+                        "name": "\u041a\u0430\u0440\u0442\u0430\u0432\u044b\u0439 xy\u0439 \u8fea\u514b",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/a61f9d3222305bf5853913027c8ddfba9befa74e_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "ancient_apparition",
+                    "furion"
+                ],
+                "rank": 144
+            },
+            {
                 "wave_count": 87,
                 "players": [
                     {
@@ -4962,7 +5002,7 @@
                     "winter_wyvern",
                     "slark"
                 ],
-                "rank": 143
+                "rank": 145
             },
             {
                 "wave_count": 87,
@@ -4982,7 +5022,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 144
+                "rank": 146
             },
             {
                 "wave_count": 87,
@@ -5002,7 +5042,7 @@
                     "ancient_apparition",
                     "invoker"
                 ],
-                "rank": 145
+                "rank": 147
             },
             {
                 "wave_count": 87,
@@ -5022,7 +5062,7 @@
                     "morphling",
                     "luna"
                 ],
-                "rank": 146
+                "rank": 148
             },
             {
                 "wave_count": 87,
@@ -5042,7 +5082,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 147
+                "rank": 149
             },
             {
                 "wave_count": 87,
@@ -5061,46 +5101,6 @@
                 "heroes": [
                     "winter_wyvern",
                     "warlock"
-                ],
-                "rank": 148
-            },
-            {
-                "wave_count": 86,
-                "players": [
-                    {
-                        "steamid": "76561199102930338",
-                        "name": "dead inside",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/90971b22de4cb93fbe5fafda13d34c443e164738_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199754749787",
-                        "name": "Ghost\u6740\u624b",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/aa378ae4d5dcd4b731bf559845d4e129d50730f4_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "medusa",
-                    "winter_wyvern"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 86,
-                "players": [
-                    {
-                        "steamid": "76561198128966530",
-                        "name": "Freddy Fnafbear",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/fbce130239df769369d0b3412361bd5cf27f98b9_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198313026164",
-                        "name": "Larry",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/b2491f35c2cc9e5e65521d24987fe161d22e9b70_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "luna",
-                    "earthshaker"
                 ],
                 "rank": 150
             }
