@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-27 08:19:18",
+    "last_updated": "2025-04-27 09:26:51",
     "tabs": {
         "1": [
             {
@@ -3109,8 +3109,8 @@
                 "players": [
                     {
                         "steamid": "76561198165096708",
-                        "name": "\u043f\u043b\u0430\u0447\u0435\u0448\u044c \u0434\u0430?",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/145e2554438fc2426afd45655eb984b5ea0b8464_medium.jpg"
+                        "name": "uglyfacekid",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/59ee4cb865579d82fa025622e650a44ab2ecee93_medium.jpg"
                     },
                     {
                         "steamid": "76561198329316760",
@@ -3154,8 +3154,8 @@
                     },
                     {
                         "steamid": "76561199100134544",
-                        "name": "funkefal jr.",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/21d13dc3fd17d76997aa6c7b887bd333060cfb82_medium.jpg"
+                        "name": "\u043f\u043e\u0440\u0430 \u043c\u0435\u043d\u044f\u0442\u044c \u043d\u0438\u043a",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/323cc1c47f3bb1136dfe7d718cc5d76278251f71_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -3169,13 +3169,13 @@
                 "players": [
                     {
                         "steamid": "76561199008227985",
-                        "name": "MoperKa",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/b3877044cdfff2ddb4288f670e0656064d9f1b2d_medium.jpg"
+                        "name": "C\u0422\u0410\u0421 \u042f\u0420\u0423\u0428\u0418\u041d",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/e484baf24cbfa9642312ea67970b420763f29401_medium.jpg"
                     },
                     {
                         "steamid": "76561199069301277",
-                        "name": "\u0411\u0415\u0428\u0415\u041d\u042b\u0419 \u0424\u0418\u041c\u041e\u0417",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/bcd910bb43b987c0634bd5d9c9d8ab84224078d6_medium.jpg"
+                        "name": "\u0421\u0422\u0410\u0421 \u042f\u0420\u0423\u0428\u0418\u041d",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/9b91267dfe522f21ad09ac7040436ba7fb89b68a_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -3809,8 +3809,8 @@
                 "players": [
                     {
                         "steamid": "76561199008227985",
-                        "name": "MoperKa",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/b3877044cdfff2ddb4288f670e0656064d9f1b2d_medium.jpg"
+                        "name": "C\u0422\u0410\u0421 \u042f\u0420\u0423\u0428\u0418\u041d",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/e484baf24cbfa9642312ea67970b420763f29401_medium.jpg"
                     },
                     {
                         "steamid": "76561199196771569",
@@ -4885,6 +4885,26 @@
                 "rank": 139
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561199209459286",
+                        "name": "i\/believe\/in\/hidden\/pool",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/59584538e4239e95301b33acf6f47e6520f00557_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199032910205",
+                        "name": "get cancer or die trying",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/6a7161a88d96aa44bf5f90ab935b42345331d7e9_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "medusa",
+                    "drow_ranger"
+                ],
+                "rank": 140
+            },
+            {
                 "wave_count": 87,
                 "players": [
                     {
@@ -4894,7 +4914,7 @@
                     },
                     {
                         "steamid": "76561199017306508",
-                        "name": "6917 \u0434\u0435\u043d\u044c \u0431\u0435\u0437 \u0441\u0435\u043a\u0441\u0430",
+                        "name": "\u0422\u043e\u043b\u044f\u0422\u043e\u043b\u044f",
                         "avatar": "https:\/\/avatars.steamstatic.com\/5596c8095f3c84e1362d71905a1ced6e4537c753_medium.jpg"
                     }
                 ],
@@ -4902,7 +4922,7 @@
                     "winter_wyvern",
                     "slark"
                 ],
-                "rank": 140
+                "rank": 141
             },
             {
                 "wave_count": 87,
@@ -4922,7 +4942,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 141
+                "rank": 142
             },
             {
                 "wave_count": 87,
@@ -4942,7 +4962,7 @@
                     "ancient_apparition",
                     "invoker"
                 ],
-                "rank": 142
+                "rank": 143
             },
             {
                 "wave_count": 87,
@@ -4962,7 +4982,7 @@
                     "morphling",
                     "luna"
                 ],
-                "rank": 143
+                "rank": 144
             },
             {
                 "wave_count": 87,
@@ -4982,7 +5002,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 87,
@@ -5002,7 +5022,7 @@
                     "winter_wyvern",
                     "warlock"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 86,
@@ -5022,7 +5042,7 @@
                     "medusa",
                     "winter_wyvern"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 86,
@@ -5042,7 +5062,7 @@
                     "luna",
                     "earthshaker"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 86,
@@ -5062,7 +5082,7 @@
                     "antimage",
                     "tidehunter"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 86,
@@ -5081,26 +5101,6 @@
                 "heroes": [
                     "luna",
                     "winter_wyvern"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 86,
-                "players": [
-                    {
-                        "steamid": "76561198253316830",
-                        "name": "forallpros",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/58eb2381516c00f1cff3a65ba2c01077142b8a5f_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198110594158",
-                        "name": "SoLo-PLaYeR",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/4fe3b967067e9a72fac3d95a9eb88841fe76ed8e_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "antimage",
-                    "dazzle"
                 ],
                 "rank": 150
             }
@@ -5641,8 +5641,8 @@
                     },
                     {
                         "steamid": "76561198971351971",
-                        "name": "\u0411\u0438\u0433\u0435\u043c\u043e\u0434 \u0444 \u043a\u0440\u043e\u0441\u043e\u0444\u043a\u0430",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/1015ca2f6beb51140c1b45c9bd54c617ab411c7d_medium.jpg"
+                        "name": "\u041c\u0438\u0441\u0442\u0440 \u0421\u0432\u043e\u0431\u043e\u0434\u043d\u0438 \u0447\u0438\u043b\u0430\u0432\u0435\u043a",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/c2965f897a9154d436bbf747e273fb5f3dbd296f_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -6603,7 +6603,7 @@
                     },
                     {
                         "steamid": "76561199017306508",
-                        "name": "6917 \u0434\u0435\u043d\u044c \u0431\u0435\u0437 \u0441\u0435\u043a\u0441\u0430",
+                        "name": "\u0422\u043e\u043b\u044f\u0422\u043e\u043b\u044f",
                         "avatar": "https:\/\/avatars.steamstatic.com\/5596c8095f3c84e1362d71905a1ced6e4537c753_medium.jpg"
                     }
                 ],
@@ -6702,7 +6702,7 @@
                     },
                     {
                         "steamid": "76561199375623134",
-                        "name": "LARL",
+                        "name": "\u0410\u0433\u043d\u0435\u0448\u0430\u0447\u043a\u0430",
                         "avatar": "https:\/\/avatars.steamstatic.com\/3ec1d823f3a2858b022801015c1e744bfb108d16_medium.jpg"
                     },
                     {
@@ -6910,7 +6910,7 @@
                     },
                     {
                         "steamid": "76561199104513450",
-                        "name": "\u043b\u0435\u043d\u0430 \u0433\u0430\u0432\u0430\u0432\u0430\u0447",
+                        "name": "\u0413\u0435\u043d\u043d\u0430\u0434\u0438\u0439 \u0413\u043e\u043b\u043e\u0432\u0430\u0447",
                         "avatar": "https:\/\/avatars.steamstatic.com\/1cd45bfc44426ce77f78fb2c3db11e2435f8ea66_medium.jpg"
                     },
                     {
@@ -7950,7 +7950,7 @@
                     },
                     {
                         "steamid": "76561199104513450",
-                        "name": "\u043b\u0435\u043d\u0430 \u0433\u0430\u0432\u0430\u0432\u0430\u0447",
+                        "name": "\u0413\u0435\u043d\u043d\u0430\u0434\u0438\u0439 \u0413\u043e\u043b\u043e\u0432\u0430\u0447",
                         "avatar": "https:\/\/avatars.steamstatic.com\/1cd45bfc44426ce77f78fb2c3db11e2435f8ea66_medium.jpg"
                     },
                     {
@@ -8392,7 +8392,7 @@
                     },
                     {
                         "steamid": "76561199104513450",
-                        "name": "\u043b\u0435\u043d\u0430 \u0433\u0430\u0432\u0430\u0432\u0430\u0447",
+                        "name": "\u0413\u0435\u043d\u043d\u0430\u0434\u0438\u0439 \u0413\u043e\u043b\u043e\u0432\u0430\u0447",
                         "avatar": "https:\/\/avatars.steamstatic.com\/1cd45bfc44426ce77f78fb2c3db11e2435f8ea66_medium.jpg"
                     },
                     {
