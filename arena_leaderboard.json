@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-27 02:18:59",
+    "last_updated": "2025-04-27 04:45:57",
     "tabs": {
         "1": [
             {
@@ -4845,6 +4845,26 @@
                 "rank": 137
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561198074422903",
+                        "name": "\u0421\u0422\u0410\u0420\u0428\u0418\u0419 \u041b\u0415\u041d\u0418\u0412\u0415\u0426",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/78c971e6456ea61e75e5ff5be3890135ab852e24_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199023918770",
+                        "name": "chereprom88",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "dragon_knight",
+                    "arc_warden"
+                ],
+                "rank": 138
+            },
+            {
                 "wave_count": 87,
                 "players": [
                     {
@@ -4862,7 +4882,7 @@
                     "winter_wyvern",
                     "slark"
                 ],
-                "rank": 138
+                "rank": 139
             },
             {
                 "wave_count": 87,
@@ -4882,7 +4902,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 139
+                "rank": 140
             },
             {
                 "wave_count": 87,
@@ -4902,7 +4922,7 @@
                     "ancient_apparition",
                     "invoker"
                 ],
-                "rank": 140
+                "rank": 141
             },
             {
                 "wave_count": 87,
@@ -4922,7 +4942,7 @@
                     "morphling",
                     "luna"
                 ],
-                "rank": 141
+                "rank": 142
             },
             {
                 "wave_count": 87,
@@ -4942,7 +4962,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 142
+                "rank": 143
             },
             {
                 "wave_count": 87,
@@ -4962,7 +4982,7 @@
                     "winter_wyvern",
                     "warlock"
                 ],
-                "rank": 143
+                "rank": 144
             },
             {
                 "wave_count": 86,
@@ -4982,7 +5002,7 @@
                     "medusa",
                     "winter_wyvern"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 86,
@@ -5002,7 +5022,7 @@
                     "luna",
                     "earthshaker"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 86,
@@ -5022,7 +5042,7 @@
                     "antimage",
                     "tidehunter"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 86,
@@ -5042,7 +5062,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 86,
@@ -5062,7 +5082,7 @@
                     "antimage",
                     "dazzle"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 86,
@@ -5081,26 +5101,6 @@
                 "heroes": [
                     "medusa",
                     "legion_commander"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 86,
-                "players": [
-                    {
-                        "steamid": "76561198942303521",
-                        "name": "Z1trax m0de",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/a15a6c0055d86f1712a20ba20569328e6fd46420_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199486764284",
-                        "name": "\u0412\u041e\u0412\u0410",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/e1c1170299333b13bbe2167de6a575e150a16337_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "antimage",
-                    "necrolyte"
                 ],
                 "rank": 150
             }
