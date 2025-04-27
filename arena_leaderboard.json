@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-27 06:09:50",
+    "last_updated": "2025-04-27 07:23:03",
     "tabs": {
         "1": [
             {
@@ -4865,6 +4865,26 @@
                 "rank": 138
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561198882287224",
+                        "name": "\u043a\u043e\u0431\u043e\u0447\u043a\u0438",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/faaf11fa3332b6cf79ec35fd9477570678ef2088_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199201938296",
+                        "name": "\u041f\u0430\u0448\u0430 \u0414\u0443\u0440\u043e\u0432",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/4f1dae3186faddd1d25f969ddf4669250c93f601_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "crystal_maiden",
+                    "dragon_knight"
+                ],
+                "rank": 139
+            },
+            {
                 "wave_count": 87,
                 "players": [
                     {
@@ -4882,7 +4902,7 @@
                     "winter_wyvern",
                     "slark"
                 ],
-                "rank": 139
+                "rank": 140
             },
             {
                 "wave_count": 87,
@@ -4902,7 +4922,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 140
+                "rank": 141
             },
             {
                 "wave_count": 87,
@@ -4922,7 +4942,7 @@
                     "ancient_apparition",
                     "invoker"
                 ],
-                "rank": 141
+                "rank": 142
             },
             {
                 "wave_count": 87,
@@ -4942,7 +4962,7 @@
                     "morphling",
                     "luna"
                 ],
-                "rank": 142
+                "rank": 143
             },
             {
                 "wave_count": 87,
@@ -4962,7 +4982,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 143
+                "rank": 144
             },
             {
                 "wave_count": 87,
@@ -4982,7 +5002,7 @@
                     "winter_wyvern",
                     "warlock"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 86,
@@ -5002,7 +5022,7 @@
                     "medusa",
                     "winter_wyvern"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 86,
@@ -5022,7 +5042,7 @@
                     "luna",
                     "earthshaker"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 86,
@@ -5042,7 +5062,7 @@
                     "antimage",
                     "tidehunter"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 86,
@@ -5062,7 +5082,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 86,
@@ -5081,26 +5101,6 @@
                 "heroes": [
                     "antimage",
                     "dazzle"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 86,
-                "players": [
-                    {
-                        "steamid": "76561199070619094",
-                        "name": "Alezar4ik",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/edea68afd57a75255af47916521ba7b4bd0174c1_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199026100835",
-                        "name": "\u0427\u0443\u043a\u0430\u0433\u0438\u0440",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/c620686fc28f48c6fc6a86bf38da70c4d034ee90_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "medusa",
-                    "legion_commander"
                 ],
                 "rank": 150
             }
