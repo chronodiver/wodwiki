@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-28 17:22:36",
+    "last_updated": "2025-04-28 18:22:30",
     "tabs": {
         "1": [
             {
@@ -5045,6 +5045,26 @@
                 "rank": 147
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561199509610482",
+                        "name": "suffering from apathy",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/0d653cdc59d9e6377d3da8ab9022ae4c1e9ca4c6_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199062638686",
+                        "name": "\u0414\u0438\u043c\u0430 \u0449\u0443\u043f\u0430\u043b\u044c\u0446\u0435",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/704e1bbca06fcc3d716cebbcd20d1066bc916c26_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "terrorblade",
+                    "lich"
+                ],
+                "rank": 148
+            },
+            {
                 "wave_count": 87,
                 "players": [
                     {
@@ -5062,7 +5082,7 @@
                     "winter_wyvern",
                     "slark"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 87,
@@ -5081,26 +5101,6 @@
                 "heroes": [
                     "luna",
                     "winter_wyvern"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 87,
-                "players": [
-                    {
-                        "steamid": "76561199055034412",
-                        "name": "samttt",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/51bb78fd07a616dffa959c285ad0951a7ece4680_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198310817905",
-                        "name": "\u041f\u25cb\u043c!\u043c\u25cb \u041d@\u0432\u25cbz@",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/a0780a0e78e5c87fc2781c636687ae24c4dd8012_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "ancient_apparition",
-                    "invoker"
                 ],
                 "rank": 150
             }
