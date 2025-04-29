@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-04-29 02:18:51",
+    "last_updated": "2025-04-29 04:42:26",
     "tabs": {
         "1": [
             {
@@ -412,6 +412,20 @@
                 "wave_count": 119,
                 "players": [
                     {
+                        "steamid": "76561198091731347",
+                        "name": "Deep Penetration",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/44b65fa70c3df3819aa00d7b9cb13a40ac7cc2dc_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "winter_wyvern"
+                ],
+                "rank": 30
+            },
+            {
+                "wave_count": 119,
+                "players": [
+                    {
                         "steamid": "76561198112903956",
                         "name": "Deofix",
                         "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
@@ -420,7 +434,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 30
+                "rank": 31
             },
             {
                 "wave_count": 119,
@@ -434,7 +448,7 @@
                 "heroes": [
                     "drow_ranger"
                 ],
-                "rank": 31
+                "rank": 32
             },
             {
                 "wave_count": 119,
@@ -448,7 +462,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 32
+                "rank": 33
             },
             {
                 "wave_count": 119,
@@ -462,7 +476,7 @@
                 "heroes": [
                     "doom_bringer"
                 ],
-                "rank": 33
+                "rank": 34
             },
             {
                 "wave_count": 119,
@@ -476,7 +490,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 34
+                "rank": 35
             },
             {
                 "wave_count": 119,
@@ -490,7 +504,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 35
+                "rank": 36
             },
             {
                 "wave_count": 119,
@@ -504,7 +518,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 36
+                "rank": 37
             },
             {
                 "wave_count": 119,
@@ -518,7 +532,7 @@
                 "heroes": [
                     "death_prophet"
                 ],
-                "rank": 37
+                "rank": 38
             },
             {
                 "wave_count": 119,
@@ -532,7 +546,7 @@
                 "heroes": [
                     "drow_ranger"
                 ],
-                "rank": 38
+                "rank": 39
             },
             {
                 "wave_count": 119,
@@ -545,20 +559,6 @@
                 ],
                 "heroes": [
                     "drow_ranger"
-                ],
-                "rank": 39
-            },
-            {
-                "wave_count": 119,
-                "players": [
-                    {
-                        "steamid": "76561198091731347",
-                        "name": "Deep Penetration",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/44b65fa70c3df3819aa00d7b9cb13a40ac7cc2dc_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "winter_wyvern"
                 ],
                 "rank": 40
             },
