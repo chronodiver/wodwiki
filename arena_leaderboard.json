@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-01 21:28:54",
+    "last_updated": "2025-05-01 22:16:03",
     "tabs": {
         "1": [
             {
@@ -8851,6 +8851,32 @@
                 "rank": 144
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561198376917411",
+                        "name": "\u1233\u1295\u12eb \u12c8\u12f0 \u1273",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/600a54e62405d2696730eabca74233adfd9aea7e_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198441390358",
+                        "name": "palma",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/0e96fd1da4c91017a7c1de980d6361b139e6831d_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198413623278",
+                        "name": "siskogrix",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/2c739b6b99181a71310f88c0c6a65b0f9ea95e8d_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "morphling",
+                    "lion",
+                    "ancient_apparition"
+                ],
+                "rank": 145
+            },
+            {
                 "wave_count": 87,
                 "players": [
                     {
@@ -8874,7 +8900,7 @@
                     "ancient_apparition",
                     "drow_ranger"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 87,
@@ -8900,7 +8926,7 @@
                     "antimage",
                     "slardar"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 86,
@@ -8926,7 +8952,7 @@
                     "pudge",
                     "nevermore"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 86,
@@ -8952,7 +8978,7 @@
                     "phantom_assassin",
                     "skeleton_king"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 86,
@@ -8977,32 +9003,6 @@
                     "nevermore",
                     "medusa",
                     "skeleton_king"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 86,
-                "players": [
-                    {
-                        "steamid": "76561198277330641",
-                        "name": "\u0412l\u0430\u0441\u043aSun",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/6c760e8602e80bcaf9e1e9f4fd5222dd8ef3925b_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198060716908",
-                        "name": "Ero Lula",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/9324703461d3b7c55d4872dbfd0f829fe142c3df_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199508975130",
-                        "name": "kra17.at",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "nyx_assassin",
-                    "zuus",
-                    "morphling"
                 ],
                 "rank": 150
             }
