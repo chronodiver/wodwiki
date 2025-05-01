@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-01 13:22:03",
+    "last_updated": "2025-05-01 14:16:49",
     "tabs": {
         "1": [
             {
@@ -1462,20 +1462,6 @@
                 "wave_count": 95,
                 "players": [
                     {
-                        "steamid": "76561198203961503",
-                        "name": "\u0418\u043d\u0442\u0438\u043c\u043d\u044b\u0439 \u043f\u0440\u044b\u0449",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/d26f851e9f0928c8209d763f04d69ad1db055c88_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "zuus"
-                ],
-                "rank": 105
-            },
-            {
-                "wave_count": 95,
-                "players": [
-                    {
                         "steamid": "76561198142961820",
                         "name": "1ody",
                         "avatar": "https:\/\/avatars.steamstatic.com\/d809720c8d237e3496d4d44d54fd41023304e1d9_medium.jpg"
@@ -1484,7 +1470,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 106
+                "rank": 105
             },
             {
                 "wave_count": 95,
@@ -1498,7 +1484,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 107
+                "rank": 106
             },
             {
                 "wave_count": 95,
@@ -1511,6 +1497,20 @@
                 ],
                 "heroes": [
                     "lich"
+                ],
+                "rank": 107
+            },
+            {
+                "wave_count": 95,
+                "players": [
+                    {
+                        "steamid": "76561198203961503",
+                        "name": "\u0418\u043d\u0442\u0438\u043c\u043d\u044b\u0439 \u043f\u0440\u044b\u0449",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/d26f851e9f0928c8209d763f04d69ad1db055c88_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "zuus"
                 ],
                 "rank": 108
             },
