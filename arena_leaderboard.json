@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-02 15:40:05",
+    "last_updated": "2025-05-02 16:29:31",
     "tabs": {
         "1": [
             {
@@ -8929,6 +8929,58 @@
                 "rank": 147
             },
             {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561199074761422",
+                        "name": "\u0433\u0443\u0447\u0438 \u043a\u043b\u0438\u043a \u043a\u043b\u0430\u043a",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/a521352ec938d97a89f4b9655f75924d3cea6344_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199544248399",
+                        "name": "LILnvalid",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/796eef47e376ad18ec58fc8f47e8e63c8bbc558c_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198358912089",
+                        "name": "\u0412\u043e\u0438\u043d\u0428\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u043e\u0433\u043e\u0413\u043b\u0430\u0437\u0430",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/5afa273d608b498be417246a70e684c77486c617_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "slardar",
+                    "luna",
+                    "lion"
+                ],
+                "rank": 148
+            },
+            {
+                "wave_count": 89,
+                "players": [
+                    {
+                        "steamid": "76561199470946628",
+                        "name": "\u043a\u0430\u043c\u0430\u0441\u0443\u0442\u0440\u0430 9G",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/defe06ed3c52b519f8ffb0b6eed39bd04e388af8_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198050032431",
+                        "name": "Red_FtW",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/0130a317367e7be7455e811d6f24adfb9f61985b_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198283593796",
+                        "name": "die",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/f133bbb834d937e8f1232123dc4bf32387a2f39e_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "bristleback",
+                    "naga_siren",
+                    "furion"
+                ],
+                "rank": 149
+            },
+            {
                 "wave_count": 87,
                 "players": [
                     {
@@ -8951,58 +9003,6 @@
                     "dragon_knight",
                     "ancient_apparition",
                     "drow_ranger"
-                ],
-                "rank": 148
-            },
-            {
-                "wave_count": 87,
-                "players": [
-                    {
-                        "steamid": "76561198187306539",
-                        "name": "DeusOleg",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/3f5e9daea59216d7fe13df4e031d3537580e5e21_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199839704748",
-                        "name": "\u0633\u0648\u063a\u0648\u064a\u0627\u0646",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/5f1188bd5c9f15d7af6442e7d593e6c85f685ef4_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198888862320",
-                        "name": "Banned in Heaven",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/f2bf975a51c1c9f7c10e36cc210ec837a9f7d7b4_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "medusa",
-                    "antimage",
-                    "slardar"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 86,
-                "players": [
-                    {
-                        "steamid": "76561198872927237",
-                        "name": "M\u00f6rfy",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/de9c8ad63e2416c9002350a0a8906b686db9ae07_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198883728217",
-                        "name": "\u3053\u306e\u4eba\u751f\u306b\u306f\u610f\u5473\u304c\u306a\u3044",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/c42df7cfe818784d32a83551e69221df3f265ce0_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199094522057",
-                        "name": "\u043f\u0435\u0440\u0435\u043b\u043e\u043c\u0430\u0439 \u043c\u043e\u0438 \u043a\u043e\u0441",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/2405c3a0b2d9b986adddeebe5450a9671b24163a_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "crystal_maiden",
-                    "pudge",
-                    "nevermore"
                 ],
                 "rank": 150
             }
