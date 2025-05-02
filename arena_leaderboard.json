@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-02 22:16:33",
+    "last_updated": "2025-05-02 23:22:29",
     "tabs": {
         "1": [
             {
@@ -20,6 +20,20 @@
                 "wave_count": 159,
                 "players": [
                     {
+                        "steamid": "76561198227013036",
+                        "name": "[ fone| \u0444\u043e\u043d ]",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/c80d19526a80dc6515550a31fd3e086bb804892d_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "dazzle"
+                ],
+                "rank": 2
+            },
+            {
+                "wave_count": 159,
+                "players": [
+                    {
                         "steamid": "76561198247769086",
                         "name": "zilain prime",
                         "avatar": "https:\/\/avatars.steamstatic.com\/2ae49ef112e3dedc5450db0fccebb058b5ea7a6a_medium.jpg"
@@ -28,7 +42,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 2
+                "rank": 3
             },
             {
                 "wave_count": 159,
@@ -42,7 +56,7 @@
                 "heroes": [
                     "kez"
                 ],
-                "rank": 3
+                "rank": 4
             },
             {
                 "wave_count": 157,
@@ -56,7 +70,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 4
+                "rank": 5
             },
             {
                 "wave_count": 149,
@@ -70,7 +84,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 5
+                "rank": 6
             },
             {
                 "wave_count": 149,
@@ -79,20 +93,6 @@
                         "steamid": "76561198144037103",
                         "name": "\u0437\u0440\u044f \u0432\u044b \u043c\u0435\u043d\u044f \u0435\u0431\u0430\u043b\u0438",
                         "avatar": "https:\/\/avatars.steamstatic.com\/845cec562c0fd42215e4fd4fcb32e7bbb2e5836f_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "zuus"
-                ],
-                "rank": 6
-            },
-            {
-                "wave_count": 149,
-                "players": [
-                    {
-                        "steamid": "76561198227013036",
-                        "name": "[ fone| \u0444\u043e\u043d ]",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/c80d19526a80dc6515550a31fd3e086bb804892d_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -2605,6 +2605,26 @@
                 "rank": 25
             },
             {
+                "wave_count": 119,
+                "players": [
+                    {
+                        "steamid": "76561198154571985",
+                        "name": "Photo Device\u2122",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/86b97dc2497ba4907824af2acc353d5c52f52076_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199638407515",
+                        "name": "\u0424\u043b\u044d\u0448\u0431\u044d\u043a\u0435\u0440",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/52eea0dff9a583c8943bbb2c14ba0bd77e74ee97_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "marci",
+                    "legion_commander"
+                ],
+                "rank": 26
+            },
+            {
                 "wave_count": 118,
                 "players": [
                     {
@@ -2622,7 +2642,7 @@
                     "winter_wyvern",
                     "zuus"
                 ],
-                "rank": 26
+                "rank": 27
             },
             {
                 "wave_count": 116,
@@ -2634,7 +2654,7 @@
                     },
                     {
                         "steamid": "76561199137626835",
-                        "name": "\u041d\u0430\u0446\u0443\u043a\u0438",
+                        "name": "Natsuki.chr",
                         "avatar": "https:\/\/avatars.steamstatic.com\/646806bbb816e931db7ddde00335732b4bc4ca12_medium.jpg"
                     }
                 ],
@@ -2642,7 +2662,7 @@
                     "winter_wyvern",
                     "zuus"
                 ],
-                "rank": 27
+                "rank": 28
             },
             {
                 "wave_count": 109,
@@ -2662,7 +2682,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 28
+                "rank": 29
             },
             {
                 "wave_count": 109,
@@ -2682,7 +2702,7 @@
                     "winter_wyvern",
                     "bristleback"
                 ],
-                "rank": 29
+                "rank": 30
             },
             {
                 "wave_count": 109,
@@ -2702,7 +2722,7 @@
                     "death_prophet",
                     "furion"
                 ],
-                "rank": 30
+                "rank": 31
             },
             {
                 "wave_count": 109,
@@ -2722,7 +2742,7 @@
                     "legion_commander",
                     "winter_wyvern"
                 ],
-                "rank": 31
+                "rank": 32
             },
             {
                 "wave_count": 109,
@@ -2742,7 +2762,7 @@
                     "winter_wyvern",
                     "kez"
                 ],
-                "rank": 32
+                "rank": 33
             },
             {
                 "wave_count": 109,
@@ -2762,7 +2782,7 @@
                     "crystal_maiden",
                     "zuus"
                 ],
-                "rank": 33
+                "rank": 34
             },
             {
                 "wave_count": 109,
@@ -2782,7 +2802,7 @@
                     "winter_wyvern",
                     "zuus"
                 ],
-                "rank": 34
+                "rank": 35
             },
             {
                 "wave_count": 109,
@@ -2802,7 +2822,7 @@
                     "doom_bringer",
                     "crystal_maiden"
                 ],
-                "rank": 35
+                "rank": 36
             },
             {
                 "wave_count": 109,
@@ -2822,7 +2842,7 @@
                     "drow_ranger",
                     "zuus"
                 ],
-                "rank": 36
+                "rank": 37
             },
             {
                 "wave_count": 109,
@@ -2842,7 +2862,7 @@
                     "winter_wyvern",
                     "marci"
                 ],
-                "rank": 37
+                "rank": 38
             },
             {
                 "wave_count": 109,
@@ -2861,26 +2881,6 @@
                 "heroes": [
                     "zuus",
                     "crystal_maiden"
-                ],
-                "rank": 38
-            },
-            {
-                "wave_count": 109,
-                "players": [
-                    {
-                        "steamid": "76561198154571985",
-                        "name": "Photo Device\u2122",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/86b97dc2497ba4907824af2acc353d5c52f52076_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199638407515",
-                        "name": "\u0424\u043b\u044d\u0448\u0431\u044d\u043a\u0435\u0440",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/52eea0dff9a583c8943bbb2c14ba0bd77e74ee97_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "marci",
-                    "zuus"
                 ],
                 "rank": 39
             },
@@ -8912,8 +8912,8 @@
                     },
                     {
                         "steamid": "76561199651870256",
-                        "name": "\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u043f\u0440\u0430\u0439\u043c",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/351e0c599623a41193a31926bc04b8fb4e5d8a51_medium.jpg"
+                        "name": "\u0421\u0415\u0420\u0415\u0413\u0410 \u041f\u0418\u0420\u0410\u0422",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/67e86f741a2c9644ce6532dba7192fad3232fe17_medium.jpg"
                     },
                     {
                         "steamid": "76561199045620374",
