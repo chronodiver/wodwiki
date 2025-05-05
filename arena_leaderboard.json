@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-05 18:21:53",
+    "last_updated": "2025-05-05 19:26:51",
     "tabs": {
         "1": [
             {
@@ -174,6 +174,20 @@
                 "wave_count": 139,
                 "players": [
                     {
+                        "steamid": "76561199721819975",
+                        "name": "Dekomori",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/4d461e2ddc399c4cc0e585c9a8a558023b584615_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "zuus"
+                ],
+                "rank": 13
+            },
+            {
+                "wave_count": 139,
+                "players": [
+                    {
                         "steamid": "76561198931627060",
                         "name": "Mikihisa Asakura",
                         "avatar": "https:\/\/avatars.steamstatic.com\/e26f321df6108d2c42a89d908ff16b4e7d5b7640_medium.jpg"
@@ -182,7 +196,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 13
+                "rank": 14
             },
             {
                 "wave_count": 139,
@@ -196,7 +210,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 14
+                "rank": 15
             },
             {
                 "wave_count": 138,
@@ -210,7 +224,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 15
+                "rank": 16
             },
             {
                 "wave_count": 138,
@@ -224,7 +238,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 16
+                "rank": 17
             },
             {
                 "wave_count": 129,
@@ -238,7 +252,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 17
+                "rank": 18
             },
             {
                 "wave_count": 129,
@@ -252,7 +266,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 18
+                "rank": 19
             },
             {
                 "wave_count": 129,
@@ -266,7 +280,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 19
+                "rank": 20
             },
             {
                 "wave_count": 129,
@@ -280,7 +294,7 @@
                 "heroes": [
                     "dazzle"
                 ],
-                "rank": 20
+                "rank": 21
             },
             {
                 "wave_count": 129,
@@ -289,20 +303,6 @@
                         "steamid": "76561198058707531",
                         "name": "Baalsham",
                         "avatar": "https:\/\/avatars.steamstatic.com\/67e5649e76d081f11110bbee7e91dc156b5f6b20_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "zuus"
-                ],
-                "rank": 21
-            },
-            {
-                "wave_count": 129,
-                "players": [
-                    {
-                        "steamid": "76561199721819975",
-                        "name": "Dekomori",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/4d461e2ddc399c4cc0e585c9a8a558023b584615_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -455,8 +455,8 @@
                 "players": [
                     {
                         "steamid": "76561198264218093",
-                        "name": "\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e",
-                        "avatar": "https:\/\/via.placeholder.com\/64"
+                        "name": "Vova",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/4198a15d4433a0cb22ad3405cf0ab9860d219f3b_medium.jpg"
                     }
                 ],
                 "heroes": [
