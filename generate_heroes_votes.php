@@ -1,6 +1,6 @@
 <?php
 $votesUrl = 'https://data.worldofdota.net/data/get_heroes_votes.php';
-$maxVotes = 500000;
+$maxVotes = 450000;
 
 $votesData = @file_get_contents($votesUrl);
 if ($votesData === false) {
