@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-07 20:18:34",
+    "last_updated": "2025-05-07 21:28:26",
     "tabs": {
         "1": [
             {
@@ -3185,6 +3185,26 @@
                 "rank": 54
             },
             {
+                "wave_count": 99,
+                "players": [
+                    {
+                        "steamid": "76561198957379946",
+                        "name": "Osuki",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/0686a9cf5a9d00b897cab49fa0059bade736fcea_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198302729066",
+                        "name": "\u30bf\u30a4\u30e0\u30ed\u30f3\u30b0-\u30b7\u30c7\u30a3\u30aa",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/68248295e195ab438ec6ef7c2d3b30b3ba9a2ec7_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "ancient_apparition",
+                    "undying"
+                ],
+                "rank": 55
+            },
+            {
                 "wave_count": 96,
                 "players": [
                     {
@@ -3202,7 +3222,7 @@
                     "drow_ranger",
                     "morphling"
                 ],
-                "rank": 55
+                "rank": 56
             },
             {
                 "wave_count": 91,
@@ -3222,7 +3242,7 @@
                     "lion",
                     "nyx_assassin"
                 ],
-                "rank": 56
+                "rank": 57
             },
             {
                 "wave_count": 91,
@@ -3242,7 +3262,7 @@
                     "luna",
                     "huskar"
                 ],
-                "rank": 57
+                "rank": 58
             },
             {
                 "wave_count": 90,
@@ -3261,26 +3281,6 @@
                 "heroes": [
                     "weaver",
                     "winter_wyvern"
-                ],
-                "rank": 58
-            },
-            {
-                "wave_count": 90,
-                "players": [
-                    {
-                        "steamid": "76561198957379946",
-                        "name": "Osuki",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/0686a9cf5a9d00b897cab49fa0059bade736fcea_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198302729066",
-                        "name": "\u30bf\u30a4\u30e0\u30ed\u30f3\u30b0-\u30b7\u30c7\u30a3\u30aa",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/68248295e195ab438ec6ef7c2d3b30b3ba9a2ec7_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "tidehunter",
-                    "zuus"
                 ],
                 "rank": 59
             },
