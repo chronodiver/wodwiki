@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-08 16:31:02",
+    "last_updated": "2025-05-08 17:18:51",
     "tabs": {
         "1": [
             {
@@ -885,6 +885,20 @@
                 "rank": 63
             },
             {
+                "wave_count": 110,
+                "players": [
+                    {
+                        "steamid": "76561198788420498",
+                        "name": "Loody<3",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/8b0504b5c9ae4328cd21d5e524082a057539befc_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "marci"
+                ],
+                "rank": 64
+            },
+            {
                 "wave_count": 109,
                 "players": [
                     {
@@ -896,7 +910,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 64
+                "rank": 65
             },
             {
                 "wave_count": 109,
@@ -910,7 +924,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 65
+                "rank": 66
             },
             {
                 "wave_count": 109,
@@ -924,7 +938,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 66
+                "rank": 67
             },
             {
                 "wave_count": 109,
@@ -938,7 +952,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 67
+                "rank": 68
             },
             {
                 "wave_count": 109,
@@ -952,7 +966,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 68
+                "rank": 69
             },
             {
                 "wave_count": 109,
@@ -966,7 +980,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 69
+                "rank": 70
             },
             {
                 "wave_count": 109,
@@ -979,20 +993,6 @@
                 ],
                 "heroes": [
                     "necrolyte"
-                ],
-                "rank": 70
-            },
-            {
-                "wave_count": 109,
-                "players": [
-                    {
-                        "steamid": "76561198788420498",
-                        "name": "Loody<3",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/8b0504b5c9ae4328cd21d5e524082a057539befc_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "zuus"
                 ],
                 "rank": 71
             },
@@ -2051,7 +2051,7 @@
                 "players": [
                     {
                         "steamid": "76561199080289625",
-                        "name": "\u0444\u0443\u0440\u0440\u0438 \u0444\u0435\u043c\u0431\u043e\u0439777",
+                        "name": "tv\/goldenpig42",
                         "avatar": "https:\/\/avatars.steamstatic.com\/bf1a8974da7b8d4adc6b15b74aa8a9c78e23ef76_medium.jpg"
                     }
                 ],
