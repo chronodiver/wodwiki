@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-10 02:18:34",
+    "last_updated": "2025-05-10 04:39:37",
     "tabs": {
         "1": [
             {
@@ -1112,20 +1112,6 @@
                 "wave_count": 109,
                 "players": [
                     {
-                        "steamid": "76561199237070965",
-                        "name": "bald",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/0e96fd1da4c91017a7c1de980d6361b139e6831d_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "luna"
-                ],
-                "rank": 80
-            },
-            {
-                "wave_count": 109,
-                "players": [
-                    {
                         "steamid": "76561198312868971",
                         "name": "MrMeowlnir",
                         "avatar": "https:\/\/avatars.steamstatic.com\/af9c07d0a860f9463f7407987cc50834559aa76c_medium.jpg"
@@ -1134,7 +1120,7 @@
                 "heroes": [
                     "windrunner"
                 ],
-                "rank": 81
+                "rank": 80
             },
             {
                 "wave_count": 109,
@@ -1148,7 +1134,7 @@
                 "heroes": [
                     "dazzle"
                 ],
-                "rank": 82
+                "rank": 81
             },
             {
                 "wave_count": 109,
@@ -1162,7 +1148,7 @@
                 "heroes": [
                     "windrunner"
                 ],
-                "rank": 83
+                "rank": 82
             },
             {
                 "wave_count": 109,
@@ -1176,7 +1162,7 @@
                 "heroes": [
                     "necrolyte"
                 ],
-                "rank": 84
+                "rank": 83
             },
             {
                 "wave_count": 109,
@@ -1190,7 +1176,7 @@
                 "heroes": [
                     "morphling"
                 ],
-                "rank": 85
+                "rank": 84
             },
             {
                 "wave_count": 109,
@@ -1204,7 +1190,7 @@
                 "heroes": [
                     "undying"
                 ],
-                "rank": 86
+                "rank": 85
             },
             {
                 "wave_count": 109,
@@ -1218,7 +1204,35 @@
                 "heroes": [
                     "zuus"
                 ],
+                "rank": 86
+            },
+            {
+                "wave_count": 109,
+                "players": [
+                    {
+                        "steamid": "76561199237070965",
+                        "name": "bald",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/0e96fd1da4c91017a7c1de980d6361b139e6831d_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "luna"
+                ],
                 "rank": 87
+            },
+            {
+                "wave_count": 109,
+                "players": [
+                    {
+                        "steamid": "76561198122325576",
+                        "name": "Nameless",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/1454c7d29372359bf8b4b3f42b4158b837f41c9c_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "legion_commander"
+                ],
+                "rank": 88
             },
             {
                 "wave_count": 108,
@@ -1232,35 +1246,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 88
-            },
-            {
-                "wave_count": 107,
-                "players": [
-                    {
-                        "steamid": "76561198997390843",
-                        "name": "2x2",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/b93f04b9194fba8980a2dc74947d47d0087ba113_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "dazzle"
-                ],
                 "rank": 89
-            },
-            {
-                "wave_count": 107,
-                "players": [
-                    {
-                        "steamid": "76561198067882531",
-                        "name": "Maral",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/536d9f9ff4e3f8e802a03a0a97817cab8e0f3d3a_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "death_prophet"
-                ],
-                "rank": 90
             },
             {
                 "wave_count": 107,
@@ -1274,19 +1260,33 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 91
+                "rank": 90
             },
             {
-                "wave_count": 106,
+                "wave_count": 107,
                 "players": [
                     {
-                        "steamid": "76561198275005748",
-                        "name": "\u30e2\u30f3\u30b9\u30bf\u30fc",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/0547e5c80eedd8ab88c6203436149db66415a78d_medium.jpg"
+                        "steamid": "76561198997390843",
+                        "name": "2x2",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/b93f04b9194fba8980a2dc74947d47d0087ba113_medium.jpg"
                     }
                 ],
                 "heroes": [
                     "dazzle"
+                ],
+                "rank": 91
+            },
+            {
+                "wave_count": 107,
+                "players": [
+                    {
+                        "steamid": "76561198067882531",
+                        "name": "Maral",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/536d9f9ff4e3f8e802a03a0a97817cab8e0f3d3a_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "death_prophet"
                 ],
                 "rank": 92
             },
@@ -1305,6 +1305,20 @@
                 "rank": 93
             },
             {
+                "wave_count": 106,
+                "players": [
+                    {
+                        "steamid": "76561198275005748",
+                        "name": "\u30e2\u30f3\u30b9\u30bf\u30fc",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/0547e5c80eedd8ab88c6203436149db66415a78d_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "dazzle"
+                ],
+                "rank": 94
+            },
+            {
                 "wave_count": 104,
                 "players": [
                     {
@@ -1315,20 +1329,6 @@
                 ],
                 "heroes": [
                     "winter_wyvern"
-                ],
-                "rank": 94
-            },
-            {
-                "wave_count": 103,
-                "players": [
-                    {
-                        "steamid": "76561198122325576",
-                        "name": "Nameless",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/1454c7d29372359bf8b4b3f42b4158b837f41c9c_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "lich"
                 ],
                 "rank": 95
             },
@@ -1350,9 +1350,9 @@
                 "wave_count": 101,
                 "players": [
                     {
-                        "steamid": "76561198161733896",
-                        "name": "Enryu",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/b928a16cfa7aa73fb19fee7800c9973502b1c30c_medium.jpg"
+                        "steamid": "76561198885910372",
+                        "name": "vovanndd",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -1364,9 +1364,9 @@
                 "wave_count": 101,
                 "players": [
                     {
-                        "steamid": "76561198885910372",
-                        "name": "vovanndd",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+                        "steamid": "76561198161733896",
+                        "name": "Enryu",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/b928a16cfa7aa73fb19fee7800c9973502b1c30c_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -2695,7 +2695,7 @@
                     {
                         "steamid": "76561199137626835",
                         "name": "Natsuki.chr",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/6e47c1994c4d23633d209bcdce823b1b224010a0_medium.jpg"
+                        "avatar": "https:\/\/avatars.steamstatic.com\/08b1d225e4aa8e1794171ab70d3f9c90df40fd9a_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -8034,7 +8034,7 @@
                     {
                         "steamid": "76561199115051237",
                         "name": "\u041c\u0430\u0442\u044c \u0410\u0440\u043c\u0430\u0442\u0443\u0440\u0430",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/b6ea9cf894de99647316505a211d2f1fa71c4f58_medium.jpg"
+                        "avatar": "https:\/\/avatars.steamstatic.com\/f8b12f37651dd3e0871a7d43cee12fa6e1b8c182_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -8969,8 +8969,8 @@
                     },
                     {
                         "steamid": "76561198171601402",
-                        "name": "trall",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/f0fcc4d2e1e1f88064f477b096660b7d77485e18_medium.jpg"
+                        "name": "\u043c\u0430\u043a\u0442\u0440\u0430\u0445\u0435\u0440",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/0297ac68becbb4d54ba5c1ba45e48497595c6cbc_medium.jpg"
                     }
                 ],
                 "heroes": [
