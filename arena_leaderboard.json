@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-12 20:18:14",
+    "last_updated": "2025-05-12 21:29:19",
     "tabs": {
         "1": [
             {
@@ -342,6 +342,20 @@
                 "wave_count": 129,
                 "players": [
                     {
+                        "steamid": "76561198248123700",
+                        "name": "\u0411\u0410\u0422\u042f",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/552f6b92f2f61801c33a0e9624e14b05ca4394c8_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "zuus"
+                ],
+                "rank": 25
+            },
+            {
+                "wave_count": 129,
+                "players": [
+                    {
                         "steamid": "76561198058707531",
                         "name": "Baalsham",
                         "avatar": "https:\/\/avatars.steamstatic.com\/67e5649e76d081f11110bbee7e91dc156b5f6b20_medium.jpg"
@@ -350,7 +364,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 25
+                "rank": 26
             },
             {
                 "wave_count": 129,
@@ -364,7 +378,7 @@
                 "heroes": [
                     "dazzle"
                 ],
-                "rank": 26
+                "rank": 27
             },
             {
                 "wave_count": 129,
@@ -378,7 +392,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 27
+                "rank": 28
             },
             {
                 "wave_count": 129,
@@ -392,7 +406,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 28
+                "rank": 29
             },
             {
                 "wave_count": 129,
@@ -406,7 +420,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 29
+                "rank": 30
             },
             {
                 "wave_count": 129,
@@ -420,7 +434,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 30
+                "rank": 31
             },
             {
                 "wave_count": 127,
@@ -434,7 +448,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 31
+                "rank": 32
             },
             {
                 "wave_count": 126,
@@ -448,7 +462,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 32
+                "rank": 33
             },
             {
                 "wave_count": 125,
@@ -462,7 +476,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 33
+                "rank": 34
             },
             {
                 "wave_count": 123,
@@ -476,7 +490,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 34
+                "rank": 35
             },
             {
                 "wave_count": 122,
@@ -485,20 +499,6 @@
                         "steamid": "76561198922536912",
                         "name": "\u2719MaKs Prive\u2719",
                         "avatar": "https:\/\/avatars.steamstatic.com\/d474333109b3cae7c68b9f6de02d882a4f5207db_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "winter_wyvern"
-                ],
-                "rank": 35
-            },
-            {
-                "wave_count": 120,
-                "players": [
-                    {
-                        "steamid": "76561198248123700",
-                        "name": "\u0411\u0410\u0422\u042f",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/552f6b92f2f61801c33a0e9624e14b05ca4394c8_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -1393,7 +1393,7 @@
                 "players": [
                     {
                         "steamid": "76561198810020548",
-                        "name": "6 \u043f\u0438\u0446\u0446",
+                        "name": "Hajime",
                         "avatar": "https:\/\/avatars.steamstatic.com\/2dd1509e6f2620ee457b42b196fd1377024ee53f_medium.jpg"
                     }
                 ],
