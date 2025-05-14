@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-14 02:19:20",
+    "last_updated": "2025-05-14 04:43:45",
     "tabs": {
         "1": [
             {
@@ -1966,6 +1966,20 @@
                 "wave_count": 96,
                 "players": [
                     {
+                        "steamid": "76561198122700325",
+                        "name": "Moskalyak on a branch",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/d4cf00edf9fe8e23fcea204c487aa08039dacee3_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "bounty_hunter"
+                ],
+                "rank": 141
+            },
+            {
+                "wave_count": 96,
+                "players": [
+                    {
                         "steamid": "76561198076209467",
                         "name": "DarkWamp",
                         "avatar": "https:\/\/avatars.steamstatic.com\/b276f8e03cc999880c51577f20fd8a8e99ebcc52_medium.jpg"
@@ -1974,7 +1988,7 @@
                 "heroes": [
                     "necrolyte"
                 ],
-                "rank": 141
+                "rank": 142
             },
             {
                 "wave_count": 95,
@@ -1988,7 +2002,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 142
+                "rank": 143
             },
             {
                 "wave_count": 95,
@@ -2002,7 +2016,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 143
+                "rank": 144
             },
             {
                 "wave_count": 95,
@@ -2016,7 +2030,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 95,
@@ -2030,7 +2044,7 @@
                 "heroes": [
                     "lich"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 94,
@@ -2044,7 +2058,7 @@
                 "heroes": [
                     "windrunner"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 93,
@@ -2058,7 +2072,7 @@
                 "heroes": [
                     "windrunner"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 92,
@@ -2072,7 +2086,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 91,
@@ -2085,20 +2099,6 @@
                 ],
                 "heroes": [
                     "nevermore"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 91,
-                "players": [
-                    {
-                        "steamid": "76561199257317366",
-                        "name": "\u041c\u0413\u0415 \u0410\u0420\u0422\u0401\u041c\u041a\u0410",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/a6b26f5adfdda1f26e9382cf8cf43bbd7b041e73_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "winter_wyvern"
                 ],
                 "rank": 150
             }
