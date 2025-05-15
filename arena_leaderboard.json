@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-15 14:17:47",
+    "last_updated": "2025-05-15 15:42:11",
     "tabs": {
         "1": [
             {
@@ -2985,6 +2985,26 @@
                 "rank": 44
             },
             {
+                "wave_count": 109,
+                "players": [
+                    {
+                        "steamid": "76561198093466755",
+                        "name": "\ud83c\udf38Ki\u0e20gSl\u0e04\u03c8er\ud83c\udf38",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/1df019eeafe34ddcfb76c20b0bfaf34d74520016_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198124087488",
+                        "name": "Forever young",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/8b80e89910433f5ace4f95036e18607af5be8b8c_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "winter_wyvern",
+                    "vengefulspirit"
+                ],
+                "rank": 45
+            },
+            {
                 "wave_count": 104,
                 "players": [
                     {
@@ -3002,7 +3022,7 @@
                     "windrunner",
                     "lich"
                 ],
-                "rank": 45
+                "rank": 46
             },
             {
                 "wave_count": 101,
@@ -3022,7 +3042,7 @@
                     "luna",
                     "winter_wyvern"
                 ],
-                "rank": 46
+                "rank": 47
             },
             {
                 "wave_count": 101,
@@ -3042,7 +3062,7 @@
                     "winter_wyvern",
                     "ancient_apparition"
                 ],
-                "rank": 47
+                "rank": 48
             },
             {
                 "wave_count": 100,
@@ -3062,7 +3082,7 @@
                     "winter_wyvern",
                     "luna"
                 ],
-                "rank": 48
+                "rank": 49
             },
             {
                 "wave_count": 100,
@@ -3082,7 +3102,7 @@
                     "winter_wyvern",
                     "nevermore"
                 ],
-                "rank": 49
+                "rank": 50
             },
             {
                 "wave_count": 100,
@@ -3102,7 +3122,7 @@
                     "zuus",
                     "tidehunter"
                 ],
-                "rank": 50
+                "rank": 51
             },
             {
                 "wave_count": 99,
@@ -3122,7 +3142,7 @@
                     "winter_wyvern",
                     "luna"
                 ],
-                "rank": 51
+                "rank": 52
             },
             {
                 "wave_count": 99,
@@ -3142,7 +3162,7 @@
                     "winter_wyvern",
                     "luna"
                 ],
-                "rank": 52
+                "rank": 53
             },
             {
                 "wave_count": 99,
@@ -3162,7 +3182,7 @@
                     "winter_wyvern",
                     "luna"
                 ],
-                "rank": 53
+                "rank": 54
             },
             {
                 "wave_count": 99,
@@ -3182,7 +3202,7 @@
                     "legion_commander",
                     "winter_wyvern"
                 ],
-                "rank": 54
+                "rank": 55
             },
             {
                 "wave_count": 99,
@@ -3202,7 +3222,7 @@
                     "dragon_knight",
                     "dazzle"
                 ],
-                "rank": 55
+                "rank": 56
             },
             {
                 "wave_count": 99,
@@ -3222,7 +3242,7 @@
                     "pangolier",
                     "winter_wyvern"
                 ],
-                "rank": 56
+                "rank": 57
             },
             {
                 "wave_count": 99,
@@ -3242,7 +3262,7 @@
                     "slardar",
                     "kez"
                 ],
-                "rank": 57
+                "rank": 58
             },
             {
                 "wave_count": 99,
@@ -3262,7 +3282,7 @@
                     "undying",
                     "phantom_assassin"
                 ],
-                "rank": 58
+                "rank": 59
             },
             {
                 "wave_count": 99,
@@ -3282,7 +3302,7 @@
                     "zuus",
                     "lich"
                 ],
-                "rank": 59
+                "rank": 60
             },
             {
                 "wave_count": 99,
@@ -3302,7 +3322,7 @@
                     "ancient_apparition",
                     "undying"
                 ],
-                "rank": 60
+                "rank": 61
             },
             {
                 "wave_count": 99,
@@ -3322,7 +3342,7 @@
                     "winter_wyvern",
                     "rubick"
                 ],
-                "rank": 61
+                "rank": 62
             },
             {
                 "wave_count": 99,
@@ -3342,7 +3362,7 @@
                     "medusa",
                     "drow_ranger"
                 ],
-                "rank": 62
+                "rank": 63
             },
             {
                 "wave_count": 99,
@@ -3362,7 +3382,7 @@
                     "vengefulspirit",
                     "tidehunter"
                 ],
-                "rank": 63
+                "rank": 64
             },
             {
                 "wave_count": 99,
@@ -3381,26 +3401,6 @@
                 "heroes": [
                     "necrolyte",
                     "winter_wyvern"
-                ],
-                "rank": 64
-            },
-            {
-                "wave_count": 98,
-                "players": [
-                    {
-                        "steamid": "76561198093466755",
-                        "name": "\ud83c\udf38Ki\u0e20gSl\u0e04\u03c8er\ud83c\udf38",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/1df019eeafe34ddcfb76c20b0bfaf34d74520016_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198124087488",
-                        "name": "Forever young",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/8b80e89910433f5ace4f95036e18607af5be8b8c_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "winter_wyvern",
-                    "witch_doctor"
                 ],
                 "rank": 65
             },
@@ -5797,7 +5797,7 @@
                     },
                     {
                         "steamid": "76561198116897281",
-                        "name": "R\u00d8nnu_666_\u5f61",
+                        "name": "Wuwka_666_\u5f61",
                         "avatar": "https:\/\/avatars.steamstatic.com\/f241f61b40b1cf35ccdbdbc001a07d265b937ab2_medium.jpg"
                     }
                 ],
@@ -7150,7 +7150,7 @@
                     {
                         "steamid": "76561198199424014",
                         "name": "Yo Michael",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/dc348c3a1addfd4a18a2b3f2477296bbe1783b1e_medium.jpg"
+                        "avatar": "https:\/\/avatars.steamstatic.com\/d31d6af3de1bd31525fa9b1bdb353944ec6fb4fe_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -7176,7 +7176,7 @@
                     {
                         "steamid": "76561198199424014",
                         "name": "Yo Michael",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/dc348c3a1addfd4a18a2b3f2477296bbe1783b1e_medium.jpg"
+                        "avatar": "https:\/\/avatars.steamstatic.com\/d31d6af3de1bd31525fa9b1bdb353944ec6fb4fe_medium.jpg"
                     }
                 ],
                 "heroes": [
@@ -7451,7 +7451,7 @@
                 "players": [
                     {
                         "steamid": "76561198116897281",
-                        "name": "R\u00d8nnu_666_\u5f61",
+                        "name": "Wuwka_666_\u5f61",
                         "avatar": "https:\/\/avatars.steamstatic.com\/f241f61b40b1cf35ccdbdbc001a07d265b937ab2_medium.jpg"
                     },
                     {
