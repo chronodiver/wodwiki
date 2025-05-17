@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-17 02:19:00",
+    "last_updated": "2025-05-17 04:41:57",
     "tabs": {
         "1": [
             {
@@ -1319,6 +1319,20 @@
                 "rank": 94
             },
             {
+                "wave_count": 109,
+                "players": [
+                    {
+                        "steamid": "76561199098973667",
+                        "name": "O\u0431c\u0438\u0434a\u043d\u043e\u0432\u044b\u0439 \u0431ap\u0431ap\u0438c",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/dba01be74f93b584c132d8d71d71c856d7c22196_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "necrolyte"
+                ],
+                "rank": 95
+            },
+            {
                 "wave_count": 108,
                 "players": [
                     {
@@ -1330,7 +1344,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 95
+                "rank": 96
             },
             {
                 "wave_count": 107,
@@ -1344,7 +1358,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 96
+                "rank": 97
             },
             {
                 "wave_count": 107,
@@ -1358,7 +1372,7 @@
                 "heroes": [
                     "dazzle"
                 ],
-                "rank": 97
+                "rank": 98
             },
             {
                 "wave_count": 107,
@@ -1372,7 +1386,7 @@
                 "heroes": [
                     "death_prophet"
                 ],
-                "rank": 98
+                "rank": 99
             },
             {
                 "wave_count": 106,
@@ -1386,7 +1400,7 @@
                 "heroes": [
                     "marci"
                 ],
-                "rank": 99
+                "rank": 100
             },
             {
                 "wave_count": 106,
@@ -1400,7 +1414,7 @@
                 "heroes": [
                     "dazzle"
                 ],
-                "rank": 100
+                "rank": 101
             },
             {
                 "wave_count": 104,
@@ -1414,7 +1428,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 101
+                "rank": 102
             },
             {
                 "wave_count": 102,
@@ -1428,7 +1442,7 @@
                 "heroes": [
                     "windrunner"
                 ],
-                "rank": 102
+                "rank": 103
             },
             {
                 "wave_count": 101,
@@ -1442,7 +1456,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 103
+                "rank": 104
             },
             {
                 "wave_count": 101,
@@ -1456,7 +1470,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 104
+                "rank": 105
             },
             {
                 "wave_count": 100,
@@ -1470,7 +1484,7 @@
                 "heroes": [
                     "windrunner"
                 ],
-                "rank": 105
+                "rank": 106
             },
             {
                 "wave_count": 100,
@@ -1484,7 +1498,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 106
+                "rank": 107
             },
             {
                 "wave_count": 100,
@@ -1498,7 +1512,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 107
+                "rank": 108
             },
             {
                 "wave_count": 99,
@@ -1512,7 +1526,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 108
+                "rank": 109
             },
             {
                 "wave_count": 99,
@@ -1526,7 +1540,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 109
+                "rank": 110
             },
             {
                 "wave_count": 99,
@@ -1540,7 +1554,7 @@
                 "heroes": [
                     "doom_bringer"
                 ],
-                "rank": 110
+                "rank": 111
             },
             {
                 "wave_count": 99,
@@ -1554,7 +1568,7 @@
                 "heroes": [
                     "ancient_apparition"
                 ],
-                "rank": 111
+                "rank": 112
             },
             {
                 "wave_count": 99,
@@ -1568,7 +1582,7 @@
                 "heroes": [
                     "skeleton_king"
                 ],
-                "rank": 112
+                "rank": 113
             },
             {
                 "wave_count": 99,
@@ -1582,7 +1596,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 113
+                "rank": 114
             },
             {
                 "wave_count": 99,
@@ -1596,7 +1610,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 114
+                "rank": 115
             },
             {
                 "wave_count": 99,
@@ -1609,20 +1623,6 @@
                 ],
                 "heroes": [
                     "luna"
-                ],
-                "rank": 115
-            },
-            {
-                "wave_count": 99,
-                "players": [
-                    {
-                        "steamid": "76561199098973667",
-                        "name": "O\u0431c\u0438\u0434a\u043d\u043e\u0432\u044b\u0439 \u0431ap\u0431ap\u0438c",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/dba01be74f93b584c132d8d71d71c856d7c22196_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "necrolyte"
                 ],
                 "rank": 116
             },
