@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-17 11:24:47",
+    "last_updated": "2025-05-17 12:19:38",
     "tabs": {
         "1": [
             {
@@ -1333,6 +1333,20 @@
                 "rank": 95
             },
             {
+                "wave_count": 109,
+                "players": [
+                    {
+                        "steamid": "76561198841595323",
+                        "name": "\u041a\u0443\u0437\u044f \u041b\u0430\u043a\u043e\u043c\u043a\u0438\u043d",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/59b5572bbf42910c616f0c18188996e778281b48_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "winter_wyvern"
+                ],
+                "rank": 96
+            },
+            {
                 "wave_count": 108,
                 "players": [
                     {
@@ -1344,7 +1358,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 96
+                "rank": 97
             },
             {
                 "wave_count": 107,
@@ -1358,7 +1372,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 97
+                "rank": 98
             },
             {
                 "wave_count": 107,
@@ -1372,7 +1386,7 @@
                 "heroes": [
                     "dazzle"
                 ],
-                "rank": 98
+                "rank": 99
             },
             {
                 "wave_count": 107,
@@ -1386,7 +1400,7 @@
                 "heroes": [
                     "death_prophet"
                 ],
-                "rank": 99
+                "rank": 100
             },
             {
                 "wave_count": 106,
@@ -1400,7 +1414,7 @@
                 "heroes": [
                     "marci"
                 ],
-                "rank": 100
+                "rank": 101
             },
             {
                 "wave_count": 106,
@@ -1414,7 +1428,7 @@
                 "heroes": [
                     "dazzle"
                 ],
-                "rank": 101
+                "rank": 102
             },
             {
                 "wave_count": 104,
@@ -1428,7 +1442,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 102
+                "rank": 103
             },
             {
                 "wave_count": 102,
@@ -1442,7 +1456,7 @@
                 "heroes": [
                     "windrunner"
                 ],
-                "rank": 103
+                "rank": 104
             },
             {
                 "wave_count": 101,
@@ -1456,7 +1470,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 104
+                "rank": 105
             },
             {
                 "wave_count": 101,
@@ -1470,7 +1484,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 105
+                "rank": 106
             },
             {
                 "wave_count": 100,
@@ -1484,7 +1498,7 @@
                 "heroes": [
                     "windrunner"
                 ],
-                "rank": 106
+                "rank": 107
             },
             {
                 "wave_count": 100,
@@ -1498,7 +1512,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 107
+                "rank": 108
             },
             {
                 "wave_count": 100,
@@ -1512,7 +1526,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 108
+                "rank": 109
             },
             {
                 "wave_count": 99,
@@ -1526,7 +1540,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 109
+                "rank": 110
             },
             {
                 "wave_count": 99,
@@ -1540,7 +1554,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 110
+                "rank": 111
             },
             {
                 "wave_count": 99,
@@ -1554,7 +1568,7 @@
                 "heroes": [
                     "doom_bringer"
                 ],
-                "rank": 111
+                "rank": 112
             },
             {
                 "wave_count": 99,
@@ -1568,7 +1582,7 @@
                 "heroes": [
                     "ancient_apparition"
                 ],
-                "rank": 112
+                "rank": 113
             },
             {
                 "wave_count": 99,
@@ -1582,7 +1596,7 @@
                 "heroes": [
                     "skeleton_king"
                 ],
-                "rank": 113
+                "rank": 114
             },
             {
                 "wave_count": 99,
@@ -1596,7 +1610,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 114
+                "rank": 115
             },
             {
                 "wave_count": 99,
@@ -1610,7 +1624,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 115
+                "rank": 116
             },
             {
                 "wave_count": 99,
@@ -1624,7 +1638,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 116
+                "rank": 117
             },
             {
                 "wave_count": 99,
@@ -1638,7 +1652,7 @@
                 "heroes": [
                     "necrolyte"
                 ],
-                "rank": 117
+                "rank": 118
             },
             {
                 "wave_count": 99,
@@ -1652,7 +1666,7 @@
                 "heroes": [
                     "morphling"
                 ],
-                "rank": 118
+                "rank": 119
             },
             {
                 "wave_count": 99,
@@ -1666,7 +1680,7 @@
                 "heroes": [
                     "undying"
                 ],
-                "rank": 119
+                "rank": 120
             },
             {
                 "wave_count": 99,
@@ -1680,7 +1694,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 120
+                "rank": 121
             },
             {
                 "wave_count": 99,
@@ -1694,7 +1708,7 @@
                 "heroes": [
                     "marci"
                 ],
-                "rank": 121
+                "rank": 122
             },
             {
                 "wave_count": 99,
@@ -1708,7 +1722,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 122
+                "rank": 123
             },
             {
                 "wave_count": 99,
@@ -1722,7 +1736,7 @@
                 "heroes": [
                     "necrolyte"
                 ],
-                "rank": 123
+                "rank": 124
             },
             {
                 "wave_count": 99,
@@ -1736,7 +1750,7 @@
                 "heroes": [
                     "legion_commander"
                 ],
-                "rank": 124
+                "rank": 125
             },
             {
                 "wave_count": 99,
@@ -1750,7 +1764,7 @@
                 "heroes": [
                     "necrolyte"
                 ],
-                "rank": 125
+                "rank": 126
             },
             {
                 "wave_count": 99,
@@ -1764,7 +1778,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 126
+                "rank": 127
             },
             {
                 "wave_count": 99,
@@ -1778,7 +1792,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 127
+                "rank": 128
             },
             {
                 "wave_count": 99,
@@ -1792,7 +1806,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 128
+                "rank": 129
             },
             {
                 "wave_count": 99,
@@ -1806,7 +1820,7 @@
                 "heroes": [
                     "windrunner"
                 ],
-                "rank": 129
+                "rank": 130
             },
             {
                 "wave_count": 99,
@@ -1820,7 +1834,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 130
+                "rank": 131
             },
             {
                 "wave_count": 99,
@@ -1834,7 +1848,7 @@
                 "heroes": [
                     "luna"
                 ],
-                "rank": 131
+                "rank": 132
             },
             {
                 "wave_count": 99,
@@ -1848,7 +1862,7 @@
                 "heroes": [
                     "necrolyte"
                 ],
-                "rank": 132
+                "rank": 133
             },
             {
                 "wave_count": 99,
@@ -1862,7 +1876,7 @@
                 "heroes": [
                     "dazzle"
                 ],
-                "rank": 133
+                "rank": 134
             },
             {
                 "wave_count": 99,
@@ -1876,7 +1890,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 134
+                "rank": 135
             },
             {
                 "wave_count": 99,
@@ -1890,7 +1904,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 135
+                "rank": 136
             },
             {
                 "wave_count": 99,
@@ -1904,7 +1918,7 @@
                 "heroes": [
                     "oracle"
                 ],
-                "rank": 136
+                "rank": 137
             },
             {
                 "wave_count": 99,
@@ -1918,7 +1932,7 @@
                 "heroes": [
                     "bristleback"
                 ],
-                "rank": 137
+                "rank": 138
             },
             {
                 "wave_count": 99,
@@ -1932,7 +1946,7 @@
                 "heroes": [
                     "windrunner"
                 ],
-                "rank": 138
+                "rank": 139
             },
             {
                 "wave_count": 99,
@@ -1946,7 +1960,7 @@
                 "heroes": [
                     "vengefulspirit"
                 ],
-                "rank": 139
+                "rank": 140
             },
             {
                 "wave_count": 99,
@@ -1960,7 +1974,7 @@
                 "heroes": [
                     "necrolyte"
                 ],
-                "rank": 140
+                "rank": 141
             },
             {
                 "wave_count": 98,
@@ -1974,7 +1988,7 @@
                 "heroes": [
                     "nevermore"
                 ],
-                "rank": 141
+                "rank": 142
             },
             {
                 "wave_count": 98,
@@ -1988,7 +2002,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 142
+                "rank": 143
             },
             {
                 "wave_count": 98,
@@ -2002,7 +2016,7 @@
                 "heroes": [
                     "marci"
                 ],
-                "rank": 143
+                "rank": 144
             },
             {
                 "wave_count": 97,
@@ -2016,7 +2030,7 @@
                 "heroes": [
                     "nevermore"
                 ],
-                "rank": 144
+                "rank": 145
             },
             {
                 "wave_count": 97,
@@ -2030,7 +2044,7 @@
                 "heroes": [
                     "nyx_assassin"
                 ],
-                "rank": 145
+                "rank": 146
             },
             {
                 "wave_count": 97,
@@ -2044,7 +2058,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 146
+                "rank": 147
             },
             {
                 "wave_count": 96,
@@ -2058,7 +2072,7 @@
                 "heroes": [
                     "bounty_hunter"
                 ],
-                "rank": 147
+                "rank": 148
             },
             {
                 "wave_count": 96,
@@ -2072,7 +2086,7 @@
                 "heroes": [
                     "necrolyte"
                 ],
-                "rank": 148
+                "rank": 149
             },
             {
                 "wave_count": 95,
@@ -2081,20 +2095,6 @@
                         "steamid": "76561198203961503",
                         "name": "\u0418\u043d\u0442\u0438\u043c\u043d\u044b\u0439 \u043f\u0440\u044b\u0449",
                         "avatar": "https:\/\/avatars.steamstatic.com\/d26f851e9f0928c8209d763f04d69ad1db055c88_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "zuus"
-                ],
-                "rank": 149
-            },
-            {
-                "wave_count": 95,
-                "players": [
-                    {
-                        "steamid": "76561198097376870",
-                        "name": "SkyperOne",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/a49953c4bf0f146c0a463abe9f77de97cdc3c89d_medium.jpg"
                     }
                 ],
                 "heroes": [
