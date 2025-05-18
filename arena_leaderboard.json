@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-18 13:20:14",
+    "last_updated": "2025-05-18 14:15:35",
     "tabs": {
         "1": [
             {
@@ -5471,6 +5471,32 @@
                 "rank": 14
             },
             {
+                "wave_count": 122,
+                "players": [
+                    {
+                        "steamid": "76561198295228500",
+                        "name": "Amo",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/2b1bdc540b9cb1ed5f7a85e85004c5e2ce66f17e_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561199379241965",
+                        "name": "panda",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/0ddbe4a171703edc7ef2715412fc54f6035bf9f7_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198297627272",
+                        "name": "\u0421\u0443\u043f\u043f\u043e\u0440\u0442",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/fd4ca10ec45c43512681dec9c40304d31569114c_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "ancient_apparition",
+                    "lich",
+                    "winter_wyvern"
+                ],
+                "rank": 15
+            },
+            {
                 "wave_count": 119,
                 "players": [
                     {
@@ -5494,7 +5520,7 @@
                     "crystal_maiden",
                     "luna"
                 ],
-                "rank": 15
+                "rank": 16
             },
             {
                 "wave_count": 119,
@@ -5520,7 +5546,7 @@
                     "nyx_assassin",
                     "zuus"
                 ],
-                "rank": 16
+                "rank": 17
             },
             {
                 "wave_count": 119,
@@ -5546,7 +5572,7 @@
                     "zuus",
                     "winter_wyvern"
                 ],
-                "rank": 17
+                "rank": 18
             },
             {
                 "wave_count": 119,
@@ -5572,7 +5598,7 @@
                     "lich",
                     "winter_wyvern"
                 ],
-                "rank": 18
+                "rank": 19
             },
             {
                 "wave_count": 119,
@@ -5598,7 +5624,7 @@
                     "death_prophet",
                     "winter_wyvern"
                 ],
-                "rank": 19
+                "rank": 20
             },
             {
                 "wave_count": 119,
@@ -5624,7 +5650,7 @@
                     "winter_wyvern",
                     "undying"
                 ],
-                "rank": 20
+                "rank": 21
             },
             {
                 "wave_count": 119,
@@ -5650,7 +5676,7 @@
                     "dazzle",
                     "lich"
                 ],
-                "rank": 21
+                "rank": 22
             },
             {
                 "wave_count": 119,
@@ -5675,32 +5701,6 @@
                     "winter_wyvern",
                     "lich",
                     "huskar"
-                ],
-                "rank": 22
-            },
-            {
-                "wave_count": 119,
-                "players": [
-                    {
-                        "steamid": "76561198295228500",
-                        "name": "Amo",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/2b1bdc540b9cb1ed5f7a85e85004c5e2ce66f17e_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561199379241965",
-                        "name": "panda",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/0ddbe4a171703edc7ef2715412fc54f6035bf9f7_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198297627272",
-                        "name": "\u0421\u0443\u043f\u043f\u043e\u0440\u0442",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/fd4ca10ec45c43512681dec9c40304d31569114c_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "lich",
-                    "windrunner",
-                    "winter_wyvern"
                 ],
                 "rank": 23
             },
