@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-19 21:29:46",
+    "last_updated": "2025-05-19 22:16:50",
     "tabs": {
         "1": [
             {
@@ -2468,26 +2468,6 @@
                 "wave_count": 119,
                 "players": [
                     {
-                        "steamid": "76561198002005787",
-                        "name": "\u0411\u0440\u0443\u043a\u043b\u0438\u043d",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/8e078fc09c7b47dcca29ab0ee192a9870dd806e1_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198281380494",
-                        "name": "\u2620\u00c4\u0179\u00d6\u0179\u013b\u00d6\u2620",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/199fc9407ee5ad2fd14d24088c75838026280132_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "winter_wyvern",
-                    "undying"
-                ],
-                "rank": 19
-            },
-            {
-                "wave_count": 119,
-                "players": [
-                    {
                         "steamid": "76561198058942927",
                         "name": "Darius Mc\u0421loud",
                         "avatar": "https:\/\/avatars.steamstatic.com\/775ed035d3baf439739ed7c1ceec641e4b74e40b_medium.jpg"
@@ -2501,6 +2481,26 @@
                 "heroes": [
                     "zuus",
                     "drow_ranger"
+                ],
+                "rank": 19
+            },
+            {
+                "wave_count": 119,
+                "players": [
+                    {
+                        "steamid": "76561198002005787",
+                        "name": "\u0411\u0440\u0443\u043a\u043b\u0438\u043d",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/8e078fc09c7b47dcca29ab0ee192a9870dd806e1_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198281380494",
+                        "name": "\u2620\u00c4\u0179\u00d6\u0179\u013b\u00d6\u2620",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/199fc9407ee5ad2fd14d24088c75838026280132_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "winter_wyvern",
+                    "undying"
                 ],
                 "rank": 20
             },
