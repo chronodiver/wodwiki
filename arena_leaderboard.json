@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-21 04:45:13",
+    "last_updated": "2025-05-21 06:12:24",
     "tabs": {
         "1": [
             {
@@ -1445,6 +1445,20 @@
                 "rank": 103
             },
             {
+                "wave_count": 109,
+                "players": [
+                    {
+                        "steamid": "76561198161733896",
+                        "name": "Enryu",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/b928a16cfa7aa73fb19fee7800c9973502b1c30c_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "marci"
+                ],
+                "rank": 104
+            },
+            {
                 "wave_count": 108,
                 "players": [
                     {
@@ -1456,7 +1470,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 104
+                "rank": 105
             },
             {
                 "wave_count": 107,
@@ -1470,7 +1484,7 @@
                 "heroes": [
                     "zuus"
                 ],
-                "rank": 105
+                "rank": 106
             },
             {
                 "wave_count": 107,
@@ -1484,7 +1498,7 @@
                 "heroes": [
                     "dazzle"
                 ],
-                "rank": 106
+                "rank": 107
             },
             {
                 "wave_count": 107,
@@ -1498,7 +1512,7 @@
                 "heroes": [
                     "death_prophet"
                 ],
-                "rank": 107
+                "rank": 108
             },
             {
                 "wave_count": 106,
@@ -1512,7 +1526,7 @@
                 "heroes": [
                     "marci"
                 ],
-                "rank": 108
+                "rank": 109
             },
             {
                 "wave_count": 106,
@@ -1526,7 +1540,7 @@
                 "heroes": [
                     "dazzle"
                 ],
-                "rank": 109
+                "rank": 110
             },
             {
                 "wave_count": 104,
@@ -1540,7 +1554,7 @@
                 "heroes": [
                     "winter_wyvern"
                 ],
-                "rank": 110
+                "rank": 111
             },
             {
                 "wave_count": 102,
@@ -1553,20 +1567,6 @@
                 ],
                 "heroes": [
                     "windrunner"
-                ],
-                "rank": 111
-            },
-            {
-                "wave_count": 101,
-                "players": [
-                    {
-                        "steamid": "76561198161733896",
-                        "name": "Enryu",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/b928a16cfa7aa73fb19fee7800c9973502b1c30c_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "zuus"
                 ],
                 "rank": 112
             },
