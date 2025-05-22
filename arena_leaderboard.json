@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-22 07:26:53",
+    "last_updated": "2025-05-22 08:20:42",
     "tabs": {
         "1": [
             {
@@ -2385,6 +2385,26 @@
                 "rank": 14
             },
             {
+                "wave_count": 129,
+                "players": [
+                    {
+                        "steamid": "76561198257973769",
+                        "name": "\u2623 AHaJIbHbIU.K\u00aeeM\u2623",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/b2732234f3fbed341c241f58e1848418941f7d92_medium.jpg"
+                    },
+                    {
+                        "steamid": "76561198411627748",
+                        "name": "yohon",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/39c4dc4b727e75216f707b9ece4a719303200f0d_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "nyx_assassin",
+                    "zuus"
+                ],
+                "rank": 15
+            },
+            {
                 "wave_count": 128,
                 "players": [
                     {
@@ -2402,7 +2422,7 @@
                     "zuus",
                     "drow_ranger"
                 ],
-                "rank": 15
+                "rank": 16
             },
             {
                 "wave_count": 123,
@@ -2422,7 +2442,7 @@
                     "winter_wyvern",
                     "zuus"
                 ],
-                "rank": 16
+                "rank": 17
             },
             {
                 "wave_count": 123,
@@ -2442,7 +2462,7 @@
                     "skeleton_king",
                     "dragon_knight"
                 ],
-                "rank": 17
+                "rank": 18
             },
             {
                 "wave_count": 122,
@@ -2462,7 +2482,7 @@
                     "zuus",
                     "winter_wyvern"
                 ],
-                "rank": 18
+                "rank": 19
             },
             {
                 "wave_count": 119,
@@ -2482,7 +2502,7 @@
                     "zuus",
                     "drow_ranger"
                 ],
-                "rank": 19
+                "rank": 20
             },
             {
                 "wave_count": 119,
@@ -2502,7 +2522,7 @@
                     "winter_wyvern",
                     "undying"
                 ],
-                "rank": 20
+                "rank": 21
             },
             {
                 "wave_count": 119,
@@ -2522,7 +2542,7 @@
                     "doom_bringer",
                     "zuus"
                 ],
-                "rank": 21
+                "rank": 22
             },
             {
                 "wave_count": 119,
@@ -2542,7 +2562,7 @@
                     "winter_wyvern",
                     "death_prophet"
                 ],
-                "rank": 22
+                "rank": 23
             },
             {
                 "wave_count": 119,
@@ -2562,7 +2582,7 @@
                     "dazzle",
                     "death_prophet"
                 ],
-                "rank": 23
+                "rank": 24
             },
             {
                 "wave_count": 119,
@@ -2582,7 +2602,7 @@
                     "winter_wyvern",
                     "nevermore"
                 ],
-                "rank": 24
+                "rank": 25
             },
             {
                 "wave_count": 119,
@@ -2602,7 +2622,7 @@
                     "ancient_apparition",
                     "winter_wyvern"
                 ],
-                "rank": 25
+                "rank": 26
             },
             {
                 "wave_count": 119,
@@ -2622,7 +2642,7 @@
                     "morphling",
                     "abaddon"
                 ],
-                "rank": 26
+                "rank": 27
             },
             {
                 "wave_count": 119,
@@ -2642,7 +2662,7 @@
                     "warlock",
                     "winter_wyvern"
                 ],
-                "rank": 27
+                "rank": 28
             },
             {
                 "wave_count": 119,
@@ -2662,7 +2682,7 @@
                     "medusa",
                     "death_prophet"
                 ],
-                "rank": 28
+                "rank": 29
             },
             {
                 "wave_count": 119,
@@ -2682,7 +2702,7 @@
                     "marci",
                     "zuus"
                 ],
-                "rank": 29
+                "rank": 30
             },
             {
                 "wave_count": 119,
@@ -2702,7 +2722,7 @@
                     "zuus",
                     "vengefulspirit"
                 ],
-                "rank": 30
+                "rank": 31
             },
             {
                 "wave_count": 119,
@@ -2722,7 +2742,7 @@
                     "zuus",
                     "drow_ranger"
                 ],
-                "rank": 31
+                "rank": 32
             },
             {
                 "wave_count": 119,
@@ -2742,7 +2762,7 @@
                     "marci",
                     "legion_commander"
                 ],
-                "rank": 32
+                "rank": 33
             },
             {
                 "wave_count": 119,
@@ -2761,26 +2781,6 @@
                 "heroes": [
                     "winter_wyvern",
                     "lich"
-                ],
-                "rank": 33
-            },
-            {
-                "wave_count": 119,
-                "players": [
-                    {
-                        "steamid": "76561198257973769",
-                        "name": "\u2623 AHaJIbHbIU.K\u00aeeM\u2623",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/b2732234f3fbed341c241f58e1848418941f7d92_medium.jpg"
-                    },
-                    {
-                        "steamid": "76561198411627748",
-                        "name": "yohon",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/39c4dc4b727e75216f707b9ece4a719303200f0d_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "nyx_assassin",
-                    "lion"
                 ],
                 "rank": 34
             },
