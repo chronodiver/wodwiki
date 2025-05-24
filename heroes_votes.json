@@ -10,6 +10,16 @@
         "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/dawnbreaker.png"
     },
     {
+        "hero_name": "bane",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/bane.png"
+    },
+    {
+        "hero_name": "alchemist",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/alchemist.png"
+    },
+    {
         "hero_name": "sniper",
         "votes": 254091,
         "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/sniper.png"
@@ -56,7 +66,7 @@
     },
     {
         "hero_name": "magnataur",
-        "votes": 10272,
+        "votes": 11274,
         "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/magnataur.png"
     },
     {
@@ -68,5 +78,220 @@
         "hero_name": "mars",
         "votes": 3032,
         "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/mars.png"
+    },
+    {
+        "hero_name": "batrider",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/batrider.png"
+    },
+    {
+        "hero_name": "beastmaster",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/beastmaster.png"
+    },
+    {
+        "hero_name": "bloodseeker",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/bloodseeker.png"
+    },
+    {
+        "hero_name": "brewmaster",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/brewmaster.png"
+    },
+    {
+        "hero_name": "broodmother",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/broodmother.png"
+    },
+    {
+        "hero_name": "centaur",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/centaur.png"
+    },
+    {
+        "hero_name": "chaos_knight",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/chaos_knight.png"
+    },
+    {
+        "hero_name": "clinkz",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/clinkz.png"
+    },
+    {
+        "hero_name": "rattletrap",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/rattletrap.png"
+    },
+    {
+        "hero_name": "dark_seer",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/dark_seer.png"
+    },
+    {
+        "hero_name": "earth_spirit",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/earth_spirit.png"
+    },
+    {
+        "hero_name": "elder_titan",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/elder_titan.png"
+    },
+    {
+        "hero_name": "ember_spirit",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/ember_spirit.png"
+    },
+    {
+        "hero_name": "enchantress",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/enchantress.png"
+    },
+    {
+        "hero_name": "enigma",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/enigma.png"
+    },
+    {
+        "hero_name": "faceless_void",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/faceless_void.png"
+    },
+    {
+        "hero_name": "grimstroke",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/grimstroke.png"
+    },
+    {
+        "hero_name": "gyrocopter",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/gyrocopter.png"
+    },
+    {
+        "hero_name": "hoodwink",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/hoodwink.png"
+    },
+    {
+        "hero_name": "keeper_of_the_light",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/keeper_of_the_light.png"
+    },
+    {
+        "hero_name": "lycan",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/lycan.png"
+    },
+    {
+        "hero_name": "monkey_king",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/monkey_king.png"
+    },
+    {
+        "hero_name": "ogre_magi",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/ogre_magi.png"
+    },
+    {
+        "hero_name": "obsidian_destroyer",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/obsidian_destroyer.png"
+    },
+    {
+        "hero_name": "phantom_lancer",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/phantom_lancer.png"
+    },
+    {
+        "hero_name": "primal_beast",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/primal_beast.png"
+    },
+    {
+        "hero_name": "puck",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/puck.png"
+    },
+    {
+        "hero_name": "pugna",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/pugna.png"
+    },
+    {
+        "hero_name": "sand_king",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/sand_king.png"
+    },
+    {
+        "hero_name": "shadow_demon",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/shadow_demon.png"
+    },
+    {
+        "hero_name": "shadow_shaman",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/shadow_shaman.png"
+    },
+    {
+        "hero_name": "silencer",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/silencer.png"
+    },
+    {
+        "hero_name": "snapfire",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/snapfire.png"
+    },
+    {
+        "hero_name": "storm_spirit",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/storm_spirit.png"
+    },
+    {
+        "hero_name": "shredder",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/shredder.png"
+    },
+    {
+        "hero_name": "tinker",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/tinker.png"
+    },
+    {
+        "hero_name": "treant",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/treant.png"
+    },
+    {
+        "hero_name": "troll_warlord",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/troll_warlord.png"
+    },
+    {
+        "hero_name": "tusk",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/tusk.png"
+    },
+    {
+        "hero_name": "abyssal_underlord",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/abyssal_underlord.png"
+    },
+    {
+        "hero_name": "venomancer",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/venomancer.png"
+    },
+    {
+        "hero_name": "viper",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/viper.png"
+    },
+    {
+        "hero_name": "visage",
+        "votes": 0,
+        "image_url": "https:\/\/cdn.akamai.steamstatic.com\/apps\/dota2\/images\/dota_react\/heroes\/visage.png"
     }
 ]
