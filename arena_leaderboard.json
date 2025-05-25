@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-25 14:15:34",
+    "last_updated": "2025-05-25 15:38:16",
     "tabs": {
         "1": [
             {
@@ -385,8 +385,8 @@
                 "players": [
                     {
                         "steamid": "76561198879466094",
-                        "name": "\u964666",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/8a10264a8a6f625483364bc6c8ba5aaa92996ddf_medium.jpg"
+                        "name": "\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e",
+                        "avatar": "https:\/\/via.placeholder.com\/64"
                     }
                 ],
                 "heroes": [
@@ -762,13 +762,13 @@
                 "wave_count": 119,
                 "players": [
                     {
-                        "steamid": "76561198122325576",
-                        "name": "Nameless",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/1454c7d29372359bf8b4b3f42b4158b837f41c9c_medium.jpg"
+                        "steamid": "76561199235045480",
+                        "name": "\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e",
+                        "avatar": "https:\/\/via.placeholder.com\/64"
                     }
                 ],
                 "heroes": [
-                    "drow_ranger"
+                    "zuus"
                 ],
                 "rank": 55
             },
@@ -790,13 +790,13 @@
                 "wave_count": 119,
                 "players": [
                     {
-                        "steamid": "76561199235045480",
-                        "name": "\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e",
-                        "avatar": "https:\/\/via.placeholder.com\/64"
+                        "steamid": "76561198122325576",
+                        "name": "Nameless",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/1454c7d29372359bf8b4b3f42b4158b837f41c9c_medium.jpg"
                     }
                 ],
                 "heroes": [
-                    "zuus"
+                    "drow_ranger"
                 ],
                 "rank": 57
             },
