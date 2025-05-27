@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-27 06:11:52",
+    "last_updated": "2025-05-27 07:27:04",
     "players": [
         {
             "rank": 1,
@@ -27,7 +27,7 @@
             "steamid": "76561198042410068",
             "name": "\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e",
             "avatar": "https:\/\/via.placeholder.com\/64",
-            "rating": "2318"
+            "rating": "2324"
         },
         {
             "rank": 5,
@@ -52,17 +52,17 @@
         },
         {
             "rank": 8,
-            "steamid": "76561198995780241",
-            "name": "still trying",
-            "avatar": "https:\/\/avatars.steamstatic.com\/1ae3df4aff1d8d04ca1d276a4b74f6afdd8e37f9_medium.jpg",
-            "rating": "2209"
-        },
-        {
-            "rank": 9,
             "steamid": "76561198109840835",
             "name": "4rce__",
             "avatar": "https:\/\/avatars.steamstatic.com\/38e51a8d69b11ec6a1b34d641c6992291115e2ec_medium.jpg",
-            "rating": "2207"
+            "rating": "2215"
+        },
+        {
+            "rank": 9,
+            "steamid": "76561198995780241",
+            "name": "still trying",
+            "avatar": "https:\/\/avatars.steamstatic.com\/1ae3df4aff1d8d04ca1d276a4b74f6afdd8e37f9_medium.jpg",
+            "rating": "2215"
         },
         {
             "rank": 10,
@@ -262,24 +262,24 @@
         },
         {
             "rank": 38,
+            "steamid": "76561198950469069",
+            "name": "\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e",
+            "avatar": "https:\/\/via.placeholder.com\/64",
+            "rating": "1590"
+        },
+        {
+            "rank": 39,
             "steamid": "76561198140835677",
             "name": "SurBomf",
             "avatar": "https:\/\/avatars.steamstatic.com\/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
             "rating": "1588"
         },
         {
-            "rank": 39,
+            "rank": 40,
             "steamid": "76561198103942735",
             "name": "muted",
             "avatar": "https:\/\/avatars.steamstatic.com\/600a54e62405d2696730eabca74233adfd9aea7e_medium.jpg",
             "rating": "1587"
-        },
-        {
-            "rank": 40,
-            "steamid": "76561198950469069",
-            "name": "\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e",
-            "avatar": "https:\/\/via.placeholder.com\/64",
-            "rating": "1582"
         },
         {
             "rank": 41,
@@ -1039,17 +1039,17 @@
         },
         {
             "rank": 149,
+            "steamid": "76561198355266269",
+            "name": "\u0427\u0415\u0420\u0415\u041c\u0428\u0410",
+            "avatar": "https:\/\/avatars.steamstatic.com\/19e62c6a802c4250ff0873ba0b3994aa3d55ecd5_medium.jpg",
+            "rating": "1045"
+        },
+        {
+            "rank": 150,
             "steamid": "76561198327795406",
             "name": "yilo",
             "avatar": "https:\/\/avatars.steamstatic.com\/0844755a6df42b44e7b4fc7ef332c17e0e114aca_medium.jpg",
             "rating": "1044"
-        },
-        {
-            "rank": 150,
-            "steamid": "76561198062942381",
-            "name": "Epicurus (341\u2013270 BC)",
-            "avatar": "https:\/\/avatars.steamstatic.com\/b7e2fba7ba2677c40ff9c71a8ad9d96df5edc36a_medium.jpg",
-            "rating": "1041"
         }
     ]
 }
