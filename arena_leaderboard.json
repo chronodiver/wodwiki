@@ -1,5 +1,5 @@
 {
-    "last_updated": "2025-05-31 04:42:41",
+    "last_updated": "2025-05-31 06:11:16",
     "tabs": {
         "1": [
             {
@@ -1798,20 +1798,6 @@
                 "wave_count": 102,
                 "players": [
                     {
-                        "steamid": "76561198137879163",
-                        "name": "Sleepyhead",
-                        "avatar": "https:\/\/avatars.steamstatic.com\/5213d224a9767e48af6d6691ae5be9156bd9e7d8_medium.jpg"
-                    }
-                ],
-                "heroes": [
-                    "nevermore"
-                ],
-                "rank": 129
-            },
-            {
-                "wave_count": 102,
-                "players": [
-                    {
                         "steamid": "76561198984184975",
                         "name": "Singularity",
                         "avatar": "https:\/\/avatars.steamstatic.com\/b109ab512fa0538a90b36dc171519a056a013f43_medium.jpg"
@@ -1819,6 +1805,20 @@
                 ],
                 "heroes": [
                     "windrunner"
+                ],
+                "rank": 129
+            },
+            {
+                "wave_count": 102,
+                "players": [
+                    {
+                        "steamid": "76561198137879163",
+                        "name": "Sleepyhead",
+                        "avatar": "https:\/\/avatars.steamstatic.com\/5213d224a9767e48af6d6691ae5be9156bd9e7d8_medium.jpg"
+                    }
+                ],
+                "heroes": [
+                    "nevermore"
                 ],
                 "rank": 130
             },
