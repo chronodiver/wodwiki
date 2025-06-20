@@ -1,0 +1,606 @@
+<div class="talent-calculator">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .talent-calculator {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Inter;
+        }
+        .talent-calculator .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 1200px;
+        }
+        .talent-calculator .talent-block {
+            width: 370px;
+            height: 582px;
+            padding: 8px;
+            border-radius: 16px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        .talent-calculator .talent-row {
+            display: flex;
+            justify-content: flex-start;
+            gap: 12px;
+            margin: 8px 0;
+        }
+        .talent-calculator .talent {
+            width: 64px;
+            height: 64px;
+            border: none;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            cursor: pointer;
+            background-color: #00000000;
+            position: relative;
+            padding-top: 10px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .talent-calculator .talent img, .talent-calculator .talent canvas {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        .talent-calculator .talent.hidden {
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .talent-calculator .talent-bar {
+            height: 4px;
+            background-color: #262C31;
+            position: absolute;
+            top: 4px;
+            border-radius: 6px;
+            z-index: 1;
+        }
+        .talent-calculator .talent-bar.active {
+            background-color: #ffd700;
+        }
+        .talent-calculator .talent.locked img, .talent-calculator .talent.locked canvas { 
+            background-color: #00000000;
+            cursor: not-allowed;
+            opacity: 1;
+            filter: grayscale(100%);
+        }
+        .talent-calculator .talent-order {
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 800;
+            text-align: center;
+            max-width: 100%;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            line-height: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+        .talent-calculator .talent-tooltip {
+            display: none;
+            position: absolute;
+            width: 320px;
+            padding: 16px;
+            background-color: #262C31;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.3;
+            border-radius: 10px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            z-index: 1000;
+            text-align: left;
+            font-family: Inter;
+            font-weight: 600;
+        }
+        .talent-calculator .counter {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+            margin-right: auto;
+            font-family: Inter;
+        }
+        .talent-calculator .reset-btn, .talent-calculator .save-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            height: 52px;
+            margin: 0;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            gap: 8px;
+            font-family: Inter;
+        }
+        .talent-calculator .save-btn {
+            background-color: #292929;
+            color: #ffffff;
+        }
+        .talent-calculator .save-btn i {
+            color: #ffffff;
+            font-size: 18px;
+        }
+        .talent-calculator .save-btn:hover {
+            background-color: #3d3d3d;
+        }
+        .talent-calculator .reset-btn {
+            background-color: rgba(44, 44, 44, 0.50);
+            color: #ffffff;
+        }
+        .talent-calculator .reset-btn i {
+            color: #ffffff;
+            font-size: 18px;
+        }
+        .talent-calculator .reset-btn:hover {
+            background-color: rgba(27, 27, 27, 0.25);
+        }
+        .talent-calculator .spec-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #000000;
+            margin-bottom: 8px;
+            font-size: 32px;
+            font-weight: bold;
+            width: 100%;
+            font-family: Inter; /* Явное задание шрифта */
+        }
+        .talent-calculator .spec-header img {
+            width: 48px;
+            height: 48px;
+        }
+        .talent-calculator .button-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 48px 0;
+            width: 1200px;
+        }
+    </style>
+
+    <div class="button-container">
+        <div class="counter">Доступные очки талантов: <span id="points">40</span></div>
+        <button class="save-btn"><i class="fas fa-save"></i> Сохранить прокачку</button>
+        <button class="reset-btn"><i class="fas fa-undo"></i> Сбросить таланты</button>
+    </div>
+    <div class="container">
+        <div>
+            <h2 class="spec-header">
+                <img src="https://static.tildacdn.com/tild6335-3038-4363-b061-616634313266/str1_png.png" alt="Strength Icon"> 
+                Сила: <span class="spec-points" data-spec="strength">0</span>
+            </h2>
+            <div class="talent-block" data-spec="strength"></div>
+        </div>
+        <div>
+            <h2 class="spec-header">
+                <img src="https://static.tildacdn.com/tild3338-3161-4138-b661-393361383664/agi1_png.png" alt="Agility Icon"> 
+                Ловкость: <span class="spec-points" data-spec="agility">0</span>
+            </h2>
+            <div class="talent-block" data-spec="agility"></div>
+        </div>
+        <div>
+            <h2 class="spec-header">
+                <img src="https://static.tildacdn.com/tild3563-3537-4931-a636-373831656230/int1_png.png" alt="Intelligence Icon"> 
+                Интеллект: <span class="spec-points" data-spec="intelligence">0</span>
+            </h2>
+            <div class="talent-block" data-spec="intelligence"></div>
+        </div>
+    </div>
+    <div class="talent-tooltip"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            const MAX_POINTS = 40;
+            const TIERS = [0, 4, 8, 12, 16, 20, 24];
+            const TALENTS_PER_ROW = [5, 5, 5, 5, 5, 5, 5];
+            let totalPoints = 0;
+            let orderCounter = 1;
+
+            const TALENT_MAX_LEVELS = {
+                strength: [
+                    [3, 2, 3, 1, 2],
+                    [0, 0, 3, 2, 1],
+                    [0, 2, 3, 0, 1],
+                    [3, 0, 1, 2, 1],
+                    [3, 0, 0, 3, 3],
+                    [2, 3, 2, 0, 0],
+                    [0, 0, 1, 0, 0]
+                ],
+                agility: [
+                    [3, 2, 3, 2, 2],
+                    [0, 0, 2, 2, 1],
+                    [0, 0, 1, 2, 1],
+                    [2, 3, 2, 0, 1],
+                    [3, 0, 0, 3, 3],
+                    [2, 0, 3, 3, 0],
+                    [0, 0, 1, 0, 0]
+                ],
+                intelligence: [
+                    [3, 2, 3, 3, 2],
+                    [0, 2, 0, 2, 1],
+                    [0, 1, 0, 2, 1],
+                    [3, 3, 0, 2, 1],
+                    [3, 0, 0, 1, 3],
+                    [2, 3, 3, 0, 0],
+                    [0, 0, 1, 0, 0]
+                ]
+            };
+
+            const TALENT_IMAGES = {
+                strength: [
+                    ["https://optim.tildacdn.com/tild3736-3233-4632-b463-386230663937/-/resize/78x/-/format/webp/hp1_png.png", "https://optim.tildacdn.com/tild6366-6137-4136-b331-323237303730/-/resize/78x/-/format/webp/regenhp1_png.png", "https://optim.tildacdn.com/tild3562-3131-4163-a566-666435363437/-/resize/78x/-/format/webp/attack1_png.png", "https://i.ibb.co/WWh463d6/1-png.png", "https://optim.tildacdn.com/tild3433-3035-4532-b235-393065376133/-/resize/78x/-/format/webp/str3_png.png"],
+                    ["","","https://i.ibb.co/WC2pGCz/2-png.png", "https://optim.tildacdn.com/tild6232-6235-4930-b337-396463613438/-/resize/78x/-/format/webp/cloak_png.png", "https://optim.tildacdn.com/tild3930-3263-4233-a361-613135383861/-/resize/78x/-/format/webp/str6_png.png"],
+                    ["", "https://optim.tildacdn.com/tild6138-3934-4933-b765-646637396163/-/resize/78x/-/format/webp/quickhp_png.png.webp", "https://i.ibb.co/BHjRb6V3/3-png.png", "", "https://optim.tildacdn.com/tild6439-3364-4236-a439-636232633964/-/resize/78x/-/format/webp/sasha_png.png"],
+                    ["https://optim.tildacdn.com/tild3133-6232-4566-b834-303238663065/-/resize/78x/-/format/webp/hp2_png.png", "", "https://i.ibb.co/qY9d3Rw2/4-png.png", "https://optim.tildacdn.com/tild3164-3833-4362-b465-633861663165/-/resize/78x/-/format/webp/octar_png.png.webp", "https://optim.tildacdn.com/tild3430-3432-4262-a365-303364396262/-/resize/78x/-/format/webp/str4_png.png"],
+                    ["https://optim.tildacdn.com/tild6331-3536-4934-a234-343134343137/-/resize/78x/-/format/webp/armor2_png.png", "", "", "https://i.ibb.co/kbbDZkr/5-png.png", "https://optim.tildacdn.com/tild3234-3335-4566-a535-393635336630/-/resize/78x/-/format/webp/str5_png.png"],
+                    ["https://optim.tildacdn.com/tild3639-6637-4366-b335-623037356264/-/resize/78x/-/format/webp/sliver_png.png.webp", "https://optim.tildacdn.com/tild3332-3335-4366-b331-353638363130/-/resize/78x/-/format/webp/regenhp2_png.png.webp", "https://i.ibb.co/hx4dsLfk/6-png.png", "", ""],
+                    ["", "", "https://i.ibb.co/BK4hjsMm/7-png.png", "", ""]
+                ],
+                agility: [
+                    ["https://optim.tildacdn.com/tild3331-6239-4262-a635-333962626335/-/resize/78x/-/format/webp/armor1_png.png", "https://optim.tildacdn.com/tild3637-6335-4734-b634-623462666530/-/resize/78x/-/format/webp/speed1_png.png", "https://optim.tildacdn.com/tild6137-3339-4232-b966-653934366136/-/resize/78x/-/format/webp/attackspeed1_png.png", "https://i.ibb.co/JRYxbhbP/8-png.png", "https://optim.tildacdn.com/tild3736-3837-4663-b532-333862373731/-/resize/78x/-/format/webp/agi3_png.png"],
+                    ["", "", "https://i.ibb.co/4gVnkMCS/9-png.png", "https://optim.tildacdn.com/tild3965-3662-4261-b063-336433626566/-/resize/78x/-/format/webp/miss1_png.png", "https://optim.tildacdn.com/tild6664-3633-4463-b164-336565303365/-/resize/78x/-/format/webp/agi6_png.png"],
+                    ["", "", "https://i.ibb.co/chqMhh7T/10-png.png", "https://optim.tildacdn.com/tild6566-3830-4033-b765-346434393665/-/resize/78x/-/format/webp/mask1_png.png", "https://optim.tildacdn.com/tild6637-3633-4030-a432-613435313636/-/resize/78x/-/format/webp/yasha_png.png"],
+                    ["https://i.ibb.co/DHxxbd5H/11-png.png", "https://optim.tildacdn.com/tild3338-3138-4331-b366-383064616339/-/resize/78x/-/format/webp/speed2_png.png", "https://optim.tildacdn.com/tild6533-6136-4965-b765-666566383064/-/resize/78x/-/format/webp/grovebow_png.png", "", "https://optim.tildacdn.com/tild3434-6536-4162-b630-653637633734/-/resize/78x/-/format/webp/agi4_png.png"],
+                    ["https://optim.tildacdn.com/tild3363-6265-4737-b762-366536316130/-/resize/78x/-/format/webp/attack2_png.png", "", "", "https://i.ibb.co/9k1m7ty8/12-png.png", "https://optim.tildacdn.com/tild3466-3935-4264-b330-353239346334/-/resize/78x/-/format/webp/agi5_png.png"],
+                    ["https://optim.tildacdn.com/tild3530-6434-4830-b036-626436393531/-/resize/78x/-/format/webp/miss2_png.png", "", "https://optim.tildacdn.com/tild6230-3539-4838-b030-653937343535/-/resize/78x/-/format/webp/attackspeed2_png.png", "https://i.ibb.co/HTwWYygG/13-png.png", ""],
+                    ["", "", "https://i.ibb.co/8gh8YD2V/14-png.png", "", ""]
+                ],
+                intelligence: [
+                    ["https://optim.tildacdn.com/tild3337-3138-4339-b563-656266306132/-/resize/78x/-/format/webp/mp1_png.png", "https://optim.tildacdn.com/tild6261-6630-4462-b131-393165303039/-/resize/78x/-/format/webp/regenmp1_png.png", "https://optim.tildacdn.com/tild3139-3361-4461-a537-396235653362/-/resize/78x/-/format/webp/spell_png.png", "https://i.ibb.co/HLTxDBZX/15-png.png", "https://optim.tildacdn.com/tild3464-3962-4834-a564-316264376262/-/resize/78x/-/format/webp/int3_png.png"],
+                    ["", "https://optim.tildacdn.com/tild3832-6466-4330-b166-313938343965/-/resize/78x/-/format/webp/fairy_png.png", "", "https://i.ibb.co/5hhB98tG/16-png.png", "https://optim.tildacdn.com/tild6662-6239-4032-a363-323464643234/-/resize/78x/-/format/webp/int6_png.png"],
+                    ["", "https://i.ibb.co/7t99hf1J/17-png.png", "", "https://optim.tildacdn.com/tild3938-6138-4131-a366-623238626331/-/resize/78x/-/format/webp/mask2_png.png", "https://optim.tildacdn.com/tild6462-3131-4464-b630-383831313432/-/resize/78x/-/format/webp/kaya_png.png"],
+                    ["https://optim.tildacdn.com/tild3734-3831-4538-b863-343333316132/-/resize/78x/-/format/webp/mp2_png.png", "https://i.ibb.co/mCbtpRhy/18-png.png", "", "https://optim.tildacdn.com/tild3537-3963-4135-b536-653966653538/-/resize/78x/-/format/webp/blood_png.png.webp", "https://optim.tildacdn.com/tild3230-3962-4934-a566-623966316362/-/resize/78x/-/format/webp/int4_png.png"],
+                    ["https://optim.tildacdn.com/tild3866-6632-4630-a466-396661393137/-/resize/78x/-/format/webp/spellprism_png.png", "", "", "https://i.ibb.co/XZG2GGWb/19-png.png", "https://optim.tildacdn.com/tild3738-3630-4663-b765-616162383734/-/resize/78x/-/format/webp/int5_png.png"],
+                    ["https://optim.tildacdn.com/tild3665-3034-4738-b763-623731323832/-/resize/78x/-/format/webp/timeless_png.png", "https://optim.tildacdn.com/tild3765-6532-4536-a232-616339323635/-/resize/78x/-/format/webp/regenmp2_png.png", "https://i.ibb.co/84RvXZKm/20-png.png", "", ""],
+                    ["", "", "https://i.ibb.co/7NKCpYNp/21-png.png", "", ""]
+                ]
+            };
+
+            const TALENT_VISIBILITY = {
+                strength: [
+                    [true, true, true, true, true],
+                    [false, false, true, true, true],
+                    [false, true, true, false, true],
+                    [true, false, true, true, true],
+                    [true, false, false, true, true],
+                    [true, true, true, false, false],
+                    [false, false, true, false, false]
+                ],
+                agility: [
+                    [true, true, true, true, true],
+                    [false, false, true, true, true],
+                    [false, false, true, true, true],
+                    [true, true, true, false, true],
+                    [true, false, false, true, true],
+                    [true, false, true, true, false],
+                    [false, false, true, false, false]
+                ],
+                intelligence: [
+                    [true, true, true, true, true],
+                    [false, true, false, true, true],
+                    [false, true, false, true, true],
+                    [true, true, false, true, true],
+                    [true, false, false, true, true],
+                    [true, true, true, false, false],
+                    [false, false, true, false, false]
+                ]
+            };
+
+            const TALENT_DESCRIPTIONS = {
+                strength: [
+                    ["Здоровье: 100/200/300", "Восстановление Здоровья: 5/10", "Базовый Урон: 10/20/30", "Aether Remnant становится переключаемой способностью. <br><br> Когда эта способность активирована, создаются копии которые не притягивают, а наносят своим взглядом 30% урона в секунду. Время жизни такой копии в 2 раза меньше.", "Сила: 5/10"],
+                    ["", "", "Увеличение Урона Aether Remnant: 50%/100%/150% от Силы", "Сопротивление Магии: 7%/14%", "<b><span style='color: #FF0000;'>Сила.</span></b> <br><br> Меняет основную характеристику на Силу. <br><br> Прирост Силы за Уровень: 0.5<br><br>Если выучить Силу, Ловкость и Интеллект, то меняет основную характеристику на Универсальную и увеличивает Базовый Урон за Атрибут: 0.1"],
+                    ["", "Уменьшение Получаемого Урона от Атак: 5%/10%", "<b><font color='#ff0000'> Огонь. </font></b> <br><br> Применение Aether Remnant увеличивает Весь Наносимый Урон: 5%/10%/15% <br><br> Длительность: 5 сек.", "", "1% Уменьшения Всего Получаемого Урона за каждые 30 Силы<br><br> <span style='color: #FF0000;'>Максимальный бонус достигается при 300 Силы.</span>"],
+                    ["Здоровье: 4%/8%/12%", "", "<b><font color='#ff0000'> Убирает Resonant Pulse. </font></b> <br><br> Увеличение Зарядов Aether Remnant: 1 <br><br> Здоровье: 250", "Дополнительная Дальность Заклинаний: 100/200", "Прирост Силы за Уровень: 1"],
+                    ["Уменьшение Всего Получаемого Урона: 4%/8%/12%", "", "", "Aether Remnant создаёт дополнительную линию обзора, которая вращается вокруг копии. <br><br> Сила: 0/10/20", "Сила: 5%/10%/15%"],
+                    ["Сопротивление Эффектам: 10%/20%", "Восстановление Здоровья: 0.25%/0.5%/0.75%", "Когда герой выходит из любого портала Dissimilate, кроме центрального, в 1/3 наиболее далёких от него порталах создаются его копии от Aether Remnant. <br><br> Длительность: 4 сек.", "", ""],
+                    ["", "", "Astral Step создаёт Aether Remnant по направлению применения. <br><br> Длительность: 4 сек.", "", ""]
+                ],
+                agility: [
+                    ["Броня: 3/6/9", "Скорость Передвижения: 15/30", "Скорость Атаки: 15/30/45", "Барьер Resonant Pulse нельзя развеять и он поглощает любой урон. <br><br> Увеличение Барьера Resonant Pulse: 50%/100% от Ловкости", "Ловкость: 5/10"],
+                    ["", "", "Каждая Атака может создать Метку Пустоты Astral Step на противнике. <br><br> Вероятность Метки: 8%/16% <br><br> Если Astral Step не изучен, то: <br> Урон: 65 <br> Замедление Передвижения: 20%", "Уклонение: 7%/14%", "<b><font color='#ff0000'>Ловкость.</font></b> <br><br> Меняет основную характеристику на Ловкость. <br><br> Прирост Ловкости за Уровень: 0.5 <br><br> Если выучить Силу, Ловкость и Интеллект, то меняет основную характеристику на Универсальную и увеличивает Базовый Урон за Атрибут: 0.1"],
+                    ["", "", "<b><font color='#ff0000'> Молния. </font></b> <br><br> Применение Astral Step дарует неограниченный обзор в радиусе 800 и увеличивает Скорость Передвижения: 20% <br><br> Длительность: 3 сек.", "Вампиризм: 7%/14%", "1% Увеличения Всего Наносимого Урона за каждые 30 Ловкости<br><br> <span style='color: #FF0000;'>Максимальный бонус достигается при 300 Ловкости.</span>"],
+                    ["Resonant Pulse накладывает на противников Безмолвие: 1/2 сек.", "Скорость Передвижения: 7%/14%/21%", "Дополнительная Дальности Атаки: 50/100 для героев Ближнего Боя, 100/200 для героев Дальнего Боя", "", "Прирост Ловкости за Уровень: 1"],
+                    ["Увеличение Всего Наносимого Урона: 4%/8%/12%", "", "", "Astral Step оставляет Разлом который наносит Магический Урон в Секунду: 25%/50%/75% от Ловкости <br><br> Ширина Разлома: 250 <br> Длительность Разлома: 3 сек.", "Ловкость: 5%/10%/15%"],
+                    ["Шанс Уклониться от Любого Урона: 4%/8%", "", "Скорость Атаки: 5%/10%/15%", "<b><font color='#ff0000'> Убирает Dissimilate. </font></b> <br><br> Astral Step не потребует Времени Перезарядки с вероятностью: 10%/20%/30%", ""],
+                    ["", "", "Уменьшение Времени Перезарядки Astral Step на 1 секунду за каждые 50 Ловкости <br><br> <b><font color='#ff0000'> Максимальный бонус достигается при 600 Ловкости. </font></b>", "", ""]
+                ],
+                intelligence: [
+                    ["Мана: 150/300/450", "Восстановление Маны: 5/10", "Урон от Заклинаний: 5%/10%/15%", "<b><font color='#ff0000'> Пустота. </font></b> <br><br> Увеличение Урона Resonant Pulse: 30%/50%/70% от Суммы Атрибутов <br><br> Если выучить Пустоту, Огонь, Молнию, Землю, то: <br><br> Сила, Ловкость, Интеллект: 20", "Интеллект: 5/10"],
+                    ["", "Уменьшение Расхода и Потери Маны: 10%/20%", "", "Сила, Ловкость: 5/10", "<b><font color='#ff0000'>Интеллект.</font></b> <br><br> Меняет основную характеристику на Интеллект. <br><br> Прирост Интеллекта за Уровень: 0.5 <br><br> Если выучить Силу, Ловкость и Интеллект, то меняет основную характеристику на Универсальную и увеличивает Базовый Урон за Атрибут: 0.1"],
+                    ["", "<b><font color='#ff0000'> Земля. </font></b> <br><br> Dissimilate применяет Нормальное Развеивание и восстанавливает Здоровье: 250", "", "Вампиризм Заклинаниями: 7%/14%", "1% Урона от Заклинаний за каждые 6 Интеллекта<br><br> <span style='color: #FF0000;'>Максимальный бонус достигается при 300 Интеллекта.</span>"],
+                    ["Мана: 5%/10%/15%", "Увеличение Урона Dissimilate: 8%/12%/16% от Текущей Маны", "", "Навсегда дарует Барьер поглощающий Любой Урон: 200/400<br><br>Время Перезарядки: 15 сек.", "Прирост Интеллекта за Уровень: 1"],
+                    ["Уменьшение Времени Перезарядки: 7%/14%/21%", "", "", "Увеличение Зарядов Resonant Pulse: 1", "Интеллект: 5%/10%/15%"],
+                    ["Увеличение Длительности Отрицательных Эффектов: 10%/20%", "Восстановление Маны: 0.5%/1%/1.5%", "Dissimilate создаёт дополнительный внешний круг. <br><br> Dissimilate накладывает на противников Оцепенение: 1/1.5/2 сек.", "", ""],
+                    ["", "", "Новая Активная Способность: Dissimilate Burst <br><br> После небольшой задержки совершает взрыв от способности Dissimilate в указанной точке. <br><br> Урон: 150% от Урона Dissimilate <br> Время Перезарядки: 22 сек. <br> Дальность Применения: 700 <br> Затраты Маны: 120", "", ""]
+                ]
+            };
+
+            const BLOCK_BACKGROUNDS = {
+                strength: "https://i.ibb.co/23hSMFnS/void-spirit-background-str-png.png",
+                agility: "https://i.ibb.co/93fs8HLx/void-spirit-background-agi-png.png",
+                intelligence: "https://i.ibb.co/wFfnbz61/void-spirit-background-int-png.png"
+            };
+
+            //строка, талант, зависим. строка, зависим. талант
+            const TALENT_DEPENDENCIES = {
+                strength: [
+                    [3, 0, 0, 0],
+                    [1, 4, 0, 4],
+                    [2, 4, 1, 4],
+                    [3, 4, 2, 4],
+                    [4, 4, 3, 4]
+                ],
+                agility: [
+                    [1, 4, 0, 4],
+                    [2, 4, 1, 4],
+                    [3, 1, 0, 1],
+                    [3, 4, 2, 4],
+                    [4, 4, 3, 4]
+                ],
+                intelligence: [
+                    [3, 0, 0, 0],
+                    [1, 4, 0, 4],
+                    [2, 4, 1, 4],
+                    [3, 4, 2, 4],
+                    [4, 4, 3, 4]
+                ]
+            };
+
+            $('.talent-calculator .talent-block').each(function() {
+                let spec = $(this).data('spec');
+                $(this).css('background-image', 'url("' + BLOCK_BACKGROUNDS[spec] + '")');
+                for (let row = 0; row < 7; row++) {
+                    let $row = $('<div class="talent-row"></div>');
+                    for (let i = 0; i < TALENTS_PER_ROW[row]; i++) {
+                        let max = TALENT_MAX_LEVELS[spec][row][i];
+                        let imageUrl = TALENT_IMAGES[spec][row][i];
+                        let isVisible = TALENT_VISIBILITY[spec][row][i];
+                        let description = TALENT_DESCRIPTIONS[spec][row][i];
+                        let $talent = $('<div class="talent" data-max="' + max + '" data-level="0" data-row="' + row + '" data-col="' + i + '" data-order="" data-description="' + description + '"><img src="' + imageUrl + '" alt="Talent" crossorigin="anonymous"><span class="talent-order"></span></div>');
+                        if (!isVisible) {
+                            $talent.addClass('hidden');
+                        }
+                        $row.append($talent);
+                    }
+                    $(this).append($row);
+                }
+            });
+
+            let $tooltip = $('.talent-calculator .talent-tooltip');
+
+            function checkDependency(spec, row, col) {
+                const dependencies = TALENT_DEPENDENCIES[spec];
+                for (let dep of dependencies) {
+                    let [depRow, depCol, reqRow, reqCol] = dep;
+                    if (depRow === row && depCol === col) {
+                        let $requiredTalent = $('.talent-calculator .talent-block[data-spec="' + spec + '"] .talent-row:eq(' + reqRow + ') .talent:eq(' + reqCol + ')');
+                        if ($requiredTalent.length === 0) {
+                            console.error('Талант зависимости не найден: spec=' + spec + ', reqRow=' + reqRow + ', reqCol=' + reqCol);
+                            return false;
+                        }
+                        let requiredMax = parseInt($requiredTalent.data('max'));
+                        let requiredLevel = parseInt($requiredTalent.data('level'));
+                        return requiredLevel === requiredMax;
+                    }
+                }
+                return true;
+            }
+
+            function updateTalents() {
+                $('.talent-calculator .talent').each(function() {
+                    let $talent = $(this);
+                    let row = parseInt($talent.data('row'));
+                    let col = parseInt($talent.data('col'));
+                    let spec = $talent.closest('.talent-block').data('spec');
+                    let specPoints = getSpecPoints(spec);
+                    let max = parseInt($talent.data('max'));
+                    let level = parseInt($talent.data('level'));
+                    let order = $talent.data('order') || '';
+                    let isLocked = specPoints < TIERS[row] || !checkDependency(spec, row, col);
+                    if (isLocked) {
+                        $talent.addClass('locked');
+                    } else {
+                        $talent.removeClass('locked');
+                    }
+                    $talent.find('.talent-bar').remove();
+                    let totalGaps = (max - 1) * 2;
+                    let totalEdgePadding = 8;
+                    let availableWidth = 64 - totalEdgePadding;
+                    let barWidth = (availableWidth - totalGaps) / max;
+                    for (let i = 0; i < max; i++) {
+                        let isActive = i < level;
+                        let leftPosition = 4 + i * (barWidth + 2);
+                        $talent.prepend('<div class="talent-bar ' + (isActive ? 'active' : '') + '" style="left: ' + leftPosition + 'px; width: ' + barWidth + 'px;"></div>');
+                    }
+                    $talent.find('.talent-order').text(order);
+                });
+                $('.talent-calculator .spec-points').each(function() {
+                    let spec = $(this).data('spec');
+                    $(this).text(getSpecPoints(spec));
+                });
+                $('.talent-calculator #points').text(MAX_POINTS - totalPoints);
+            }
+
+            function getSpecPoints(spec) {
+                let points = 0;
+                $('.talent-calculator .talent-block[data-spec="' + spec + '"] .talent').not('.hidden').each(function() {
+                    points += parseInt($(this).data('level'));
+                });
+                return points;
+            }
+
+            $('.talent-calculator .talent').on('click', function() {
+                let $talent = $(this);
+                if ($talent.hasClass('locked') || $talent.hasClass('hidden')) return;
+                let level = parseInt($talent.data('level'));
+                let max = parseInt($talent.data('max'));
+                let order = $talent.data('order') || '';
+                if (level < max && totalPoints < MAX_POINTS) {
+                    level++;
+                    totalPoints++;
+                    if (order === '') {
+                        order = orderCounter.toString();
+                    } else {
+                        order += '/' + orderCounter;
+                    }
+                    orderCounter++;
+                    $talent.data('level', level);
+                    $talent.data('order', order);
+                }
+                updateTalents();
+            });
+
+            $('.talent-calculator .talent').on('mouseenter', function() {
+                let $talent = $(this);
+                let row = parseInt($talent.data('row'));
+                let description = $talent.data('description');
+                let $calculator = $('.talent-calculator');
+                let calculatorOffset = $calculator.offset();
+                let talentOffset = $talent.offset();
+                let talentHeight = $talent.outerHeight();
+                let talentWidth = $talent.outerWidth();
+                let tooltipHeight = $tooltip.outerHeight();
+
+                let topRelative = talentOffset.top - calculatorOffset.top;
+                let leftRelative = talentOffset.left - calculatorOffset.left;
+
+                $tooltip.html(description);
+
+                if (row === 5 || row === 6) {
+                    $tooltip.css({
+                        'display': 'block',
+                        'top': topRelative - tooltipHeight - 10,
+                        'left': leftRelative + (talentWidth / 2) - (320 / 2)
+                    });
+                } else {
+                    $tooltip.css({
+                        'display': 'block',
+                        'top': topRelative + talentHeight + 20,
+                        'left': leftRelative + (talentWidth / 2) - (320 / 2)
+                    });
+                }
+            }).on('mouseleave', function() {
+                $tooltip.css('display', 'none');
+            });
+
+            function applyGrayscaleToImage(imgElement) {
+                return new Promise(function(resolve) {
+                    let img = new Image();
+                    img.crossOrigin = "anonymous";
+                    img.src = imgElement.src;
+                    img.onload = function() {
+                        let canvas = document.createElement('canvas');
+                        canvas.width = 64;
+                        canvas.height = 64;
+                        let ctx = canvas.getContext('2d');
+                        ctx.fillStyle = '#eee';
+                        ctx.fillRect(0, 0, 64, 64);
+                        ctx.drawImage(img, 0, 0, 64, 64);
+                        let imageData = ctx.getImageData(0, 0, 64, 64);
+                        let data = imageData.data;
+                        for (let i = 0; i < data.length; i += 4) {
+                            let r = data[i];
+                            let g = data[i + 1];
+                            let b = data[i + 2];
+                            let gray = 0.2989 * r + 0.5870 * g + 0.1140 * b;
+                            data[i] = gray;
+                            data[i + 1] = gray;
+                            data[i + 2] = gray;
+                        }
+                        ctx.putImageData(imageData, 0, 0);
+                        resolve(canvas);
+                    };
+                    img.onerror = function() {
+                        console.error('Ошибка загрузки изображения:', img.src);
+                        resolve(imgElement);
+                    };
+                });
+            }
+
+            $('.talent-calculator .save-btn').on('click', function() {
+                $tooltip.css('display', 'none');
+                let $originalContainer = $('.talent-calculator .container');
+                let $cloneContainer = $originalContainer.clone(true);
+                $cloneContainer.css({
+                    position: 'absolute',
+                    left: '-9999px',
+                    top: '-9999px'
+                });
+                $('.talent-calculator').append($cloneContainer);
+                let promises = [];
+                $cloneContainer.find('.talent').each(function() {
+                    let $talent = $(this);
+                    let level = parseInt($talent.data('level'));
+                    let $img = $talent.find('img');
+                    if ((level === 0 && !$talent.hasClass('hidden')) || $talent.hasClass('locked')) {
+                        promises.push(applyGrayscaleToImage($img[0]).then(function(canvas) {
+                            $img.replaceWith(canvas);
+                        }));
+                    }
+                });
+                Promise.all(promises).then(function() {
+                    html2canvas($cloneContainer[0], {
+                        backgroundColor: null,
+                        scale: 2,
+                        useCORS: true,
+                        width: 1250,
+                        height: $cloneContainer[0].scrollHeight,
+                        scrollX: 0,
+                        scrollY: 0
+                    }).then(function(canvas) {
+                        $cloneContainer.remove();
+                        let link = document.createElement('a');
+                        link.download = 'talent-build.png';
+                        link.href = canvas.toDataURL('image/png');
+                        link.click();
+                    }).catch(function(err) {
+                        $cloneContainer.remove();
+                        console.error('Ошибка при сохранении изображения:', err);
+                    });
+                }).catch(function(err) {
+                    $cloneContainer.remove();
+                    console.error('Ошибка при обработке изображений:', err);
+                });
+            });
+
+            $('.talent-calculator .reset-btn').on('click', function() {
+                $('.talent-calculator .talent').not('.hidden').each(function() {
+                    $(this).data('level', 0);
+                    $(this).data('order', '');
+                });
+                totalPoints = 0;
+                orderCounter = 1;
+                updateTalents();
+            });
+
+            updateTalents();
+        });
+    </script>
+</div>
